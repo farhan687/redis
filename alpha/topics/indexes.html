@@ -1,0 +1,558 @@
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <base href="../../">
+  <title>Documentation</title>
+  <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <!-- Flatdoc theme -->
+  <link href="../../bower_components/flatdoc/theme-white/style.css" rel="stylesheet">
+  <script src="../../bower_components/google-code-prettify/bin/prettify.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../bower_components/google-code-prettify/bin/prettify.min.css">
+  <link rel="stylesheet" type="text/css" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- DocBase -->
+  <link rel="stylesheet" type="text/css" href="../../bower_components/docbase/dist/css/main.min.css">
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="styles/theme.css">
+  
+<script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc" class="no-literate">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a id="docs-appbase-logo" class="navbar-brand" ng-href="#/" href="#/">
+      <img src="./images/docbase.png">
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+      <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <a ng-href=../../alpha/commands/index.html class="dropdown-toggle map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" href=../../alpha/commands/index.html>commands</a>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/append.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/append.html>append</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/auth.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/auth.html>auth</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/bgrewriteaof.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/bgrewriteaof.html>bgrewriteaof</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/bgsave.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/bgsave.html>bgsave</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/bitcount.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/bitcount.html>bitcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/bitop.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/bitop.html>bitop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/bitpos.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/bitpos.html>bitpos</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/blpop.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/blpop.html>blpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/brpop.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/brpop.html>brpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/brpoplpush.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/brpoplpush.html>brpoplpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/client-getname.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/client-getname.html>client-getname</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/client-kill.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/client-kill.html>client-kill</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/client-list.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/client-list.html>client-list</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/client-pause.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/client-pause.html>client-pause</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/client-reply.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/client-reply.html>client-reply</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/client-setname.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/client-setname.html>client-setname</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/cluster-addslots.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/cluster-addslots.html>cluster-addslots</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/cluster-count-failure-reports.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/cluster-count-failure-reports.html>cluster-count-failure-reports</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/cluster-countkeysinslot.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/cluster-countkeysinslot.html>cluster-countkeysinslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/cluster-delslots.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/cluster-delslots.html>cluster-delslots</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/commands/cluster-failover.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/cluster-failover.html>cluster-failover</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
+            <a ng-href=../../alpha/commands/index.html ng-bind="file.label" class="ng-binding" href=../../alpha/commands/index.html>index</a>
+          </li><!-- end ngRepeat: file in folder.files -->
+        </ul>
+      </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <a ng-href=../../alpha/topics/index.html class="dropdown-toggle map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" href=../../alpha/topics/index.html>topics</a>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/admin.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/admin.html>admin</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/benchmarks.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/benchmarks.html>benchmarks</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/clients.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/clients.html>clients</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/cluster-spec.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/cluster-spec.html>cluster-spec</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/cluster-tutorial.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/cluster-tutorial.html>cluster-tutorial</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/config.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/config.html>config</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/data-types-intro.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/data-types-intro.html>data-types-intro</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/data-types.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/data-types.html>data-types</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/debugging.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/debugging.html>debugging</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/distlock.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/distlock.html>distlock</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/encryption.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/encryption.html>encryption</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/faq.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/faq.html>faq</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/indexes.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/indexes.html>indexes</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/internals-eventlib.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/internals-eventlib.html>internals-eventlib</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/internals-rediseventlib.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/internals-rediseventlib.html>internals-rediseventlib</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/internals-sds.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/internals-sds.html>internals-sds</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/internals-vm.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/internals-vm.html>internals-vm</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/internals.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/internals.html>internals</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/introduction.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/introduction.html>introduction</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/latency-monitor.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/latency-monitor.html>latency-monitor</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/latency.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/latency.html>latency</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/ldb.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/ldb.html>ldb</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/license.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/license.html>license</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/lru-cache.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/lru-cache.html>lru-cache</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/mass-insert.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/mass-insert.html>mass-insert</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/memory-optimization.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/memory-optimization.html>memory-optimization</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=../../alpha/topics/notifications.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/notifications.html>notifications</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
+            <a ng-href=../../alpha/topics/index.html ng-bind="file.label" class="ng-binding" href=../../alpha/topics/index.html>index</a>
+          </li><!-- end ngRepeat: file in folder.files -->
+        </ul>
+      </li><!-- end ngRepeat: folder in map[currentVersion] -->
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown search-dropdown">
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+      </li>
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+           <span ng-bind="currentVersion" class="ng-binding">alpha</span> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu version-switcher" role="menu">
+          <!-- ngRepeat: version in versions --><li ng-repeat="version in versions" class="ng-scope">
+            <a ng-href=../../alpha/commands/append.html ng-bind="version" class="ng-binding" href=../../alpha/commands/append.html>alpha</a>
+          </li><!-- end ngRepeat: version in versions -->
+        </ul>
+      </li>
+      <!-- ngIf: docbaseOptions.method == 'github' --><li class="github-star ng-scope" data-ng-if="docbaseOptions.method == 'github'">
+        <iframe src="https://ghbtns.com/github-btn.html?user=farhan687&amp;repo=redis&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+      </li><!-- end ngIf: docbaseOptions.method == 'github' -->
+      <!-- ngIf: docbaseOptions.method != 'github' -->
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+  <div class="menubar fixed">
+    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="secondary-indexing-with-redis-item" class="level-1"><a id="secondary-indexing-with-redis-link" href="../../alpha/topics/indexes.html#secondary-indexing-with-redis" class="level-1" pref="#secondary-indexing-with-redis">Secondary indexing with Redis</a></li><li id="simple-numerical-indexes-with-sorted-sets-item" class="level-1"><a id="simple-numerical-indexes-with-sorted-sets-link" href="../../alpha/topics/indexes.html#simple-numerical-indexes-with-sorted-sets" class="level-1" pref="#simple-numerical-indexes-with-sorted-sets">Simple numerical indexes with sorted sets</a><ul class="level-2" id="simple-numerical-indexes-with-sorted-sets-list"><li id="simple-numerical-indexes-with-sorted-sets-using-objects-ids-as-associated-values-item" class="level-2"><a id="simple-numerical-indexes-with-sorted-sets-using-objects-ids-as-associated-values-link" href="../../alpha/topics/indexes.html#simple-numerical-indexes-with-sorted-sets-using-objects-ids-as-associated-values" class="level-2" pref="#simple-numerical-indexes-with-sorted-sets-using-objects-ids-as-associated-values">Using objects IDs as associated values</a></li><li id="simple-numerical-indexes-with-sorted-sets-updating-simple-sorted-set-indexes-item" class="level-2"><a id="simple-numerical-indexes-with-sorted-sets-updating-simple-sorted-set-indexes-link" href="../../alpha/topics/indexes.html#simple-numerical-indexes-with-sorted-sets-updating-simple-sorted-set-indexes" class="level-2" pref="#simple-numerical-indexes-with-sorted-sets-updating-simple-sorted-set-indexes">Updating simple sorted set indexes</a></li><li id="simple-numerical-indexes-with-sorted-sets-turning-multi-dimensional-data-into-linear-data-item" class="level-2"><a id="simple-numerical-indexes-with-sorted-sets-turning-multi-dimensional-data-into-linear-data-link" href="../../alpha/topics/indexes.html#simple-numerical-indexes-with-sorted-sets-turning-multi-dimensional-data-into-linear-data" class="level-2" pref="#simple-numerical-indexes-with-sorted-sets-turning-multi-dimensional-data-into-linear-data">Turning multi dimensional data into linear data</a></li><li id="simple-numerical-indexes-with-sorted-sets-limits-of-the-score-item" class="level-2"><a id="simple-numerical-indexes-with-sorted-sets-limits-of-the-score-link" href="../../alpha/topics/indexes.html#simple-numerical-indexes-with-sorted-sets-limits-of-the-score" class="level-2" pref="#simple-numerical-indexes-with-sorted-sets-limits-of-the-score">Limits of the score</a></li></ul></li><li id="lexicographical-indexes-item" class="level-1"><a id="lexicographical-indexes-link" href="../../alpha/topics/indexes.html#lexicographical-indexes" class="level-1" pref="#lexicographical-indexes">Lexicographical indexes</a><ul class="level-2" id="lexicographical-indexes-list"><li id="lexicographical-indexes-a-first-example-completion-item" class="level-2"><a id="lexicographical-indexes-a-first-example-completion-link" href="../../alpha/topics/indexes.html#lexicographical-indexes-a-first-example-completion" class="level-2" pref="#lexicographical-indexes-a-first-example-completion">A first example: completion</a></li><li id="lexicographical-indexes-adding-frequency-into-the-mix-item" class="level-2"><a id="lexicographical-indexes-adding-frequency-into-the-mix-link" href="../../alpha/topics/indexes.html#lexicographical-indexes-adding-frequency-into-the-mix" class="level-2" pref="#lexicographical-indexes-adding-frequency-into-the-mix">Adding frequency into the mix</a></li><li id="lexicographical-indexes-normalizing-strings-for-case-and-accents-item" class="level-2"><a id="lexicographical-indexes-normalizing-strings-for-case-and-accents-link" href="../../alpha/topics/indexes.html#lexicographical-indexes-normalizing-strings-for-case-and-accents" class="level-2" pref="#lexicographical-indexes-normalizing-strings-for-case-and-accents">Normalizing strings for case and accents</a></li><li id="lexicographical-indexes-adding-auxiliary-information-in-the-index-item" class="level-2"><a id="lexicographical-indexes-adding-auxiliary-information-in-the-index-link" href="../../alpha/topics/indexes.html#lexicographical-indexes-adding-auxiliary-information-in-the-index" class="level-2" pref="#lexicographical-indexes-adding-auxiliary-information-in-the-index">Adding auxiliary information in the index</a></li><li id="lexicographical-indexes-numerical-padding-item" class="level-2"><a id="lexicographical-indexes-numerical-padding-link" href="../../alpha/topics/indexes.html#lexicographical-indexes-numerical-padding" class="level-2" pref="#lexicographical-indexes-numerical-padding">Numerical padding</a></li><li id="lexicographical-indexes-using-numbers-in-binary-form-item" class="level-2"><a id="lexicographical-indexes-using-numbers-in-binary-form-link" href="../../alpha/topics/indexes.html#lexicographical-indexes-using-numbers-in-binary-form" class="level-2" pref="#lexicographical-indexes-using-numbers-in-binary-form">Using numbers in binary form</a></li></ul></li><li id="composite-indexes-item" class="level-1"><a id="composite-indexes-link" href="../../alpha/topics/indexes.html#composite-indexes" class="level-1" pref="#composite-indexes">Composite indexes</a></li><li id="updating-lexicographical-indexes-item" class="level-1"><a id="updating-lexicographical-indexes-link" href="../../alpha/topics/indexes.html#updating-lexicographical-indexes" class="level-1" pref="#updating-lexicographical-indexes">Updating lexicographical indexes</a></li><li id="representing-and-querying-graphs-using-an-hexastore-item" class="level-1"><a id="representing-and-querying-graphs-using-an-hexastore-link" href="../../alpha/topics/indexes.html#representing-and-querying-graphs-using-an-hexastore" class="level-1" pref="#representing-and-querying-graphs-using-an-hexastore">Representing and querying graphs using an hexastore</a></li><li id="multi-dimensional-indexes-item" class="level-1"><a id="multi-dimensional-indexes-link" href="../../alpha/topics/indexes.html#multi-dimensional-indexes" class="level-1" pref="#multi-dimensional-indexes">Multi dimensional indexes</a></li><li id="multi-dimensional-indexes-with-negative-or-floating-point-numbers-item" class="level-1"><a id="multi-dimensional-indexes-with-negative-or-floating-point-numbers-link" href="../../alpha/topics/indexes.html#multi-dimensional-indexes-with-negative-or-floating-point-numbers" class="level-1" pref="#multi-dimensional-indexes-with-negative-or-floating-point-numbers">Multi dimensional indexes with negative or floating point numbers</a></li><li id="non-range-indexes-item" class="level-1"><a id="non-range-indexes-link" href="../../alpha/topics/indexes.html#non-range-indexes" class="level-1" pref="#non-range-indexes">Non range indexes</a></li><li id="index-inconsistency-item" class="level-1"><a id="index-inconsistency-link" href="../../alpha/topics/indexes.html#index-inconsistency" class="level-1" pref="#index-inconsistency">Index inconsistency</a></li></ul></li></ul></div>
+  </div>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/75a57c6c9a9f100cfeab720e0bac477e9e4e6566">Mar 21, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="secondary-indexing-with-redis">Secondary indexing with Redis</h1><p>Redis is not exactly a key-value store, since values can be complex data structures. However it has an external key-value shell: at API level data is addressed by the key name. It is fair to say that, natively, Redis only offers <em>primary key access</em>. However since Redis is a data structures server, its capabilities can be used for indexing, in order to create secondary indexes of different kinds, including composite (multi-column) indexes.</p><p>This document explains how it is possible to create indexes in Redis using the following data structures:</p><ul>
+<li>Sorted sets to create secondary indexes by ID or other numerical fields.</li>
+<li>Sorted sets with lexicographical ranges for creating more advanced secondary indexes, composite indexes and graph traversal indexes.</li>
+<li>Sets for creating random indexes.</li>
+<li>Lists for creating simple iterable indexes and last N items indexes.</li>
+</ul><p>Implementing and maintaining indexes with Redis is an advanced topic, so most
+users that need to perform complex queries on data should understand if they
+are better served by a relational store. However often, especially in caching
+scenarios, there is the explicit need to store indexed data into Redis in order to speedup common queries which require some form of indexing in order to be executed.</p><h1 id="simple-numerical-indexes-with-sorted-sets">Simple numerical indexes with sorted sets</h1><p>The simplest secondary index you can create with Redis is by using the
+sorted set data type, which is a data structure representing a set of
+elements ordered by a floating point number which is the <em>score</em> of
+each element. Elements are ordered from the smallest to the highest score.</p><p>Since the score is a double precision float, indexes you can build with
+vanilla sorted sets are limited to things were the indexing field is a number
+within a given range.</p><p>The two commands to build these kind of indexes are <code>ZADD</code> and
+<code>ZRANGEBYSCORE</code> to respectively add items and retrieve items within a
+specified range.</p><p>For instance, it is possible to index a set of person names by their
+age by adding element to a sorted set. The element will be the name of the
+person and the score will be the age.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">25</span><span class="pln"> </span><span class="typ">Manuel</span><span class="pln">
+ZADD myindex </span><span class="lit">18</span><span class="pln"> </span><span class="typ">Anna</span><span class="pln">
+ZADD myindex </span><span class="lit">35</span><span class="pln"> </span><span class="typ">Jon</span><span class="pln">
+ZADD myindex </span><span class="lit">67</span><span class="pln"> </span><span class="typ">Helen</span></code></pre><p>In order to retrieve all persons with an age between 20 and 40, the following
+command can be used:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYSCORE myindex </span><span class="lit">20</span><span class="pln"> </span><span class="lit">40</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Manuel"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Jon"</span></code></pre><p>By using the <strong>WITHSCORES</strong> option of <code>ZRANGEBYSCORE</code> it is also possible
+to obtain the scores associated with the returned elements.</p><p>The <code>ZCOUNT</code> command can be used in order to retrieve the number of elements
+within a given range, without actually fetching the elements, which is also
+useful, especially given the fact the operation is executed in logarithmic
+time regardless of the size of the range.</p><p>Ranges can be inclusive or exclusive, please refer to the <code>ZRANGEBYSCORE</code>
+command documentation for more information.</p><p><strong>Note</strong>: Using the <code>ZREVRANGEBYSCORE</code> it is possible to query a range in
+reversed order, which is often useful when data is indexed in a given
+direction (ascending or descending) but we want to retrieve information
+the other way around.</p><h2 id="simple-numerical-indexes-with-sorted-sets-using-objects-ids-as-associated-values">Using objects IDs as associated values</h2><p>In the above example we associated names to ages. However in general we
+may want to index some field of an object which is stored elsewhere.
+Instead of using the sorted set value directly to store the data associated
+with the indexed field, it is possible to store just the ID of the object.</p><p>For example I may have Redis hashes representing users. Each user is
+represented by a single key, directly accessible by ID:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">HMSET user</span><span class="pun">:</span><span class="lit">1</span><span class="pln"> id </span><span class="lit">1</span><span class="pln"> username antirez ctime </span><span class="lit">1444809424</span><span class="pln"> age </span><span class="lit">38</span><span class="pln">
+HMSET user</span><span class="pun">:</span><span class="lit">2</span><span class="pln"> id </span><span class="lit">2</span><span class="pln"> username maria ctime </span><span class="lit">1444808132</span><span class="pln"> age </span><span class="lit">42</span><span class="pln">
+HMSET user</span><span class="pun">:</span><span class="lit">3</span><span class="pln"> id </span><span class="lit">3</span><span class="pln"> username jballard ctime </span><span class="lit">1443246218</span><span class="pln"> age </span><span class="lit">33</span></code></pre><p>If I want to create an index in order to query users by their age, I
+could do:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD user</span><span class="pun">.</span><span class="pln">age</span><span class="pun">.</span><span class="pln">index </span><span class="lit">38</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+ZADD user</span><span class="pun">.</span><span class="pln">age</span><span class="pun">.</span><span class="pln">index </span><span class="lit">42</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+ZADD user</span><span class="pun">.</span><span class="pln">age</span><span class="pun">.</span><span class="pln">index </span><span class="lit">33</span><span class="pln"> </span><span class="lit">3</span></code></pre><p>This time the value associated with the score in the sorted set is the
+ID of the object. So once I query the index with <code>ZRANGEBYSCORE</code> I’ll
+also have to retrieve the information I need with <code>HGETALL</code> or similar
+commands. The obvious advantage is that objects can change without touching
+the index, as long as we don’t change the indexed field.</p><p>In the next examples we’ll almost always use IDs as values associated with
+the index, since this is usually the more sounding design, with a few
+exceptions.</p><h2 id="simple-numerical-indexes-with-sorted-sets-updating-simple-sorted-set-indexes">Updating simple sorted set indexes</h2><p>Often we index things which change over time. In the above
+example, the age of the user changes every year. In such a case it would
+make sense to use the birth date as index instead of the age itself,
+but there are other cases where we simple want some field to change from
+time to time, and the index to reflect this change.</p><p>The <code>ZADD</code> command makes updating simple indexes a very trivial operation
+since re-adding back an element with a different score and the same value
+will simply update the score and move the element at the right position,
+so if the user <code>antirez</code> turned 39 years old, in order to update the
+data in the hash representing the user, and in the index as well, we need
+to execute the following two commands:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">HSET user</span><span class="pun">:</span><span class="lit">1</span><span class="pln"> age </span><span class="lit">39</span><span class="pln">
+ZADD user</span><span class="pun">.</span><span class="pln">age</span><span class="pun">.</span><span class="pln">index </span><span class="lit">39</span><span class="pln"> </span><span class="lit">1</span></code></pre><p>The operation may be wrapped in a <code>MULTI</code>/<code>EXEC</code> transaction in order to
+make sure both fields are updated or none.</p><h2 id="simple-numerical-indexes-with-sorted-sets-turning-multi-dimensional-data-into-linear-data">Turning multi dimensional data into linear data</h2><p>Indexes created with sorted sets are able to index only a single numerical
+value. Because of this you may think it is impossible to index something
+which has multiple dimensions using this kind of indexes, but actually this
+is not always true. If you can efficiently represent something
+multi-dimensional in a linear way, they it is often possible to use a simple
+sorted set for indexing.</p><p>For example the <a href="../../commands/geoadd">Redis geo indexing API</a> uses a sorted
+set to index places by latitude and longitude using a technique called
+<a href="https://en.wikipedia.org/wiki/Geohash">Geo hash</a>. The sorted set score
+represents alternating bits of longitude and latitude, so that we map the
+linear score of a sorted set to many small <em>squares</em> in the earth surface.
+By doing an 8+1 style center plus neighborhoods search it is possible to
+retrieve elements by radius.</p><h2 id="simple-numerical-indexes-with-sorted-sets-limits-of-the-score">Limits of the score</h2><p>Sorted set elements scores are double precision integers. It means that
+they can represent different decimal or integer values with different
+errors, because they use an exponential representation internally.
+However what is interesting for indexing purposes is that the score is
+always able to represent without any error numbers between -9007199254740992
+and 9007199254740992, which is <code>-/+ 2^53</code>.</p><p>When representing much larger numbers, you need a different form of indexing
+that is able to index numbers at any precision, called a lexicographical
+index.</p><h1 id="lexicographical-indexes">Lexicographical indexes</h1><p>Redis sorted sets have an interesting property. When elements are added
+with the same score, they are sorted lexicographically, comparing the
+strings as binary data with the <code>memcmp()</code> function.</p><p>For people that don’t know the C language nor the <code>memcmp</code> function, what
+it means is that elements with the same score are sorted comparing the
+raw values of their bytes, byte after byte. If the first byte is the same,
+the second is checked and so forth. If the common prefix of two strings is
+the same then the longer string is considered the greater of the two,
+so “foobar” is greater than “foo”.</p><p>There are commands such as <code>ZRANGEBYLEX</code> and <code>ZLEXCOUNT</code> that
+are able to query and count ranges in a lexicographically fashion, assuming
+they are used with sorted sets where all the elements have the same score.</p><p>This Redis feature is basically equivalent to a <code>b-tree</code> data structure which
+is often used in order to implement indexes with traditional databases.
+As you can guess, because of this, it is possible to use this Redis data
+structure in order to implement pretty fancy indexes.</p><p>Before we dive into using lexicographical indexes, let’s check how
+sorted sets behave in this special mode of operation. Since we need to
+add elements with the same score, we’ll always use the special score of
+zero.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> baaa
+ZADD myindex </span><span class="lit">0</span><span class="pln"> abbb
+ZADD myindex </span><span class="lit">0</span><span class="pln"> aaaa
+ZADD myindex </span><span class="lit">0</span><span class="pln"> bbbb</span></code></pre><p>Fetching all the elements from the sorted set immediately reveals that they
+are ordered lexicographically.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGE myindex </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"aaaa"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"abbb"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"baaa"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"bbbb"</span></code></pre><p>Now we can use <code>ZRANGEBYLEX</code> in order to perform range queries.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex </span><span class="pun">[</span><span class="pln">a </span><span class="pun">(</span><span class="pln">b
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"aaaa"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"abbb"</span></code></pre><p>Note that in the range queries we prefixed the <code>min</code> and <code>max</code> elements
+identifying the range with the special characters <code>[</code> and <code>(</code>.
+This prefixes are mandatory, and they specify if the elements
+of the range are inclusive or exclusive. So the range <code>[a (b</code> means give me
+all the elements lexicographically between <code>a</code> inclusive and <code>b</code> exclusive,
+which are all the elements starting with <code>a</code>.</p><p>There are also two more special characters indicating the infinitely negative
+string and the infinitely positive string, which are <code>-</code> and <code>+</code>.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex </span><span class="pun">[</span><span class="pln">b </span><span class="pun">+</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"baaa"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"bbbb"</span></code></pre><p>That’s it basically. Let’s see how to use these features to build indexes.</p><h2 id="lexicographical-indexes-a-first-example-completion">A first example: completion</h2><p>An interesting application of indexing is completion. Completion is what
+happens when you start typing your query into a search engine: the user
+interface will anticipate what you are likely typing, providing common
+queries that start with the same characters.</p><p>A naive approach to completion is to just add every single query we
+get from the user into the index. For example if the user searches <code>banana</code>
+we’ll just do:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> banana</span></code></pre><p>And so forth for each search query ever encountered. Then when we want to
+complete the user input, we execute a range query using <code>ZRANGEBYLEX</code>.
+Imagine the user is typing “bit” inside the search form, and we want to
+offer possible search keywords starting for “bit”. We send Redis a command
+like that:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex </span><span class="str">"[bit"</span><span class="pln"> </span><span class="str">"[bit\xff"</span></code></pre><p>Basically we create a range using the string the user is typing right now
+as start, and the same string plus a trailing byte set to 255, which is <code>\xff</code> in the example, as the end of the range. This way we get all the strings that start for the string the user is typing.</p><p>Note that we don’t want too many items returned, so we may use the <strong>LIMIT</strong> option in order to reduce the number of results.</p><h2 id="lexicographical-indexes-adding-frequency-into-the-mix">Adding frequency into the mix</h2><p>The above approach is a bit naive, because all the user searches are the same
+in this way. In a real system we want to complete strings according to their
+frequency: very popular searches will be proposed with an higher probability
+compared to search strings typed very rarely.</p><p>In order to implement something which depends on the frequency, and at the
+same time automatically adapts to future inputs, by purging searches that
+are no longer popular, we can use a very simple <em>streaming algorithm</em>.</p><p>To start, we modify our index in order to store not just the search term,
+but also the frequency the term is associated with. So instead of just adding
+<code>banana</code> we add <code>banana:1</code>, where 1 is the frequency.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> banana</span><span class="pun">:</span><span class="lit">1</span></code></pre><p>We also need logic in order to increment the index if the search term
+already exists in the index, so what we’ll actually do is something like
+that:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex </span><span class="str">"[banana:"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> LIMIT </span><span class="lit">1</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"banana:1"</span></code></pre><p>This will return the single entry of <code>banana</code> if it exists. Then we
+can increment the associated frequency and send the following two
+commands:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZREM myindex </span><span class="lit">0</span><span class="pln"> banana</span><span class="pun">:</span><span class="lit">1</span><span class="pln">
+ZADD myindex </span><span class="lit">0</span><span class="pln"> banana</span><span class="pun">:</span><span class="lit">2</span></code></pre><p>Note that because it is possible that there are concurrent updates, the
+above three commands should be send via a <a href="../../commands/eval">Lua script</a>
+instead, so that the Lua script will atomically get the old count and
+re-add the item with incremented score.</p><p>So the result will be that, every time a user searches for <code>banana</code> we’ll
+get our entry updated.</p><p>There is more: our goal is to just have items searched very frequently.
+So we need some form of purging. When we actually query the index
+in order to complete the user input, we may see something like that:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex </span><span class="str">"[banana:"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> LIMIT </span><span class="lit">1</span><span class="pln"> </span><span class="lit">10</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"banana:123"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"banahhh:1"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"banned user:49"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"banning:89"</span></code></pre><p>Apparently nobody searches for “banahhh”, for example, but the query was
+performed a single time, so we end presenting it to the user.</p><p>This is what we can do. Out of the returned items, we pick a random one,
+decrement its score by one, and re-add it with the new score.
+However if the score reaches 0, we simply remove the item from the list.
+You can use much more advanced systems, but the idea is that the index in
+the long run will contain top searches, and if top searches will change over
+the time it will adapt automatically.</p><p>A refinement to this algorithm is to pick entries in the list according to
+their weight: the higher the score, the less likely entries are picked
+in order to decrement its score, or evict them.</p><h2 id="lexicographical-indexes-normalizing-strings-for-case-and-accents">Normalizing strings for case and accents</h2><p>In the completion examples we always used lowercase strings. However
+reality is much more complex than that: languages have capitalized names,
+accents, and so forth.</p><p>One simple way do deal with this issues is to actually normalize the
+string the user searches. Whatever the user searches for “Banana”,
+“BANANA” or “Ba’nana” we may always turn it into “banana”.</p><p>However sometimes we could like to present the user with the original
+item typed, even if we normalize the string for indexing. In order to
+do this, what we do is to change the format of the index so that instead
+of just storing <code>term:frequency</code> we store <code>normalized:frequency:original</code>
+like in the following example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> banana</span><span class="pun">:</span><span class="lit">273</span><span class="pun">:</span><span class="typ">Banana</span></code></pre><p>Basically we add another field that we’ll extract and use only for
+visualization. Ranges will always be computed using the normalized strings
+instead. This is a common trick which has multiple applications.</p><h2 id="lexicographical-indexes-adding-auxiliary-information-in-the-index">Adding auxiliary information in the index</h2><p>When using a sorted set in a direct way, we have two different attributes
+for each object: the score, which we use as an index, and an associated
+value. When using lexicographical indexes instead, the score is always
+set to 0 and basically not used at all. We are left with a single string,
+which is the element itself.</p><p>Like we did in the previous completion examples, we are still able to
+store associated data using separators. For example we used the colon in
+order to add the frequency and the original word for completion.</p><p>In general we can add any kind of associated value to our indexing key.
+In order to use a lexicographical index to implement a simple key-value store
+we just store the entry as <code>key:value</code>:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> mykey</span><span class="pun">:</span><span class="pln">myvalue</span></code></pre><p>And search for the key with:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex mykey</span><span class="pun">:</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> LIMIT </span><span class="lit">1</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"mykey:myvalue"</span></code></pre><p>Then we extract the part after the colon to retrieve the value.
+However a problem to solve in this case is collisions. The colon character
+may be part of the key itself, so it must be chosen in order to never
+collide with the key we add.</p><p>Since lexicographical ranges in Redis are binary safe you can use any
+byte or any sequence of bytes. However if you receive untrusted user
+input, it is better to use some form of escaping in order to guarantee
+that the separator will never happen to be part of the key.</p><p>For example if you use two null bytes as separator <code>"\0\0"</code>, you may
+want to always escape null bytes into two bytes sequences in your strings.</p><h2 id="lexicographical-indexes-numerical-padding">Numerical padding</h2><p>Lexicographical indexes may look like good only when the problem at hand
+is to index strings. Actually it is very simple to use this kind of index
+in order to perform indexing of arbitrary precision numbers.</p><p>In the ASCII character set, digits appear in the order from 0 to 9, so
+if we left-pad numbers with leading zeroes, the result is that comparing
+them as strings will order them by their numerical value.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> </span><span class="lit">00324823481</span><span class="pun">:</span><span class="pln">foo
+ZADD myindex </span><span class="lit">0</span><span class="pln"> </span><span class="lit">12838349234</span><span class="pun">:</span><span class="pln">bar
+ZADD myindex </span><span class="lit">0</span><span class="pln"> </span><span class="lit">00000000111</span><span class="pun">:</span><span class="pln">zap
+
+ZRANGE myindex </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"00000000111:zap"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"00324823481:foo"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"12838349234:bar"</span></code></pre><p>We effectively created an index using a numerical field which can be as
+big as we want. This also works with floating point numbers of any precision
+by making sure we left pad the numerical part with leading zeroes and the
+decimal part with trailing zeroes like in the following list of numbers:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">    </span><span class="lit">01000000000000.11000000000000</span><span class="pln">
+    </span><span class="lit">01000000000000.02200000000000</span><span class="pln">
+    </span><span class="lit">00000002121241.34893482930000</span><span class="pln">
+    </span><span class="lit">00999999999999.00000000000000</span></code></pre><h2 id="lexicographical-indexes-using-numbers-in-binary-form">Using numbers in binary form</h2><p>Storing numbers in decimal may use too much memory. An alternative approach
+is just to store numbers, for example 128 bit integers, directly in their
+binary form. However for this to work, you need to store the numbers in
+<em>big endian format</em>, so that the most significant bytes are stored before
+the least significant bytes. This way when Redis compares the strings with
+<code>memcmp()</code>, it will effectively sort the numbers by their value.</p><p>Keep in mind that data stored in binary format is less observable for
+debugging, harder to parse and export. So it is definitely a trade off.</p><h1 id="composite-indexes">Composite indexes</h1><p>So far we explored ways to index single fields. However we all know that
+SQL stores are able to create indexes using multiple fields. For example
+I may index products in a very large store by room number and price.</p><p>I need to run queries in order to retrieve all the products in a given
+room having a given price range. What I can do is to index each product
+in the following way:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0056</span><span class="pun">:</span><span class="lit">0028.44</span><span class="pun">:</span><span class="lit">90</span><span class="pln">
+ZADD myindex </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0034</span><span class="pun">:</span><span class="lit">0011.00</span><span class="pun">:</span><span class="lit">832</span></code></pre><p>Here the fields are <code>room:price:product_id</code>. I used just four digits padding
+in the example for simplicity. The auxiliary data (the product ID) does not
+need any padding.</p><p>With an index like that, to get all the products in room 56 having a price
+between 10 and 30 dollars is very easy. We can just run the following
+command:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex </span><span class="pun">[</span><span class="lit">0056</span><span class="pun">:</span><span class="lit">0010.00</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0056</span><span class="pun">:</span><span class="lit">0030.00</span></code></pre><p>The above is called a composed index. Its effectiveness depends on the
+order of the fields and the queries I want to run. For example the above
+index cannot be used efficiently in order to get all the products having
+a specific price range regardless of the room number. However I can use
+the primary key in order to run queries regardless of the price, like
+<em>give me all the products in room 44</em>.</p><p>Composite indexes are very powerful, and are used in traditional stores
+in order to optimize complex queries. In Redis they could be useful both
+to implement a very fast in-memory Redis index of something stored into
+a traditional data store, or in order to directly index Redis data.</p><h1 id="updating-lexicographical-indexes">Updating lexicographical indexes</h1><p>The value of the index in a lexicographical index can get pretty fancy
+and hard or slow to rebuild from what we store about the object. So one
+approach to simplify the handling of the index, at the cost of using more
+memory, is to also take alongside to the sorted set representing the index
+a hash mapping the object ID to the current index value.</p><p>So for example, when we index we also add to a hash:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">MULTI
+ZADD myindex </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0056</span><span class="pun">:</span><span class="lit">0028.44</span><span class="pun">:</span><span class="lit">90</span><span class="pln">
+HSET index</span><span class="pun">.</span><span class="pln">content </span><span class="lit">90</span><span class="pln"> </span><span class="lit">0056</span><span class="pun">:</span><span class="lit">0028.44</span><span class="pun">:</span><span class="lit">90</span><span class="pln">
+EXEC</span></code></pre><p>This is not always needed, but simplifies the operations of updating
+the index. In order to remove the old information we indexed for the object
+ID 90, regardless of the <em>current</em> fields values of the object, we just
+have to retrieve the hash value by object ID and <code>ZREM</code> it in the sorted
+set view.</p><h1 id="representing-and-querying-graphs-using-an-hexastore">Representing and querying graphs using an hexastore</h1><p>One cool thing about composite indexes is that they are handy in order
+to represent graphs, using a data structure which is called
+<a href="http://www.vldb.org/pvldb/1/1453965.pdf">Hexastore</a>.</p><p>The hexastore provides a representation for relations between objects,
+formed by a <em>subject</em>, a <em>predicate</em> and an <em>object</em>.
+A simple relation between objects could be:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">antirez </span><span class="kwd">is</span><span class="pun">-</span><span class="kwd">friend</span><span class="pun">-</span><span class="pln">of matteocollina</span></code></pre><p>In order to represent this relation I can store the following element
+in my lexicographical index:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> spo</span><span class="pun">:</span><span class="pln">antirez</span><span class="pun">:</span><span class="kwd">is</span><span class="pun">-</span><span class="kwd">friend</span><span class="pun">-</span><span class="pln">of</span><span class="pun">:</span><span class="pln">matteocollina</span></code></pre><p>Note that I prefixed my item with the string <strong>spo</strong>. It means that
+the item represents a subject,predicate,object relation.</p><p>In can add 5 more entries for the same relation, but in a different order:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZADD myindex </span><span class="lit">0</span><span class="pln"> sop</span><span class="pun">:</span><span class="pln">antirez</span><span class="pun">:</span><span class="pln">matteocollina</span><span class="pun">:</span><span class="kwd">is</span><span class="pun">-</span><span class="kwd">friend</span><span class="pun">-</span><span class="pln">of
+ZADD myindex </span><span class="lit">0</span><span class="pln"> ops</span><span class="pun">:</span><span class="pln">matteocollina</span><span class="pun">:</span><span class="kwd">is</span><span class="pun">-</span><span class="kwd">friend</span><span class="pun">-</span><span class="pln">of</span><span class="pun">:</span><span class="pln">antirez
+ZADD myindex </span><span class="lit">0</span><span class="pln"> osp</span><span class="pun">:</span><span class="pln">matteocollina</span><span class="pun">:</span><span class="pln">antirez</span><span class="pun">:</span><span class="kwd">is</span><span class="pun">-</span><span class="kwd">friend</span><span class="pun">-</span><span class="pln">of
+ZADD myindex </span><span class="lit">0</span><span class="pln"> pso</span><span class="pun">:</span><span class="kwd">is</span><span class="pun">-</span><span class="kwd">friend</span><span class="pun">-</span><span class="pln">of</span><span class="pun">:</span><span class="pln">antirez</span><span class="pun">:</span><span class="pln">matteocollina
+ZADD myindex </span><span class="lit">0</span><span class="pln"> pos</span><span class="pun">:</span><span class="kwd">is</span><span class="pun">-</span><span class="kwd">friend</span><span class="pun">-</span><span class="pln">of</span><span class="pun">:</span><span class="pln">matteocollina</span><span class="pun">:</span><span class="pln">antirez</span></code></pre><p>Now things start to be interesting, and I can query the graph in many
+different ways. For example, what are all the people <code>antirez</code>
+<em>is friend to</em>?</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex </span><span class="str">"[spo:antirez:is-friend-of:"</span><span class="pln"> </span><span class="str">"[spo:antirez:is-friend-of:\xff"</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"spo:antirez:is-friend-of:matteocollina"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"spo:antirez:is-friend-of:wonderwoman"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"spo:antirez:is-friend-of:spiderman"</span></code></pre><p>Or, what are all the relationships <code>antirez</code> and <code>matteocollina</code> have where
+the first is the subject and the second is the object?</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">ZRANGEBYLEX myindex </span><span class="str">"[sop:antirez:matteocollina:"</span><span class="pln"> </span><span class="str">"[sop:antirez:matteocollina:\xff"</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"sop:antirez:matteocollina:is-friend-of"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"sop:antirez:matteocollina:was-at-conference-with"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"sop:antirez:matteocollina:talked-with"</span></code></pre><p>By combining different queries, I can ask fancy questions. For example:
+<em>What are all my friends that, like beer, live in Barcelona, and matteocollina consider friends as well?</em>
+To get this information I start with an <code>spo</code> query to find all the people
+I’m friend with. Than for each result I get I perform an <code>spo</code> query
+to check if they like beer, removing the ones for which I can’t find
+this relation. I do it again to filter by city. Finally I perform an <code>ops</code>
+query to find, of the list I obtained, who is considered friend by
+matteocollina.</p><p>Make sure to check <a href="http://nodejsconfit.levelgraph.io/">Matteo Collina’s slides about Levelgraph</a> in order to better understand these ideas.</p><h1 id="multi-dimensional-indexes">Multi dimensional indexes</h1><p>A more complex type of index is an index that allows to perform queries
+where two or multiple variables are queried at the same time for specific
+ranges. For example I may have a data set representing persons age and
+salary, and I want to retrieve all the people between 50 and 55 years old
+having a salary between 70000 and 85000.</p><p>This query may be performed with a multi column index, but this requires
+us to select the first variable and then scan the second, which means we
+may do a lot more work than needed. It is possible to perform this kind of
+queries involving multiple variables using different data structures.
+For example, multi-dimensional trees such as <em>k-d trees</em> or <em>r-trees</em> are
+sometimes used. Here we’ll describe a different way to index data into
+multiple dimensions, using a representation trick that allows us to perform
+the query in a very efficient way using Redis lexicographical ranges.</p><p>Let’s start by visualizing the problem. In this picture we have points
+in the space, which represent our data samples, where <code>x</code> and <code>y</code> are
+our coordinates. Both variables max value is 400.</p><p>The blue box in the picture represents our query. We want all the points
+where <code>x</code> is between 50 and 100, and where <code>y</code> is between 100 and 300.</p><p><img src="http://redis.io/images/redisdoc/2idx_0.png" alt="Points in the space"></p><p>In order to represent data that makes this kind of queries fast to perform,
+we start by padding our numbers with 0. So for example imagine we want to
+add the point 10,25 (x,y) to our index. Given that the maximum range in the
+example is 400 we can just pad to three digits, so we obtain:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">x </span><span class="pun">=</span><span class="pln"> </span><span class="lit">010</span><span class="pln">
+y </span><span class="pun">=</span><span class="pln"> </span><span class="lit">025</span></code></pre><p>Now what we do is to interleave the digits, taking the leftmost digit
+in x, and the leftmost digit in y, and so forth, in order to create a single
+number:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">001205</span></code></pre><p>This is our index, however in order to more easily reconstruct the original
+representation, if we want (at the cost of space), we may also add the
+original values as additional columns:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">001205</span><span class="pun">:</span><span class="lit">10</span><span class="pun">:</span><span class="lit">25</span></code></pre><p>Now, let’s reason about this representation and why it is useful in the
+context of range queries. For example let’s take the center of our blue
+box, which is at <code>x=75</code> and <code>y=200</code>. We can encode this number as we did
+earlier by interleaving the digits, obtaining:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">027005</span></code></pre><p>What happens if we substitute the last two digits respectively with 00 and 99?
+We obtain a range which is lexicographically continue:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">027000</span><span class="pln"> to </span><span class="lit">027099</span></code></pre><p>What this maps to is to a square representing all values where the <code>x</code>
+variable is between 70 and 79, and the <code>y</code> variable is between 200 and 209.
+We can write random points in this interval, in order to identify this
+specific area:</p><p><img src="http://redis.io/images/redisdoc/2idx_1.png" alt="Small area"></p><p>So the above lexicographic query allows us to easily query for points in
+a specific square in the picture. However the square may be too small for
+the box we are searching, so that too many queries are needed.
+So we can do the same but instead of replacing the last two digits with 00
+and 99, we can do it for the last four digits, obtaining the following
+range:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">020000</span><span class="pln"> </span><span class="lit">029999</span></code></pre><p>This time the range represents all the points where <code>x</code> is between 0 and 99
+and <code>y</code> is between 200 and 299. Drawing random points in this interval
+shows us this larger area:</p><p><img src="http://redis.io/images/redisdoc/2idx_2.png" alt="Large area"></p><p>Oops now our area is ways too big for our query, and still our search box is
+not completely included. We need more granularity, but we can easily obtain
+it by representing our numbers in binary form. This time, when we replace
+digits instead of getting squares which are ten times bigger, we get squares
+which are just two times bigger.</p><p>Our numbers in binary form, assuming we need just 9 bits for each variable
+(in order to represent numbers up to 400 in value) would be:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">x </span><span class="pun">=</span><span class="pln"> </span><span class="lit">75</span><span class="pln">  </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="lit">001001011</span><span class="pln">
+y </span><span class="pun">=</span><span class="pln"> </span><span class="lit">200</span><span class="pln"> </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="lit">011001000</span></code></pre><p>So by interleaving digits, our representation in the index would be:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">0001110011001010</span><span class="pun">:</span><span class="lit">75</span><span class="pun">:</span><span class="lit">200</span></code></pre><p>Let’s see what are our ranges as we substitute the last 2, 4, 6, 8, …
+bits with 0s ad 1s in the interleaved representation:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">2</span><span class="pln"> bits</span><span class="pun">:</span><span class="pln"> x between </span><span class="lit">70</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="lit">75</span><span class="pun">,</span><span class="pln"> y between </span><span class="lit">200</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="lit">201</span><span class="pln"> </span><span class="pun">(</span><span class="pln">range</span><span class="pun">=</span><span class="lit">2</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">4</span><span class="pln"> bits</span><span class="pun">:</span><span class="pln"> x between </span><span class="lit">72</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="lit">75</span><span class="pun">,</span><span class="pln"> y between </span><span class="lit">200</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="lit">203</span><span class="pln"> </span><span class="pun">(</span><span class="pln">range</span><span class="pun">=</span><span class="lit">4</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">6</span><span class="pln"> bits</span><span class="pun">:</span><span class="pln"> x between </span><span class="lit">72</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="lit">79</span><span class="pun">,</span><span class="pln"> y between </span><span class="lit">200</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="lit">207</span><span class="pln"> </span><span class="pun">(</span><span class="pln">range</span><span class="pun">=</span><span class="lit">8</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">8</span><span class="pln"> bits</span><span class="pun">:</span><span class="pln"> x between </span><span class="lit">64</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="lit">79</span><span class="pun">,</span><span class="pln"> y between </span><span class="lit">192</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="lit">207</span><span class="pln"> </span><span class="pun">(</span><span class="pln">range</span><span class="pun">=</span><span class="lit">16</span><span class="pun">)</span></code></pre><p>And so forth. Now we have definitely better granularity!
+As you can see substituting N bits from the index gives us
+search boxes of side <code>2^(N/2)</code>.</p><p>So what we do is to check the dimension where our search box is smaller,
+and check the nearest power of two to this number. Our search box
+was 50,100 to 100,300, so it has a width of 50 and an height of 200.
+We take the smaller of the two, 50, and check the nearest power of two
+which is 64. 64 is 2^6, so we would work with indexes obtained replacing
+the latest 12 bits from the interleaved representation (so that we end
+replacing just 6 bits of each variable).</p><p>However single squares may not cover all our search, so we may need more.
+What we do is to start with the left bottom corner of our search box,
+which is 50,100, and find the first range by substituting the last 6 bits
+in each number with 0. Then we do the same with the right top corner.</p><p>With two trivial nested for loops where we increment only the significative
+bits, we can find all the squares between this two. For each square we
+convert the two numbers into our interleaved representation, and create
+the range using the converted representation as our start, and the same
+representation but with the latest 12 bits turned on as end range.</p><p>For each square found we perform our query and get the elements inside,
+removing the elements which are outside our search box.</p><p>Turning this into code is simple. Here is a Ruby example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="kwd">def</span><span class="pln"> spacequery</span><span class="pun">(</span><span class="pln">x0</span><span class="pun">,</span><span class="pln">y0</span><span class="pun">,</span><span class="pln">x1</span><span class="pun">,</span><span class="pln">y1</span><span class="pun">,</span><span class="pln">exp</span><span class="pun">)</span><span class="pln">
+    bits</span><span class="pun">=</span><span class="pln">exp</span><span class="pun">*</span><span class="lit">2</span><span class="pln">
+    x_start </span><span class="pun">=</span><span class="pln"> x0</span><span class="pun">/(</span><span class="lit">2</span><span class="pun">**</span><span class="pln">exp</span><span class="pun">)</span><span class="pln">
+    x_end </span><span class="pun">=</span><span class="pln"> x1</span><span class="pun">/(</span><span class="lit">2</span><span class="pun">**</span><span class="pln">exp</span><span class="pun">)</span><span class="pln">
+    y_start </span><span class="pun">=</span><span class="pln"> y0</span><span class="pun">/(</span><span class="lit">2</span><span class="pun">**</span><span class="pln">exp</span><span class="pun">)</span><span class="pln">
+    y_end </span><span class="pun">=</span><span class="pln"> y1</span><span class="pun">/(</span><span class="lit">2</span><span class="pun">**</span><span class="pln">exp</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">(</span><span class="pln">x_start</span><span class="pun">..</span><span class="pln">x_end</span><span class="pun">).</span><span class="pln">each</span><span class="pun">{|</span><span class="pln">x</span><span class="pun">|</span><span class="pln">
+        </span><span class="pun">(</span><span class="pln">y_start</span><span class="pun">..</span><span class="pln">y_end</span><span class="pun">).</span><span class="pln">each</span><span class="pun">{|</span><span class="pln">y</span><span class="pun">|</span><span class="pln">
+            x_range_start </span><span class="pun">=</span><span class="pln"> x</span><span class="pun">*(</span><span class="lit">2</span><span class="pun">**</span><span class="pln">exp</span><span class="pun">)</span><span class="pln">
+            x_range_end </span><span class="pun">=</span><span class="pln"> x_range_start </span><span class="pun">|</span><span class="pln"> </span><span class="pun">((</span><span class="lit">2</span><span class="pun">**</span><span class="pln">exp</span><span class="pun">)-</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+            y_range_start </span><span class="pun">=</span><span class="pln"> y</span><span class="pun">*(</span><span class="lit">2</span><span class="pun">**</span><span class="pln">exp</span><span class="pun">)</span><span class="pln">
+            y_range_end </span><span class="pun">=</span><span class="pln"> y_range_start </span><span class="pun">|</span><span class="pln"> </span><span class="pun">((</span><span class="lit">2</span><span class="pun">**</span><span class="pln">exp</span><span class="pun">)-</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+            puts </span><span class="str">"#{x},#{y} x from #{x_range_start} to #{x_range_end}, y from #{y_range_start} to #{y_range_end}"</span><span class="pln">
+
+            </span><span class="com"># Turn it into interleaved form for ZRANGEBYLEX query.</span><span class="pln">
+            </span><span class="com"># We assume we need 9 bits for each integer, so the final</span><span class="pln">
+            </span><span class="com"># interleaved representation will be 18 bits.</span><span class="pln">
+            xbin </span><span class="pun">=</span><span class="pln"> x_range_start</span><span class="pun">.</span><span class="pln">to_s</span><span class="pun">(</span><span class="lit">2</span><span class="pun">).</span><span class="pln">rjust</span><span class="pun">(</span><span class="lit">9</span><span class="pun">,</span><span class="str">'0'</span><span class="pun">)</span><span class="pln">
+            ybin </span><span class="pun">=</span><span class="pln"> y_range_start</span><span class="pun">.</span><span class="pln">to_s</span><span class="pun">(</span><span class="lit">2</span><span class="pun">).</span><span class="pln">rjust</span><span class="pun">(</span><span class="lit">9</span><span class="pun">,</span><span class="str">'0'</span><span class="pun">)</span><span class="pln">
+            s </span><span class="pun">=</span><span class="pln"> xbin</span><span class="pun">.</span><span class="pln">split</span><span class="pun">(</span><span class="str">""</span><span class="pun">).</span><span class="pln">zip</span><span class="pun">(</span><span class="pln">ybin</span><span class="pun">.</span><span class="pln">split</span><span class="pun">(</span><span class="str">""</span><span class="pun">)).</span><span class="pln">flatten</span><span class="pun">.</span><span class="pln">compact</span><span class="pun">.</span><span class="pln">join</span><span class="pun">(</span><span class="str">""</span><span class="pun">)</span><span class="pln">
+            </span><span class="com"># Now that we have the start of the range, calculate the end</span><span class="pln">
+            </span><span class="com"># by replacing the specified number of bits from 0 to 1.</span><span class="pln">
+            e </span><span class="pun">=</span><span class="pln"> s</span><span class="pun">[</span><span class="lit">0.</span><span class="pun">.-(</span><span class="pln">bits</span><span class="pun">+</span><span class="lit">1</span><span class="pun">)]+(</span><span class="str">"1"</span><span class="pun">*</span><span class="pln">bits</span><span class="pun">)</span><span class="pln">
+            puts </span><span class="str">"ZRANGEBYLEX myindex [#{s} [#{e}"</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">end</span><span class="pln">
+
+spacequery</span><span class="pun">(</span><span class="lit">50</span><span class="pun">,</span><span class="lit">100</span><span class="pun">,</span><span class="lit">100</span><span class="pun">,</span><span class="lit">300</span><span class="pun">,</span><span class="lit">6</span><span class="pun">)</span></code></pre><p>While non immediately trivial this is a very useful indexing strategy that
+in the future may be implemented in Redis in a native way.
+For now, the good thing is that the complexity may be easily incapsualted
+inside a library that can be used in order to perform indexing and queries.
+One example of such library is <a href="https://github.com/antirez/redimension">Redimension</a>, a proof of concept Ruby library which indexes N-dimensional data inside Redis using the technique described here.</p><h1 id="multi-dimensional-indexes-with-negative-or-floating-point-numbers">Multi dimensional indexes with negative or floating point numbers</h1><p>The simplest way to represent negative values is just to work with unsigned
+integers and represent them using an offset, so that when you index, before
+translating numbers in the indexed representation, you add the absolute value
+of your smaller negative integer.</p><p>For floating point numbers, the simplest approach is probably to convert them
+to integers by multiplying the integer for a power of ten proportional to the
+number of digits after the dot you want to retain.</p><h1 id="non-range-indexes">Non range indexes</h1><p>So far we checked indexes which are useful to query by range or by single
+item. However other Redis data structures such as Sets or Lists can be used
+in order to build other kind of indexes. They are very commonly used but
+maybe we don’t always realize they are actually a form of indexing.</p><p>For instance I can index object IDs into a Set data type in order to use
+the <em>get random elements</em> operation via <code>SRANDMEMBER</code> in order to retrieve
+a set of random objects. Sets can also be used to check for existence when
+all I need is to test if a given item exists or not or has a single boolean
+property or not.</p><p>Similarly lists can be used in order to index items into a fixed order.
+I can add all my items into a Redis list and rotate the list with
+RPOPLPUSH using the same key name as source and destination. This is useful
+when I want to process a given set of items again and again forever in the
+same order. Think of an RSS feed system that needs to refresh the local copy
+periodically.</p><p>Another popular index often used with Redis is a <strong>capped list</strong>, where items
+are added with <code>LPUSH</code> and trimmed with <code>LTRIM</code>, in order to create a view
+with just the latest N items encountered, in the same order they were
+seen.</p><h1 id="index-inconsistency">Index inconsistency</h1><p>Keeping the index updated may be challenging, in the course of months
+or years it is possible that inconsistencies are added because of software
+bugs, network partitions or other events.</p><p>Different strategies could be used. If the index data is outside Redis
+<em>read repair</em> can be a solution, where data is fixed in a lazy way when
+it is requested. When we index data which is stored in Redis itself
+the <code>SCAN</code> family of commands can be used in order to verify, update or
+rebuild the index from scratch, incrementally.</p></div>
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/src/alpha/topics/indexes.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/src/alpha/topics/indexes.md">
+    <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+</div><!-- end ngIf: !index -->
+<!-- ngIf: index -->
+</div>
+  <script type="text/javascript" src="../../docbase-config.js"></script>
+  <script type="text/javascript" src="../../bower_components/docbase/dist/js/main.unique.js"></script>
+
+
+</body><script>$(function(){  $('.search-form').searchAppbase('/search-index.json', true); })</script></html>
