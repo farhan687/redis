@@ -1,0 +1,731 @@
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <base href="../../">
+  <title>Documentation</title>
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <!-- Flatdoc theme -->
+  <link href="./bower_components/flatdoc/theme-white/style.css" rel="stylesheet">
+  <script src="./bower_components/google-code-prettify/bin/prettify.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./bower_components/google-code-prettify/bin/prettify.min.css">
+  <link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- DocBase -->
+  <link rel="stylesheet" type="text/css" href="./bower_components/docbase/dist/css/main.min.css">
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="./styles/theme.css">
+  
+<script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc" class="no-literate">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a id="docs-appbase-logo" class="navbar-brand" ng-href="#/" href="#/">
+      <img src="./images/docbase.png">
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+      <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <a ng-href=./alpha/commands/index.html class="dropdown-toggle map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" href=./alpha/commands/index.html>commands</a>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/append.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/append.html>append</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/auth.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/auth.html>auth</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bgrewriteaof.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bgrewriteaof.html>bgrewriteaof</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bgsave.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bgsave.html>bgsave</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitcount.html>bitcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitop.html>bitop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitpos.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitpos.html>bitpos</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
+            <a ng-href=./alpha/commands/index.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/index.html>index</a>
+          </li><!-- end ngRepeat: file in folder.files -->
+        </ul>
+      </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <a ng-href=./alpha/topics/index.html class="dropdown-toggle map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" href=./alpha/topics/index.html>topics</a>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/admin.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/admin.html>admin</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/benchmarks.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/benchmarks.html>benchmarks</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/clients.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/clients.html>clients</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/cluster-spec.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/cluster-spec.html>cluster-spec</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/cluster-tutorial.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/cluster-tutorial.html>cluster-tutorial</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/config.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/config.html>config</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/data-types-intro.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/data-types-intro.html>data-types-intro</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/data-types.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/data-types.html>data-types</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/debugging.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/debugging.html>debugging</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/distlock.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/distlock.html>distlock</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/encryption.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/encryption.html>encryption</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/faq.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/faq.html>faq</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/indexes.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/indexes.html>indexes</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
+            <a ng-href=./alpha/topics/index.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/index.html>index</a>
+          </li><!-- end ngRepeat: file in folder.files -->
+        </ul>
+      </li><!-- end ngRepeat: folder in map[currentVersion] -->
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown search-dropdown">
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+      </li>
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+           <span ng-bind="currentVersion" class="ng-binding">alpha</span> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu version-switcher" role="menu">
+          <!-- ngRepeat: version in versions --><li ng-repeat="version in versions" class="ng-scope">
+            <a ng-href=./alpha/commands/append.html ng-bind="version" class="ng-binding" href=./alpha/commands/append.html>alpha</a>
+          </li><!-- end ngRepeat: version in versions -->
+        </ul>
+      </li>
+      <!-- ngIf: docbaseOptions.method == 'github' --><li class="github-star ng-scope" data-ng-if="docbaseOptions.method == 'github'">
+        <iframe src="https://ghbtns.com/github-btn.html?user=farhan687&amp;repo=redis&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+      </li><!-- end ngIf: docbaseOptions.method == 'github' -->
+      <!-- ngIf: docbaseOptions.method != 'github' -->
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+  <div class="menubar fixed">
+    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="an-introduction-to-redis-data-types-and-abstractions-item" class="level-1"><a id="an-introduction-to-redis-data-types-and-abstractions-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions" class="level-1" pref="#an-introduction-to-redis-data-types-and-abstractions">An introduction to Redis data types and abstractions</a><ul class="level-2" id="an-introduction-to-redis-data-types-and-abstractions-list"><li id="an-introduction-to-redis-data-types-and-abstractions-redis-keys-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-redis-keys-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-redis-keys" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-redis-keys">Redis keys</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-redis-strings-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-redis-strings-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-redis-strings" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-redis-strings">Redis Strings</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-altering-and-querying-the-key-space-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-altering-and-querying-the-key-space-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-altering-and-querying-the-key-space" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-altering-and-querying-the-key-space">Altering and querying the key space</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-redis-expires-keys-with-limited-time-to-live-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-redis-expires-keys-with-limited-time-to-live-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-redis-expires-keys-with-limited-time-to-live" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-redis-expires-keys-with-limited-time-to-live">Redis expires: keys with limited time to live</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-redis-lists-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-redis-lists-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-redis-lists" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-redis-lists">Redis Lists</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-first-steps-with-redis-lists-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-first-steps-with-redis-lists-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-first-steps-with-redis-lists" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-first-steps-with-redis-lists">First steps with Redis Lists</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-common-use-cases-for-lists-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-common-use-cases-for-lists-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-common-use-cases-for-lists" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-common-use-cases-for-lists">Common use cases for lists</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-capped-lists-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-capped-lists-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-capped-lists" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-capped-lists">Capped lists</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-blocking-operations-on-lists-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-blocking-operations-on-lists-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-blocking-operations-on-lists" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-blocking-operations-on-lists">Blocking operations on lists</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-automatic-creation-and-removal-of-keys-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-automatic-creation-and-removal-of-keys-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-automatic-creation-and-removal-of-keys" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-automatic-creation-and-removal-of-keys">Automatic creation and removal of keys</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-redis-hashes-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-redis-hashes-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-redis-hashes" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-redis-hashes">Redis Hashes</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-redis-sets-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-redis-sets-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-redis-sets" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-redis-sets">Redis Sets</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-redis-sorted-sets-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-redis-sorted-sets-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-redis-sorted-sets" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-redis-sorted-sets">Redis Sorted sets</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-operating-on-ranges-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-operating-on-ranges-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-operating-on-ranges" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-operating-on-ranges">Operating on ranges</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-lexicographical-scores-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-lexicographical-scores-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-lexicographical-scores" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-lexicographical-scores">Lexicographical scores</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-updating-the-score-leader-boards-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-updating-the-score-leader-boards-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-updating-the-score-leader-boards" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-updating-the-score-leader-boards">Updating the score: leader boards</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-bitmaps-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-bitmaps-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-bitmaps" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-bitmaps">Bitmaps</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-hyperloglogs-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-hyperloglogs-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-hyperloglogs" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-hyperloglogs">HyperLogLogs</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-other-notable-features-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-other-notable-features-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-other-notable-features" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-other-notable-features">Other notable features</a></li><li id="an-introduction-to-redis-data-types-and-abstractions-learn-more-item" class="level-2"><a id="an-introduction-to-redis-data-types-and-abstractions-learn-more-link" href="./alpha/topics/data-types-intro.html#an-introduction-to-redis-data-types-and-abstractions-learn-more" class="level-2" pref="#an-introduction-to-redis-data-types-and-abstractions-learn-more">Learn more</a></li></ul></li></ul></li></ul></div>
+  </div>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/75a57c6c9a9f100cfeab720e0bac477e9e4e6566">Mar 21, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="an-introduction-to-redis-data-types-and-abstractions">An introduction to Redis data types and abstractions</h1><p>Redis is not a <em>plain</em> key-value store, actually it is a <em>data structures server</em>, supporting different kind of values. What this means is that, while in
+traditional key-value stores you associated string keys to string values, in
+Redis the value is not limited to a simple string, but can also hold more complex
+data structures. The following is the list of all the data structures supported
+by Redis, which will be covered separately in this tutorial:</p><ul>
+<li>Binary-safe strings.</li>
+<li>Lists: collections of string elements sorted according to the order of insertion. They are basically <em>linked lists</em>.</li>
+<li>Sets: collections of unique, unsorted string elements.</li>
+<li>Sorted sets, similar to Sets but where every string element is associated to a
+floating number value, called <em>score</em>. The elements are always taken sorted
+by their score, so unlike Sets it is possible to retrieve a range of elements
+(for example you may ask: give me the top 10, or the bottom 10).</li>
+<li>Hashes, which are maps composed of fields associated with values. Both the
+field and the value are strings. This is very similar to Ruby or Python
+hashes.</li>
+<li>Bit arrays (or simply bitmaps): it is possible, using special commands, to
+handle String values like an array of bits: you can set and clear individual
+bits, count all the bits set to 1, find the first set or unset bit, and so
+forth.</li>
+<li>HyperLogLogs: this is a probabilistic data structure which is used in order
+to estimate the cardinality of a set. Don’t be scared, it is simpler than
+it seems… See later in the HyperLogLog section of this tutorial.</li>
+</ul><p>It’s not always trivial to grasp how these data types work and what to use in
+order to solve a given problem from the <a href="/commands">command reference</a>, so this
+document is a crash course to Redis data types and their most common patterns.</p><p>For all the examples we’ll use the <code>redis-cli</code> utility, a simple but
+handy command-line utility, to issue commands against the Redis server.</p><h2 id="an-introduction-to-redis-data-types-and-abstractions-redis-keys">Redis keys</h2><p>Redis keys are binary safe, this means that you can use any binary sequence as a
+key, from a string like “foo” to the content of a JPEG file.
+The empty string is also a valid key.</p><p>A few other rules about keys:</p><ul>
+<li>Very long keys are not a good idea. For instance a key of 1024 bytes is a bad
+idea not only memory-wise, but also because the lookup of the key in the
+dataset may require several costly key-comparisons. Even when the task at hand
+is to match the existence of a large value, hashing it (for example
+with SHA1) is a better idea, especially from the perspective of memory
+and bandwidth.</li>
+<li>Very short keys are often not a good idea. There is little point in writing
+“u1000flw” as a key if you can instead write “user:1000:followers”.  The latter
+is more readable and the added space is minor compared to the space used by
+the key object itself and the value object. While short keys will obviously
+consume a bit less memory, your job is to find the right balance.</li>
+<li>Try to stick with a schema. For instance “object-type:id” is a good
+idea, as in “user:1000”. Dots or dashes are often used for multi-word
+fields, as in “comment:1234:reply.to” or “comment:1234:reply-to”.</li>
+<li>The maximum allowed key size is 512 MB.</li>
+</ul><p><a name="strings"></a></p><h2 id="an-introduction-to-redis-data-types-and-abstractions-redis-strings">Redis Strings</h2><p>The Redis String type is the simplest type of value you can associate with
+a Redis key. It is the only data type in Memcached, so it is also very natural
+for newcomers to use it in Redis.</p><p>Since Redis keys are strings, when we use the string type as a value too,
+we are mapping a string to another string. The string data type is useful
+for a number of use cases, like caching HTML fragments or pages.</p><p>Let’s play a bit with the string type, using <code>redis-cli</code> (all the examples
+will be performed via <code>redis-cli</code> in this tutorial).</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> mykey somevalue
+OK
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">get</span><span class="pln"> mykey
+</span><span class="str">"somevalue"</span></code></pre><p>As you can see using the <code>SET</code> and the <code>GET</code> commands are the way we set
+and retrieve a string value. Note that <code>SET</code> will replace any existing value
+already stored into the key, in the case that the key already exists, even if
+the key is associated with a non-string value. So <code>SET</code> performs an assignment.</p><p>Values can be strings (including binary data) of every kind, for instance you
+can store a jpeg image inside a key. A value can’t be bigger than 512 MB.</p><p>The <code>SET</code> command has interesting options, that are provided as additional
+arguments. For example, I may ask <code>SET</code> to fail if the key already exists,
+or the opposite, that it only succeed if the key already exists:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> mykey newval nx
+</span><span class="pun">(</span><span class="kwd">nil</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> mykey newval xx
+OK</span></code></pre><p>Even if strings are the basic values of Redis, there are interesting operations
+you can perform with them. For instance, one is atomic increment:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> counter </span><span class="lit">100</span><span class="pln">
+OK
+</span><span class="pun">&gt;</span><span class="pln"> incr counter
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">101</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> incr counter
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">102</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> incrby counter </span><span class="lit">50</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">152</span></code></pre><p>The <a href="/commands/incr">INCR</a> command parses the string value as an integer,
+increments it by one, and finally sets the obtained value as the new value.
+There are other similar commands like <a href="/commands/incrby">INCRBY</a>,
+<a href="/commands/decr">DECR</a> and <a href="/commands/decrby">DECRBY</a>. Internally it’s
+always the same command, acting in a slightly different way.</p><p>What does it mean that INCR is atomic?
+That even multiple clients issuing INCR against
+the same key will never enter into a race condition. For instance, it will never
+happen that client 1 reads “10”, client 2 reads “10” at the same time, both
+increment to 11, and set the new value to 11. The final value will always be
+12 and the read-increment-set operation is performed while all the other
+clients are not executing a command at the same time.</p><p>There are a number of commands for operating on strings. For example
+the <code>GETSET</code> command sets a key to a new value, returning the old value as the
+result. You can use this command, for example, if you have a
+system that increments a Redis key using <code>INCR</code>
+every time your web site receives a new visitor. You may want to collect this
+information once every hour, without losing a single increment.
+You can <code>GETSET</code> the key, assigning it the new value of “0” and reading the
+old value back.</p><p>The ability to set or retrieve the value of multiple keys in a single
+command is also useful for reduced latency. For this reason there are
+the <code>MSET</code> and <code>MGET</code> commands:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> mset a </span><span class="lit">10</span><span class="pln"> b </span><span class="lit">20</span><span class="pln"> c </span><span class="lit">30</span><span class="pln">
+OK
+</span><span class="pun">&gt;</span><span class="pln"> mget a b c
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"10"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"20"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"30"</span></code></pre><p>When <code>MGET</code> is used, Redis returns an array of values.</p><h2 id="an-introduction-to-redis-data-types-and-abstractions-altering-and-querying-the-key-space">Altering and querying the key space</h2><p>There are commands that are not defined on particular types, but are useful
+in order to interact with the space of keys, and thus, can be used with
+keys of any type.</p><p>For example the <code>EXISTS</code> command returns 1 or 0 to signal if a given key
+exists or not in the database, while the <code>DEL</code> command deletes a key
+and associated value, whatever the value is.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> mykey hello
+OK
+</span><span class="pun">&gt;</span><span class="pln"> exists mykey
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">del</span><span class="pln"> mykey
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> exists mykey
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span></code></pre><p>From the examples you can also see how <code>DEL</code> itself returns 1 or 0 depending on whether
+the key was removed (it existed) or not (there was no such key with that
+name).</p><p>There are many key space related commands, but the above two are the
+essential ones together with the <code>TYPE</code> command, which returns the kind
+of value stored at the specified key:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> mykey x
+OK
+</span><span class="pun">&gt;</span><span class="pln"> type mykey
+</span><span class="kwd">string</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">del</span><span class="pln"> mykey
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> type mykey
+none</span></code></pre><h2 id="an-introduction-to-redis-data-types-and-abstractions-redis-expires-keys-with-limited-time-to-live">Redis expires: keys with limited time to live</h2><p>Before continuing with more complex data structures, we need to discuss
+another feature which works regardless of the value type, and is
+called <strong>Redis expires</strong>. Basically you can set a timeout for a key, which
+is a limited time to live. When the time to live elapses, the key is
+automatically destroyed, exactly as if the user called the <code>DEL</code> command
+with the key.</p><p>A few quick info about Redis expires:</p><ul>
+<li>They can be set both using seconds or milliseconds precision.</li>
+<li>However the expire time resolution is always 1 millisecond.</li>
+<li>Information about expires are replicated and persisted on disk, the time virtually passes when your Redis server remains stopped (this means that Redis saves the date at which a key will expire).</li>
+</ul><p>Setting an expire is trivial:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> key some</span><span class="pun">-</span><span class="pln">value
+OK
+</span><span class="pun">&gt;</span><span class="pln"> expire key </span><span class="lit">5</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">get</span><span class="pln"> key </span><span class="pun">(</span><span class="pln">immediately</span><span class="pun">)</span><span class="pln">
+</span><span class="str">"some-value"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">get</span><span class="pln"> key </span><span class="pun">(</span><span class="pln">after some time</span><span class="pun">)</span><span class="pln">
+</span><span class="pun">(</span><span class="kwd">nil</span><span class="pun">)</span></code></pre><p>The key vanished between the two <code>GET</code> calls, since the second call was
+delayed more than 5 seconds. In the example above we used <code>EXPIRE</code> in
+order to set the expire (it can also be used in order to set a different
+expire to a key already having one, like <code>PERSIST</code> can be used in order
+to remove the expire and make the key persistent forever). However we
+can also create keys with expires using other Redis commands. For example
+using <code>SET</code> options:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> key </span><span class="lit">100</span><span class="pln"> ex </span><span class="lit">10</span><span class="pln">
+OK
+</span><span class="pun">&gt;</span><span class="pln"> ttl key
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">9</span></code></pre><p>The example above sets a key with the string value <code>100</code>, having an expire
+of ten seconds. Later the <code>TTL</code> command is called in order to check the
+remaining time to live for the key.</p><p>In order to set and check expires in milliseconds, check the <code>PEXPIRE</code> and
+the <code>PTTL</code> commands, and the full list of <code>SET</code> options.</p><p><a name="lists"></a></p><h2 id="an-introduction-to-redis-data-types-and-abstractions-redis-lists">Redis Lists</h2><p>To explain the List data type it’s better to start with a little bit of theory,
+as the term <em>List</em> is often used in an improper way by information technology
+folks. For instance “Python Lists” are not what the name may suggest (Linked
+Lists), but rather Arrays (the same data type is called Array in
+Ruby actually).</p><p>From a very general point of view a List is just a sequence of ordered
+elements: 10,20,1,2,3 is a list. But the properties of a List implemented using
+an Array are very different from the properties of a List implemented using a
+<em>Linked List</em>.</p><p>Redis lists are implemented via Linked Lists. This means that even if you have
+millions of elements inside a list, the operation of adding a new element in
+the head or in the tail of the list is performed <em>in constant time</em>. The speed of adding a
+new element with the <code>LPUSH</code> command to the head of a list with ten
+elements is the same as adding an element to the head of list with 10
+million elements.</p><p>What’s the downside? Accessing an element <em>by index</em> is very fast in lists
+implemented with an Array (constant time indexed access) and not so fast in
+lists implemented by linked lists (where the operation requires an amount of
+work proportional to the index of the accessed element).</p><p>Redis Lists are implemented with linked lists because for a database system it
+is crucial to be able to add elements to a very long list in a very fast way.
+Another strong advantage, as you’ll see in a moment, is that Redis Lists can be
+taken at constant length in constant time.</p><p>When fast access to the middle of a large collection of elements is important,
+there is a different data structure that can be used, called sorted sets.
+Sorted sets will be covered later in this tutorial.</p><h2 id="an-introduction-to-redis-data-types-and-abstractions-first-steps-with-redis-lists">First steps with Redis Lists</h2><p>The <code>LPUSH</code> command adds a new element into a list, on the
+left (at the head), while the <code>RPUSH</code> command adds a new
+element into a list ,on the right (at the tail). Finally the
+<code>LRANGE</code> command extracts ranges of elements from lists:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> rpush mylist A
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> rpush mylist B
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lpush mylist first
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lrange mylist </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"first"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"A"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"B"</span></code></pre><p>Note that <a href="/commands/lrange">LRANGE</a> takes two indexes, the first and the last
+element of the range to return. Both the indexes can be negative, telling Redis
+to start counting from the end: so -1 is the last element, -2 is the
+penultimate element of the list, and so forth.</p><p>As you can see <code>RPUSH</code> appended the elements on the right of the list, while
+the final <code>LPUSH</code> appended the element on the left.</p><p>Both commands are <em>variadic commands</em>, meaning that you are free to push
+multiple elements into a list in a single call:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> rpush mylist </span><span class="lit">1</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="lit">4</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="str">"foo bar"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">9</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lrange mylist </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"first"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"A"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"B"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1"</span><span class="pln">
+</span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="str">"2"</span><span class="pln">
+</span><span class="lit">6</span><span class="pun">)</span><span class="pln"> </span><span class="str">"3"</span><span class="pln">
+</span><span class="lit">7</span><span class="pun">)</span><span class="pln"> </span><span class="str">"4"</span><span class="pln">
+</span><span class="lit">8</span><span class="pun">)</span><span class="pln"> </span><span class="str">"5"</span><span class="pln">
+</span><span class="lit">9</span><span class="pun">)</span><span class="pln"> </span><span class="str">"foo bar"</span></code></pre><p>An important operation defined on Redis lists is the ability to <em>pop elements</em>.
+Popping elements is the operation of both retrieving the element from the list,
+and eliminating it from the list, at the same time. You can pop elements
+from left and right, similarly to how you can push elements in both sides
+of the list:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> rpush mylist a b c
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> rpop mylist
+</span><span class="str">"c"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> rpop mylist
+</span><span class="str">"b"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> rpop mylist
+</span><span class="str">"a"</span></code></pre><p>We added three elements and popped three elements, so at the end of this
+sequence of commands the list is empty and there are no more elements to
+pop. If we try to pop yet another element, this is the result we get:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> rpop mylist
+</span><span class="pun">(</span><span class="kwd">nil</span><span class="pun">)</span></code></pre><p>Redis returned a NULL value to signal that there are no elements into the
+list.</p><h2 id="an-introduction-to-redis-data-types-and-abstractions-common-use-cases-for-lists">Common use cases for lists</h2><p>Lists are useful for a number of tasks, two very representative use cases
+are the following:</p><ul>
+<li>Remember the latest updates posted by users into a social network.</li>
+<li>Communication between processes, using a consumer-producer pattern where the producer pushes items into a list, and a consumer (usually a <em>worker</em>) consumes those items and executed actions. Redis has special list commands to make this use case both more reliable and efficient.</li>
+</ul><p>For example both the popular Ruby libraries <a href="https://github.com/resque/resque">resque</a> and
+<a href="https://github.com/mperham/sidekiq">sidekiq</a> use Redis lists under the hood in order to
+implement background jobs.</p><p>The popular Twitter social network <a href="http://www.infoq.com/presentations/Real-Time-Delivery-Twitter">takes the latest tweets</a>
+posted by users into Redis lists.</p><p>To describe a common use case step by step, imagine your home page shows the latest
+photos published in a photo sharing social network and you want to speedup access.</p><ul>
+<li>Every time a user posts a new photo, we add its ID into a list with <code>LPUSH</code>.</li>
+<li>When users visit the home page, we use <code>LRANGE 0 9</code> in order to get the latest 10 posted items.</li>
+</ul><h2 id="an-introduction-to-redis-data-types-and-abstractions-capped-lists">Capped lists</h2><p>In many use cases we just want to use lists to store the <em>latest items</em>,
+whatever they are: social network updates, logs, or anything else.</p><p>Redis allows us to use lists as a capped collection, only remembering the latest
+N items and discarding all the oldest items using the <code>LTRIM</code> command.</p><p>The <code>LTRIM</code> command is similar to <code>LRANGE</code>, but <strong>instead of displaying the
+specified range of elements</strong> it sets this range as the new list value. All
+the elements outside the given range are removed.</p><p>An example will make it more clear:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> rpush mylist </span><span class="lit">1</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="lit">4</span><span class="pln"> </span><span class="lit">5</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">5</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> ltrim mylist </span><span class="lit">0</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+OK
+</span><span class="pun">&gt;</span><span class="pln"> lrange mylist </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"2"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"3"</span></code></pre><p>The above <code>LTRIM</code> command tells Redis to take just list elements from index
+0 to 2, everything else will be discarded. This allows for a very simple but
+useful pattern: doing a List push operation + a List trim operation together
+in order to add a new element and discard elements exceeding a limit:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">LPUSH mylist </span><span class="pun">&lt;</span><span class="pln">some element</span><span class="pun">&gt;</span><span class="pln">
+LTRIM mylist </span><span class="lit">0</span><span class="pln"> </span><span class="lit">999</span></code></pre><p>The above combination adds a new element and takes only the 1000
+newest elements into the list. With <code>LRANGE</code> you can access the top items
+without any need to remember very old data.</p><p>Note: while <code>LRANGE</code> is technically an O(N) command, accessing small ranges
+towards the head or the tail of the list is a constant time operation.</p><h2 id="an-introduction-to-redis-data-types-and-abstractions-blocking-operations-on-lists">Blocking operations on lists</h2><p>Lists have a special feature that make them suitable to implement queues,
+and in general as a building block for inter process communication systems:
+blocking operations.</p><p>Imagine you want to push items into a list with one process, and use
+a different process in order to actually do some kind of work with those
+items. This is the usual producer / consumer setup, and can be implemented
+in the following simple way:</p><ul>
+<li>To push items into the list, producers call <code>LPUSH</code>.</li>
+<li>To extract / process items from the list, consumers call <code>RPOP</code>.</li>
+</ul><p>However it is possible that sometimes the list is empty and there is nothing
+to process, so <code>RPOP</code> just returns NULL. In this case a consumer is forced to wait
+some time and retry again with <code>RPOP</code>. This is called <em>polling</em>, and is not
+a good idea in this context because it has several drawbacks:</p><ol>
+<li>Forces Redis and clients to process useless commands (all the requests when the list is empty will get no actual work done, they’ll just return NULL).</li>
+<li>Adds a delay to the processing of items, since after a worker receives a NULL, it waits some time. To make the delay smaller, we could wait less between calls to <code>RPOP</code>, with the effect of amplifying problem number 1, i.e. more useless calls to Redis.</li>
+</ol><p>So Redis implements commands called <code>BRPOP</code> and <code>BLPOP</code> which are versions
+of <code>RPOP</code> and <code>LPOP</code> able to block if the list is empty: they’ll return to
+the caller only when a new element is added to the list, or when a user-specified
+timeout is reached.</p><p>This is an example of a <code>BRPOP</code> call we could use in the worker:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> brpop tasks </span><span class="lit">5</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"tasks"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"do_something"</span></code></pre><p>It means: “wait for elements in the list <code>tasks</code>, but return if after 5 seconds
+no element is available”.</p><p>Note that you can use 0 as timeout to wait for elements forever, and you can
+also specify multiple lists and not just one, in order to wait on multiple
+lists at the same time, and get notified when the first list receives an
+element.</p><p>A few things to note about <code>BRPOP</code>:</p><ol>
+<li>Clients are served in an ordered way: the first client that blocked waiting for a list, is served first when an element is pushed by some other client, and so forth.</li>
+<li>The return value is different compared to <code>RPOP</code>: it is a two-element array since it also includes the name of the key, because <code>BRPOP</code> and <code>BLPOP</code> are able to block waiting for elements from multiple lists.</li>
+<li>If the timeout is reached, NULL is returned.</li>
+</ol><p>There are more things you should know about lists and blocking ops. We
+suggest that you read more on the following:</p><ul>
+<li>It is possible to build safer queues or rotating queues using <code>RPOPLPUSH</code>.</li>
+<li>There is also a blocking variant of the command, called <code>BRPOPLPUSH</code>.</li>
+</ul><h2 id="an-introduction-to-redis-data-types-and-abstractions-automatic-creation-and-removal-of-keys">Automatic creation and removal of keys</h2><p>So far in our examples we never had to create empty lists before pushing
+elements, or removing empty lists when they no longer have elements inside.
+It is Redis’ responsibility to delete keys when lists are left empty, or to create
+an empty list if the key does not exist and we are trying to add elements
+to it, for example, with <code>LPUSH</code>.</p><p>This is not specific to lists, it applies to all the Redis data types
+composed of multiple elements — Sets, Sorted Sets and Hashes.</p><p>Basically we can summarize the behavior with three rules:</p><ol>
+<li>When we add an element to an aggregate data type, if the target key does not exist, an empty aggregate data type is created before adding the element.</li>
+<li>When we remove elements from an aggregate data type, if the value remains empty, the key is automatically destroyed.</li>
+<li>Calling a read-only command such as <code>LLEN</code> (which returns the length of the list), or a write command removing elements, with an empty key, always produces the same result as if the key is holding an empty aggregate type of the type the command expects to find.</li>
+</ol><p>Examples of rule 1:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">del</span><span class="pln"> mylist
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lpush mylist </span><span class="lit">1</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">3</span></code></pre><p>However we can’t perform operations against the wrong type of the key exists:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> foo bar
+OK
+</span><span class="pun">&gt;</span><span class="pln"> lpush foo </span><span class="lit">1</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">error</span><span class="pun">)</span><span class="pln"> WRONGTYPE </span><span class="typ">Operation</span><span class="pln"> against a key holding the wrong kind of value
+</span><span class="pun">&gt;</span><span class="pln"> type foo
+</span><span class="kwd">string</span></code></pre><p>Example of rule 2:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> lpush mylist </span><span class="lit">1</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> exists mylist
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lpop mylist
+</span><span class="str">"3"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lpop mylist
+</span><span class="str">"2"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lpop mylist
+</span><span class="str">"1"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> exists mylist
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span></code></pre><p>The key no longer exists after all the elements are popped.</p><p>Example of rule 3:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">del</span><span class="pln"> mylist
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> llen mylist
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lpop mylist
+</span><span class="pun">(</span><span class="kwd">nil</span><span class="pun">)</span></code></pre><p><a name="hashes"></a></p><h2 id="an-introduction-to-redis-data-types-and-abstractions-redis-hashes">Redis Hashes</h2><p>Redis hashes look exactly how one might expect a “hash” to look, with field-value pairs:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> hmset user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln"> username antirez birthyear </span><span class="lit">1977</span><span class="pln"> verified </span><span class="lit">1</span><span class="pln">
+OK
+</span><span class="pun">&gt;</span><span class="pln"> hget user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln"> username
+</span><span class="str">"antirez"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> hget user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln"> birthyear
+</span><span class="str">"1977"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> hgetall user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"username"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"antirez"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"birthyear"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1977"</span><span class="pln">
+</span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="str">"verified"</span><span class="pln">
+</span><span class="lit">6</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1"</span></code></pre><p>While hashes are handy to represent <em>objects</em>, actually the number of fields you can
+put inside a hash has no practical limits (other than available memory), so you can use
+hashes in many different ways inside your application.</p><p>The command <code>HMSET</code> sets multiple fields of the hash, while <code>HGET</code> retrieves
+a single field. <code>HMGET</code> is similar to <code>HGET</code> but returns an array of values:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> hmget user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln"> username birthyear </span><span class="kwd">no</span><span class="pun">-</span><span class="pln">such</span><span class="pun">-</span><span class="pln">field
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"antirez"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1977"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">nil</span><span class="pun">)</span></code></pre><p>There are commands that are able to perform operations on individual fields
+as well, like <code>HINCRBY</code>:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> hincrby user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln"> birthyear </span><span class="lit">10</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1987</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> hincrby user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln"> birthyear </span><span class="lit">10</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1997</span></code></pre><p>You can find the <a href="http://redis.io/commands#hash">full list of hash commands in the documentation</a>.</p><p>It is worth noting that small hashes (i.e., a few elements with small values) are
+encoded in special way in memory that make them very memory efficient.</p><p><a name="sets"></a></p><h2 id="an-introduction-to-redis-data-types-and-abstractions-redis-sets">Redis Sets</h2><p>Redis Sets are unordered collections of strings. The
+<code>SADD</code> command adds new elements to a set. It’s also possible
+to do a number of other operations against sets like testing if a given element
+already exists, performing the intersection, union or difference between
+multiple sets, and so forth.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> sadd myset </span><span class="lit">1</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> smembers myset
+</span><span class="lit">1.</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="lit">2.</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="lit">3.</span><span class="pln"> </span><span class="lit">2</span></code></pre><p>Here I’ve added three elements to my set and told Redis to return all the
+elements. As you can see they are not sorted — Redis is free to return the
+elements in any order at every call, since there is no contract with the
+user about element ordering.</p><p>Redis has commands to test for membership. For example, checking if an element exists:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> sismember myset </span><span class="lit">3</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> sismember myset </span><span class="lit">30</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span></code></pre><p>“3” is a member of the set, while “30” is not.</p><p>Sets are good for expressing relations between objects.
+For instance we can easily use sets in order to implement tags.</p><p>A simple way to model this problem is to have a set for every object we
+want to tag. The set contains the IDs of the tags associated with the object.</p><p>One illustration is tagging news articles.
+If article ID 1000 is tagged with tags 1, 2, 5 and 77, a set
+can associate these tag IDs with the news item:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> sadd news</span><span class="pun">:</span><span class="lit">1000</span><span class="pun">:</span><span class="pln">tags </span><span class="lit">1</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="lit">77</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">4</span></code></pre><p>We may also want to have the inverse relation as well: the list
+of all the news tagged with a given tag:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> sadd tag</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">news </span><span class="lit">1000</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> sadd tag</span><span class="pun">:</span><span class="lit">2</span><span class="pun">:</span><span class="pln">news </span><span class="lit">1000</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> sadd tag</span><span class="pun">:</span><span class="lit">5</span><span class="pun">:</span><span class="pln">news </span><span class="lit">1000</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> sadd tag</span><span class="pun">:</span><span class="lit">77</span><span class="pun">:</span><span class="pln">news </span><span class="lit">1000</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span></code></pre><p>To get all the tags for a given object is trivial:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> smembers news</span><span class="pun">:</span><span class="lit">1000</span><span class="pun">:</span><span class="pln">tags
+</span><span class="lit">1.</span><span class="pln"> </span><span class="lit">5</span><span class="pln">
+</span><span class="lit">2.</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="lit">3.</span><span class="pln"> </span><span class="lit">77</span><span class="pln">
+</span><span class="lit">4.</span><span class="pln"> </span><span class="lit">2</span></code></pre><p>Note: in the example we assume you have another data structure, for example
+a Redis hash, which maps tag IDs to tag names.</p><p>There are other non trivial operations that are still easy to implement
+using the right Redis commands. For instance we may want a list of all the
+objects with the tags 1, 2, 10, and 27 together. We can do this using
+the <code>SINTER</code> command, which performs the intersection between different
+sets. We can use:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> sinter tag</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">news tag</span><span class="pun">:</span><span class="lit">2</span><span class="pun">:</span><span class="pln">news tag</span><span class="pun">:</span><span class="lit">10</span><span class="pun">:</span><span class="pln">news tag</span><span class="pun">:</span><span class="lit">27</span><span class="pun">:</span><span class="pln">news
+</span><span class="pun">...</span><span class="pln"> results here </span><span class="pun">...</span></code></pre><p>In addition to intersection you can also perform
+unions, difference, extract a random element, and so forth.</p><p>The command to extract an element is called <code>SPOP</code>, and is handy to model
+certain problems. For example in order to implement a web-based poker game,
+you may want to represent your deck with a set. Imagine we use a one-char
+prefix for (C)lubs, (D)iamonds, (H)earts, (S)pades:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln">  sadd deck C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 CJ CQ CK
+   D1 D2 D3 D4 D5 D6 D7 D8 D9 D10 DJ DQ DK H1 H2 H3
+   H4 H5 H6 H7 H8 H9 H10 HJ HQ HK S1 S2 S3 S4 S5 S6
+   S7 S8 S9 S10 SJ SQ SK
+   </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">52</span></code></pre><p>Now we want to provide each player with 5 cards. The <code>SPOP</code> command
+removes a random element, returning it to the client, so it is the
+perfect operation in this case.</p><p>However if we call it against our deck directly, in the next play of the
+game we’ll need to populate the deck of cards again, which may not be
+ideal. So to start, we can make a copy of the set stored in the <code>deck</code> key
+into the <code>game:1:deck</code> key.</p><p>This is accomplished using <code>SUNIONSTORE</code>, which normally performs the
+union between multiple sets, and stores the result into another set.
+However, since the union of a single set is itself, I can copy my deck
+with:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> sunionstore game</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">deck deck
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">52</span></code></pre><p>Now I’m ready to provide the first player with five cards:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> spop game</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">deck
+</span><span class="str">"C6"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> spop game</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">deck
+</span><span class="str">"CQ"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> spop game</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">deck
+</span><span class="str">"D1"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> spop game</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">deck
+</span><span class="str">"CJ"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> spop game</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">deck
+</span><span class="str">"SJ"</span></code></pre><p>One pair of jacks, not great…</p><p>This is a good time to introduce the set command that provides the number
+of elements inside a set. This is often called the <em>cardinality of a set</em>
+in the context of set theory, so the Redis command is called <code>SCARD</code>.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> scard game</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln">deck
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">47</span></code></pre><p>The math works: 52 - 5 = 47.</p><p>When you need to just get random elements without removing them from the
+set, there is the <code>SRANDMEMBER</code> command suitable for the task. It also features
+the ability to return both repeating and non-repeating elements.</p><p><a name="sorted-sets"></a></p><h2 id="an-introduction-to-redis-data-types-and-abstractions-redis-sorted-sets">Redis Sorted sets</h2><p>Sorted sets are a data type which is similar to a mix between a Set and
+a Hash. Like sets, sorted sets are composed of unique, non-repeating
+string elements, so in some sense a sorted set is a set as well.</p><p>However while elements inside sets are not ordered, every element in
+a sorted set is associated with a floating point value, called <em>the score</em>
+(this is why the type is also similar to a hash, since every element
+is mapped to a value).</p><p>Moreover, elements in a sorted sets are <em>taken in order</em> (so they are not
+ordered on request, order is a peculiarity of the data structure used to
+represent sorted sets). They are ordered according to the following rule:</p><ul>
+<li>If A and B are two elements with a different score, then A &gt; B if A.score is &gt; B.score.</li>
+<li>If A and B have exactly the same score, then A &gt; B if the A string is lexicographically greater than the B string. A and B strings can’t be equal since sorted sets only have unique elements.</li>
+</ul><p>Let’s start with a simple example, adding a few selected hackers names as
+sorted set elements, with their year of birth as “score”.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1940</span><span class="pln"> </span><span class="str">"Alan Kay"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1957</span><span class="pln"> </span><span class="str">"Sophie Wilson"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1953</span><span class="pln"> </span><span class="str">"Richard Stallman"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1949</span><span class="pln"> </span><span class="str">"Anita Borg"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1965</span><span class="pln"> </span><span class="str">"Yukihiro Matsumoto"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1914</span><span class="pln"> </span><span class="str">"Hedy Lamarr"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1916</span><span class="pln"> </span><span class="str">"Claude Shannon"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1969</span><span class="pln"> </span><span class="str">"Linus Torvalds"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">1912</span><span class="pln"> </span><span class="str">"Alan Turing"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span></code></pre><p>As you can see <code>ZADD</code> is similar to <code>SADD</code>, but takes one additional argument
+(placed before the element to be added) which is the score.
+<code>ZADD</code> is also variadic, so you are free to specify multiple score-value
+pairs, even if this is not used in the example above.</p><p>With sorted sets it is trivial to return a list of hackers sorted by their
+birth year because actually <em>they are already sorted</em>.</p><p>Implementation note: Sorted sets are implemented via a
+dual-ported data structure containing both a skip list and a hash table, so
+every time we add an element Redis performs an O(log(N)) operation. That’s
+good, but when we ask for sorted elements Redis does not have to do any work at
+all, it’s already all sorted:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zrange hackers </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Turing"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Hedy Lamarr"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Claude Shannon"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Kay"</span><span class="pln">
+</span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Anita Borg"</span><span class="pln">
+</span><span class="lit">6</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Richard Stallman"</span><span class="pln">
+</span><span class="lit">7</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Sophie Wilson"</span><span class="pln">
+</span><span class="lit">8</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Yukihiro Matsumoto"</span><span class="pln">
+</span><span class="lit">9</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Linus Torvalds"</span></code></pre><p>Note: 0 and -1 means from element index 0 to the last element (-1 works
+here just as it does in the case of the <code>LRANGE</code> command).</p><p>What if I want to order them the opposite way, youngest to oldest?
+Use <a href="/commands/zrevrange">ZREVRANGE</a> instead of <a href="/commands/zrange">ZRANGE</a>:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zrevrange hackers </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Linus Torvalds"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Yukihiro Matsumoto"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Sophie Wilson"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Richard Stallman"</span><span class="pln">
+</span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Anita Borg"</span><span class="pln">
+</span><span class="lit">6</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Kay"</span><span class="pln">
+</span><span class="lit">7</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Claude Shannon"</span><span class="pln">
+</span><span class="lit">8</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Hedy Lamarr"</span><span class="pln">
+</span><span class="lit">9</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Turing"</span></code></pre><p>It is possible to return scores as well, using the <code>WITHSCORES</code> argument:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zrange hackers </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln"> withscores
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Turing"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1912"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Hedy Lamarr"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1914"</span><span class="pln">
+</span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Claude Shannon"</span><span class="pln">
+</span><span class="lit">6</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1916"</span><span class="pln">
+</span><span class="lit">7</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Kay"</span><span class="pln">
+</span><span class="lit">8</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1940"</span><span class="pln">
+</span><span class="lit">9</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Anita Borg"</span><span class="pln">
+</span><span class="lit">10</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1949"</span><span class="pln">
+</span><span class="lit">11</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Richard Stallman"</span><span class="pln">
+</span><span class="lit">12</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1953"</span><span class="pln">
+</span><span class="lit">13</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Sophie Wilson"</span><span class="pln">
+</span><span class="lit">14</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1957"</span><span class="pln">
+</span><span class="lit">15</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Yukihiro Matsumoto"</span><span class="pln">
+</span><span class="lit">16</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1965"</span><span class="pln">
+</span><span class="lit">17</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Linus Torvalds"</span><span class="pln">
+</span><span class="lit">18</span><span class="pun">)</span><span class="pln"> </span><span class="str">"1969"</span></code></pre><h2 id="an-introduction-to-redis-data-types-and-abstractions-operating-on-ranges">Operating on ranges</h2><p>Sorted sets are more powerful than this. They can operate on ranges.
+Let’s get all the individuals that were born up to 1950 inclusive. We
+use the <code>ZRANGEBYSCORE</code> command to do it:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zrangebyscore hackers </span><span class="pun">-</span><span class="pln">inf </span><span class="lit">1950</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Turing"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Hedy Lamarr"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Claude Shannon"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Kay"</span><span class="pln">
+</span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Anita Borg"</span></code></pre><p>We asked Redis to return all the elements with a score between negative
+infinity and 1950 (both extremes are included).</p><p>It’s also possible to remove ranges of elements. Let’s remove all
+the hackers born between 1940 and 1960 from the sorted set:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zremrangebyscore hackers </span><span class="lit">1940</span><span class="pln"> </span><span class="lit">1960</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">4</span></code></pre><p><code>ZREMRANGEBYSCORE</code> is perhaps not the best command name,
+but it can be very useful, and returns the number of removed elements.</p><p>Another extremely useful operation defined for sorted set elements
+is the get-rank operation. It is possible to ask what is the
+position of an element in the set of the ordered elements.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zrank hackers </span><span class="str">"Anita Borg"</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">4</span></code></pre><p>The <code>ZREVRANK</code> command is also available in order to get the rank, considering
+the elements sorted a descending way.</p><h2 id="an-introduction-to-redis-data-types-and-abstractions-lexicographical-scores">Lexicographical scores</h2><p>With recent versions of Redis 2.8, a new feature was introduced that allows
+getting ranges lexicographically, assuming elements in a sorted set are all
+inserted with the same identical score (elements are compared with the C
+<code>memcmp</code> function, so it is guaranteed that there is no collation, and every
+Redis instance will reply with the same output).</p><p>The main commands to operate with lexicographical ranges are <code>ZRANGEBYLEX</code>,
+<code>ZREVRANGEBYLEX</code>, <code>ZREMRANGEBYLEX</code> and <code>ZLEXCOUNT</code>.</p><p>For example, let’s add again our list of famous hackers, but this time
+use a score of zero for all the elements:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zadd hackers </span><span class="lit">0</span><span class="pln"> </span><span class="str">"Alan Kay"</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"Sophie Wilson"</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"Richard Stallman"</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+  </span><span class="str">"Anita Borg"</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"Yukihiro Matsumoto"</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"Hedy Lamarr"</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"Claude Shannon"</span><span class="pln">
+  </span><span class="lit">0</span><span class="pln"> </span><span class="str">"Linus Torvalds"</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"Alan Turing"</span></code></pre><p>Because of the sorted sets ordering rules, they are already sorted
+lexicographically:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zrange hackers </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Kay"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Alan Turing"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Anita Borg"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Claude Shannon"</span><span class="pln">
+</span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Hedy Lamarr"</span><span class="pln">
+</span><span class="lit">6</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Linus Torvalds"</span><span class="pln">
+</span><span class="lit">7</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Richard Stallman"</span><span class="pln">
+</span><span class="lit">8</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Sophie Wilson"</span><span class="pln">
+</span><span class="lit">9</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Yukihiro Matsumoto"</span></code></pre><p>Using <code>ZRANGEBYLEX</code> we can ask for lexicographical ranges:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> zrangebylex hackers </span><span class="pun">[</span><span class="pln">B </span><span class="pun">[</span><span class="pln">P
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Claude Shannon"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Hedy Lamarr"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Linus Torvalds"</span></code></pre><p>Ranges can be inclusive or exclusive (depending on the first character),
+also string infinite and minus infinite are specified respectively with
+the <code>+</code> and <code>-</code> strings. See the documentation for more information.</p><p>This feature is important because it allows us to use sorted sets as a generic
+index. For example, if you want to index elements by a 128-bit unsigned
+integer argument, all you need to do is to add elements into a sorted
+set with the same score (for example 0) but with an 8 byte prefix
+consisting of <strong>the 128 bit number in big endian</strong>. Since numbers in big
+endian, when ordered lexicographically (in raw bytes order) are actually
+ordered numerically as well, you can ask for ranges in the 128 bit space,
+and get the element’s value discarding the prefix.</p><p>If you want to see the feature in the context of a more serious demo,
+check the <a href="http://autocomplete.redis.io">Redis autocomplete demo</a>.</p><h2 id="an-introduction-to-redis-data-types-and-abstractions-updating-the-score-leader-boards">Updating the score: leader boards</h2><p>Just a final note about sorted sets before switching to the next topic.
+Sorted sets’ scores can be updated at any time. Just calling <code>ZADD</code> against
+an element already included in the sorted set will update its score
+(and position) with O(log(N)) time complexity.  As such, sorted sets are suitable
+when there are tons of updates.</p><p>Because of this characteristic a common use case is leader boards.
+The typical application is a Facebook game where you combine the ability to
+take users sorted by their high score, plus the get-rank operation, in order
+to show the top-N users, and the user rank in the leader board (e.g., “you are
+the #4932 best score here”).</p><p><a name="bitmaps"></a></p><h2 id="an-introduction-to-redis-data-types-and-abstractions-bitmaps">Bitmaps</h2><p>Bitmaps are not an actual data type, but a set of bit-oriented operations
+defined on the String type. Since strings are binary safe blobs and their
+maximum length is 512 MB, they are suitable to set up to 2^32 different
+bits.</p><p>Bit operations are divided into two groups: constant-time single bit
+operations, like setting a bit to 1 or 0, or getting its value, and
+operations on groups of bits, for example counting the number of set
+bits in a given range of bits (e.g., population counting).</p><p>One of the biggest advantages of bitmaps is that they often provide
+extreme space savings when storing information. For example in a system
+where different users are represented by incremental user IDs, it is possible
+to remember a single bit information (for example, knowing whether
+a user wants to receive a newsletter) of 4 billion of users using just 512 MB of memory.</p><p>Bits are set and retrieved using the <code>SETBIT</code> and <code>GETBIT</code> commands:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> setbit key </span><span class="lit">10</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> getbit key </span><span class="lit">10</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> getbit key </span><span class="lit">11</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span></code></pre><p>The <code>SETBIT</code> command takes as its first argument the bit number, and as its second
+argument the value to set the bit to, which is 1 or 0. The command
+automatically enlarges the string if the addressed bit is outside the
+current string length.</p><p><code>GETBIT</code> just returns the value of the bit at the specified index.
+Out of range bits (addressing a bit that is outside the length of the string
+stored into the target key) are always considered to be zero.</p><p>There are three commands operating on group of bits:</p><ol>
+<li><code>BITOP</code> performs bit-wise operations between different strings. The provided operations are AND, OR, XOR and NOT.</li>
+<li><code>BITCOUNT</code> performs population counting, reporting the number of bits set to 1.</li>
+<li><code>BITPOS</code> finds the first bit having the specified value of 0 or 1.</li>
+</ol><p>Both <code>BITPOS</code> and <code>BITCOUNT</code> are able to operate with byte ranges of the
+string, instead of running for the whole length of the string. The following
+is a trivial example of <code>BITCOUNT</code> call:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> setbit key </span><span class="lit">0</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> setbit key </span><span class="lit">100</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> bitcount key
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">2</span></code></pre><p>Common user cases for bitmaps are:</p><ul>
+<li>Real time analytics of all kinds.</li>
+<li>Storing space efficient but high performance boolean information associated with object IDs.</li>
+</ul><p>For example imagine you want to know the longest streak of daily visits of
+your web site users. You start counting days starting from zero, that is the
+day you made your web site public, and set a bit with <code>SETBIT</code> every time
+the user visits the web site. As a bit index you simply take the current unix
+time, subtract the initial offset, and divide by 3600*24.</p><p>This way for each user you have a small string containing the visit
+information for each day. With <code>BITCOUNT</code> it is possible to easily get
+the number of days a given user visited the web site, while with
+a few <code>BITPOS</code> calls, or simply fetching and analyzing the bitmap client-side,
+it is possible to easily compute the longest streak.</p><p>Bitmaps are trivial to split into multiple keys, for example for
+the sake of sharding the data set and because in general it is better to
+avoid working with huge keys. To split a bitmap across different keys
+instead of setting all the bits into a key, a trivial strategy is just
+to store M bits per key and obtain the key name with <code>bit-number/M</code> and
+the Nth bit to address inside the key with <code>bit-number MOD M</code>.</p><p><a name="hyperloglogs"></a></p><h2 id="an-introduction-to-redis-data-types-and-abstractions-hyperloglogs">HyperLogLogs</h2><p>A HyperLogLog is a probabilistic data structure used in order to count
+unique things (technically this is referred to estimating the cardinality
+of a set). Usually counting unique items requires using an amount of memory
+proportional to the number of items you want to count, because you need
+to remember the elements you have already seen in the past in order to avoid
+counting them multiple times. However there is a set of algorithms that trade
+memory for precision: you end with an estimated measure with a standard error,
+in the case of the Redis implementation, which is less than 1%.  The
+magic of this algorithm is that you no longer need to use an amount of memory
+proportional to the number of items counted, and instead can use a
+constant amount of memory! 12k bytes in the worst case, or a lot less if your
+HyperLogLog (We’ll just call them HLL from now) has seen very few elements.</p><p>HLLs in Redis, while technically a different data structure, is encoded
+as a Redis string, so you can call <code>GET</code> to serialize a HLL, and <code>SET</code>
+to deserialize it back to the server.</p><p>Conceptually the HLL API is like using Sets to do the same task. You would
+<code>SADD</code> every observed element into a set, and would use <code>SCARD</code> to check the
+number of elements inside the set, which are unique since <code>SADD</code> will not
+re-add an existing element.</p><p>While you don’t really <em>add items</em> into an HLL, because the data structure
+only contains a state that does not include actual elements, the API is the
+same:</p><ul>
+<li>Every time you see a new element, you add it to the count with <code>PFADD</code>.</li>
+<li><p>Every time you want to retrieve the current approximation of the unique elements <em>added</em> with <code>PFADD</code> so far, you use the <code>PFCOUNT</code>.</p>
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  </span><span class="pun">&gt;</span><span class="pln"> pfadd hll a b c d
+  </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+  </span><span class="pun">&gt;</span><span class="pln"> pfcount hll
+  </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">4</span></code></pre>
+</li>
+</ul><p>An example of use case for this data structure is counting unique queries
+performed by users in a search form every day.</p><p>Redis is also able to perform the union of HLLs, please check the
+<a href="/commands#hyperloglog">full documentation</a> for more information.</p><h2 id="an-introduction-to-redis-data-types-and-abstractions-other-notable-features">Other notable features</h2><p>There are other important things in the Redis API that can’t be explored
+in the context of this document, but are worth your attention:</p><ul>
+<li>It is possible to <a href="/commands/scan">iterate the key space of a large collection incrementally</a>.</li>
+<li>It is possible to run <a href="/commands/eval">Lua scripts server side</a> to win latency and bandwidth.</li>
+<li>Redis is also a <a href="/topics/pubsub">Pub-Sub server</a>.</li>
+</ul><h2 id="an-introduction-to-redis-data-types-and-abstractions-learn-more">Learn more</h2><p>This tutorial is in no way complete and has covered just the basics of the API.
+Read the <a href="/commands">command reference</a> to discover a lot more.</p><p>Thanks for reading, and have fun hacking with Redis!</p></div>
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/src/alpha/topics/data-types-intro.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/src/alpha/topics/data-types-intro.md">
+    <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+</div><!-- end ngIf: !index -->
+<!-- ngIf: index -->
+</div>
+
+ <script type="text/javascript" src="./docbase-config.js"></script>
+  <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>
+
+
+
+</body><script>$(function(){  $('.search-form').searchAppbase('/search-index.json', true); })</script></html>
