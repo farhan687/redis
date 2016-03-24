@@ -7,6 +7,7 @@ module.exports = function(grunt) {
 					generateSearchIndex : true,
 					generateHtml : true,
 					baseUrl: "./",
+					operation: 'parallel',
 					urlToAccess: "http://localhost:9001/",
 					assets: ['bower_components', 'styles', 'images', 'docbase-config.js'],
 					checkLoadedSelector : '#navbar-collapse',
@@ -20,6 +21,7 @@ module.exports = function(grunt) {
 					generateSearchIndex : true,
 					generateHtml : false,
 					baseUrl: "./",
+					operation: 'parallel',
 					urlToAccess: "http://localhost:9001/",
 					assets: ['docs', 'html', 'index.html', 'bower_components', 'styles', 'images', 'docbase-config.js', 'search-index.json' ],
 					checkLoadedSelector : '#navbar-collapse'
