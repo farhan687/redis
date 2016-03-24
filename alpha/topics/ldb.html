@@ -1,0 +1,707 @@
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <base href="../../">
+  <title>Documentation</title>
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <!-- Flatdoc theme -->
+  <link href="./bower_components/flatdoc/theme-white/style.css" rel="stylesheet">
+  <script src="./bower_components/google-code-prettify/bin/prettify.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./bower_components/google-code-prettify/bin/prettify.min.css">
+  <link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- DocBase -->
+  <link rel="stylesheet" type="text/css" href="./bower_components/docbase/dist/css/main.min.css">
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="./styles/theme.css">
+  
+<script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc" class="no-literate">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a id="docs-appbase-logo" class="navbar-brand" ng-href="#/" href="#/">
+      <img src="./images/docbase.png">
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+      <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <a ng-href=./alpha/commands/index.html class="dropdown-toggle map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" href=./alpha/commands/index.html>commands</a>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/append.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/append.html>append</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/auth.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/auth.html>auth</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bgrewriteaof.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bgrewriteaof.html>bgrewriteaof</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bgsave.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bgsave.html>bgsave</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitcount.html>bitcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitop.html>bitop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitpos.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitpos.html>bitpos</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/blpop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/blpop.html>blpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/brpop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/brpop.html>brpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/brpoplpush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/brpoplpush.html>brpoplpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-getname.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-getname.html>client-getname</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-kill.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-kill.html>client-kill</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-list.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-list.html>client-list</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-pause.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-pause.html>client-pause</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-reply.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-reply.html>client-reply</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-setname.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-setname.html>client-setname</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-addslots.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-addslots.html>cluster-addslots</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-count-failure-reports.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-count-failure-reports.html>cluster-count-failure-reports</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-countkeysinslot.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-countkeysinslot.html>cluster-countkeysinslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-delslots.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-delslots.html>cluster-delslots</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-failover.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-failover.html>cluster-failover</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-forget.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-forget.html>cluster-forget</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-getkeysinslot.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-getkeysinslot.html>cluster-getkeysinslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-info.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-info.html>cluster-info</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-keyslot.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-keyslot.html>cluster-keyslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-meet.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-meet.html>cluster-meet</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-nodes.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-nodes.html>cluster-nodes</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-replicate.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-replicate.html>cluster-replicate</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-reset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-reset.html>cluster-reset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-saveconfig.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-saveconfig.html>cluster-saveconfig</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-set-config-epoch.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-set-config-epoch.html>cluster-set-config-epoch</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-setslot.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-setslot.html>cluster-setslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-slaves.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-slaves.html>cluster-slaves</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-slots.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-slots.html>cluster-slots</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/command-count.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/command-count.html>command-count</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/command-getkeys.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/command-getkeys.html>command-getkeys</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/command-info.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/command-info.html>command-info</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/command.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/command.html>command</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/config-get.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/config-get.html>config-get</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/config-resetstat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/config-resetstat.html>config-resetstat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/config-rewrite.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/config-rewrite.html>config-rewrite</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/config-set.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/config-set.html>config-set</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/dbsize.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/dbsize.html>dbsize</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/debug-object.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/debug-object.html>debug-object</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/debug-segfault.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/debug-segfault.html>debug-segfault</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/decr.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/decr.html>decr</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/decrby.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/decrby.html>decrby</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/del.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/del.html>del</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/discard.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/discard.html>discard</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/dump.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/dump.html>dump</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/echo.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/echo.html>echo</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/eval.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/eval.html>eval</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/evalsha.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/evalsha.html>evalsha</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/exec.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/exec.html>exec</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/exists.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/exists.html>exists</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/expire.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/expire.html>expire</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/expireat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/expireat.html>expireat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/flushall.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/flushall.html>flushall</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/flushdb.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/flushdb.html>flushdb</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geoadd.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geoadd.html>geoadd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geodecode.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geodecode.html>geodecode</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geodist.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geodist.html>geodist</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geoencode.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geoencode.html>geoencode</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geohash.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geohash.html>geohash</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geopos.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geopos.html>geopos</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/georadius.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/georadius.html>georadius</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/georadiusbymember.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/georadiusbymember.html>georadiusbymember</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/get.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/get.html>get</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/getbit.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/getbit.html>getbit</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/getrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/getrange.html>getrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/getset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/getset.html>getset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hdel.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hdel.html>hdel</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hexists.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hexists.html>hexists</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hget.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hget.html>hget</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hgetall.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hgetall.html>hgetall</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hincrby.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hincrby.html>hincrby</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hincrbyfloat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hincrbyfloat.html>hincrbyfloat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hkeys.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hkeys.html>hkeys</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hlen.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hlen.html>hlen</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hmget.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hmget.html>hmget</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hmset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hmset.html>hmset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hscan.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hscan.html>hscan</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hset.html>hset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hsetnx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hsetnx.html>hsetnx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hstrlen.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hstrlen.html>hstrlen</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hvals.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hvals.html>hvals</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/incr.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/incr.html>incr</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/incrby.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/incrby.html>incrby</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/incrbyfloat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/incrbyfloat.html>incrbyfloat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/info.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/info.html>info</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/keys.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/keys.html>keys</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lastsave.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lastsave.html>lastsave</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lindex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lindex.html>lindex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/linsert.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/linsert.html>linsert</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/llen.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/llen.html>llen</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lpop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lpop.html>lpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lpush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lpush.html>lpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lpushx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lpushx.html>lpushx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lrange.html>lrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lrem.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lrem.html>lrem</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lset.html>lset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/ltrim.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/ltrim.html>ltrim</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/mget.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/mget.html>mget</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/migrate.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/migrate.html>migrate</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/monitor.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/monitor.html>monitor</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/move.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/move.html>move</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/mset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/mset.html>mset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/msetnx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/msetnx.html>msetnx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/multi.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/multi.html>multi</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/object.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/object.html>object</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/persist.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/persist.html>persist</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pexpire.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pexpire.html>pexpire</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pexpireat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pexpireat.html>pexpireat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pfadd.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pfadd.html>pfadd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pfcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pfcount.html>pfcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pfmerge.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pfmerge.html>pfmerge</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/ping.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/ping.html>ping</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/psetex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/psetex.html>psetex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/psubscribe.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/psubscribe.html>psubscribe</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pttl.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pttl.html>pttl</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/publish.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/publish.html>publish</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pubsub.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pubsub.html>pubsub</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/punsubscribe.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/punsubscribe.html>punsubscribe</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/quit.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/quit.html>quit</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/randomkey.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/randomkey.html>randomkey</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/readonly.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/readonly.html>readonly</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/readwrite.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/readwrite.html>readwrite</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rename.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rename.html>rename</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/renamenx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/renamenx.html>renamenx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/restore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/restore.html>restore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/role.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/role.html>role</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rpop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rpop.html>rpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rpoplpush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rpoplpush.html>rpoplpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rpush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rpush.html>rpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rpushx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rpushx.html>rpushx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sadd.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sadd.html>sadd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/save.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/save.html>save</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/scan.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/scan.html>scan</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/scard.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/scard.html>scard</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-debug.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-debug.html>script-debug</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-exists.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-exists.html>script-exists</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-flush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-flush.html>script-flush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-kill.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-kill.html>script-kill</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-load.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-load.html>script-load</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sdiff.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sdiff.html>sdiff</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sdiffstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sdiffstore.html>sdiffstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/select.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/select.html>select</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/set.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/set.html>set</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/setbit.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/setbit.html>setbit</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/setex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/setex.html>setex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/setnx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/setnx.html>setnx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/setrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/setrange.html>setrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/shutdown.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/shutdown.html>shutdown</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sinter.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sinter.html>sinter</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sinterstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sinterstore.html>sinterstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sismember.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sismember.html>sismember</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/slaveof.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/slaveof.html>slaveof</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/slowlog.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/slowlog.html>slowlog</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/smembers.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/smembers.html>smembers</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/smove.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/smove.html>smove</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sort.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sort.html>sort</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/spop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/spop.html>spop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/srandmember.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/srandmember.html>srandmember</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/srem.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/srem.html>srem</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sscan.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sscan.html>sscan</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/strlen.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/strlen.html>strlen</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/subscribe.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/subscribe.html>subscribe</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sunion.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sunion.html>sunion</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sunionstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sunionstore.html>sunionstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sync.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sync.html>sync</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/time.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/time.html>time</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/ttl.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/ttl.html>ttl</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/type.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/type.html>type</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/unsubscribe.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/unsubscribe.html>unsubscribe</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/unwatch.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/unwatch.html>unwatch</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/wait.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/wait.html>wait</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/watch.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/watch.html>watch</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zadd.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zadd.html>zadd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zcard.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zcard.html>zcard</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zcount.html>zcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zincrby.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zincrby.html>zincrby</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zinterstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zinterstore.html>zinterstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zlexcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zlexcount.html>zlexcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrange.html>zrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrangebylex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrangebylex.html>zrangebylex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrangebyscore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrangebyscore.html>zrangebyscore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrank.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrank.html>zrank</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrem.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrem.html>zrem</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zremrangebylex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zremrangebylex.html>zremrangebylex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zremrangebyrank.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zremrangebyrank.html>zremrangebyrank</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zremrangebyscore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zremrangebyscore.html>zremrangebyscore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrevrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrevrange.html>zrevrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrevrangebylex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrevrangebylex.html>zrevrangebylex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrevrangebyscore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrevrangebyscore.html>zrevrangebyscore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrevrank.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrevrank.html>zrevrank</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zscan.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zscan.html>zscan</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zscore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zscore.html>zscore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zunionstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zunionstore.html>zunionstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
+            <a ng-href=./alpha/commands/index.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/index.html>index</a>
+          </li><!-- end ngRepeat: file in folder.files -->
+        </ul>
+      </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <a ng-href=./alpha/topics/index.html class="dropdown-toggle map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" href=./alpha/topics/index.html>topics</a>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/admin.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/admin.html>admin</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/benchmarks.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/benchmarks.html>benchmarks</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/clients.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/clients.html>clients</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/cluster-spec.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/cluster-spec.html>cluster-spec</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/cluster-tutorial.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/cluster-tutorial.html>cluster-tutorial</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/config.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/config.html>config</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/data-types-intro.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/data-types-intro.html>data-types-intro</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/data-types.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/data-types.html>data-types</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/debugging.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/debugging.html>debugging</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/distlock.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/distlock.html>distlock</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/encryption.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/encryption.html>encryption</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/faq.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/faq.html>faq</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/indexes.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/indexes.html>indexes</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals-eventlib.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals-eventlib.html>internals-eventlib</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals-rediseventlib.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals-rediseventlib.html>internals-rediseventlib</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals-sds.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals-sds.html>internals-sds</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals-vm.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals-vm.html>internals-vm</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals.html>internals</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/introduction.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/introduction.html>introduction</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/latency-monitor.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/latency-monitor.html>latency-monitor</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/latency.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/latency.html>latency</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/ldb.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/ldb.html>ldb</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/license.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/license.html>license</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/lru-cache.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/lru-cache.html>lru-cache</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/mass-insert.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/mass-insert.html>mass-insert</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/memory-optimization.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/memory-optimization.html>memory-optimization</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/notifications.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/notifications.html>notifications</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/partitioning.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/partitioning.html>partitioning</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/persistence.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/persistence.html>persistence</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/pipelining.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/pipelining.html>pipelining</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/problems.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/problems.html>problems</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/protocol.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/protocol.html>protocol</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/pubsub.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/pubsub.html>pubsub</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/quickstart.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/quickstart.html>quickstart</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/rdd-1.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/rdd-1.html>rdd-1</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/rdd-2.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/rdd-2.html>rdd-2</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/rdd.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/rdd.html>rdd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/releases.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/releases.html>releases</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/replication.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/replication.html>replication</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/security.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/security.html>security</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sentinel-clients.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sentinel-clients.html>sentinel-clients</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sentinel-old.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sentinel-old.html>sentinel-old</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sentinel-spec.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sentinel-spec.html>sentinel-spec</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sentinel.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sentinel.html>sentinel</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/signals.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/signals.html>signals</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sponsors.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sponsors.html>sponsors</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/trademark.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/trademark.html>trademark</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/transactions.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/transactions.html>transactions</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/twitter-clone.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/twitter-clone.html>twitter-clone</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/virtual-memory.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/virtual-memory.html>virtual-memory</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/whos-using-redis.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/whos-using-redis.html>whos-using-redis</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
+            <a ng-href=./alpha/topics/index.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/index.html>index</a>
+          </li><!-- end ngRepeat: file in folder.files -->
+        </ul>
+      </li><!-- end ngRepeat: folder in map[currentVersion] -->
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown search-dropdown">
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+      </li>
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+           <span ng-bind="currentVersion" class="ng-binding">alpha</span> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu version-switcher" role="menu">
+          <!-- ngRepeat: version in versions --><li ng-repeat="version in versions" class="ng-scope">
+            <a ng-href=./alpha/commands/append.html ng-bind="version" class="ng-binding" href=./alpha/commands/append.html>alpha</a>
+          </li><!-- end ngRepeat: version in versions -->
+        </ul>
+      </li>
+      <!-- ngIf: docbaseOptions.method == 'github' --><li class="github-star ng-scope" data-ng-if="docbaseOptions.method == 'github'">
+        <iframe src="https://ghbtns.com/github-btn.html?user=farhan687&amp;repo=redis&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+      </li><!-- end ngIf: docbaseOptions.method == 'github' -->
+      <!-- ngIf: docbaseOptions.method != 'github' -->
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+  <div class="menubar fixed">
+    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="redis-lua-scripts-debugger-item" class="level-1"><a id="redis-lua-scripts-debugger-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger" class="level-1" pref="#redis-lua-scripts-debugger">Redis Lua scripts debugger</a><ul class="level-2" id="redis-lua-scripts-debugger-list"><li id="redis-lua-scripts-debugger-quick-start-item" class="level-2"><a id="redis-lua-scripts-debugger-quick-start-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-quick-start" class="level-2" pref="#redis-lua-scripts-debugger-quick-start">Quick start</a></li><li id="redis-lua-scripts-debugger-termination-of-the-debugging-session-item" class="level-2"><a id="redis-lua-scripts-debugger-termination-of-the-debugging-session-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-termination-of-the-debugging-session" class="level-2" pref="#redis-lua-scripts-debugger-termination-of-the-debugging-session">Termination of the debugging session</a></li><li id="redis-lua-scripts-debugger-abbreviating-debugging-commands-item" class="level-2"><a id="redis-lua-scripts-debugger-abbreviating-debugging-commands-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-abbreviating-debugging-commands" class="level-2" pref="#redis-lua-scripts-debugger-abbreviating-debugging-commands">Abbreviating debugging commands</a></li><li id="redis-lua-scripts-debugger-breakpoints-item" class="level-2"><a id="redis-lua-scripts-debugger-breakpoints-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-breakpoints" class="level-2" pref="#redis-lua-scripts-debugger-breakpoints">Breakpoints</a></li><li id="redis-lua-scripts-debugger-dynamic-breakpoints-item" class="level-2"><a id="redis-lua-scripts-debugger-dynamic-breakpoints-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-dynamic-breakpoints" class="level-2" pref="#redis-lua-scripts-debugger-dynamic-breakpoints">Dynamic breakpoints</a></li><li id="redis-lua-scripts-debugger-synchronous-mode-item" class="level-2"><a id="redis-lua-scripts-debugger-synchronous-mode-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-synchronous-mode" class="level-2" pref="#redis-lua-scripts-debugger-synchronous-mode">Synchronous mode</a></li><li id="redis-lua-scripts-debugger-logging-from-scripts-item" class="level-2"><a id="redis-lua-scripts-debugger-logging-from-scripts-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-logging-from-scripts" class="level-2" pref="#redis-lua-scripts-debugger-logging-from-scripts">Logging from scripts</a></li><li id="redis-lua-scripts-debugger-inspecting-the-program-state-with-print-and-eval-item" class="level-2"><a id="redis-lua-scripts-debugger-inspecting-the-program-state-with-print-and-eval-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-inspecting-the-program-state-with-print-and-eval" class="level-2" pref="#redis-lua-scripts-debugger-inspecting-the-program-state-with-print-and-eval">Inspecting the program state with print and eval</a></li><li id="redis-lua-scripts-debugger-debugging-clients-item" class="level-2"><a id="redis-lua-scripts-debugger-debugging-clients-link" href="./alpha/topics/ldb.html#redis-lua-scripts-debugger-debugging-clients" class="level-2" pref="#redis-lua-scripts-debugger-debugging-clients">Debugging clients</a></li></ul></li></ul></li></ul></div>
+  </div>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-lua-scripts-debugger">Redis Lua scripts debugger</h1><p>Starting with version 3.2 Redis includes a complete Lua debugger, that can be
+used in order to make the task of writing complex Redis scripts much simpler.</p><p>Because Redis 3.2 is still in beta, please download the <code>unstable</code> branch of Redis from Github and compile it in order to test the debugger. You can use Redis unstable in order to debug your scripts that you’ll later run in a stable version of Redis, so the debugger is already usable in practical terms.</p><p>The Redis Lua debugger, codename LDB, has the following important features:</p><ul>
+<li>It uses a server-client model, so it’s a remote debugger. The Redis server acts as the debugging server, while the default client is <code>redis-cli</code>. However other clients can be developed by following the simple protocol implemented by the server.</li>
+<li>By default every new debugging session is a forked session. It means that while the Redis Lua script is being debugged, the server does not block and is usable for development or in order to execute multiple debugging sessions in parallel. This also means that changes are <strong>rolled back</strong> after the script debugging session finished, so that’s possible to restart a new debugging session again, using exactly the same Redis data set as the previous debugging session.</li>
+<li>An alternative synchronous (non forked) debugging model is available on demand, so that changes to the dataset can be retained. In this mode the server blocks for the time the debugging session is active.</li>
+<li>Support for step by step execution.</li>
+<li>Support for static and dynamic breakpoints.</li>
+<li>Support from logging the debugged script into the debugger console.</li>
+<li>Inspection of Lua variables.</li>
+<li>Tracing of Redis commands executed by the script.</li>
+<li>Pretty printing of Redis and Lua values.</li>
+<li>Infinite loops and long execution detection, which simulates a breakpoint.</li>
+</ul><h2 id="redis-lua-scripts-debugger-quick-start">Quick start</h2><p>A simple way to get started with the Lua debugger is to watch this video
+introduction:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/IMvRfStaoyM" frameborder="0" allowfullscreen=""></iframe><p><strong>Important note:</strong> please make sure to avoid debugging Lua scripts using your Redis production server. Use a development server instead. Also note that using the synchronous debugging mode (which is NOT the default) results into the Redis server blocking for all the time the debugging session lasts.</p><p>To start a new debugging session using <code>redis-cli</code> do the following steps:</p><ol>
+<li>Create your script in some file with your preferred editor. Let’s assume you are editing your Redis Lua script located at <code>/tmp/script.lua</code>.</li>
+<li><p>Start a debugging session with:</p>
+<p> ./redis-cli —ldb —eval /tmp/script.lua</p>
+</li>
+</ol><p>Note that with the <code>--eval</code> option of <code>redis-cli</code> you can pass key names and arguments to the script, separated by a comma, like in the following example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">.</span><span class="str">/redis-cli --ldb --eval /</span><span class="pln">tmp</span><span class="pun">/</span><span class="pln">script</span><span class="pun">.</span><span class="pln">lua mykey somekey </span><span class="pun">,</span><span class="pln"> arg1 arg2</span></code></pre><p>You’ll enter a special mode where <code>redis-cli</code> no longer accepts its normal
+commands, but instead prints an help screen and passes the unmodified debugging
+commands directly to Redis.</p><p>The only commands which are not passed to the Redis debugger are:</p><ul>
+<li><code>quit</code> — this will terminate the debugging session. It’s like removing all the breakpoints and using the <code>continue</code> debugging command. Moreover the command will exit from <code>redis-cli</code>.</li>
+<li><code>restart</code> — the debugging session will restart from scratch, <strong>reloading the new version of the script from the file</strong>. So a normal debugging cycle involves modifying the script after some debugging, and calling <code>restart</code> in order to start debugging again with the new script changes.</li>
+<li><code>help</code> — this command is passed to the Redis Lua debugger, that will print a list of commands like the following:</li>
+</ul><pre><code class="prettyprint prettyprinted" style=""><span class="pln">lua </span><span class="kwd">debugger</span><span class="pun">&gt;</span><span class="pln"> help
+</span><span class="typ">Redis</span><span class="pln"> </span><span class="typ">Lua</span><span class="pln"> </span><span class="kwd">debugger</span><span class="pln"> help</span><span class="pun">:</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">h</span><span class="pun">]</span><span class="pln">elp               </span><span class="typ">Show</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> help</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">s</span><span class="pun">]</span><span class="pln">tep               </span><span class="typ">Run</span><span class="pln"> current line </span><span class="kwd">and</span><span class="pln"> stop again</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">n</span><span class="pun">]</span><span class="pln">ext               </span><span class="typ">Alias</span><span class="pln"> </span><span class="kwd">for</span><span class="pln"> step</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">c</span><span class="pun">]</span><span class="kwd">continue</span><span class="pln">          </span><span class="typ">Run</span><span class="pln"> till </span><span class="kwd">next</span><span class="pln"> breakpoint</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">l</span><span class="pun">]</span><span class="pln">list              </span><span class="typ">List</span><span class="pln"> source code around current line</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">l</span><span class="pun">]</span><span class="pln">list </span><span class="pun">[</span><span class="pln">line</span><span class="pun">]</span><span class="pln">       </span><span class="typ">List</span><span class="pln"> source code around </span><span class="pun">[</span><span class="pln">line</span><span class="pun">].</span><span class="pln">
+                     line </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> means</span><span class="pun">:</span><span class="pln"> current position</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">l</span><span class="pun">]</span><span class="pln">list </span><span class="pun">[</span><span class="pln">line</span><span class="pun">]</span><span class="pln"> </span><span class="pun">[</span><span class="pln">ctx</span><span class="pun">]</span><span class="pln"> </span><span class="typ">In</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> form </span><span class="pun">[</span><span class="pln">ctx</span><span class="pun">]</span><span class="pln"> specifies how many lines
+                     to show before</span><span class="pun">/</span><span class="pln">after </span><span class="pun">[</span><span class="pln">line</span><span class="pun">].</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">w</span><span class="pun">]</span><span class="pln">hole              </span><span class="typ">List</span><span class="pln"> all source code</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Alias</span><span class="pln"> </span><span class="kwd">for</span><span class="pln"> </span><span class="str">'list 1 1000000'</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">p</span><span class="pun">]</span><span class="pln">rint              </span><span class="typ">Show</span><span class="pln"> all the </span><span class="kwd">local</span><span class="pln"> variables</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">p</span><span class="pun">]</span><span class="pln">rint </span><span class="str">&lt;var&gt;</span><span class="pln">        </span><span class="typ">Show</span><span class="pln"> the value of the specified variable</span><span class="pun">.</span><span class="pln">
+                     </span><span class="typ">Can</span><span class="pln"> also show </span><span class="kwd">global</span><span class="pln"> vars KEYS </span><span class="kwd">and</span><span class="pln"> ARGV</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">b</span><span class="pun">]</span><span class="pln">reak              </span><span class="typ">Show</span><span class="pln"> all breakpoints</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">b</span><span class="pun">]</span><span class="pln">reak </span><span class="str">&lt;line&gt;</span><span class="pln">       </span><span class="typ">Add</span><span class="pln"> a breakpoint to the specified line</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">b</span><span class="pun">]</span><span class="pln">reak </span><span class="pun">-&lt;</span><span class="pln">line</span><span class="pun">&gt;</span><span class="pln">      </span><span class="typ">Remove</span><span class="pln"> breakpoint </span><span class="kwd">from</span><span class="pln"> the specified line</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">b</span><span class="pun">]</span><span class="pln">reak </span><span class="lit">0</span><span class="pln">            </span><span class="typ">Remove</span><span class="pln"> all breakpoints</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">t</span><span class="pun">]</span><span class="pln">race              </span><span class="typ">Show</span><span class="pln"> a backtrace</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">e</span><span class="pun">]</span><span class="kwd">eval</span><span class="pln"> </span><span class="str">&lt;code&gt;</span><span class="pln">       </span><span class="typ">Execute</span><span class="pln"> some </span><span class="typ">Lua</span><span class="pln"> code </span><span class="pun">(</span><span class="kwd">in</span><span class="pln"> a different callframe</span><span class="pun">).</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">r</span><span class="pun">]</span><span class="pln">edis </span><span class="str">&lt;cmd&gt;</span><span class="pln">        </span><span class="typ">Execute</span><span class="pln"> a </span><span class="typ">Redis</span><span class="pln"> command</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">m</span><span class="pun">]</span><span class="pln">axlen </span><span class="pun">[</span><span class="pln">len</span><span class="pun">]</span><span class="pln">       </span><span class="typ">Trim</span><span class="pln"> logged </span><span class="typ">Redis</span><span class="pln"> replies </span><span class="kwd">and</span><span class="pln"> </span><span class="typ">Lua</span><span class="pln"> </span><span class="kwd">var</span><span class="pln"> dumps to len</span><span class="pun">.</span><span class="pln">
+                     </span><span class="typ">Specifying</span><span class="pln"> zero </span><span class="kwd">as</span><span class="pln"> </span><span class="str">&lt;len&gt;</span><span class="pln"> means unlimited</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">a</span><span class="pun">]</span><span class="pln">abort             </span><span class="typ">Stop</span><span class="pln"> the execution of the script</span><span class="pun">.</span><span class="pln"> </span><span class="typ">In</span><span class="pln"> sync
+                     mode dataset changes will be retained</span><span class="pun">.</span><span class="pln">
+
+</span><span class="typ">Debugger</span><span class="pln"> functions you can call </span><span class="kwd">from</span><span class="pln"> </span><span class="typ">Lua</span><span class="pln"> scripts</span><span class="pun">:</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">debug</span><span class="pun">()</span><span class="pln">        </span><span class="typ">Produce</span><span class="pln"> logs </span><span class="kwd">in</span><span class="pln"> the </span><span class="kwd">debugger</span><span class="pln"> console</span><span class="pun">.</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">breakpoint</span><span class="pun">()</span><span class="pln">   </span><span class="typ">Stop</span><span class="pln"> execution </span><span class="kwd">as</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> there was a breakpoint </span><span class="kwd">in</span><span class="pln"> the
+                     </span><span class="kwd">next</span><span class="pln"> line of code</span><span class="pun">.</span></code></pre><p>Note that when you start the debugger it will start in <strong>stepping mode</strong>. It will stop at the first line of the script that actually does something before executing it.</p><p>From this point you usually call <code>step</code> in order to execute the line and go to the next line. While you step Redis will show all the commands executed by the server like in the following example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">*</span><span class="pln"> </span><span class="typ">Stopped</span><span class="pln"> at </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> stop reason </span><span class="pun">=</span><span class="pln"> step over
+</span><span class="pun">-&gt;</span><span class="pln"> </span><span class="lit">1</span><span class="pln">   redis</span><span class="pun">.</span><span class="pln">call</span><span class="pun">(</span><span class="str">'ping'</span><span class="pun">)</span><span class="pln">
+lua </span><span class="kwd">debugger</span><span class="pun">&gt;</span><span class="pln"> step
+</span><span class="str">&lt;redis&gt;</span><span class="pln"> ping
+</span><span class="str">&lt;reply&gt;</span><span class="pln"> </span><span class="str">"+PONG"</span><span class="pln">
+</span><span class="pun">*</span><span class="pln"> </span><span class="typ">Stopped</span><span class="pln"> at </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> stop reason </span><span class="pun">=</span><span class="pln"> step over</span></code></pre><p>The <code>&lt;redis&gt;</code> and <code>&lt;reply&gt;</code> lines show the command executed by the line just
+executed, and the reply from the server. Note that this happens only in stepping mode. If you use <code>continue</code> in order to execute the script till the next breakpoint, commands will not be dumped on the screen to prevent too much output.</p><h2 id="redis-lua-scripts-debugger-termination-of-the-debugging-session">Termination of the debugging session</h2><p>When the scripts terminates naturally, the debugging session ends and
+<code>redis-cli</code> returns in its normal non-debugging mode. You can restart the
+session using the <code>restart</code> command as usually.</p><p>Another way to stop a debugging session is just interrupting <code>redis-cli</code>
+manually by pressing <code>Ctrl+C</code>. Note that also any event breaking the
+connection between <code>redis-cli</code> and the <code>redis-server</code> will interrupt the
+debugging session.</p><p>All the forked debugging sessions are terminated when the server is shut
+down.</p><h2 id="redis-lua-scripts-debugger-abbreviating-debugging-commands">Abbreviating debugging commands</h2><p>Debugging can be a very repetitive task. For this reason every Redis
+debugger command starts with a different character, and you can use the single
+initial character in order to refer to the command.</p><p>So for example instead of typing <code>step</code> you can just type <code>s</code>.</p><h2 id="redis-lua-scripts-debugger-breakpoints">Breakpoints</h2><p>Adding and removing breakpoints is trivial as described in the online help.
+Just use <code>b 1 2 3 4</code> to add a breakpoint in line 1, 2, 3, 4.
+The command <code>b 0</code> removes all the breakpoints. Selected breakpoints can be
+removed using as argument the line where the breakpoint we want to remove is, but prefixed by a minus sign. So for example <code>b -3</code> removes the breakpoint from line 3.</p><p>Note that adding breakpoints to lines that Lua never executes, like declaration of local variables or comments, will not work. The breakpoint will be added but since this part of the script will never be executed, the program will never stop.</p><h2 id="redis-lua-scripts-debugger-dynamic-breakpoints">Dynamic breakpoints</h2><p>Using the <code>breakpoint</code> command it is possible to add breakpoints into specific
+lines. However sometimes we want to stop the execution of the program only
+when something special happens. In order to do so, you can use the
+<code>redis.breakpoint()</code> function inside your Lua script. When called it simulates
+a breakpoint in the next line that will be executed.</p><pre><code class="prettyprint prettyprinted" style=""><span class="kwd">if</span><span class="pln"> counter </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> </span><span class="kwd">then</span><span class="pln"> redis</span><span class="pun">.</span><span class="pln">breakpoint</span><span class="pun">()</span><span class="pln"> </span><span class="kwd">end</span></code></pre><p>This feature is extremely useful when debugging, so that we can avoid to
+continue the script execution manually multiple times until a given condition
+is encountered.</p><h2 id="redis-lua-scripts-debugger-synchronous-mode">Synchronous mode</h2><p>As explained previously, but default LDB uses forked sessions with rollback
+of all the data changes operated by the script while it has being debugged.
+Determinism is usually a good thing to have during debugging, so that successive
+debugging sessions can be started without having to reset the database content
+to its original state.</p><p>However for tracking certain bugs, you may want to retain the changes performed
+to the key space by each debugging session. When this is a good idea you
+should start the debugger using a special option, <code>ldb-sync-mode</code>, in <code>redis-cli</code>.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">.</span><span class="str">/redis-cli --ldb-sync-mode --eval /</span><span class="pln">tmp</span><span class="pun">/</span><span class="pln">script</span><span class="pun">.</span><span class="pln">lua</span></code></pre><p><strong>Note that the Redis server will be unreachable during the debugging session in this mode</strong>, so use with care.</p><p>In this special mode, the <code>abort</code> command can stop the script half-way taking the changes operated to the dataset. Note that this is different compared to ending the debugging session normally. If you just interrupt <code>redis-cli</code> the script will be fully executed and then the session terminated. Instead with <code>abort</code> you can interrupt the script execution in the middle and start a new debugging session if needed.</p><h2 id="redis-lua-scripts-debugger-logging-from-scripts">Logging from scripts</h2><p>The <code>redis.debug()</code> command is a powerful debugging facility that can be
+called inside the Redis Lua script in order to log things into the debug
+console:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">lua </span><span class="kwd">debugger</span><span class="pun">&gt;</span><span class="pln"> list
+</span><span class="pun">-&gt;</span><span class="pln"> </span><span class="lit">1</span><span class="pln">   </span><span class="kwd">local</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">3</span><span class="pun">}</span><span class="pln">
+   </span><span class="lit">2</span><span class="pln">   </span><span class="kwd">local</span><span class="pln"> b </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">false</span><span class="pln">
+   </span><span class="lit">3</span><span class="pln">   redis</span><span class="pun">.</span><span class="pln">debug</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="pln">b</span><span class="pun">)</span><span class="pln">
+lua </span><span class="kwd">debugger</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">continue</span><span class="pln">
+</span><span class="str">&lt;debug&gt;</span><span class="pln"> line </span><span class="lit">3</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">;</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span><span class="pln"> </span><span class="lit">3</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">false</span></code></pre><p>If the script is executed outside of a debugging session, <code>redis.debug()</code> has no effects at all. Note that the function accepts multiple arguments, that are separated by a comma and a space in the output.</p><p>Tables and nested tables are displayed correctly in order to make values simple to observe for the programmer debugging the script.</p><h2 id="redis-lua-scripts-debugger-inspecting-the-program-state-with-print-and-eval">Inspecting the program state with <code>print</code> and <code>eval</code></h2><p>While the <code>redis.debug()</code> function can be used in order to print values
+directly from within the Lua script, often it is useful to observe the local
+variables of a program while stepping or when stopped into a breakpoint.</p><p>The <code>print</code> command does just that, and performs lookup in the call frames
+starting from the current one back to the previous ones, up to top-level.
+This means that even if we are into a nested function inside a Lua script,
+we can still use <code>print foo</code> to look at the value of <code>foo</code> in the context
+of the calling function. When called without a variable name, <code>print</code> will
+print all variables and their respective values.</p><p>The <code>eval</code> command executes small pieces of Lua scripts <strong>outside the context of the current call frame</strong> (evaluating inside the context of the current call frame is not possible with the current Lua internals). However you can use this command in order to test Lua functions.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">lua </span><span class="kwd">debugger</span><span class="pun">&gt;</span><span class="pln"> e redis</span><span class="pun">.</span><span class="pln">sha1hex</span><span class="pun">(</span><span class="str">'foo'</span><span class="pun">)</span><span class="pln">
+</span><span class="str">&lt;retval&gt;</span><span class="pln"> </span><span class="str">"0beec7b5ea3f0fdbc95d0dd47f3c5bc275da8a33"</span></code></pre><h2 id="redis-lua-scripts-debugger-debugging-clients">Debugging clients</h2><p>LDB uses the client-server model where the Redis servers acts as a debugging server that communicates using <a href="/topics/protocol">RESP</a>. While <code>redis-cli</code> is the default debug client, any <a href="/clients">client</a> can be used for debugging as long as it meets one of the following conditions:</p><ol>
+<li>The client provides a native interface for setting the debug mode and controlling the debug session.</li>
+<li>The client provides an interface for sending arbitrary commands over RESP.</li>
+<li>The client allows sending raw messages to the Redis server.</li>
+</ol><p>For example, the <a href="https://redislabs.com/blog/zerobrane-studio-plugin-for-redis-lua-scripts">Redis plugin</a> for <a href="http://studio.zerobrane.com/">ZeroBrane Studio</a> integrates with LDB using <a href="https://github.com/nrk/redis-lua">redis-lua</a>. The following Lua code is a simplified example of how the plugin achieves that:</p><pre><code class="lang-Lua prettyprint prettyprinted" style=""><span class="kwd">local</span><span class="pln"> redis </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pln"> </span><span class="string"><span class="str">'redis'</span></span><span class="pln">
+
+</span><span class="pun">--</span><span class="pln"> add LDB</span><span class="string"><span class="str">'s Continue command
+redis.commands['</span></span><span class="pln">ldbcontinue</span><span class="string"><span class="str">'] = redis.command('</span></span><span class="pln">C</span><span class="string"><span class="str">')
+
+-- script to be debugged
+local script = [[
+  local x, y = tonumber(ARGV[</span><span class="number"><span class="str">1</span></span><span class="str">]), tonumber(ARGV[</span><span class="number"><span class="str">2</span></span><span class="str">])
+  local result = x * y
+  return result
+]]
+
+local client = redis.connect('</span></span><span class="number"><span class="number"><span class="lit">127</span></span><span class="lit">.</span><span class="number"><span class="lit">0</span></span></span><span class="pun">.</span><span class="number"><span class="number"><span class="lit">0</span></span><span class="lit">.</span><span class="number"><span class="lit">1</span></span></span><span class="str">', </span><span class="number"><span class="str">6379</span></span><span class="str">)
+client:script(</span><span class="string"><span class="str">"DEBUG"</span></span><span class="str">, </span><span class="string"><span class="str">"YES"</span></span><span class="str">)
+print(unpack(client:eval(script, </span><span class="number"><span class="str">0</span></span><span class="str">, </span><span class="number"><span class="str">6</span></span><span class="str">, </span><span class="number"><span class="str">9</span></span><span class="str">)))
+client:ldbcontinue()</span></code></pre></div>
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/ldb.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/ldb.md">
+    <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+</div><!-- end ngIf: !index -->
+<!-- ngIf: index -->
+</div>
+
+ <script type="text/javascript" src="./docbase-config.js"></script>
+  <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>
+
+
+
+</body><script>$(function(){  $('.search-form').searchAppbase('./search-index.json', true); })</script></html>

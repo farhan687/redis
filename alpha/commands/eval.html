@@ -1,0 +1,1049 @@
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <base href="../../">
+  <title>Documentation</title>
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <!-- Flatdoc theme -->
+  <link href="./bower_components/flatdoc/theme-white/style.css" rel="stylesheet">
+  <script src="./bower_components/google-code-prettify/bin/prettify.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./bower_components/google-code-prettify/bin/prettify.min.css">
+  <link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- DocBase -->
+  <link rel="stylesheet" type="text/css" href="./bower_components/docbase/dist/css/main.min.css">
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="./styles/theme.css">
+  
+<script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc" class="no-literate">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a id="docs-appbase-logo" class="navbar-brand" ng-href="#/" href="#/">
+      <img src="./images/docbase.png">
+    </a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+      <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <a ng-href=./alpha/commands/index.html class="dropdown-toggle map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" href=./alpha/commands/index.html>commands</a>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/append.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/append.html>append</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/auth.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/auth.html>auth</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bgrewriteaof.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bgrewriteaof.html>bgrewriteaof</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bgsave.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bgsave.html>bgsave</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitcount.html>bitcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitop.html>bitop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/bitpos.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/bitpos.html>bitpos</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/blpop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/blpop.html>blpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/brpop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/brpop.html>brpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/brpoplpush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/brpoplpush.html>brpoplpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-getname.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-getname.html>client-getname</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-kill.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-kill.html>client-kill</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-list.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-list.html>client-list</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-pause.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-pause.html>client-pause</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-reply.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-reply.html>client-reply</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/client-setname.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/client-setname.html>client-setname</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-addslots.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-addslots.html>cluster-addslots</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-count-failure-reports.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-count-failure-reports.html>cluster-count-failure-reports</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-countkeysinslot.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-countkeysinslot.html>cluster-countkeysinslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-delslots.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-delslots.html>cluster-delslots</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-failover.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-failover.html>cluster-failover</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-forget.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-forget.html>cluster-forget</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-getkeysinslot.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-getkeysinslot.html>cluster-getkeysinslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-info.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-info.html>cluster-info</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-keyslot.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-keyslot.html>cluster-keyslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-meet.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-meet.html>cluster-meet</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-nodes.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-nodes.html>cluster-nodes</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-replicate.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-replicate.html>cluster-replicate</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-reset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-reset.html>cluster-reset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-saveconfig.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-saveconfig.html>cluster-saveconfig</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-set-config-epoch.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-set-config-epoch.html>cluster-set-config-epoch</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-setslot.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-setslot.html>cluster-setslot</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-slaves.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-slaves.html>cluster-slaves</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/cluster-slots.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/cluster-slots.html>cluster-slots</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/command-count.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/command-count.html>command-count</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/command-getkeys.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/command-getkeys.html>command-getkeys</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/command-info.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/command-info.html>command-info</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/command.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/command.html>command</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/config-get.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/config-get.html>config-get</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/config-resetstat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/config-resetstat.html>config-resetstat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/config-rewrite.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/config-rewrite.html>config-rewrite</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/config-set.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/config-set.html>config-set</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/dbsize.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/dbsize.html>dbsize</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/debug-object.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/debug-object.html>debug-object</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/debug-segfault.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/debug-segfault.html>debug-segfault</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/decr.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/decr.html>decr</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/decrby.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/decrby.html>decrby</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/del.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/del.html>del</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/discard.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/discard.html>discard</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/dump.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/dump.html>dump</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/echo.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/echo.html>echo</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/eval.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/eval.html>eval</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/evalsha.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/evalsha.html>evalsha</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/exec.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/exec.html>exec</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/exists.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/exists.html>exists</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/expire.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/expire.html>expire</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/expireat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/expireat.html>expireat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/flushall.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/flushall.html>flushall</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/flushdb.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/flushdb.html>flushdb</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geoadd.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geoadd.html>geoadd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geodecode.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geodecode.html>geodecode</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geodist.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geodist.html>geodist</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geoencode.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geoencode.html>geoencode</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geohash.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geohash.html>geohash</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/geopos.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/geopos.html>geopos</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/georadius.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/georadius.html>georadius</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/georadiusbymember.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/georadiusbymember.html>georadiusbymember</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/get.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/get.html>get</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/getbit.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/getbit.html>getbit</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/getrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/getrange.html>getrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/getset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/getset.html>getset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hdel.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hdel.html>hdel</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hexists.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hexists.html>hexists</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hget.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hget.html>hget</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hgetall.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hgetall.html>hgetall</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hincrby.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hincrby.html>hincrby</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hincrbyfloat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hincrbyfloat.html>hincrbyfloat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hkeys.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hkeys.html>hkeys</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hlen.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hlen.html>hlen</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hmget.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hmget.html>hmget</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hmset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hmset.html>hmset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hscan.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hscan.html>hscan</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hset.html>hset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hsetnx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hsetnx.html>hsetnx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hstrlen.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hstrlen.html>hstrlen</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/hvals.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/hvals.html>hvals</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/incr.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/incr.html>incr</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/incrby.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/incrby.html>incrby</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/incrbyfloat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/incrbyfloat.html>incrbyfloat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/info.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/info.html>info</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/keys.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/keys.html>keys</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lastsave.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lastsave.html>lastsave</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lindex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lindex.html>lindex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/linsert.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/linsert.html>linsert</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/llen.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/llen.html>llen</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lpop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lpop.html>lpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lpush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lpush.html>lpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lpushx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lpushx.html>lpushx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lrange.html>lrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lrem.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lrem.html>lrem</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/lset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/lset.html>lset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/ltrim.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/ltrim.html>ltrim</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/mget.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/mget.html>mget</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/migrate.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/migrate.html>migrate</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/monitor.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/monitor.html>monitor</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/move.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/move.html>move</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/mset.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/mset.html>mset</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/msetnx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/msetnx.html>msetnx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/multi.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/multi.html>multi</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/object.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/object.html>object</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/persist.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/persist.html>persist</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pexpire.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pexpire.html>pexpire</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pexpireat.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pexpireat.html>pexpireat</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pfadd.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pfadd.html>pfadd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pfcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pfcount.html>pfcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pfmerge.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pfmerge.html>pfmerge</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/ping.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/ping.html>ping</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/psetex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/psetex.html>psetex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/psubscribe.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/psubscribe.html>psubscribe</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pttl.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pttl.html>pttl</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/publish.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/publish.html>publish</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/pubsub.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/pubsub.html>pubsub</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/punsubscribe.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/punsubscribe.html>punsubscribe</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/quit.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/quit.html>quit</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/randomkey.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/randomkey.html>randomkey</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/readonly.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/readonly.html>readonly</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/readwrite.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/readwrite.html>readwrite</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rename.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rename.html>rename</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/renamenx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/renamenx.html>renamenx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/restore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/restore.html>restore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/role.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/role.html>role</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rpop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rpop.html>rpop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rpoplpush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rpoplpush.html>rpoplpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rpush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rpush.html>rpush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/rpushx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/rpushx.html>rpushx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sadd.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sadd.html>sadd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/save.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/save.html>save</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/scan.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/scan.html>scan</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/scard.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/scard.html>scard</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-debug.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-debug.html>script-debug</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-exists.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-exists.html>script-exists</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-flush.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-flush.html>script-flush</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-kill.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-kill.html>script-kill</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/script-load.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/script-load.html>script-load</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sdiff.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sdiff.html>sdiff</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sdiffstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sdiffstore.html>sdiffstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/select.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/select.html>select</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/set.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/set.html>set</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/setbit.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/setbit.html>setbit</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/setex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/setex.html>setex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/setnx.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/setnx.html>setnx</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/setrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/setrange.html>setrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/shutdown.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/shutdown.html>shutdown</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sinter.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sinter.html>sinter</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sinterstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sinterstore.html>sinterstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sismember.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sismember.html>sismember</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/slaveof.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/slaveof.html>slaveof</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/slowlog.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/slowlog.html>slowlog</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/smembers.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/smembers.html>smembers</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/smove.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/smove.html>smove</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sort.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sort.html>sort</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/spop.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/spop.html>spop</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/srandmember.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/srandmember.html>srandmember</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/srem.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/srem.html>srem</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sscan.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sscan.html>sscan</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/strlen.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/strlen.html>strlen</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/subscribe.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/subscribe.html>subscribe</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sunion.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sunion.html>sunion</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sunionstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sunionstore.html>sunionstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/sync.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/sync.html>sync</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/time.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/time.html>time</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/ttl.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/ttl.html>ttl</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/type.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/type.html>type</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/unsubscribe.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/unsubscribe.html>unsubscribe</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/unwatch.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/unwatch.html>unwatch</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/wait.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/wait.html>wait</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/watch.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/watch.html>watch</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zadd.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zadd.html>zadd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zcard.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zcard.html>zcard</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zcount.html>zcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zincrby.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zincrby.html>zincrby</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zinterstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zinterstore.html>zinterstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zlexcount.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zlexcount.html>zlexcount</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrange.html>zrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrangebylex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrangebylex.html>zrangebylex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrangebyscore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrangebyscore.html>zrangebyscore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrank.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrank.html>zrank</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrem.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrem.html>zrem</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zremrangebylex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zremrangebylex.html>zremrangebylex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zremrangebyrank.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zremrangebyrank.html>zremrangebyrank</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zremrangebyscore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zremrangebyscore.html>zremrangebyscore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrevrange.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrevrange.html>zrevrange</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrevrangebylex.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrevrangebylex.html>zrevrangebylex</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrevrangebyscore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrevrangebyscore.html>zrevrangebyscore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zrevrank.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zrevrank.html>zrevrank</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zscan.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zscan.html>zscan</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zscore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zscore.html>zscore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/commands/zunionstore.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/zunionstore.html>zunionstore</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
+            <a ng-href=./alpha/commands/index.html ng-bind="file.label" class="ng-binding" href=./alpha/commands/index.html>index</a>
+          </li><!-- end ngRepeat: file in folder.files -->
+        </ul>
+      </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <a ng-href=./alpha/topics/index.html class="dropdown-toggle map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" href=./alpha/topics/index.html>topics</a>
+        <ul class="dropdown-menu">
+          <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/admin.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/admin.html>admin</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/benchmarks.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/benchmarks.html>benchmarks</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/clients.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/clients.html>clients</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/cluster-spec.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/cluster-spec.html>cluster-spec</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/cluster-tutorial.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/cluster-tutorial.html>cluster-tutorial</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/config.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/config.html>config</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/data-types-intro.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/data-types-intro.html>data-types-intro</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/data-types.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/data-types.html>data-types</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/debugging.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/debugging.html>debugging</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/distlock.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/distlock.html>distlock</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/encryption.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/encryption.html>encryption</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/faq.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/faq.html>faq</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/indexes.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/indexes.html>indexes</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals-eventlib.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals-eventlib.html>internals-eventlib</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals-rediseventlib.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals-rediseventlib.html>internals-rediseventlib</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals-sds.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals-sds.html>internals-sds</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals-vm.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals-vm.html>internals-vm</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/internals.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/internals.html>internals</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/introduction.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/introduction.html>introduction</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/latency-monitor.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/latency-monitor.html>latency-monitor</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/latency.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/latency.html>latency</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/ldb.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/ldb.html>ldb</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/license.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/license.html>license</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/lru-cache.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/lru-cache.html>lru-cache</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/mass-insert.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/mass-insert.html>mass-insert</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/memory-optimization.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/memory-optimization.html>memory-optimization</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/notifications.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/notifications.html>notifications</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/partitioning.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/partitioning.html>partitioning</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/persistence.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/persistence.html>persistence</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/pipelining.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/pipelining.html>pipelining</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/problems.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/problems.html>problems</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/protocol.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/protocol.html>protocol</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/pubsub.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/pubsub.html>pubsub</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/quickstart.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/quickstart.html>quickstart</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/rdd-1.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/rdd-1.html>rdd-1</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/rdd-2.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/rdd-2.html>rdd-2</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/rdd.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/rdd.html>rdd</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/releases.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/releases.html>releases</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/replication.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/replication.html>replication</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/security.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/security.html>security</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sentinel-clients.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sentinel-clients.html>sentinel-clients</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sentinel-old.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sentinel-old.html>sentinel-old</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sentinel-spec.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sentinel-spec.html>sentinel-spec</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sentinel.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sentinel.html>sentinel</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/signals.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/signals.html>signals</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/sponsors.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/sponsors.html>sponsors</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/trademark.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/trademark.html>trademark</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/transactions.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/transactions.html>transactions</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/twitter-clone.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/twitter-clone.html>twitter-clone</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/virtual-memory.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/virtual-memory.html>virtual-memory</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+            <a ng-href=./alpha/topics/whos-using-redis.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/whos-using-redis.html>whos-using-redis</a>
+          </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
+            <a ng-href=./alpha/topics/index.html ng-bind="file.label" class="ng-binding" href=./alpha/topics/index.html>index</a>
+          </li><!-- end ngRepeat: file in folder.files -->
+        </ul>
+      </li><!-- end ngRepeat: folder in map[currentVersion] -->
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown search-dropdown">
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+      </li>
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+           <span ng-bind="currentVersion" class="ng-binding">alpha</span> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu version-switcher" role="menu">
+          <!-- ngRepeat: version in versions --><li ng-repeat="version in versions" class="ng-scope">
+            <a ng-href=./alpha/commands/append.html ng-bind="version" class="ng-binding" href=./alpha/commands/append.html>alpha</a>
+          </li><!-- end ngRepeat: version in versions -->
+        </ul>
+      </li>
+      <!-- ngIf: docbaseOptions.method == 'github' --><li class="github-star ng-scope" data-ng-if="docbaseOptions.method == 'github'">
+        <iframe src="https://ghbtns.com/github-btn.html?user=farhan687&amp;repo=redis&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+      </li><!-- end ngIf: docbaseOptions.method == 'github' -->
+      <!-- ngIf: docbaseOptions.method != 'github' -->
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+  <div class="menubar fixed">
+    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-introduction-to-eval-item" class="level-2"><a id="-introduction-to-eval-link" href="./alpha/commands/eval.html#-introduction-to-eval" class="level-2" pref="#-introduction-to-eval">Introduction to EVAL</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-conversion-between-lua-and-redis-data-types-item" class="level-2"><a id="-conversion-between-lua-and-redis-data-types-link" href="./alpha/commands/eval.html#-conversion-between-lua-and-redis-data-types" class="level-2" pref="#-conversion-between-lua-and-redis-data-types">Conversion between Lua and Redis data types</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-helper-functions-to-return-redis-types-item" class="level-2"><a id="-helper-functions-to-return-redis-types-link" href="./alpha/commands/eval.html#-helper-functions-to-return-redis-types" class="level-2" pref="#-helper-functions-to-return-redis-types">Helper functions to return Redis types</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-atomicity-of-scripts-item" class="level-2"><a id="-atomicity-of-scripts-link" href="./alpha/commands/eval.html#-atomicity-of-scripts" class="level-2" pref="#-atomicity-of-scripts">Atomicity of scripts</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-error-handling-item" class="level-2"><a id="-error-handling-link" href="./alpha/commands/eval.html#-error-handling" class="level-2" pref="#-error-handling">Error handling</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-bandwidth-and-evalsha-item" class="level-2"><a id="-bandwidth-and-evalsha-link" href="./alpha/commands/eval.html#-bandwidth-and-evalsha" class="level-2" pref="#-bandwidth-and-evalsha">Bandwidth and EVALSHA</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-script-cache-semantics-item" class="level-2"><a id="-script-cache-semantics-link" href="./alpha/commands/eval.html#-script-cache-semantics" class="level-2" pref="#-script-cache-semantics">Script cache semantics</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-the-script-command-item" class="level-2"><a id="-the-script-command-link" href="./alpha/commands/eval.html#-the-script-command" class="level-2" pref="#-the-script-command">The SCRIPT command</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-scripts-as-pure-functions-item" class="level-2"><a id="-scripts-as-pure-functions-link" href="./alpha/commands/eval.html#-scripts-as-pure-functions" class="level-2" pref="#-scripts-as-pure-functions">Scripts as pure functions</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-replicating-commands-instead-of-scripts-item" class="level-2"><a id="-replicating-commands-instead-of-scripts-link" href="./alpha/commands/eval.html#-replicating-commands-instead-of-scripts" class="level-2" pref="#-replicating-commands-instead-of-scripts">Replicating commands instead of scripts</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-selective-replication-of-commands-item" class="level-2"><a id="-selective-replication-of-commands-link" href="./alpha/commands/eval.html#-selective-replication-of-commands" class="level-2" pref="#-selective-replication-of-commands">Selective replication of commands</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-global-variables-protection-item" class="level-2"><a id="-global-variables-protection-link" href="./alpha/commands/eval.html#-global-variables-protection" class="level-2" pref="#-global-variables-protection">Global variables protection</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-using-select-inside-scripts-item" class="level-2"><a id="-using-select-inside-scripts-link" href="./alpha/commands/eval.html#-using-select-inside-scripts" class="level-2" pref="#-using-select-inside-scripts">Using SELECT inside scripts</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-available-libraries-item" class="level-2"><a id="-available-libraries-link" href="./alpha/commands/eval.html#-available-libraries" class="level-2" pref="#-available-libraries">Available libraries</a><ul class="level-3" id="-available-libraries-list"><li id="-available-libraries-struct-item" class="level-3"><a id="-available-libraries-struct-link" href="./alpha/commands/eval.html#-available-libraries-struct" class="level-3" pref="#-available-libraries-struct">struct</a></li><li id="-available-libraries-cjson-item" class="level-3"><a id="-available-libraries-cjson-link" href="./alpha/commands/eval.html#-available-libraries-cjson" class="level-3" pref="#-available-libraries-cjson">CJSON</a></li><li id="-available-libraries-cmsgpack-item" class="level-3"><a id="-available-libraries-cmsgpack-link" href="./alpha/commands/eval.html#-available-libraries-cmsgpack" class="level-3" pref="#-available-libraries-cmsgpack">cmsgpack</a></li><li id="-available-libraries-bitop-item" class="level-3"><a id="-available-libraries-bitop-link" href="./alpha/commands/eval.html#-available-libraries-bitop" class="level-3" pref="#-available-libraries-bitop">bitop</a></li><li id="-available-libraries-redissha1hex-item" class="level-3"><a id="-available-libraries-redissha1hex-link" href="./alpha/commands/eval.html#-available-libraries-redissha1hex" class="level-3" pref="#-available-libraries-redissha1hex">redis.sha1hex</a></li></ul></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-emitting-redis-logs-from-scripts-item" class="level-2"><a id="-emitting-redis-logs-from-scripts-link" href="./alpha/commands/eval.html#-emitting-redis-logs-from-scripts" class="level-2" pref="#-emitting-redis-logs-from-scripts">Emitting Redis logs from scripts</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-sandbox-and-maximum-execution-time-item" class="level-2"><a id="-sandbox-and-maximum-execution-time-link" href="./alpha/commands/eval.html#-sandbox-and-maximum-execution-time" class="level-2" pref="#-sandbox-and-maximum-execution-time">Sandbox and maximum execution time</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-evalsha-in-the-context-of-pipelining-item" class="level-2"><a id="-evalsha-in-the-context-of-pipelining-link" href="./alpha/commands/eval.html#-evalsha-in-the-context-of-pipelining" class="level-2" pref="#-evalsha-in-the-context-of-pipelining">EVALSHA in the context of pipelining</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-debugging-lua-scripts-item" class="level-2"><a id="-debugging-lua-scripts-link" href="./alpha/commands/eval.html#-debugging-lua-scripts" class="level-2" pref="#-debugging-lua-scripts">Debugging Lua scripts</a></li></ul></li></ul></li></ul></div>
+  </div>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h2 id="-introduction-to-eval">Introduction to EVAL</h2><p><code>EVAL</code> and <code>EVALSHA</code> are used to evaluate scripts using the Lua interpreter
+built into Redis starting from version 2.6.0.</p><p>The first argument of <code>EVAL</code> is a Lua 5.1 script.
+The script does not need to define a Lua function (and should not).
+It is just a Lua program that will run in the context of the Redis server.</p><p>The second argument of <code>EVAL</code> is the number of arguments that follows the script
+(starting from the third argument) that represent Redis key names.
+The arguments can be accessed by Lua using the <code>!KEYS</code> global variable in the
+form of a one-based array (so <code>KEYS[1]</code>, <code>KEYS[2]</code>, …).</p><p>All the additional arguments should not represent key names and can be accessed
+by Lua using the <code>ARGV</code> global variable, very similarly to what happens with
+keys (so <code>ARGV[1]</code>, <code>ARGV[2]</code>, …).</p><p>The following example should clarify what stated above:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return {KEYS[1],KEYS[2],ARGV[1],ARGV[2]}"</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> key1 key2 first second
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"key1"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"key2"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"first"</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"second"</span></code></pre><p>Note: as you can see Lua arrays are returned as Redis multi bulk replies, that
+is a Redis return type that your client library will likely convert into an
+Array type in your programming language.</p><p>It is possible to call Redis commands from a Lua script using two different Lua
+functions:</p><ul>
+<li><code>redis.call()</code></li>
+<li><code>redis.pcall()</code></li>
+</ul><p><code>redis.call()</code> is similar to <code>redis.pcall()</code>, the only difference is that if a
+Redis command call will result in an error, <code>redis.call()</code> will raise a Lua
+error that in turn will force <code>EVAL</code> to return an error to the command caller,
+while <code>redis.pcall</code> will trap the error and return a Lua table representing the
+error.</p><p>The arguments of the <code>redis.call()</code> and <code>redis.pcall()</code> functions are all
+the arguments of a well formed Redis command:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return redis.call('set','foo','bar')"</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+OK</span></code></pre><p>The above script sets the key <code>foo</code> to the string <code>bar</code>.
+However it violates the <code>EVAL</code> command semantics as all the keys that the script
+uses should be passed using the <code>!KEYS</code> array:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return redis.call('set',KEYS[1],'bar')"</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> foo
+OK</span></code></pre><p>All Redis commands must be analyzed before execution to determine which
+keys the command will operate on.  In order for this to be true for <code>EVAL</code>, keys must be passed explicitly.
+This is useful in many ways, but especially to make sure Redis Cluster
+can forward your request to the appropriate cluster node.</p><p>Note this rule is not enforced in order to provide the user with
+opportunities to abuse the Redis single instance configuration, at the cost of
+writing scripts not compatible with Redis Cluster.</p><p>Lua scripts can return a value that is converted from the Lua type to the Redis
+protocol using a set of conversion rules.</p><h2 id="-conversion-between-lua-and-redis-data-types">Conversion between Lua and Redis data types</h2><p>Redis return values are converted into Lua data types when Lua calls a Redis
+command using call() or pcall().
+Similarly Lua data types are converted into the Redis protocol when a Lua script
+returns a value, so that scripts can control what <code>EVAL</code> will return to the
+client.</p><p>This conversion between data types is designed in a way that if a Redis type is
+converted into a Lua type, and then the result is converted back into a Redis
+type, the result is the same as the initial value.</p><p>In other words there is a one-to-one conversion between Lua and Redis types.
+The following table shows you all the conversions rules:</p><p><strong>Redis to Lua</strong> conversion table.</p><ul>
+<li>Redis integer reply -&gt; Lua number</li>
+<li>Redis bulk reply -&gt; Lua string</li>
+<li>Redis multi bulk reply -&gt; Lua table (may have other Redis data types nested)</li>
+<li>Redis status reply -&gt; Lua table with a single <code>ok</code> field containing the status</li>
+<li>Redis error reply -&gt; Lua table with a single <code>err</code> field containing the error</li>
+<li>Redis Nil bulk reply and Nil multi bulk reply -&gt; Lua false boolean type</li>
+</ul><p><strong>Lua to Redis</strong> conversion table.</p><ul>
+<li>Lua number -&gt; Redis integer reply (the number is converted into an integer)</li>
+<li>Lua string -&gt; Redis bulk reply</li>
+<li>Lua table (array) -&gt; Redis multi bulk reply (truncated to the first nil inside the Lua array if any)</li>
+<li>Lua table with a single <code>ok</code> field -&gt; Redis status reply</li>
+<li>Lua table with a single <code>err</code> field -&gt; Redis error reply</li>
+<li>Lua boolean false -&gt; Redis Nil bulk reply.</li>
+</ul><p>There is an additional Lua-to-Redis conversion rule that has no corresponding
+Redis to Lua conversion rule:</p><ul>
+<li>Lua boolean true -&gt; Redis integer reply with value of 1.</li>
+</ul><p>Also there are two important rules to note:</p><ul>
+<li>Lua has a single numerical type, Lua numbers. There is no distinction between integers and floats. So we always convert Lua numbers into integer replies, removing the decimal part of the number if any. <strong>If you want to return a float from Lua you should return it as a string</strong>, exactly like Redis itself does (see for instance the <code>ZSCORE</code> command).</li>
+<li>There is <a href="http://www.lua.org/pil/19.1.html">no simple way to have nils inside Lua arrays</a>, this is a result of Lua table semantics, so when Redis converts a Lua array into Redis protocol the conversion is stopped if a nil is encountered.</li>
+</ul><p>Here are a few conversion examples:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return 10"</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">10</span><span class="pln">
+
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return {1,2,{3,'Hello World!'}}"</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+   </span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"Hello World!"</span><span class="pln">
+
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return redis.call('get','foo')"</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="str">"bar"</span></code></pre><p>The last example shows how it is possible to receive the exact return value of
+<code>redis.call()</code> or <code>redis.pcall()</code> from Lua that would be returned if the command
+was called directly.</p><p>In the following example we can see how floats and arrays with nils are handled:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return {1,2,3.3333,'foo',nil,'bar'}"</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">3</span><span class="pln">
+</span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"foo"</span></code></pre><p>As you can see 3.333 is converted into 3, and the <em>bar</em> string is never returned as there is a nil before.</p><h2 id="-helper-functions-to-return-redis-types">Helper functions to return Redis types</h2><p>There are two helper functions to return Redis types from Lua.</p><ul>
+<li><code>redis.error_reply(error_string)</code> returns an error reply. This function simply returns a single field table with the <code>err</code> field set to the specified string for you.</li>
+<li><code>redis.status_reply(status_string)</code> returns a status reply. This function simply returns a single field table with the <code>ok</code> field set to the specified string for you.</li>
+</ul><p>There is no difference between using the helper functions or directly returning the table with the specified format, so the following two forms are equivalent:</p><pre><code class="prettyprint prettyprinted" style=""><span class="kwd">return</span><span class="pln"> </span><span class="pun">{</span><span class="pln">err</span><span class="pun">=</span><span class="str">"My Error"</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">return</span><span class="pln"> redis</span><span class="pun">.</span><span class="pln">error_reply</span><span class="pun">(</span><span class="str">"My Error"</span><span class="pun">)</span></code></pre><h2 id="-atomicity-of-scripts">Atomicity of scripts</h2><p>Redis uses the same Lua interpreter to run all the commands.
+Also Redis guarantees that a script is executed in an atomic way: no other
+script or Redis command will be executed while a script is being executed.
+This semantic is similar to the one of <code>MULTI</code> / <code>EXEC</code>.
+From the point of view of all the other clients the effects of a script are
+either still not visible or already completed.</p><p>However this also means that executing slow scripts is not a good idea.
+It is not hard to create fast scripts, as the script overhead is very low, but
+if you are going to use slow scripts you should be aware that while the script
+is running no other client can execute commands.</p><h2 id="-error-handling">Error handling</h2><p>As already stated, calls to <code>redis.call()</code> resulting in a Redis command error
+will stop the execution of the script and return an error, in a way that
+makes it obvious that the error was generated by a script:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">del</span><span class="pln"> foo
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> lpush foo a
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return redis.call('get','foo')"</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">error</span><span class="pun">)</span><span class="pln"> ERR </span><span class="typ">Error</span><span class="pln"> running script </span><span class="pun">(</span><span class="pln">call to f_6b1bf486c81ceb7edf3c093f4c48582e38c0e791</span><span class="pun">):</span><span class="pln"> ERR </span><span class="typ">Operation</span><span class="pln"> against a key holding the wrong kind of value</span></code></pre><p>Using <code>redis.pcall()</code> no error is raised, but an error object is
+returned in the format specified above (as a Lua table with an <code>err</code> field).
+The script can pass the exact error to the user by returning the error object
+returned by <code>redis.pcall()</code>.</p><h2 id="-bandwidth-and-evalsha">Bandwidth and EVALSHA</h2><p>The <code>EVAL</code> command forces you to send the script body again and again.
+Redis does not need to recompile the script every time as it uses an internal
+caching mechanism, however paying the cost of the additional bandwidth may not
+be optimal in many contexts.</p><p>On the other hand, defining commands using a special command or via <code>redis.conf</code>
+would be a problem for a few reasons:</p><ul>
+<li><p>Different instances may have different implementations of a command.</p>
+</li>
+<li><p>Deployment is hard if we have to make sure all instances contain a
+given command, especially in a distributed environment.</p>
+</li>
+<li><p>Reading application code, the complete semantics might not be clear since the
+application calls commands defined server side.</p>
+</li>
+</ul><p>In order to avoid these problems while avoiding the bandwidth penalty, Redis
+implements the <code>EVALSHA</code> command.</p><p><code>EVALSHA</code> works exactly like <code>EVAL</code>, but instead of having a script as the first
+argument it has the SHA1 digest of a script.
+The behavior is the following:</p><ul>
+<li><p>If the server still remembers a script with a matching SHA1 digest, the
+script is executed.</p>
+</li>
+<li><p>If the server does not remember a script with this SHA1 digest, a special
+error is returned telling the client to use <code>EVAL</code> instead.</p>
+</li>
+</ul><p>Example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">set</span><span class="pln"> foo bar
+OK
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">"return redis.call('get','foo')"</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="str">"bar"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> evalsha </span><span class="lit">6b1bf486c81ceb7edf3c093f4c48582e38c0e791</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="str">"bar"</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> evalsha ffffffffffffffffffffffffffffffffffffffff </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">error</span><span class="pun">)</span><span class="pln"> </span><span class="str">`NOSCRIPT`</span><span class="pln"> </span><span class="typ">No</span><span class="pln"> matching script</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Please</span><span class="pln"> </span><span class="kwd">use</span><span class="pln"> </span><span class="str">`EVAL`</span><span class="pun">.</span></code></pre><p>The client library implementation can always optimistically send <code>EVALSHA</code> under
+the hood even when the client actually calls <code>EVAL</code>, in the hope the script was
+already seen by the server.
+If the <code>NOSCRIPT</code> error is returned <code>EVAL</code> will be used instead.</p><p>Passing keys and arguments as additional <code>EVAL</code> arguments is also very useful in
+this context as the script string remains constant and can be efficiently cached
+by Redis.</p><h2 id="-script-cache-semantics">Script cache semantics</h2><p>Executed scripts are guaranteed to be in the script cache of a given execution
+of a Redis instance forever. This means that if an <code>EVAL</code> is performed against a Redis instance all the subsequent <code>EVALSHA</code> calls will succeed.</p><p>The reason why scripts can be cached for long time is that it is unlikely for
+a well written application to have enough different scripts to cause memory
+problems. Every script is conceptually like the implementation of a new command, and even a large application will likely have just a few hundred of them.
+Even if the application is modified many times and scripts will change, the
+memory used is negligible.</p><p>The only way to flush the script cache is by explicitly calling the <code>SCRIPT FLUSH</code> command, which will <em>completely flush</em> the scripts cache removing all the
+scripts executed so far.</p><p>This is usually needed only when the instance is going to be instantiated for
+another customer or application in a cloud environment.</p><p>Also, as already mentioned, restarting a Redis instance flushes the
+script cache, which is not persistent. However from the point of view of the
+client there are only two ways to make sure a Redis instance was not restarted
+between two different commands.</p><ul>
+<li>The connection we have with the server is persistent and was never closed so far.</li>
+<li>The client explicitly checks the <code>runid</code> field in the <code>INFO</code> command in order to make sure the server was not restarted and is still the same process.</li>
+</ul><p>Practically speaking, for the client it is much better to simply assume that in the context of a given connection, cached scripts are guaranteed to be there
+unless an administrator explicitly called the <code>SCRIPT FLUSH</code> command.</p><p>The fact that the user can count on Redis not removing scripts is semantically
+useful in the context of pipelining.</p><p>For instance an application with a persistent connection to Redis can be sure
+that if a script was sent once it is still in memory, so EVALSHA can be used
+against those scripts in a pipeline without the chance of an error being
+generated due to an unknown script (we’ll see this problem in detail later).</p><p>A common pattern is to call <code>SCRIPT LOAD</code> to load all the scripts that will
+appear in a pipeline, then use <code>EVALSHA</code> directly inside the pipeline without
+any need to check for errors resulting from the script hash not being
+recognized.</p><h2 id="-the-script-command">The SCRIPT command</h2><p>Redis offers a SCRIPT command that can be used in order to control the scripting
+subsystem.
+SCRIPT currently accepts three different commands:</p><ul>
+<li><p><code>SCRIPT FLUSH</code></p>
+<p>This command is the only way to force Redis to flush the scripts cache.
+It is most useful in a cloud environment where the same instance can be
+reassigned to a different user.
+It is also useful for testing client libraries’ implementations of the
+scripting feature.</p>
+</li>
+<li><p><code>SCRIPT EXISTS sha1 sha2 ... shaN</code></p>
+<p>Given a list of SHA1 digests as arguments this command returns an array of
+1 or 0, where 1 means the specific SHA1 is recognized as a script already
+present in the scripting cache, while 0 means that a script with this SHA1
+was never seen before (or at least never seen after the latest SCRIPT FLUSH
+command).</p>
+</li>
+<li><p><code>SCRIPT LOAD script</code></p>
+<p>This command registers the specified script in the Redis script cache.
+The command is useful in all the contexts where we want to make sure that
+<code>EVALSHA</code> will not fail (for instance during a pipeline or MULTI/EXEC
+operation), without the need to actually execute the script.</p>
+</li>
+<li><p><code>SCRIPT KILL</code></p>
+<p>This command is the only way to interrupt a long-running script that reaches
+the configured maximum execution time for scripts.
+The SCRIPT KILL command can only be used with scripts that did not modify
+the dataset during their execution (since stopping a read-only script does
+not violate the scripting engine’s guaranteed atomicity).
+See the next sections for more information about long running scripts.</p>
+</li>
+</ul><h2 id="-scripts-as-pure-functions">Scripts as pure functions</h2><p>A very important part of scripting is writing scripts that are pure functions.
+Scripts executed in a Redis instance are, by default, replicated on slaves
+and into the AOF file by sending the script itself — not the resulting
+commands.</p><p>The reason is that sending a script to another Redis instance is often much
+faster than sending the multiple commands the script generates, so if the
+client is sending many scripts to the master, converting the scripts into
+individual commands for the slave / AOF would result in too much bandwidth
+for the replication link or the Append Only File (and also too much CPU since
+dispatching a command received via network is a lot more work for Redis compared
+to dispatching a command invoked by Lua scripts).</p><p>Normally replicating scripts instead of the effects of the scripts makes sense,
+however not in all the cases. So starting with Redis 3.2 (currently not stable),
+the scripting engine is able to, alternatively, replicate the sequence of write
+commands resulting from the script execution, instead of replication the
+script itself. See the next section for more information.
+In this section we’ll assume that scripts are replicated by sending the whole
+script. Let’s call this replication mode <strong>whole scripts replication</strong>.</p><p>The main drawback with the <em>whole scripts replication</em> approach is that scripts are required to have the following property:</p><ul>
+<li>The script must always evaluates the same Redis <em>write</em> commands with the
+same arguments given the same input data set.
+Operations performed by the script cannot depend on any hidden (non-explicit)
+information or state that may change as script execution proceeds or between
+different executions of the script, nor can it depend on any external input
+from I/O devices.</li>
+</ul><p>Things like using the system time, calling Redis random commands like
+<code>RANDOMKEY</code>, or using Lua random number generator, could result into scripts
+that will not always evaluate in the same way.</p><p>In order to enforce this behavior in scripts Redis does the following:</p><ul>
+<li>Lua does not export commands to access the system time or other external
+state.</li>
+<li>Redis will block the script with an error if a script calls a Redis
+command able to alter the data set <strong>after</strong> a Redis <em>random</em> command like
+<code>RANDOMKEY</code>, <code>SRANDMEMBER</code>, <code>TIME</code>.
+This means that if a script is read-only and does not modify the data set it
+is free to call those commands.
+Note that a <em>random command</em> does not necessarily mean a command that uses
+random numbers: any non-deterministic command is considered a random command
+(the best example in this regard is the <code>TIME</code> command).</li>
+<li>Redis commands that may return elements in random order, like <code>SMEMBERS</code>
+(because Redis Sets are <em>unordered</em>) have a different behavior when called
+from Lua, and undergo a silent lexicographical sorting filter before
+returning data to Lua scripts.
+So <code>redis.call("smembers",KEYS[1])</code> will always return the Set elements
+in the same order, while the same command invoked from normal clients may
+return different results even if the key contains exactly the same elements.</li>
+<li>Lua pseudo random number generation functions <code>math.random</code> and
+<code>math.randomseed</code> are modified in order to always have the same seed every
+time a new script is executed.
+This means that calling <code>math.random</code> will always generate the same sequence
+of numbers every time a script is executed if <code>math.randomseed</code> is not used.</li>
+</ul><p>However the user is still able to write commands with random behavior using the
+following simple trick.
+Imagine I want to write a Redis script that will populate a list with N random
+integers.</p><p>I can start with this small Ruby program:</p><pre><code class="prettyprint prettyprinted" style=""><span class="kwd">require</span><span class="pln"> </span><span class="str">'rubygems'</span><span class="pln">
+</span><span class="kwd">require</span><span class="pln"> </span><span class="str">'redis'</span><span class="pln">
+
+r </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Redis</span><span class="pun">.</span><span class="kwd">new</span><span class="pln">
+
+</span><span class="typ">RandomPushScript</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">&lt;&lt;</span><span class="pln">EOF
+    </span><span class="kwd">local</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> tonumber</span><span class="pun">(</span><span class="pln">ARGV</span><span class="pun">[</span><span class="lit">1</span><span class="pun">])</span><span class="pln">
+    </span><span class="kwd">local</span><span class="pln"> res
+    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">i </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">do</span><span class="pln">
+        res </span><span class="pun">=</span><span class="pln"> redis</span><span class="pun">.</span><span class="pln">call</span><span class="pun">(</span><span class="str">'lpush'</span><span class="pun">,</span><span class="pln">KEYS</span><span class="pun">[</span><span class="lit">1</span><span class="pun">],</span><span class="pln">math</span><span class="pun">.</span><span class="pln">random</span><span class="pun">())</span><span class="pln">
+        i </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+    </span><span class="kwd">end</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> res
+EOF
+
+r</span><span class="pun">.</span><span class="kwd">del</span><span class="pun">(:</span><span class="pln">mylist</span><span class="pun">)</span><span class="pln">
+puts r</span><span class="pun">.</span><span class="kwd">eval</span><span class="pun">(</span><span class="typ">RandomPushScript</span><span class="pun">,[:</span><span class="pln">mylist</span><span class="pun">],[</span><span class="lit">10</span><span class="pun">,</span><span class="pln">rand</span><span class="pun">(</span><span class="lit">2</span><span class="pun">**</span><span class="lit">32</span><span class="pun">)])</span></code></pre><p>Every time this script executed the resulting list will have exactly the
+following elements:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span><span class="pln"> lrange mylist </span><span class="lit">0</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+ </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.74509509873814"</span><span class="pln">
+ </span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.87390407681181"</span><span class="pln">
+ </span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.36876626981831"</span><span class="pln">
+ </span><span class="lit">4</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.6921941534114"</span><span class="pln">
+ </span><span class="lit">5</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.7857992587545"</span><span class="pln">
+ </span><span class="lit">6</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.57730350670279"</span><span class="pln">
+ </span><span class="lit">7</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.87046522734243"</span><span class="pln">
+ </span><span class="lit">8</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.09637165539729"</span><span class="pln">
+ </span><span class="lit">9</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.74990198051087"</span><span class="pln">
+</span><span class="lit">10</span><span class="pun">)</span><span class="pln"> </span><span class="str">"0.17082803611217"</span></code></pre><p>In order to make it a pure function, but still be sure that every invocation
+of the script will result in different random elements, we can simply add an
+additional argument to the script that will be used in order to seed the Lua
+pseudo-random number generator.
+The new script is as follows:</p><pre><code class="prettyprint prettyprinted" style=""><span class="typ">RandomPushScript</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">&lt;&lt;</span><span class="pln">EOF
+    </span><span class="kwd">local</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> tonumber</span><span class="pun">(</span><span class="pln">ARGV</span><span class="pun">[</span><span class="lit">1</span><span class="pun">])</span><span class="pln">
+    </span><span class="kwd">local</span><span class="pln"> res
+    math</span><span class="pun">.</span><span class="pln">randomseed</span><span class="pun">(</span><span class="pln">tonumber</span><span class="pun">(</span><span class="pln">ARGV</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]))</span><span class="pln">
+    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">i </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">do</span><span class="pln">
+        res </span><span class="pun">=</span><span class="pln"> redis</span><span class="pun">.</span><span class="pln">call</span><span class="pun">(</span><span class="str">'lpush'</span><span class="pun">,</span><span class="pln">KEYS</span><span class="pun">[</span><span class="lit">1</span><span class="pun">],</span><span class="pln">math</span><span class="pun">.</span><span class="pln">random</span><span class="pun">())</span><span class="pln">
+        i </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">-</span><span class="lit">1</span><span class="pln">
+    </span><span class="kwd">end</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> res
+EOF
+
+r</span><span class="pun">.</span><span class="kwd">del</span><span class="pun">(:</span><span class="pln">mylist</span><span class="pun">)</span><span class="pln">
+puts r</span><span class="pun">.</span><span class="kwd">eval</span><span class="pun">(</span><span class="typ">RandomPushScript</span><span class="pun">,</span><span class="lit">1</span><span class="pun">,:</span><span class="pln">mylist</span><span class="pun">,</span><span class="lit">10</span><span class="pun">,</span><span class="pln">rand</span><span class="pun">(</span><span class="lit">2</span><span class="pun">**</span><span class="lit">32</span><span class="pun">))</span></code></pre><p>What we are doing here is sending the seed of the PRNG as one of the arguments.
+This way the script output will be the same given the same arguments, but we are
+changing one of the arguments in every invocation, generating the random seed
+client-side.
+The seed will be propagated as one of the arguments both in the replication
+link and in the Append Only File, guaranteeing that the same changes will be
+generated when the AOF is reloaded or when the slave processes the script.</p><p>Note: an important part of this behavior is that the PRNG that Redis implements
+as <code>math.random</code> and <code>math.randomseed</code> is guaranteed to have the same output
+regardless of the architecture of the system running Redis.
+32-bit, 64-bit, big-endian and little-endian systems will all produce the same
+output.</p><h2 id="-replicating-commands-instead-of-scripts">Replicating commands instead of scripts</h2><p>Starting with Redis 3.2 (not yet stable) it is possible to select an
+alternative replication method. Instead of replication whole scripts, we
+can just replicate single write commands generated by the script.
+We call this <strong>script effects replication</strong>.</p><p>In this replication mode, while Lua scripts are executed, Redis collects
+all the commands executed by the Lua scripting engine that actually modify
+the dataset. When the script execution finishes, the sequence of commands
+that the script generated are wrapped into a MULTI / EXEC transaction and
+are sent to slaves and AOF.</p><p>This is useful in several ways depending on the use case:</p><ul>
+<li>When the script is slow to compute, but the effects can be summarized by
+a few write commands, it is a shame to re-compute the script on the slaves
+or when reloading the AOF. In this case to replicate just the effect of the
+script is much better.</li>
+<li>When script effects replication is enabled, the controls about non
+deterministic functions are disabled. You can, for example, use the <code>TIME</code>
+or <code>SRANDMEMBER</code> commands inside your scripts freely at any place.</li>
+<li>The Lua PRNG in this mode is seeded randomly at every call.</li>
+</ul><p>In order to enable script effects replication, you need to issue the
+following Lua command before any write operated by the script:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">redis</span><span class="pun">.</span><span class="pln">replicate_commands</span><span class="pun">()</span></code></pre><p>The function returns true if the script effects replication was enabled,
+otherwise if the function was called after the script already called
+some write command, it returns false, and normal whole script replication
+is used.</p><h2 id="-selective-replication-of-commands">Selective replication of commands</h2><p>When script effects replication is selected (see the previous section), it
+is possible to have more control in the way commands are replicated to slaves
+and AOF. This is a very advanced feature since <strong>a misuse can do damage</strong> by
+breaking the contract that the master, slaves, and AOF, all must contain the
+same logical content.</p><p>However this is a useful feature since, sometimes, we need to execute certain
+commands only in the master in order to create, for example, intermediate
+values.</p><p>Think at a Lua script where we perform an intersection between two sets.
+Pick five random elements, and create a new set with this five random
+elements. Finally we delete the temporary key representing the intersection
+between the two original sets. What we want to replicate is only the creation
+of the new set with the five elements. It’s not useful to also replicate the
+commands creating the temporary key.</p><p>For this reason, Redis 3.2 introduces a new command that only works when
+script effects replication is enabled, and is able to control the scripting
+replication engine. The command is called <code>redis.set_repl()</code> and fails raising
+an error if called when script effects replication is disabled.</p><p>The command can be called with four different arguments:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">redis</span><span class="pun">.</span><span class="pln">set_repl</span><span class="pun">(</span><span class="pln">redis</span><span class="pun">.</span><span class="pln">REPL_ALL</span><span class="pun">)</span><span class="pln"> </span><span class="pun">--</span><span class="pln"> </span><span class="typ">Replicte</span><span class="pln"> to AOF </span><span class="kwd">and</span><span class="pln"> slaves</span><span class="pun">.</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">set_repl</span><span class="pun">(</span><span class="pln">redis</span><span class="pun">.</span><span class="pln">REPL_AOF</span><span class="pun">)</span><span class="pln"> </span><span class="pun">--</span><span class="pln"> </span><span class="typ">Replicte</span><span class="pln"> only to AOF</span><span class="pun">.</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">set_repl</span><span class="pun">(</span><span class="pln">redis</span><span class="pun">.</span><span class="pln">REPL_SLAVE</span><span class="pun">)</span><span class="pln"> </span><span class="pun">--</span><span class="pln"> </span><span class="typ">Replicte</span><span class="pln"> only to slaves</span><span class="pun">.</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">set_repl</span><span class="pun">(</span><span class="pln">redis</span><span class="pun">.</span><span class="pln">REPL_NONE</span><span class="pun">)</span><span class="pln"> </span><span class="pun">--</span><span class="pln"> </span><span class="typ">Don</span><span class="str">'t replicate at all.</span></code></pre><p>By default the scripting engine is always set to <code>REPL_ALL</code>. By calling
+this function the user can switch on/off AOF and or slaves replication, and
+turn them back later at her/his wish.</p><p>A simple example follows:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">redis</span><span class="pun">.</span><span class="pln">replicate_commands</span><span class="pun">()</span><span class="pln"> </span><span class="pun">--</span><span class="pln"> </span><span class="typ">Enable</span><span class="pln"> effects replication</span><span class="pun">.</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">call</span><span class="pun">(</span><span class="str">'set'</span><span class="pun">,</span><span class="str">'A'</span><span class="pun">,</span><span class="str">'1'</span><span class="pun">)</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">set_repl</span><span class="pun">(</span><span class="pln">redis</span><span class="pun">.</span><span class="pln">REPL_NONE</span><span class="pun">)</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">call</span><span class="pun">(</span><span class="str">'set'</span><span class="pun">,</span><span class="str">'B'</span><span class="pun">,</span><span class="str">'2'</span><span class="pun">)</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">set_repl</span><span class="pun">(</span><span class="pln">redis</span><span class="pun">.</span><span class="pln">REPL_ALL</span><span class="pun">)</span><span class="pln">
+redis</span><span class="pun">.</span><span class="pln">call</span><span class="pun">(</span><span class="str">'set'</span><span class="pun">,</span><span class="str">'C'</span><span class="pun">,</span><span class="str">'3'</span><span class="pun">)</span></code></pre><p>After running the above script, the result is that only keys A and C
+will be created on slaves and AOF.</p><h2 id="-global-variables-protection">Global variables protection</h2><p>Redis scripts are not allowed to create global variables, in order to avoid
+leaking data into the Lua state.
+If a script needs to maintain state between calls (a pretty uncommon need) it
+should use Redis keys instead.</p><p>When global variable access is attempted the script is terminated and EVAL
+returns with an error:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">redis </span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'a=10'</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">error</span><span class="pun">)</span><span class="pln"> ERR </span><span class="typ">Error</span><span class="pln"> running script </span><span class="pun">(</span><span class="pln">call to f_933044db579a2f8fd45d8065f04a8d0249383e57</span><span class="pun">):</span><span class="pln"> user_script</span><span class="pun">:</span><span class="lit">1</span><span class="pun">:</span><span class="pln"> </span><span class="typ">Script</span><span class="pln"> attempted to create </span><span class="kwd">global</span><span class="pln"> variable </span><span class="str">'a'</span></code></pre><p>Accessing a <em>non existing</em> global variable generates a similar error.</p><p>Using Lua debugging functionality or other approaches like altering the meta
+table used to implement global protections in order to circumvent globals
+protection is not hard.
+However it is difficult to do it accidentally.
+If the user messes with the Lua global state, the consistency of AOF and
+replication is not guaranteed: don’t do it.</p><p>Note for Lua newbies: in order to avoid using global variables in your scripts
+simply declare every variable you are going to use using the <em>local</em> keyword.</p><h2 id="-using-select-inside-scripts">Using SELECT inside scripts</h2><p>It is possible to call <code>SELECT</code> inside Lua scripts like with normal clients,
+However one subtle aspect of the behavior changes between Redis 2.8.11 and
+Redis 2.8.12. Before the 2.8.12 release the database selected by the Lua
+script was <em>transferred</em> to the calling script as current database.
+Starting from Redis 2.8.12 the database selected by the Lua script only
+affects the execution of the script itself, but does not modify the database
+selected by the client calling the script.</p><p>The semantic change between patch level releases was needed since the old
+behavior was inherently incompatible with the Redis replication layer and
+was the cause of bugs.</p><h2 id="-available-libraries">Available libraries</h2><p>The Redis Lua interpreter loads the following Lua libraries:</p><ul>
+<li><code>base</code> lib.</li>
+<li><code>table</code> lib.</li>
+<li><code>string</code> lib.</li>
+<li><code>math</code> lib.</li>
+<li><code>struct</code> lib.</li>
+<li><code>cjson</code> lib.</li>
+<li><code>cmsgpack</code> lib.</li>
+<li><code>bitop</code> lib.</li>
+<li><code>redis.sha1hex</code> function.</li>
+<li><code>redis.breakpoint and redis.debug</code> function in the context of the <a href="/topics/ldb">Redis Lua debugger</a>.</li>
+</ul><p>Every Redis instance is <em>guaranteed</em> to have all the above libraries so you can
+be sure that the environment for your Redis scripts is always the same.</p><p>struct, CJSON and cmsgpack are external libraries, all the other libraries are standard
+Lua libraries.</p><h3 id="-available-libraries-struct">struct</h3><p>struct is a library for packing/unpacking structures within Lua.</p><pre><code class="prettyprint prettyprinted" style=""><span class="typ">Valid</span><span class="pln"> formats</span><span class="pun">:</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> big endian
+</span><span class="pun">&lt;</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> little endian
+</span><span class="pun">![</span><span class="pln">num</span><span class="pun">]</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> alignment
+x </span><span class="pun">-</span><span class="pln"> pading
+b</span><span class="pun">/</span><span class="pln">B </span><span class="pun">-</span><span class="pln"> </span><span class="kwd">signed</span><span class="pun">/</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">byte</span><span class="pln">
+h</span><span class="pun">/</span><span class="pln">H </span><span class="pun">-</span><span class="pln"> </span><span class="kwd">signed</span><span class="pun">/</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">short</span><span class="pln">
+l</span><span class="pun">/</span><span class="pln">L </span><span class="pun">-</span><span class="pln"> </span><span class="kwd">signed</span><span class="pun">/</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">long</span><span class="pln">
+T   </span><span class="pun">-</span><span class="pln"> </span><span class="typ">size_t</span><span class="pln">
+i</span><span class="pun">/</span><span class="typ">In</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> </span><span class="kwd">signed</span><span class="pun">/</span><span class="kwd">unsigned</span><span class="pln"> integer </span><span class="kwd">with</span><span class="pln"> size </span><span class="str">`n' (default is size of int)
+cn - sequence of `</span><span class="pln">n</span><span class="str">' chars (from/to a string); when packing, n==0 means
+     the whole string; when unpacking, n==0 means use the previous
+     read number as the string length
+s - zero-terminated string
+f - float
+d - double
+'</span><span class="pln"> </span><span class="str">' - ignored</span></code></pre><p>Example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return struct.pack("HH", 1, 2)'</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="str">"\x01\x00\x02\x00"</span><span class="pln">
+</span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return {struct.unpack("HH", ARGV[1])}'</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"\x01\x00\x02\x00"</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">5</span><span class="pln">
+</span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return struct.size("HH")'</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">4</span></code></pre><h3 id="-available-libraries-cjson">CJSON</h3><p>The CJSON library provides extremely fast JSON manipulation within Lua.</p><p>Example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">redis </span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return cjson.encode({["foo"]= "bar"})'</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="str">"{\"foo\":\"bar\"}"</span><span class="pln">
+redis </span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return cjson.decode(ARGV[1])["foo"]'</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"{\"foo\":\"bar\"}"</span><span class="pln">
+</span><span class="str">"bar"</span></code></pre><h3 id="-available-libraries-cmsgpack">cmsgpack</h3><p>The cmsgpack library provides simple and fast MessagePack manipulation within Lua.</p><p>Example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return cmsgpack.pack({"foo", "bar", "baz"})'</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="str">"\x93\xa3foo\xa3bar\xa3baz"</span><span class="pln">
+</span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return cmsgpack.unpack(ARGV[1])'</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"\x93\xa3foo\xa3bar\xa3baz"</span><span class="pln">
+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="str">"foo"</span><span class="pln">
+</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="str">"bar"</span><span class="pln">
+</span><span class="lit">3</span><span class="pun">)</span><span class="pln"> </span><span class="str">"baz"</span></code></pre><h3 id="-available-libraries-bitop">bitop</h3><p>The Lua Bit Operations Module adds bitwise operations on numbers.
+It is available for scripting in Redis since version 2.8.18.</p><p>Example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return bit.tobit(1)'</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+</span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return bit.bor(1,2,4,8,16,32,64,128)'</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">255</span><span class="pln">
+</span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return bit.tohex(422342)'</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
+</span><span class="str">"000671c6"</span></code></pre><p>It supports several other functions:
+<code>bit.tobit</code>, <code>bit.tohex</code>, <code>bit.bnot</code>, <code>bit.band</code>, <code>bit.bor</code>, <code>bit.bxor</code>,
+<code>bit.lshift</code>, <code>bit.rshift</code>, <code>bit.arshift</code>, <code>bit.rol</code>, <code>bit.ror</code>, <code>bit.bswap</code>.
+All available functions are documented in the <a href="http://bitop.luajit.org/api.html">Lua BitOp documentation</a></p><h3 id="-available-libraries-redissha1hex"><code>redis.sha1hex</code></h3><p>Perform the SHA1 of the input string.</p><p>Example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">:</span><span class="lit">6379</span><span class="pun">&gt;</span><span class="pln"> </span><span class="kwd">eval</span><span class="pln"> </span><span class="str">'return redis.sha1hex(ARGV[1])'</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="str">"foo"</span><span class="pln">
+</span><span class="str">"0beec7b5ea3f0fdbc95d0dd47f3c5bc275da8a33"</span></code></pre><h2 id="-emitting-redis-logs-from-scripts">Emitting Redis logs from scripts</h2><p>It is possible to write to the Redis log file from Lua scripts using the
+<code>redis.log</code> function.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">redis</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">loglevel</span><span class="pun">,</span><span class="pln">message</span><span class="pun">)</span></code></pre><p><code>loglevel</code> is one of:</p><ul>
+<li><code>redis.LOG_DEBUG</code></li>
+<li><code>redis.LOG_VERBOSE</code></li>
+<li><code>redis.LOG_NOTICE</code></li>
+<li><code>redis.LOG_WARNING</code></li>
+</ul><p>They correspond directly to the normal Redis log levels.
+Only logs emitted by scripting using a log level that is equal or greater than
+the currently configured Redis instance log level will be emitted.</p><p>The <code>message</code> argument is simply a string.
+Example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">redis</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="pln">redis</span><span class="pun">.</span><span class="pln">LOG_WARNING</span><span class="pun">,</span><span class="str">"Something is wrong with this script."</span><span class="pun">)</span></code></pre><p>Will generate the following:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">[</span><span class="lit">32343</span><span class="pun">]</span><span class="pln"> </span><span class="lit">22</span><span class="pln"> </span><span class="typ">Mar</span><span class="pln"> </span><span class="lit">15</span><span class="pun">:</span><span class="lit">21</span><span class="pun">:</span><span class="lit">39</span><span class="pln"> </span><span class="com"># Something is wrong with this script.</span></code></pre><h2 id="-sandbox-and-maximum-execution-time">Sandbox and maximum execution time</h2><p>Scripts should never try to access the external system, like the file system or
+any other system call.
+A script should only operate on Redis data and passed arguments.</p><p>Scripts are also subject to a maximum execution time (five seconds by default).
+This default timeout is huge since a script should usually run in under a
+millisecond.
+The limit is mostly to handle accidental infinite loops created during
+development.</p><p>It is possible to modify the maximum time a script can be executed with
+millisecond precision, either via <code>redis.conf</code> or using the CONFIG GET / CONFIG
+SET command.
+The configuration parameter affecting max execution time is called
+<code>lua-time-limit</code>.</p><p>When a script reaches the timeout it is not automatically terminated by Redis
+since this violates the contract Redis has with the scripting engine to ensure
+that scripts are atomic.
+Interrupting a script means potentially leaving the dataset with half-written
+data.
+For this reasons when a script executes for more than the specified time the
+following happens:</p><ul>
+<li>Redis logs that a script is running too long.</li>
+<li>It starts accepting commands again from other clients, but will reply with a
+BUSY error to all the clients sending normal commands.
+The only allowed commands in this status are <code>SCRIPT KILL</code> and <code>SHUTDOWN
+NOSAVE</code>.</li>
+<li>It is possible to terminate a script that executes only read-only commands
+using the <code>SCRIPT KILL</code> command.
+This does not violate the scripting semantic as no data was yet written to the
+dataset by the script.</li>
+<li>If the script already called write commands the only allowed command becomes
+<code>SHUTDOWN NOSAVE</code> that stops the server without saving the current data set on
+disk (basically the server is aborted).</li>
+</ul><h2 id="-evalsha-in-the-context-of-pipelining">EVALSHA in the context of pipelining</h2><p>Care should be taken when executing <code>EVALSHA</code> in the context of a pipelined
+request, since even in a pipeline the order of execution of commands must be
+guaranteed.
+If <code>EVALSHA</code> will return a <code>NOSCRIPT</code> error the command can not be reissued
+later otherwise the order of execution is violated.</p><p>The client library implementation should take one of the following approaches:</p><ul>
+<li><p>Always use plain <code>EVAL</code> when in the context of a pipeline.</p>
+</li>
+<li><p>Accumulate all the commands to send into the pipeline, then check for <code>EVAL</code>
+commands and use the <code>SCRIPT EXISTS</code> command to check if all the scripts are
+already defined.
+If not, add <code>SCRIPT LOAD</code> commands on top of the pipeline as required, and
+use <code>EVALSHA</code> for all the <code>EVAL</code> calls.</p>
+</li>
+</ul><h2 id="-debugging-lua-scripts">Debugging Lua scripts</h2><p>Starting with Redis 3.2 (currently in beta), Redis has support for native
+Lua debugging. The Redis Lua debugger is a remote debugger consisting of
+a server, which is Redis itself, and a client, which is by default <code>redis-cli</code>.</p><p>The Lua debugger is described in the <a href="/topics/ldb">Lua scripts debugging</a> section of the Redis documentation.</p></div>
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/eval.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/eval.md">
+    <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+</div><!-- end ngIf: !index -->
+<!-- ngIf: index -->
+</div>
+
+ <script type="text/javascript" src="./docbase-config.js"></script>
+  <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>
+
+
+
+</body><script>$(function(){  $('.search-form').searchAppbase('./search-index.json', true); })</script></html>
