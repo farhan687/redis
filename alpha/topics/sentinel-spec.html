@@ -550,7 +550,7 @@
 
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown search-dropdown">
-        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
       </li>
       <li class="dropdown">
         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -572,380 +572,240 @@
 </nav>
 <!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
   <div class="menubar fixed">
-    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="how-fast-is-redis-item" class="level-1"><a id="how-fast-is-redis-link" href="./alpha/topics/benchmarks.html#how-fast-is-redis" class="level-1" pref="#how-fast-is-redis">How fast is Redis?</a><ul class="level-2" id="how-fast-is-redis-list"><li id="how-fast-is-redis-running-only-a-subset-of-the-tests-item" class="level-2"><a id="how-fast-is-redis-running-only-a-subset-of-the-tests-link" href="./alpha/topics/benchmarks.html#how-fast-is-redis-running-only-a-subset-of-the-tests" class="level-2" pref="#how-fast-is-redis-running-only-a-subset-of-the-tests">Running only a subset of the tests</a></li><li id="how-fast-is-redis-selecting-the-size-of-the-key-space-item" class="level-2"><a id="how-fast-is-redis-selecting-the-size-of-the-key-space-link" href="./alpha/topics/benchmarks.html#how-fast-is-redis-selecting-the-size-of-the-key-space" class="level-2" pref="#how-fast-is-redis-selecting-the-size-of-the-key-space">Selecting the size of the key space</a></li><li id="how-fast-is-redis-using-pipelining-item" class="level-2"><a id="how-fast-is-redis-using-pipelining-link" href="./alpha/topics/benchmarks.html#how-fast-is-redis-using-pipelining" class="level-2" pref="#how-fast-is-redis-using-pipelining">Using pipelining</a></li><li id="how-fast-is-redis-pitfalls-and-misconceptions-item" class="level-2"><a id="how-fast-is-redis-pitfalls-and-misconceptions-link" href="./alpha/topics/benchmarks.html#how-fast-is-redis-pitfalls-and-misconceptions" class="level-2" pref="#how-fast-is-redis-pitfalls-and-misconceptions">Pitfalls and misconceptions</a></li><li id="how-fast-is-redis-factors-impacting-redis-performance-item" class="level-2"><a id="how-fast-is-redis-factors-impacting-redis-performance-link" href="./alpha/topics/benchmarks.html#how-fast-is-redis-factors-impacting-redis-performance" class="level-2" pref="#how-fast-is-redis-factors-impacting-redis-performance">Factors impacting Redis performance</a></li><li id="how-fast-is-redis-other-things-to-consider-item" class="level-2"><a id="how-fast-is-redis-other-things-to-consider-link" href="./alpha/topics/benchmarks.html#how-fast-is-redis-other-things-to-consider" class="level-2" pref="#how-fast-is-redis-other-things-to-consider">Other things to consider</a></li></ul></li><li id="benchmark-results-on-different-virtualized-and-bare-metal-servers-item" class="level-1"><a id="benchmark-results-on-different-virtualized-and-bare-metal-servers-link" href="./alpha/topics/benchmarks.html#benchmark-results-on-different-virtualized-and-bare-metal-servers" class="level-1" pref="#benchmark-results-on-different-virtualized-and-bare-metal-servers">Benchmark results on different virtualized and bare-metal servers.</a><ul class="level-2" id="benchmark-results-on-different-virtualized-and-bare-metal-servers-list"><li id="benchmark-results-on-different-virtualized-and-bare-metal-servers-more-detailed-tests-without-pipelining-item" class="level-2"><a id="benchmark-results-on-different-virtualized-and-bare-metal-servers-more-detailed-tests-without-pipelining-link" href="./alpha/topics/benchmarks.html#benchmark-results-on-different-virtualized-and-bare-metal-servers-more-detailed-tests-without-pipelining" class="level-2" pref="#benchmark-results-on-different-virtualized-and-bare-metal-servers-more-detailed-tests-without-pipelining">More detailed tests without pipelining</a></li></ul></li><li id="example-of-benchmark-results-with-optimized-high-end-server-hardware-item" class="level-1"><a id="example-of-benchmark-results-with-optimized-high-end-server-hardware-link" href="./alpha/topics/benchmarks.html#example-of-benchmark-results-with-optimized-high-end-server-hardware" class="level-1" pref="#example-of-benchmark-results-with-optimized-high-end-server-hardware">Example of benchmark results with optimized high-end server hardware</a></li></ul></li></ul></div>
+    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="redis-sentinel-design-draft-13-item" class="level-1"><a id="redis-sentinel-design-draft-13-link" href="./alpha/topics/sentinel-spec.html#redis-sentinel-design-draft-13" class="level-1" pref="#redis-sentinel-design-draft-13">Redis Sentinel design draft 1.3</a></li><li id="introduction-item" class="level-1"><a id="introduction-link" href="./alpha/topics/sentinel-spec.html#introduction" class="level-1" pref="#introduction">Introduction</a></li><li id="redis-sentinel-idea-item" class="level-1"><a id="redis-sentinel-idea-link" href="./alpha/topics/sentinel-spec.html#redis-sentinel-idea" class="level-1" pref="#redis-sentinel-idea">Redis Sentinel idea</a></li><li id="in-what-form-it-will-be-shipped-item" class="level-1"><a id="in-what-form-it-will-be-shipped-link" href="./alpha/topics/sentinel-spec.html#in-what-form-it-will-be-shipped" class="level-1" pref="#in-what-form-it-will-be-shipped">In what form it will be shipped</a></li><li id="sentinels-networking-item" class="level-1"><a id="sentinels-networking-link" href="./alpha/topics/sentinel-spec.html#sentinels-networking" class="level-1" pref="#sentinels-networking">Sentinels networking</a></li><li id="sentinels-discovering-item" class="level-1"><a id="sentinels-discovering-link" href="./alpha/topics/sentinel-spec.html#sentinels-discovering" class="level-1" pref="#sentinels-discovering">Sentinels discovering</a></li><li id="detection-of-failing-masters-item" class="level-1"><a id="detection-of-failing-masters-link" href="./alpha/topics/sentinel-spec.html#detection-of-failing-masters" class="level-1" pref="#detection-of-failing-masters">Detection of failing masters</a></li><li id="handling-of-busy-state-item" class="level-1"><a id="handling-of-busy-state-link" href="./alpha/topics/sentinel-spec.html#handling-of-busy-state" class="level-1" pref="#handling-of-busy-state">Handling of -BUSY state</a></li><li id="subjectively-down-and-objectively-down-item" class="level-1"><a id="subjectively-down-and-objectively-down-link" href="./alpha/topics/sentinel-spec.html#subjectively-down-and-objectively-down" class="level-1" pref="#subjectively-down-and-objectively-down">Subjectively down and Objectively down</a></li><li id="how-sentinels-agree-to-mark-a-master-o_down-item" class="level-1"><a id="how-sentinels-agree-to-mark-a-master-o_down-link" href="./alpha/topics/sentinel-spec.html#how-sentinels-agree-to-mark-a-master-o_down" class="level-1" pref="#how-sentinels-agree-to-mark-a-master-o_down">How Sentinels agree to mark a master O_DOWN.</a></li><li id="the-sentinel-is-master-down-by-addr-command-item" class="level-1"><a id="the-sentinel-is-master-down-by-addr-command-link" href="./alpha/topics/sentinel-spec.html#the-sentinel-is-master-down-by-addr-command" class="level-1" pref="#the-sentinel-is-master-down-by-addr-command">The SENTINEL is-master-down-by-addr command</a></li><li id="duplicate-sentinels-removal-item" class="level-1"><a id="duplicate-sentinels-removal-link" href="./alpha/topics/sentinel-spec.html#duplicate-sentinels-removal" class="level-1" pref="#duplicate-sentinels-removal">Duplicate Sentinels removal</a></li><li id="starting-the-failover-leaders-and-observers-item" class="level-1"><a id="starting-the-failover-leaders-and-observers-link" href="./alpha/topics/sentinel-spec.html#starting-the-failover-leaders-and-observers" class="level-1" pref="#starting-the-failover-leaders-and-observers">Starting the failover: Leaders and Observers</a></li><li id="leader-sentinel-election-item" class="level-1"><a id="leader-sentinel-election-link" href="./alpha/topics/sentinel-spec.html#leader-sentinel-election" class="level-1" pref="#leader-sentinel-election">Leader Sentinel election</a></li><li id="guarantees-of-the-leader-election-process-item" class="level-1"><a id="guarantees-of-the-leader-election-process-link" href="./alpha/topics/sentinel-spec.html#guarantees-of-the-leader-election-process" class="level-1" pref="#guarantees-of-the-leader-election-process">Guarantees of the Leader election process</a></li><li id="how-observers-understand-that-the-failover-started-item" class="level-1"><a id="how-observers-understand-that-the-failover-started-link" href="./alpha/topics/sentinel-spec.html#how-observers-understand-that-the-failover-started" class="level-1" pref="#how-observers-understand-that-the-failover-started">How observers understand that the failover started</a></li><li id="selection-of-the-slave-to-promote-item" class="level-1"><a id="selection-of-the-slave-to-promote-link" href="./alpha/topics/sentinel-spec.html#selection-of-the-slave-to-promote" class="level-1" pref="#selection-of-the-slave-to-promote">Selection of the Slave to promote</a></li><li id="fail-over-process-item" class="level-1"><a id="fail-over-process-link" href="./alpha/topics/sentinel-spec.html#fail-over-process" class="level-1" pref="#fail-over-process">Fail over process</a></li><li id="tilt-mode-item" class="level-1"><a id="tilt-mode-link" href="./alpha/topics/sentinel-spec.html#tilt-mode" class="level-1" pref="#tilt-mode">TILT mode</a></li><li id="sentinels-monitoring-other-sentinels-item" class="level-1"><a id="sentinels-monitoring-other-sentinels-link" href="./alpha/topics/sentinel-spec.html#sentinels-monitoring-other-sentinels" class="level-1" pref="#sentinels-monitoring-other-sentinels">Sentinels monitoring other sentinels</a></li><li id="user-provided-scripts-item" class="level-1"><a id="user-provided-scripts-link" href="./alpha/topics/sentinel-spec.html#user-provided-scripts" class="level-1" pref="#user-provided-scripts">User provided scripts</a></li><li id="setup-examples-item" class="level-1"><a id="setup-examples-link" href="./alpha/topics/sentinel-spec.html#setup-examples" class="level-1" pref="#setup-examples">Setup examples</a></li><li id="sentinel-subcommands-item" class="level-1"><a id="sentinel-subcommands-link" href="./alpha/topics/sentinel-spec.html#sentinel-subcommands" class="level-1" pref="#sentinel-subcommands">SENTINEL SUBCOMMANDS</a></li><li id="todo-item" class="level-1"><a id="todo-link" href="./alpha/topics/sentinel-spec.html#todo" class="level-1" pref="#todo">TODO</a></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="how-fast-is-redis">How fast is Redis?</h1><p>Redis includes the <code>redis-benchmark</code> utility that simulates running commands done
-by N clients at the same time sending M total queries (it is similar to the
-Apache’s <code>ab</code> utility). Below you’ll find the full output of a benchmark executed
-against a Linux box.</p><p>The following options are supported:</p><pre><code class="prettyprint prettyprinted" style=""><span class="typ">Usage</span><span class="pun">:</span><span class="pln"> redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">[-</span><span class="pln">h </span><span class="str">&lt;host&gt;</span><span class="pun">]</span><span class="pln"> </span><span class="pun">[-</span><span class="pln">p </span><span class="str">&lt;port&gt;</span><span class="pun">]</span><span class="pln"> </span><span class="pun">[-</span><span class="pln">c </span><span class="str">&lt;clients&gt;</span><span class="pun">]</span><span class="pln"> </span><span class="pun">[-</span><span class="pln">n </span><span class="pun">&lt;</span><span class="pln">requests</span><span class="pun">]&gt;</span><span class="pln"> </span><span class="pun">[-</span><span class="pln">k </span><span class="str">&lt;boolean&gt;</span><span class="pun">]</span><span class="pln">
-
- </span><span class="pun">-</span><span class="pln">h </span><span class="str">&lt;hostname&gt;</span><span class="pln">      </span><span class="typ">Server</span><span class="pln"> hostname </span><span class="pun">(</span><span class="kwd">default</span><span class="pln"> </span><span class="lit">127.0</span><span class="pun">.</span><span class="lit">0.1</span><span class="pun">)</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">p </span><span class="str">&lt;port&gt;</span><span class="pln">          </span><span class="typ">Server</span><span class="pln"> port </span><span class="pun">(</span><span class="kwd">default</span><span class="pln"> </span><span class="lit">6379</span><span class="pun">)</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">s </span><span class="str">&lt;socket&gt;</span><span class="pln">        </span><span class="typ">Server</span><span class="pln"> socket </span><span class="pun">(</span><span class="pln">overrides host </span><span class="kwd">and</span><span class="pln"> port</span><span class="pun">)</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">a </span><span class="str">&lt;password&gt;</span><span class="pln">      </span><span class="typ">Password</span><span class="pln"> </span><span class="kwd">for</span><span class="pln"> </span><span class="typ">Redis</span><span class="pln"> </span><span class="typ">Auth</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">c </span><span class="str">&lt;clients&gt;</span><span class="pln">       </span><span class="typ">Number</span><span class="pln"> of parallel connections </span><span class="pun">(</span><span class="kwd">default</span><span class="pln"> </span><span class="lit">50</span><span class="pun">)</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">n </span><span class="str">&lt;requests&gt;</span><span class="pln">      </span><span class="typ">Total</span><span class="pln"> number of requests </span><span class="pun">(</span><span class="kwd">default</span><span class="pln"> </span><span class="lit">100000</span><span class="pun">)</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">d </span><span class="str">&lt;size&gt;</span><span class="pln">          </span><span class="typ">Data</span><span class="pln"> size of SET</span><span class="pun">/</span><span class="pln">GET value </span><span class="kwd">in</span><span class="pln"> bytes </span><span class="pun">(</span><span class="kwd">default</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">dbnum </span><span class="str">&lt;db&gt;</span><span class="pln">        SELECT the specified db number </span><span class="pun">(</span><span class="kwd">default</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">k </span><span class="str">&lt;boolean&gt;</span><span class="pln">       </span><span class="lit">1</span><span class="pun">=</span><span class="pln">keep alive </span><span class="lit">0</span><span class="pun">=</span><span class="pln">reconnect </span><span class="pun">(</span><span class="kwd">default</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">r </span><span class="str">&lt;keyspacelen&gt;</span><span class="pln">   </span><span class="typ">Use</span><span class="pln"> random keys </span><span class="kwd">for</span><span class="pln"> SET</span><span class="pun">/</span><span class="pln">GET</span><span class="pun">/</span><span class="pln">INCR</span><span class="pun">,</span><span class="pln"> random values </span><span class="kwd">for</span><span class="pln"> SADD
-  </span><span class="typ">Using</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> option the benchmark will expand the </span><span class="kwd">string</span><span class="pln"> __rand_int__
-  inside an argument </span><span class="kwd">with</span><span class="pln"> a </span><span class="lit">12</span><span class="pln"> digits number </span><span class="kwd">in</span><span class="pln"> the specified range
-  </span><span class="kwd">from</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> to keyspacelen</span><span class="pun">-</span><span class="lit">1.</span><span class="pln"> </span><span class="typ">The</span><span class="pln"> substitution changes every time a command
-  </span><span class="kwd">is</span><span class="pln"> executed</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Default</span><span class="pln"> tests </span><span class="kwd">use</span><span class="pln"> </span><span class="kwd">this</span><span class="pln"> to hit random keys </span><span class="kwd">in</span><span class="pln"> the
-  specified range</span><span class="pun">.</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">P </span><span class="str">&lt;numreq&gt;</span><span class="pln">        </span><span class="typ">Pipeline</span><span class="pln"> </span><span class="str">&lt;numreq&gt;</span><span class="pln"> requests</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Default</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">no</span><span class="pln"> pipeline</span><span class="pun">).</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">q                 </span><span class="typ">Quiet</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Just</span><span class="pln"> show query</span><span class="pun">/</span><span class="pln">sec values
- </span><span class="pun">--</span><span class="pln">csv              </span><span class="typ">Output</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> CSV format
- </span><span class="pun">-</span><span class="pln">l                 </span><span class="typ">Loop</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Run</span><span class="pln"> the tests forever
- </span><span class="pun">-</span><span class="pln">t </span><span class="str">&lt;tests&gt;</span><span class="pln">         </span><span class="typ">Only</span><span class="pln"> run the comma separated list of tests</span><span class="pun">.</span><span class="pln"> </span><span class="typ">The</span><span class="pln"> test
-                    names are the same </span><span class="kwd">as</span><span class="pln"> the ones produced </span><span class="kwd">as</span><span class="pln"> output</span><span class="pun">.</span><span class="pln">
- </span><span class="pun">-</span><span class="pln">I                 </span><span class="typ">Idle</span><span class="pln"> mode</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Just</span><span class="pln"> open N idle connections </span><span class="kwd">and</span><span class="pln"> wait</span><span class="pun">.</span></code></pre><p>You need to have a running Redis instance before launching the benchmark.
-A typical example would be:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">q </span><span class="pun">-</span><span class="pln">n </span><span class="lit">100000</span></code></pre><p>Using this tool is quite easy, and you can also write your own benchmark,
-but as with any benchmarking activity, there are some pitfalls to avoid.</p><h2 id="how-fast-is-redis-running-only-a-subset-of-the-tests">Running only a subset of the tests</h2><p>You don’t need to run all the default tests every time you execute redis-benchmark.
-The simplest thing to select only a subset of tests is to use the <code>-t</code> option
-like in the following example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">t </span><span class="kwd">set</span><span class="pun">,</span><span class="pln">lpush </span><span class="pun">-</span><span class="pln">n </span><span class="lit">100000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">q
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">74239.05</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">79239.30</span><span class="pln"> requests per second</span></code></pre><p>In the above example we asked to just run test the SET and LPUSH commands,
-in quiet mode (see the <code>-q</code> switch).</p><p>It is also possible to specify the command to benchmark directly like in the
-following example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">n </span><span class="lit">100000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">q script load </span><span class="str">"redis.call('set','foo','bar')"</span><span class="pln">
-script load redis</span><span class="pun">.</span><span class="pln">call</span><span class="pun">(</span><span class="str">'set'</span><span class="pun">,</span><span class="str">'foo'</span><span class="pun">,</span><span class="str">'bar'</span><span class="pun">):</span><span class="pln"> </span><span class="lit">69881.20</span><span class="pln"> requests per second</span></code></pre><h2 id="how-fast-is-redis-selecting-the-size-of-the-key-space">Selecting the size of the key space</h2><p>By default the benchmark runs against a single key. In Redis the difference
-between such a synthetic benchmark and a real one is not huge since it is an
-in-memory system, however it is possible to stress cache misses and in general
-to simulate a more real-world work load by using a large key space.</p><p>This is obtained by using the <code>-r</code> switch. For instance if I want to run
-one million SET operations, using a random key for every operation out of
-100k possible keys, I’ll use the following command line:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ redis</span><span class="pun">-</span><span class="pln">cli flushall
-OK
-
-$ redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">t </span><span class="kwd">set</span><span class="pln"> </span><span class="pun">-</span><span class="pln">r </span><span class="lit">100000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">n </span><span class="lit">1000000</span><span class="pln">
-</span><span class="pun">======</span><span class="pln"> SET </span><span class="pun">======</span><span class="pln">
-  </span><span class="lit">1000000</span><span class="pln"> requests completed </span><span class="kwd">in</span><span class="pln"> </span><span class="lit">13.86</span><span class="pln"> seconds
-  </span><span class="lit">50</span><span class="pln"> parallel clients
-  </span><span class="lit">3</span><span class="pln"> bytes payload
-  keep alive</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
-
-</span><span class="lit">99.76</span><span class="pun">%</span><span class="pln"> </span><span class="str">`&lt;=`</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> milliseconds
-</span><span class="lit">99.98</span><span class="pun">%</span><span class="pln"> </span><span class="str">`&lt;=`</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="str">`&lt;=`</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="str">`&lt;=`</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> milliseconds
-</span><span class="lit">72144.87</span><span class="pln"> requests per second
-
-$ redis</span><span class="pun">-</span><span class="pln">cli dbsize
-</span><span class="pun">(</span><span class="pln">integer</span><span class="pun">)</span><span class="pln"> </span><span class="lit">99993</span></code></pre><h2 id="how-fast-is-redis-using-pipelining">Using pipelining</h2><p>By default every client (the benchmark simulates 50 clients if not otherwise
-specified with <code>-c</code>) sends the next command only when the reply of the previous
-command is received, this means that the server will likely need a read call
-in order to read each command from every client. Also RTT is paid as well.</p><p>Redis supports <a href="pipelining">/topics/pipelining</a>, so it is possible to send
-multiple commands at once, a feature often exploited by real world applications.
-Redis pipelining is able to dramatically improve the number of operations per
-second a server is able do deliver.</p><p>This is an example of running the benchmark in a MacBook Air 11” using a
-pipelining of 16 commands:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">n </span><span class="lit">1000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">t </span><span class="kwd">set</span><span class="pun">,</span><span class="kwd">get</span><span class="pln"> </span><span class="pun">-</span><span class="pln">P </span><span class="lit">16</span><span class="pln"> </span><span class="pun">-</span><span class="pln">q
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">403063.28</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">508388.41</span><span class="pln"> requests per second</span></code></pre><p>Using pipelining results in a significant increase in performance.</p><h2 id="how-fast-is-redis-pitfalls-and-misconceptions">Pitfalls and misconceptions</h2><p>The first point is obvious: the golden rule of a useful benchmark is to
-only compare apples and apples. Different versions of Redis can be compared
-on the same workload for instance. Or the same version of Redis, but with
-different options. If you plan to compare Redis to something else, then it is
-important to evaluate the functional and technical differences, and take them
-in account.</p><ul>
-<li>Redis is a server: all commands involve network or IPC round trips. It is
-meaningless to compare it to embedded data stores such as SQLite, Berkeley DB,
-Tokyo/Kyoto Cabinet, etc … because the cost of most operations is
-primarily in network/protocol management.</li>
-<li>Redis commands return an acknowledgment for all usual commands. Some other
-data stores do not (for instance MongoDB does not implicitly acknowledge write
-operations). Comparing Redis to stores involving one-way queries is only
-mildly useful.</li>
-<li>Naively iterating on synchronous Redis commands does not benchmark Redis
-itself, but rather measure your network (or IPC) latency. To really test Redis,
-you need multiple connections (like redis-benchmark) and/or to use pipelining
-to aggregate several commands and/or multiple threads or processes.</li>
-<li>Redis is an in-memory data store with some optional persistence options. If
-you plan to compare it to transactional servers (MySQL, PostgreSQL, etc …),
-then you should consider activating AOF and decide on a suitable fsync policy.</li>
-<li>Redis is a single-threaded server. It is not designed to benefit from
-multiple CPU cores. People are supposed to launch several Redis instances to
-scale out on several cores if needed. It is not really fair to compare one
-single Redis instance to a multi-threaded data store.</li>
-</ul><p>A common misconception is that redis-benchmark is designed to make Redis
-performances look stellar, the throughput achieved by redis-benchmark being
-somewhat artificial, and not achievable by a real application. This is
-actually plain wrong.</p><p>The redis-benchmark program is a quick and useful way to get some figures and
-evaluate the performance of a Redis instance on a given hardware. However,
-by default, it does not represent the maximum throughput a Redis instance can
-sustain. Actually, by using pipelining and a fast client (hiredis), it is fairly
-easy to write a program generating more throughput than redis-benchmark. The
-default behavior of redis-benchmark is to achieve throughput by exploiting
-concurrency only (i.e. it creates several connections to the server).
-It does not use pipelining or any parallelism at all (one pending query per
-connection at most, and no multi-threading).</p><p>To run a benchmark using pipelining mode (and achieve higher throughput),
-you need to explicitly use the -P option. Please note that it is still a
-realistic behavior since a lot of Redis based applications actively use
-pipelining to improve performance.</p><p>Finally, the benchmark should apply the same operations, and work in the same way
-with the multiple data stores you want to compare. It is absolutely pointless to
-compare the result of redis-benchmark to the result of another benchmark
-program and extrapolate.</p><p>For instance, Redis and memcached in single-threaded mode can be compared on
-GET/SET operations. Both are in-memory data stores, working mostly in the same
-way at the protocol level. Provided their respective benchmark application is
-aggregating queries in the same way (pipelining) and use a similar number of
-connections, the comparison is actually meaningful.</p><p>This perfect example is illustrated by the dialog between Redis (antirez) and
-memcached (dormando) developers.</p><p><a href="http://antirez.com/post/redis-memcached-benchmark.html">antirez 1 - On Redis, Memcached, Speed, Benchmarks and The Toilet</a></p><p><a href="http://dormando.livejournal.com/525147.html">dormando - Redis VS Memcached (slightly better bench)</a></p><p><a href="http://antirez.com/post/update-on-memcached-redis-benchmark.html">antirez 2 - An update on the Memcached/Redis benchmark</a></p><p>You can see that in the end, the difference between the two solutions is not
-so staggering, once all technical aspects are considered. Please note both
-Redis and memcached have been optimized further after these benchmarks.</p><p>Finally, when very efficient servers are benchmarked (and stores like Redis
-or memcached definitely fall in this category), it may be difficult to saturate
-the server. Sometimes, the performance bottleneck is on client side,
-and not server-side. In that case, the client (i.e. the benchmark program itself)
-must be fixed, or perhaps scaled out, in order to reach the maximum throughput.</p><h2 id="how-fast-is-redis-factors-impacting-redis-performance">Factors impacting Redis performance</h2><p>There are multiple factors having direct consequences on Redis performance.
-We mention them here, since they can alter the result of any benchmarks.
-Please note however, that a typical Redis instance running on a low end,
-untuned box usually provides good enough performance for most applications.</p><ul>
-<li>Network bandwidth and latency usually have a direct impact on the performance.
-It is a good practice to use the ping program to quickly check the latency
-between the client and server hosts is normal before launching the benchmark.
-Regarding the bandwidth, it is generally useful to estimate
-the throughput in Gbit/s and compare it to the theoretical bandwidth
-of the network. For instance a benchmark setting 4 KB strings
-in Redis at 100000 q/s, would actually consume 3.2 Gbit/s of bandwidth
-and probably fit within a 10 Gbit/s link, but not a 1 Gbit/s one. In many real
-world scenarios, Redis throughput is limited by the network well before being
-limited by the CPU. To consolidate several high-throughput Redis instances
-on a single server, it worth considering putting a 10 Gbit/s NIC
-or multiple 1 Gbit/s NICs with TCP/IP bonding.</li>
-<li>CPU is another very important factor. Being single-threaded, Redis favors
-fast CPUs with large caches and not many cores. At this game, Intel CPUs are
-currently the winners. It is not uncommon to get only half the performance on
-an AMD Opteron CPU compared to similar Nehalem EP/Westmere EP/Sandy Bridge
-Intel CPUs with Redis. When client and server run on the same box, the CPU is
-the limiting factor with redis-benchmark.</li>
-<li>Speed of RAM and memory bandwidth seem less critical for global performance
-especially for small objects. For large objects (&gt;10 KB), it may become
-noticeable though. Usually, it is not really cost-effective to buy expensive
-fast memory modules to optimize Redis.</li>
-<li>Redis runs slower on a VM compared to running without virtualization using
-the same hardware. If you have the chance to run Redis on a physical machine
-this is preferred. However this does not mean that Redis is slow in
-virtualized environments, the delivered performances are still very good
-and most of the serious performance issues you may incur in virtualized
-environments are due to over-provisioning, non-local disks with high latency,
-or old hypervisor software that have slow <code>fork</code> syscall implementation.</li>
-<li>When the server and client benchmark programs run on the same box, both
-the TCP/IP loopback and unix domain sockets can be used. Depending on the
-platform, unix domain sockets can achieve around 50% more throughput than
-the TCP/IP loopback (on Linux for instance). The default behavior of
-redis-benchmark is to use the TCP/IP loopback.</li>
-<li>The performance benefit of unix domain sockets compared to TCP/IP loopback
-tends to decrease when pipelining is heavily used (i.e. long pipelines).</li>
-<li>When an ethernet network is used to access Redis, aggregating commands using
-pipelining is especially efficient when the size of the data is kept under
-the ethernet packet size (about 1500 bytes). Actually, processing 10 bytes,
-100 bytes, or 1000 bytes queries almost result in the same throughput.
-See the graph below.</li>
-</ul><p><img src="https://github.com/dspezia/redis-doc/raw/client_command/topics/Data_size.png" alt="Data size impact"></p><ul>
-<li>On multi CPU sockets servers, Redis performance becomes dependent on the
-NUMA configuration and process location. The most visible effect is that
-redis-benchmark results seem non-deterministic because client and server
-processes are distributed randomly on the cores. To get deterministic results,
-it is required to use process placement tools (on Linux: taskset or numactl).
-The most efficient combination is always to put the client and server on two
-different cores of the same CPU to benefit from the L3 cache.
-Here are some results of 4 KB SET benchmark for 3 server CPUs (AMD Istanbul,
-Intel Nehalem EX, and Intel Westmere) with different relative placements.
-Please note this benchmark is not meant to compare CPU models between themselves
-(CPUs exact model and frequency are therefore not disclosed).</li>
-</ul><p><img src="https://github.com/dspezia/redis-doc/raw/6374a07f93e867353e5e946c1e39a573dfc83f6c/topics/NUMA_chart.gif" alt="NUMA chart"></p><ul>
-<li>With high-end configurations, the number of client connections is also an
-important factor. Being based on epoll/kqueue, the Redis event loop is quite
-scalable. Redis has already been benchmarked at more than 60000 connections,
-and was still able to sustain 50000 q/s in these conditions. As a rule of thumb,
-an instance with 30000 connections can only process half the throughput
-achievable with 100 connections. Here is an example showing the throughput of
-a Redis instance per number of connections:</li>
-</ul><p><img src="https://github.com/dspezia/redis-doc/raw/system_info/topics/Connections_chart.png" alt="connections chart"></p><ul>
-<li>With high-end configurations, it is possible to achieve higher throughput by
-tuning the NIC(s) configuration and associated interruptions. Best throughput
-is achieved by setting an affinity between Rx/Tx NIC queues and CPU cores,
-and activating RPS (Receive Packet Steering) support. More information in this
-<a href="https://groups.google.com/forum/#!msg/redis-db/gUhc19gnYgc/BruTPCOroiMJ">thread</a>.
-Jumbo frames may also provide a performance boost when large objects are used.</li>
-<li>Depending on the platform, Redis can be compiled against different memory
-allocators (libc malloc, jemalloc, tcmalloc), which may have different behaviors
-in term of raw speed, internal and external fragmentation.
-If you did not compile Redis yourself, you can use the INFO command to check
-the mem_allocator field. Please note most benchmarks do not run long enough to
-generate significant external fragmentation (contrary to production Redis
-instances).</li>
-</ul><h2 id="how-fast-is-redis-other-things-to-consider">Other things to consider</h2><p>One important goal of any benchmark is to get reproducible results, so they
-can be compared to the results of other tests.</p><ul>
-<li>A good practice is to try to run tests on isolated hardware as much as possible.
-If it is not possible, then the system must be monitored to check the benchmark
-is not impacted by some external activity.</li>
-<li>Some configurations (desktops and laptops for sure, some servers as well)
-have a variable CPU core frequency mechanism. The policy controlling this
-mechanism can be set at the OS level. Some CPU models are more aggressive than
-others at adapting the frequency of the CPU cores to the workload. To get
-reproducible results, it is better to set the highest possible fixed frequency
-for all the CPU cores involved in the benchmark.</li>
-<li>An important point is to size the system accordingly to the benchmark.
-The system must have enough RAM and must not swap. On Linux, do not forget
-to set the overcommit_memory parameter correctly. Please note 32 and 64 bit
-Redis instances do not have the same memory footprint.</li>
-<li>If you plan to use RDB or AOF for your benchmark, please check there is no other
-I/O activity in the system. Avoid putting RDB or AOF files on NAS or NFS shares,
-or on any other devices impacting your network bandwidth and/or latency
-(for instance, EBS on Amazon EC2).</li>
-<li>Set Redis logging level (loglevel parameter) to warning or notice. Avoid putting
-the generated log file on a remote filesystem.</li>
-<li>Avoid using monitoring tools which can alter the result of the benchmark. For
-instance using INFO at regular interval to gather statistics is probably fine,
-but MONITOR will impact the measured performance significantly.</li>
-</ul><h1 id="benchmark-results-on-different-virtualized-and-bare-metal-servers">Benchmark results on different virtualized and bare-metal servers.</h1><ul>
-<li>The test was done with 50 simultaneous clients performing 2 million requests.</li>
-<li>Redis 2.6.14 is used for all the tests.</li>
-<li>Test was executed using the loopback interface.</li>
-<li>Test was executed using a key space of 1 million keys.</li>
-<li>Test was executed with and without pipelining (16 commands pipeline).</li>
-</ul><p><strong>Intel(R) Xeon(R) CPU E5520  @ 2.27GHz (with pipelining)</strong></p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ </span><span class="pun">./</span><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">r </span><span class="lit">1000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">n </span><span class="lit">2000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">t </span><span class="kwd">get</span><span class="pun">,</span><span class="kwd">set</span><span class="pun">,</span><span class="pln">lpush</span><span class="pun">,</span><span class="pln">lpop </span><span class="pun">-</span><span class="pln">P </span><span class="lit">16</span><span class="pln"> </span><span class="pun">-</span><span class="pln">q
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">552028.75</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">707463.75</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">767459.75</span><span class="pln"> requests per second
-LPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">770119.38</span><span class="pln"> requests per second</span></code></pre><p><strong>Intel(R) Xeon(R) CPU E5520  @ 2.27GHz (without pipelining)</strong></p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ </span><span class="pun">./</span><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">r </span><span class="lit">1000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">n </span><span class="lit">2000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">t </span><span class="kwd">get</span><span class="pun">,</span><span class="kwd">set</span><span class="pun">,</span><span class="pln">lpush</span><span class="pun">,</span><span class="pln">lpop </span><span class="pun">-</span><span class="pln">q
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">122556.53</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">123601.76</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">136752.14</span><span class="pln"> requests per second
-LPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">132424.03</span><span class="pln"> requests per second</span></code></pre><p><strong>Linode 2048 instance (with pipelining)</strong></p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ </span><span class="pun">./</span><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">r </span><span class="lit">1000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">n </span><span class="lit">2000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">t </span><span class="kwd">get</span><span class="pun">,</span><span class="kwd">set</span><span class="pun">,</span><span class="pln">lpush</span><span class="pun">,</span><span class="pln">lpop </span><span class="pun">-</span><span class="pln">q </span><span class="pun">-</span><span class="pln">P </span><span class="lit">16</span><span class="pln">
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">195503.42</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">250187.64</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">230547.55</span><span class="pln"> requests per second
-LPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">250815.16</span><span class="pln"> requests per second</span></code></pre><p><strong>Linode 2048 instance (without pipelining)</strong></p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ </span><span class="pun">./</span><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">r </span><span class="lit">1000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">n </span><span class="lit">2000000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">t </span><span class="kwd">get</span><span class="pun">,</span><span class="kwd">set</span><span class="pun">,</span><span class="pln">lpush</span><span class="pun">,</span><span class="pln">lpop </span><span class="pun">-</span><span class="pln">q
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35001.75</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">37481.26</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">36968.58</span><span class="pln"> requests per second
-LPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">35186.49</span><span class="pln"> requests per second</span></code></pre><h2 id="benchmark-results-on-different-virtualized-and-bare-metal-servers-more-detailed-tests-without-pipelining">More detailed tests without pipelining</h2><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">n </span><span class="lit">100000</span><span class="pln">
-
-</span><span class="pun">======</span><span class="pln"> SET </span><span class="pun">======</span><span class="pln">
-  </span><span class="lit">100007</span><span class="pln"> requests completed </span><span class="kwd">in</span><span class="pln"> </span><span class="lit">0.88</span><span class="pln"> seconds
-  </span><span class="lit">50</span><span class="pln"> parallel clients
-  </span><span class="lit">3</span><span class="pln"> bytes payload
-  keep alive</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
-
-</span><span class="lit">58.50</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> milliseconds
-</span><span class="lit">99.17</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> milliseconds
-</span><span class="lit">99.58</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> milliseconds
-</span><span class="lit">99.85</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> milliseconds
-</span><span class="lit">99.90</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">6</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">9</span><span class="pln"> milliseconds
-</span><span class="lit">114293.71</span><span class="pln"> requests per second
-
-</span><span class="pun">======</span><span class="pln"> GET </span><span class="pun">======</span><span class="pln">
-  </span><span class="lit">100000</span><span class="pln"> requests completed </span><span class="kwd">in</span><span class="pln"> </span><span class="lit">1.23</span><span class="pln"> seconds
-  </span><span class="lit">50</span><span class="pln"> parallel clients
-  </span><span class="lit">3</span><span class="pln"> bytes payload
-  keep alive</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
-
-</span><span class="lit">43.12</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> milliseconds
-</span><span class="lit">96.82</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> milliseconds
-</span><span class="lit">98.62</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> milliseconds
-</span><span class="lit">81234.77</span><span class="pln"> requests per second
-
-</span><span class="pun">======</span><span class="pln"> INCR </span><span class="pun">======</span><span class="pln">
-  </span><span class="lit">100018</span><span class="pln"> requests completed </span><span class="kwd">in</span><span class="pln"> </span><span class="lit">1.46</span><span class="pln"> seconds
-  </span><span class="lit">50</span><span class="pln"> parallel clients
-  </span><span class="lit">3</span><span class="pln"> bytes payload
-  keep alive</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
-
-</span><span class="lit">32.32</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> milliseconds
-</span><span class="lit">96.67</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> milliseconds
-</span><span class="lit">99.14</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> milliseconds
-</span><span class="lit">99.83</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> milliseconds
-</span><span class="lit">99.88</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">4</span><span class="pln"> milliseconds
-</span><span class="lit">99.89</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> milliseconds
-</span><span class="lit">99.96</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">9</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">18</span><span class="pln"> milliseconds
-</span><span class="lit">68458.59</span><span class="pln"> requests per second
-
-</span><span class="pun">======</span><span class="pln"> LPUSH </span><span class="pun">======</span><span class="pln">
-  </span><span class="lit">100004</span><span class="pln"> requests completed </span><span class="kwd">in</span><span class="pln"> </span><span class="lit">1.14</span><span class="pln"> seconds
-  </span><span class="lit">50</span><span class="pln"> parallel clients
-  </span><span class="lit">3</span><span class="pln"> bytes payload
-  keep alive</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
-
-</span><span class="lit">62.27</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> milliseconds
-</span><span class="lit">99.74</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> milliseconds
-</span><span class="lit">99.85</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> milliseconds
-</span><span class="lit">99.86</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> milliseconds
-</span><span class="lit">99.89</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> milliseconds
-</span><span class="lit">99.93</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">7</span><span class="pln"> milliseconds
-</span><span class="lit">99.96</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">9</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">22</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">208</span><span class="pln"> milliseconds
-</span><span class="lit">88109.25</span><span class="pln"> requests per second
-
-</span><span class="pun">======</span><span class="pln"> LPOP </span><span class="pun">======</span><span class="pln">
-  </span><span class="lit">100001</span><span class="pln"> requests completed </span><span class="kwd">in</span><span class="pln"> </span><span class="lit">1.39</span><span class="pln"> seconds
-  </span><span class="lit">50</span><span class="pln"> parallel clients
-  </span><span class="lit">3</span><span class="pln"> bytes payload
-  keep alive</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
-
-</span><span class="lit">54.83</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> milliseconds
-</span><span class="lit">97.34</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> milliseconds
-</span><span class="lit">99.95</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> milliseconds
-</span><span class="lit">99.96</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> milliseconds
-</span><span class="lit">99.96</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">4</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">9</span><span class="pln"> milliseconds
-</span><span class="lit">100.00</span><span class="pun">%</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">208</span><span class="pln"> milliseconds
-</span><span class="lit">71994.96</span><span class="pln"> requests per second</span></code></pre><p>Notes: changing the payload from 256 to 1024 or 4096 bytes does not change the
-numbers significantly (but reply packets are glued together up to 1024 bytes so
-GETs may be slower with big payloads). The same for the number of clients, from
-50 to 256 clients I got the same numbers. With only 10 clients it starts to get
-a bit slower.</p><p>You can expect different results from different boxes. For example a low
-profile box like <em>Intel core duo T5500 clocked at 1.66 GHz running Linux 2.6</em>
-will output the following:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ </span><span class="pun">./</span><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">q </span><span class="pun">-</span><span class="pln">n </span><span class="lit">100000</span><span class="pln">
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">53684.38</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">45497.73</span><span class="pln"> requests per second
-INCR</span><span class="pun">:</span><span class="pln"> </span><span class="lit">39370.47</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">34803.41</span><span class="pln"> requests per second
-LPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">37367.20</span><span class="pln"> requests per second</span></code></pre><p>Another one using a 64-bit box, a Xeon L5420 clocked at 2.5 GHz:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ </span><span class="pun">./</span><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">q </span><span class="pun">-</span><span class="pln">n </span><span class="lit">100000</span><span class="pln">
-PING</span><span class="pun">:</span><span class="pln"> </span><span class="lit">111731.84</span><span class="pln"> requests per second
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">108114.59</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">98717.67</span><span class="pln"> requests per second
-INCR</span><span class="pun">:</span><span class="pln"> </span><span class="lit">95241.91</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">104712.05</span><span class="pln"> requests per second
-LPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">93722.59</span><span class="pln"> requests per second</span></code></pre><h1 id="example-of-benchmark-results-with-optimized-high-end-server-hardware">Example of benchmark results with optimized high-end server hardware</h1><ul>
-<li>Redis version <strong>2.4.2</strong></li>
-<li>Default number of connections, payload size = 256</li>
-<li>The Linux box is running <em>SLES10 SP3 2.6.16.60-0.54.5-smp</em>, CPU is 2 x <em>Intel X5670 @ 2.93 GHz</em>.</li>
-<li>Test executed while running Redis server and benchmark client on the same CPU, but different cores.</li>
-</ul><p>Using a unix domain socket:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ numactl </span><span class="pun">-</span><span class="pln">C </span><span class="lit">6</span><span class="pln"> </span><span class="pun">./</span><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">q </span><span class="pun">-</span><span class="pln">n </span><span class="lit">100000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">s </span><span class="pun">/</span><span class="pln">tmp</span><span class="pun">/</span><span class="pln">redis</span><span class="pun">.</span><span class="pln">sock </span><span class="pun">-</span><span class="pln">d </span><span class="lit">256</span><span class="pln">
-PING </span><span class="pun">(</span><span class="kwd">inline</span><span class="pun">):</span><span class="pln"> </span><span class="lit">200803.22</span><span class="pln"> requests per second
-PING</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200803.22</span><span class="pln"> requests per second
-MSET </span><span class="pun">(</span><span class="lit">10</span><span class="pln"> keys</span><span class="pun">):</span><span class="pln"> </span><span class="lit">78064.01</span><span class="pln"> requests per second
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">198412.69</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">198019.80</span><span class="pln"> requests per second
-INCR</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200400.80</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200000.00</span><span class="pln"> requests per second
-LPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">198019.80</span><span class="pln"> requests per second
-SADD</span><span class="pun">:</span><span class="pln"> </span><span class="lit">203665.98</span><span class="pln"> requests per second
-SPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200803.22</span><span class="pln"> requests per second
-LPUSH </span><span class="pun">(</span><span class="pln">again</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> order to bench LRANGE</span><span class="pun">):</span><span class="pln"> </span><span class="lit">200000.00</span><span class="pln"> requests per second
-LRANGE </span><span class="pun">(</span><span class="pln">first </span><span class="lit">100</span><span class="pln"> elements</span><span class="pun">):</span><span class="pln"> </span><span class="lit">42123.00</span><span class="pln"> requests per second
-LRANGE </span><span class="pun">(</span><span class="pln">first </span><span class="lit">300</span><span class="pln"> elements</span><span class="pun">):</span><span class="pln"> </span><span class="lit">15015.02</span><span class="pln"> requests per second
-LRANGE </span><span class="pun">(</span><span class="pln">first </span><span class="lit">450</span><span class="pln"> elements</span><span class="pun">):</span><span class="pln"> </span><span class="lit">10159.50</span><span class="pln"> requests per second
-LRANGE </span><span class="pun">(</span><span class="pln">first </span><span class="lit">600</span><span class="pln"> elements</span><span class="pun">):</span><span class="pln"> </span><span class="lit">7548.31</span><span class="pln"> requests per second</span></code></pre><p>Using the TCP loopback:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ numactl </span><span class="pun">-</span><span class="pln">C </span><span class="lit">6</span><span class="pln"> </span><span class="pun">./</span><span class="pln">redis</span><span class="pun">-</span><span class="pln">benchmark </span><span class="pun">-</span><span class="pln">q </span><span class="pun">-</span><span class="pln">n </span><span class="lit">100000</span><span class="pln"> </span><span class="pun">-</span><span class="pln">d </span><span class="lit">256</span><span class="pln">
-PING </span><span class="pun">(</span><span class="kwd">inline</span><span class="pun">):</span><span class="pln"> </span><span class="lit">145137.88</span><span class="pln"> requests per second
-PING</span><span class="pun">:</span><span class="pln"> </span><span class="lit">144717.80</span><span class="pln"> requests per second
-MSET </span><span class="pun">(</span><span class="lit">10</span><span class="pln"> keys</span><span class="pun">):</span><span class="pln"> </span><span class="lit">65487.89</span><span class="pln"> requests per second
-SET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">142653.36</span><span class="pln"> requests per second
-GET</span><span class="pun">:</span><span class="pln"> </span><span class="lit">142450.14</span><span class="pln"> requests per second
-INCR</span><span class="pun">:</span><span class="pln"> </span><span class="lit">143061.52</span><span class="pln"> requests per second
-LPUSH</span><span class="pun">:</span><span class="pln"> </span><span class="lit">144092.22</span><span class="pln"> requests per second
-LPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">142247.52</span><span class="pln"> requests per second
-SADD</span><span class="pun">:</span><span class="pln"> </span><span class="lit">144717.80</span><span class="pln"> requests per second
-SPOP</span><span class="pun">:</span><span class="pln"> </span><span class="lit">143678.17</span><span class="pln"> requests per second
-LPUSH </span><span class="pun">(</span><span class="pln">again</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> order to bench LRANGE</span><span class="pun">):</span><span class="pln"> </span><span class="lit">143061.52</span><span class="pln"> requests per second
-LRANGE </span><span class="pun">(</span><span class="pln">first </span><span class="lit">100</span><span class="pln"> elements</span><span class="pun">):</span><span class="pln"> </span><span class="lit">29577.05</span><span class="pln"> requests per second
-LRANGE </span><span class="pun">(</span><span class="pln">first </span><span class="lit">300</span><span class="pln"> elements</span><span class="pun">):</span><span class="pln"> </span><span class="lit">10431.88</span><span class="pln"> requests per second
-LRANGE </span><span class="pun">(</span><span class="pln">first </span><span class="lit">450</span><span class="pln"> elements</span><span class="pun">):</span><span class="pln"> </span><span class="lit">7010.66</span><span class="pln"> requests per second
-LRANGE </span><span class="pun">(</span><span class="pln">first </span><span class="lit">600</span><span class="pln"> elements</span><span class="pun">):</span><span class="pln"> </span><span class="lit">5296.61</span><span class="pln"> requests per second</span></code></pre></div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/benchmarks.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/benchmarks.md">
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p><strong>WARNING:</strong> this document is no longer in sync with the implementation of Redis Sentinel and will be removed in the next weeks.</p><h1 id="redis-sentinel-design-draft-13">Redis Sentinel design draft 1.3</h1><p>Changelog:</p><ul>
+<li>1.0 first version.</li>
+<li>1.1 fail over steps modified: slaves are pointed to new master one after the other and not simultaneously. New section about monitoring slaves to ensure they are replicating correctly.</li>
+<li>1.2 Fixed a typo in the fail over section about: critical error is in step 5 and not 6. Added TODO section.</li>
+<li>1.3 Document updated to reflect the actual implementation of the monitoring and leader election.</li>
+</ul><h1 id="introduction">Introduction</h1><p>Redis Sentinel is the name of the Redis high availability solution that’s
+currently under development. It has nothing to do with Redis Cluster and
+is intended to be used by people that don’t need Redis Cluster, but simply
+a way to perform automatic fail over when a master instance is not functioning
+correctly.</p><p>The plan is to provide a usable beta implementation of Redis Sentinel in a
+short time, preferably in mid July 2012.</p><p>In short this is what Redis Sentinel will be able to do:</p><ul>
+<li>Monitor master and slave instances to see if they are available.</li>
+<li>Promote a slave to master when the master fails.</li>
+<li>Modify clients configurations when a slave is elected.</li>
+<li>Inform the system administrator about incidents using notifications.</li>
+</ul><p>So the three different roles of Redis Sentinel can be summarized in the following three big aspects:</p><ul>
+<li>Monitoring.</li>
+<li>Notification.</li>
+<li>Automatic failover.</li>
+</ul><p>The following document explains what is the design of Redis Sentinel in order
+to accomplish this goals.</p><h1 id="redis-sentinel-idea">Redis Sentinel idea</h1><p>The idea of Redis Sentinel is to have multiple “monitoring devices” in
+different places of your network, monitoring the Redis master instance.</p><p>However this independent devices can’t act without agreement with other
+sentinels.</p><p>Once a Redis master instance is detected as failing, for the failover process
+to start, the sentinel must verify that there is a given level of agreement.</p><p>The amount of sentinels, their location in the network, and the
+configured quorum, select the desired behavior among many possibilities.</p><p>Redis Sentinel does not use any proxy: clients reconfiguration is performed
+running user-provided executables (for instance a shell script or a
+Python program) in a user setup specific way.</p><h1 id="in-what-form-it-will-be-shipped">In what form it will be shipped</h1><p>Redis Sentinel is just a special mode of the redis-server executable.</p><p>If the redis-server is called with “redis-sentinel” as <code>argv[0]</code> (for instance
+using a symbolic link or copying the file), or if —sentinel option is passed,
+the Redis instance starts in sentinel mode and will only understand sentinel
+related commands. All the other commands will be refused.</p><p>The whole implementation of sentinel will live in a separated file sentinel.c
+with minimal impact on the rest of the code base. However this solution allows
+to use all the facilities already implemented inside Redis without any need
+to reimplement them or to maintain a separated code base for Redis Sentinel.</p><h1 id="sentinels-networking">Sentinels networking</h1><p>All the sentinels take persistent connections with:</p><ul>
+<li>The monitored masters.</li>
+<li>All its slaves, that are discovered using the master’s INFO output.</li>
+<li>All the other Sentinels connected to this master, discovered via Pub/Sub.</li>
+</ul><p>Sentinels use the Redis protocol to talk with each other, and to reply to
+external clients.</p><p>Redis Sentinels export a SENTINEL command. Subcommands of the SENTINEL
+command are used in order to perform different actions.</p><p>For instance the <code>SENTINEL masters</code> command enumerates all the monitored
+masters and their states. However Sentinels can also reply to the PING command
+as a normal Redis instance, so that it is possible to monitor a Sentinel
+considering it a normal Redis instance.</p><p>The list of networking tasks performed by every sentinel is the following:</p><ul>
+<li>A Sentinel PUBLISH its presence using the master Pub/Sub multiple times every five seconds.</li>
+<li>A Sentinel accepts commands using a TCP port. By default the port is 26379.</li>
+<li>A Sentinel constantly monitors masters, slaves, other sentinels sending PING commands.</li>
+<li>A Sentinel sends INFO commands to the masters and slaves every ten seconds in order to take a fresh list of connected slaves, the state of the master, and so forth.</li>
+<li>A Sentinel monitors the sentinel Pub/Sub “hello” channel in order to discover newly connected Sentinels, or to detect no longer connected Sentinels. The channel used is <code>__sentinel__:hello</code>.</li>
+</ul><h1 id="sentinels-discovering">Sentinels discovering</h1><p>To make the configuration of sentinels as simple as possible every sentinel
+broadcasts its presence using the Redis master Pub/Sub functionality.</p><p>Every sentinel is subscribed to the same channel, and broadcast information
+about its existence to the same channel, including the Run ID of the Sentinel,
+and the IP address and port where it is listening for commands.</p><p>Every sentinel maintains a list of other sentinels Run ID, IP and port.
+A sentinel that does no longer announce its presence using Pub/Sub for too
+long time is removed from the list, assuming the Master appears to be working well. In that case a notification is delivered to the system administrator.</p><h1 id="detection-of-failing-masters">Detection of failing masters</h1><p>An instance is not available from the point of view of Redis Sentinel when
+it is no longer able to reply to the PING command correctly for longer than
+the specified number of seconds, consecutively.</p><p>For a PING reply to be considered valid, one of the following conditions
+should be true:</p><ul>
+<li>PING replied with +PONG.</li>
+<li>PING replied with -LOADING error.</li>
+<li>PING replied with -MASTERDOWN error.</li>
+</ul><p>What is not considered an acceptable reply:</p><ul>
+<li>PING replied with -BUSY error.</li>
+<li>PING replied with -MISCONF error.</li>
+<li>PING reply not received after more than a specified number of milliseconds.</li>
+</ul><p>PING should never reply with a different error code than the ones listed above
+but any other error code is considered an acceptable reply by Redis Sentinel.</p><h1 id="handling-of-busy-state">Handling of -BUSY state</h1><p>The -BUSY error is returned when a script is running for more time than the
+configured script time limit. When this happens before triggering a fail over
+Redis Sentinel will try to send a “SCRIPT KILL” command, that will only
+succeed if the script was read-only.</p><h1 id="subjectively-down-and-objectively-down">Subjectively down and Objectively down</h1><p>From the point of view of a Sentinel there are two different error conditions for a master:</p><ul>
+<li><em>Subjectively Down</em> (aka <code>S_DOWN</code>) means that a master is down from the point of view of a Sentinel.</li>
+<li><em>Objectively Down</em> (aka <code>O_DOWN</code>) means that a master is subjectively down from the point of view of enough Sentinels to reach the configured quorum for that master.</li>
+</ul><h1 id="how-sentinels-agree-to-mark-a-master-o_down">How Sentinels agree to mark a master <code>O_DOWN</code>.</h1><p>Once a Sentinel detects that a master is in <code>S_DOWN</code> condition it starts to
+send other sentinels a <code>SENTINEL is-master-down-by-addr</code> request every second.
+The reply is stored inside the state that every Sentinel takes in memory.</p><p>Ten times every second a Sentinel scans the state and checks if there are
+enough Sentinels thinking that a master is down (this is not specific for
+this operation, most state checks are performed with this frequency).</p><p>If this Sentinel has already an <code>S_DOWN</code> condition for this master, and there
+are enough other sentinels that recently reported this condition
+(the validity time is currently set to 5 seconds), then the master is marked
+as <code>O_DOWN</code> (Objectively Down).</p><p>Note that the <code>O_DOWN</code> state is not propagated among Sentinels. Every single
+Sentinel can reach independently this state.</p><h1 id="the-sentinel-is-master-down-by-addr-command">The SENTINEL is-master-down-by-addr command</h1><p>Sentinels ask other Sentinels for the state of a master from their local point
+of view using the <code>SENTINEL is-master-down-by-addr</code> command. This command
+replies with a boolean value (in the form of a 0 or 1 integer reply, as
+a first element of a multi bulk reply).</p><p>However in order to avoid false positives, the command acts in the following
+way:</p><ul>
+<li>If the specified ip and port is not known, 0 is returned.</li>
+<li>If the specified ip and port are found but don’t belong to a Master instance, 0 is returned.</li>
+<li>If the Sentinel is in TILT mode (see later in this document) 0 is returned.</li>
+<li>The value of 1 is returned only if the instance is known, is a master, is flagged <code>S_DOWN</code> and the Sentinel is in TILT mode.</li>
+</ul><h1 id="duplicate-sentinels-removal">Duplicate Sentinels removal</h1><p>In order to reach the configured quorum we absolutely want to make sure that
+the quorum is reached by different physical Sentinel instances. Under
+no circumstance we should get agreement from the same instance that for some
+reason appears to be two or multiple distinct Sentinel instances.</p><p>This is enforced by an aggressive removal of duplicated Sentinels: every time
+a Sentinel sends a message in the Hello Pub/Sub channel with its address
+and runid, if we can’t find a perfect match (same runid and address) inside
+the Sentinels table for that master, we remove any other Sentinel with the same
+runid OR the same address. And later add the new Sentinel.</p><p>For instance if a Sentinel instance is restarted, the Run ID will be different,
+and the old Sentinel with the same IP address and port pair will be removed.</p><h1 id="starting-the-failover-leaders-and-observers">Starting the failover: Leaders and Observers</h1><p>The fact that a master is marked as <code>O_DOWN</code> is not enough to star the
+failover process. What Sentinel should start the failover is also to be
+decided.</p><p>Also Sentinels can be configured in two ways: only as monitors that can’t
+perform the fail over, or as Sentinels that can start the failover.</p><p>What is desirable is that only a Sentinel will start the failover process,
+and this Sentinel should be selected among the Sentinels that are allowed
+to perform the failover.</p><p>In Sentinel there are two roles during a fail over:</p><ul>
+<li>The Leader Sentinel is the one selected to perform the failover.</li>
+<li>The Observers Sentinels are the other sentinels just following the failover process without doing active operations.</li>
+</ul><p>So the condition to start the failover is:</p><ul>
+<li>A Master in <code>O_DOWN</code> condition.</li>
+<li>A Sentinel that is elected Leader.</li>
+</ul><h1 id="leader-sentinel-election">Leader Sentinel election</h1><p>The election process works as follows:</p><ul>
+<li>Every Sentinel with a master in <code>O_DOWN</code> condition updates its internal state with frequency of 10 HZ to refresh what is the <em>Subjective Leader</em> from its point of view.</li>
+</ul><p>A Subjective Leader is selected in this way by every sentinel.</p><ul>
+<li>Every Sentinel we know about a given master, that is reachable (no <code>S_DOWN</code> state), that is allowed to perform the failover (this Sentinel-specific configuration is propagated using the Hello channel), is a possible candidate.</li>
+<li>Among all the possible candidates, the one with lexicographically smaller Run ID is selected.</li>
+</ul><p>Every time a Sentinel replies with to the <code>MASTER is-sentinel-down-by-addr</code> command it also replies with the Run ID of its Subjective Leader.</p><p>Every Sentinel with a failing master (<code>O_DOWN</code>) checks its subjective leader
+and the subjective leaders of all the other Sentinels with a frequency of
+10 HZ, and will flag itself as the Leader if the following conditions happen:</p><ul>
+<li>It is the Subjective Leader of itself.</li>
+<li>At least N-1 other Sentinels that see the master as down, and are reachable, also think that it is the Leader. With N being the quorum configured for this master.</li>
+<li>At least 50% + 1 of all the Sentinels involved in the voting process (that are reachable and that also see the master as failing) should agree on the Leader.</li>
+</ul><p>So for instance if there are a total of three sentinels, the master is failing,
+and all the three sentinels are able to communicate (no Sentinel is failing)
+and the configured quorum for this master is 2, a Sentinel will feel itself
+an Objective Leader if at least it and another Sentinel is agreeing that
+it is the subjective leader.</p><p>Once a Sentinel detects that it is the objective leader, it flags the master
+with <code>FAILOVER_IN_PROGRESS</code> and <code>IM_THE_LEADER</code> flags, and starts the failover
+process in <code>SENTINEL_FAILOVER_DELAY</code> (5 seconds currently) plus a random
+additional time between 0 milliseconds and 10000 milliseconds.</p><p>During that time we ask INFO to all the slaves with an increased frequency
+of one time per second (usually the period is 10 seconds). If a slave is
+turned into a master in the meantime the failover is suspended and the
+Leader clears the <code>IM_THE_LEADER</code> flag to turn itself into an observer.</p><h1 id="guarantees-of-the-leader-election-process">Guarantees of the Leader election process</h1><p>As you can see for a Sentinel to become a leader the majority is not strictly
+required. A user can force the majority to be needed just setting the master
+quorum to, for instance, the value of 5 if there are a total of 9 sentinels.</p><p>However it is also possible to set the quorum to the value of 2 with 9
+sentinels in order to improve the resistance to netsplits or failing Sentinels
+or other error conditions. In such a case the protection against race
+conditions (multiple Sentinels starting to perform the fail over at the same
+time) is given by the random delay used to start the fail over, and the
+continuous monitor of the slave instances to detect if another Sentinel
+(or a human) started the failover process.</p><p>Moreover the slave to promote is selected using a deterministic process to
+minimize the chance that two different Sentinels with full vision of the
+working slaves may pick two different slaves to promote.</p><p>However it is possible to easily imagine netsplits and specific configurations
+where two Sentinels may start to act as a leader at the same time, electing two
+different slaves as masters, in two different parts of the net that can’t
+communicate. The Redis Sentinel user should evaluate the network topology and
+select an appropriate quorum considering his or her goals and the different
+trade offs.</p><h1 id="how-observers-understand-that-the-failover-started">How observers understand that the failover started</h1><p>An observer is just a Sentinel that does not believe to be the Leader, but
+still sees a master in <code>O_DOWN</code> condition.</p><p>The observer is still able to follow and update the internal state based on
+what is happening with the failover, but does not directly rely on the
+Leader to communicate with it to be informed by progresses. It simply observes
+the state of the slaves to understand what is happening.</p><p>Specifically the observers flags the master as <code>FAILOVER_IN_PROGRESS</code> if a slave
+attached to a master turns into a master (observers can see it in the INFO output). An observer will also consider the failover complete once all the other
+reachable slaves appear to be slaves of this slave that was turned into a
+master.</p><p>If a Slave is in <code>FAILOVER_IN_PROGRESS</code> and the failover is not progressing for
+too much time, and at the same time the other Sentinels start claiming that
+this Sentinel is the objective leader (because for example the old leader
+is no longer reachable), the Sentinel will flag itself as <code>IM_THE_LEADER</code> and
+will proceed with the failover.</p><p>Note: all the Sentinel state, including the subjective and objective leadership
+is a dynamic process that is continuously refreshed with period of 10 HZ.
+There is no “one time decision” step in Sentinel.</p><h1 id="selection-of-the-slave-to-promote">Selection of the Slave to promote</h1><p>If a master has multiple slaves, the slave to promote to master is selected
+checking the slave priority (a new configuration option of Redis instances
+that is propagated via INFO output), and picking the one with lower priority
+value (it is an integer similar to the one of the MX field of the DNS system).
+All the slaves that appears to be disconnected from the master for a long
+time are discarded (stale data).</p><p>If slaves with the same priority exist, the one with the lexicographically
+smaller Run ID is selected.</p><p>If there is no Slave to select because all the salves are failing the failover
+is not started at all. Instead if there is no Slave to select because the
+master <em>never</em> used to have slaves in the monitoring session, then the
+failover is performed nonetheless just calling the user scripts.
+However for this to happen a special configuration option must be set for
+that master (force-failover-without-slaves).</p><p>This is useful because there are configurations where a new Instance can be
+provisioned at IP protocol level by the script, but there are no attached
+slaves.</p><h1 id="fail-over-process">Fail over process</h1><p>The fail over process consists of the following steps:</p><ul>
+<li>1) Turn the selected slave into a master using the SLAVEOF NO ONE command.</li>
+<li>2) Turn all the remaining slaves, if any, to slaves of the new master. This is done incrementally, one slave after the other, waiting for the previous slave to complete the synchronization process before starting with the next one.</li>
+<li>3) Call a user script to inform the clients that the configuration changed.</li>
+<li>4) Completely remove the old failing master from the table, and add the new master with the same name.</li>
+</ul><p>If Steps “1” fails, the fail over is aborted.</p><p>All the other errors are considered to be non-fatal.</p><h1 id="tilt-mode">TILT mode</h1><p>Redis Sentinel is heavily dependent on the computer time: for instance in
+order to understand if an instance is available it remembers the time of the
+latest successful reply to the PING command, and compares it with the current
+time to understand how old it is.</p><p>However if the computer time changes in an unexpected way, or if the computer
+is very busy, or the process blocked for some reason, Sentinel may start to
+behave in an unexpected way.</p><p>The TILT mode is a special “protection” mode that a Sentinel can enter when
+something odd is detected that can lower the reliability of the system.
+The Sentinel timer interrupt is normally called 10 times per second, so we
+expect that more or less 100 milliseconds will elapse between two calls
+to the timer interrupt.</p><p>What a Sentinel does is to register the previous time the timer interrupt
+was called, and compare it with the current call: if the time difference
+is negative or unexpectedly big (2 seconds or more) the TILT mode is entered
+(or if it was already entered the exit from the TILT mode postponed).</p><p>When in TILT mode the Sentinel will continue to monitor everything, but:</p><ul>
+<li>It stops acting at all.</li>
+<li>It starts to reply negatively to <code>SENTINEL is-master-down-by-addr</code> requests as the ability to detect a failure is no longer trusted.</li>
+</ul><p>If everything appears to be normal for 30 second, the TILT mode is exited.</p><h1 id="sentinels-monitoring-other-sentinels">Sentinels monitoring other sentinels</h1><p>When a sentinel no longer advertises itself using the Pub/Sub channel for too
+much time (30 minutes more the configured timeout for the master), but at the
+same time the master appears to work correctly, the Sentinel is removed from
+the table of Sentinels for this master, and a notification is sent to the
+system administrator. </p><h1 id="user-provided-scripts">User provided scripts</h1><p>Sentinels can optionally call user-provided scripts to perform two tasks:</p><ul>
+<li>Inform clients that the configuration changed.</li>
+<li>Notify the system administrator of problems.</li>
+</ul><p>The script to inform clients of a configuration change has the following parameters:</p><ul>
+<li>ip:port of the calling Sentinel.</li>
+<li>old master ip:port.</li>
+<li>new master ip:port.</li>
+</ul><p>The script to send notifications is called with the following parameters:</p><ul>
+<li>ip:port of the calling Sentinel.</li>
+<li>The message to deliver to the system administrator is passed writing to the standard input.</li>
+</ul><p>Using the ip:port of the calling sentinel, scripts may call SENTINEL subcommands
+to get more info if needed.</p><p>Concrete implementations of notification scripts will likely use the “mail”
+command or some other command to deliver SMS messages, emails, tweets.</p><p>Implementations of the script to modify the configuration in web applications
+are likely to use HTTP GET requests to force clients to update the
+configuration, or any other sensible mechanism for the specific setup in use.</p><h1 id="setup-examples">Setup examples</h1><p>Imaginary setup:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">computer A runs the </span><span class="typ">Redis</span><span class="pln"> master</span><span class="pun">.</span><span class="pln">
+computer B runs the </span><span class="typ">Redis</span><span class="pln"> slave </span><span class="kwd">and</span><span class="pln"> the client software</span><span class="pun">.</span></code></pre><p>In this naive configuration it is possible to place a single sentinel, with
+“minimal agreement” set to the value of one (no acknowledge from other
+sentinels needed), running on “B”.</p><p>If “A” will fail the fail over process will start, the slave will be elected
+to master, and the client software will be reconfigured.</p><p>Imaginary setup:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">computer A runs the </span><span class="typ">Redis</span><span class="pln"> master
+computer B runs the </span><span class="typ">Redis</span><span class="pln"> slave
+computer C</span><span class="pun">,</span><span class="pln">D</span><span class="pun">,</span><span class="pln">E</span><span class="pun">,</span><span class="pln">F</span><span class="pun">,</span><span class="pln">G are web servers acting </span><span class="kwd">as</span><span class="pln"> clients</span></code></pre><p>In this setup it is possible to run five sentinels placed at C,D,E,F,G with
+“minimal agreement” set to 3.</p><p>In real production environments there is to evaluate how the different
+computers are networked together, and to check what happens during net splits
+in order to select where to place the sentinels, and the level of minimal
+agreement, so that a single arm of the network failing will not trigger a
+fail over.</p><p>In general if a complex network topology is present, the minimal agreement
+should be set to the max number of sentinels existing at the same time in
+the same network arm, plus one.</p><h1 id="sentinel-subcommands">SENTINEL SUBCOMMANDS</h1><ul>
+<li><code>SENTINEL masters</code>, provides a list of configured masters.</li>
+<li><code>SENTINEL slaves &lt;master name&gt;</code>, provides a list of slaves for the master with the specified name.</li>
+<li><code>SENTINEL sentinels &lt;master name&gt;</code>, provides a list of sentinels for the master with the specified name.</li>
+<li><code>SENTINEL is-master-down-by-addr &lt;ip&gt; &lt;port&gt;</code>, returns a two elements multi bulk reply where the first element is :0 or :1, and the second is the Subjective Leader for the failover.</li>
+</ul><h1 id="todo">TODO</h1><ul>
+<li>More detailed specification of user script error handling, including what return codes may mean, like 0: try again. 1: fatal error. 2: try again, and so forth.</li>
+<li>More detailed specification of what happens when a user script does not return in a given amount of time.</li>
+<li>Add a “push” notification system for configuration changes.</li>
+<li>Document that for every master monitored the configuration specifies a name for the master that is reported by all the SENTINEL commands.</li>
+<li>Make clear that we handle a single Sentinel monitoring multiple masters.</li>
+</ul></div>
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/sentinel-spec.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/sentinel-spec.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->
 </div><!-- end ngIf: !index -->
