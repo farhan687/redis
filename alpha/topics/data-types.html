@@ -572,64 +572,71 @@
 </nav>
 <!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
   <div class="menubar fixed">
-    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="using-redis-as-an-lru-cache-item" class="level-1"><a id="using-redis-as-an-lru-cache-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache" class="level-1" pref="#using-redis-as-an-lru-cache">Using Redis as an LRU cache</a><ul class="level-2" id="using-redis-as-an-lru-cache-list"><li id="using-redis-as-an-lru-cache-maxmemory-configuration-directive-item" class="level-2"><a id="using-redis-as-an-lru-cache-maxmemory-configuration-directive-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache-maxmemory-configuration-directive" class="level-2" pref="#using-redis-as-an-lru-cache-maxmemory-configuration-directive">Maxmemory configuration directive</a></li><li id="using-redis-as-an-lru-cache-eviction-policies-item" class="level-2"><a id="using-redis-as-an-lru-cache-eviction-policies-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache-eviction-policies" class="level-2" pref="#using-redis-as-an-lru-cache-eviction-policies">Eviction policies</a></li><li id="using-redis-as-an-lru-cache-how-the-eviction-process-works-item" class="level-2"><a id="using-redis-as-an-lru-cache-how-the-eviction-process-works-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache-how-the-eviction-process-works" class="level-2" pref="#using-redis-as-an-lru-cache-how-the-eviction-process-works">How the eviction process works</a></li><li id="using-redis-as-an-lru-cache-approximated-lru-algorithm-item" class="level-2"><a id="using-redis-as-an-lru-cache-approximated-lru-algorithm-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache-approximated-lru-algorithm" class="level-2" pref="#using-redis-as-an-lru-cache-approximated-lru-algorithm">Approximated LRU algorithm</a></li></ul></li></ul></li></ul></div>
+    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="data-types-item" class="level-1"><a id="data-types-link" href="./alpha/topics/data-types.html#data-types" class="level-1" pref="#data-types">Data types</a><ul class="level-2" id="data-types-list"><li id="data-types-strings-item" class="level-2"><a id="data-types-strings-link" href="./alpha/topics/data-types.html#data-types-strings" class="level-2" pref="#data-types-strings">Strings</a></li><li id="data-types-lists-item" class="level-2"><a id="data-types-lists-link" href="./alpha/topics/data-types.html#data-types-lists" class="level-2" pref="#data-types-lists">Lists</a></li><li id="data-types-sets-item" class="level-2"><a id="data-types-sets-link" href="./alpha/topics/data-types.html#data-types-sets" class="level-2" pref="#data-types-sets">Sets</a></li><li id="data-types-hashes-item" class="level-2"><a id="data-types-hashes-link" href="./alpha/topics/data-types.html#data-types-hashes" class="level-2" pref="#data-types-hashes">Hashes</a></li><li id="data-types-sorted-sets-item" class="level-2"><a id="data-types-sorted-sets-link" href="./alpha/topics/data-types.html#data-types-sorted-sets" class="level-2" pref="#data-types-sorted-sets">Sorted sets</a></li><li id="data-types-bitmaps-and-hyperloglogs-item" class="level-2"><a id="data-types-bitmaps-and-hyperloglogs-link" href="./alpha/topics/data-types.html#data-types-bitmaps-and-hyperloglogs" class="level-2" pref="#data-types-bitmaps-and-hyperloglogs">Bitmaps and HyperLogLogs</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="using-redis-as-an-lru-cache">Using Redis as an LRU cache</h1><p>When Redis is used as a cache, sometimes it is handy to let it automatically
-evict old data as you add new one. This behavior is very well known in the
-community of developers, since it is the default behavior of the popular
-<em>memcached</em> system.</p><p>LRU is actually only one of the supported eviction methods. This page covers
-the more general topic of the Redis <code>maxmemory</code> directive that is used in
-order to limit the memory usage to a fixed amount, and it also covers in
-depth the LRU algorithm used by Redis, that is actually an approximation of
-the exact LRU.</p><h2 id="using-redis-as-an-lru-cache-maxmemory-configuration-directive">Maxmemory configuration directive</h2><p>The <code>maxmemory</code> configuration directive is used in order to configure Redis
-to use a specified amount of memory for the data set. It is possible to
-set the configuration directive using the <code>redis.conf</code> file, or later using
-the <code>CONFIG SET</code> command at runtime.</p><p>For example in order to configure a memory limit of 100 megabytes, the
-following directive can be used inside the <code>redis.conf</code> file.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">maxmemory </span><span class="lit">100mb</span></code></pre><p>Setting <code>maxmemory</code> to zero results into no memory limits. This is the
-default behavior for 64 bit systems, while 32 bit systems use an implicit
-memory limit of 3GB.</p><p>When the specified amount of memory is reached, it is possible to select
-among different behaviors, called <strong>policies</strong>.
-Redis can just return errors for commands that could result in more memory
-being used, or it can evict some old data in order to return back to the
-specified limit every time new data is added.</p><h2 id="using-redis-as-an-lru-cache-eviction-policies">Eviction policies</h2><p>The exact behavior Redis follows when the <code>maxmemory</code> limit is reached is
-configured using the <code>maxmemory-policy</code> configuration directive.</p><p>The following policies are available:</p><ul>
-<li><strong>noeviction</strong>: return errors when the memory limit was reached and the client is trying to execute commands that could result in more memory to be used (most write commands, but <code>DEL</code> and a few more exceptions).</li>
-<li><strong>allkeys-lru</strong>: evict keys trying to remove the less recently used (LRU) keys first, in order to make space for the new data added.</li>
-<li><strong>volatile-lru</strong>: evict keys trying to remove the less recently used (LRU) keys first, but only among keys that have an <strong>expire set</strong>, in order to make space for the new data added.</li>
-<li><strong>allkeys-random</strong>: evict random keys in order to make space for the new data added.</li>
-<li><strong>volatile-random</strong>: evict random keys in order to make space for the new data added, but only evict keys with an <strong>expire set</strong>.</li>
-<li><strong>volatile-ttl</strong>: In order to make space for the new data, evict only keys with an <strong>expire set</strong>, and try to evict keys with a shorter time to live (TTL) first.</li>
-</ul><p>The policies <strong>volatile-lru</strong>, <strong>volatile-random</strong> and <strong>volatile-ttl</strong> behave like <strong>noeviction</strong> if there are no keys to evict matching the prerequisites.</p><p>To pick the right eviction policy is important depending on the access pattern 
-of your application, however you can reconfigure the policy at runtime while 
-the application is running, and monitor the number of cache misses and hits 
-using the Redis <code>INFO</code> output in order to tune your setup.</p><p>In general as a rule of thumb:</p><ul>
-<li>Use the <strong>allkeys-lru</strong> policy when you expect a power-law distribution in the popularity of your requests, that is, you expect that a subset of elements will be accessed far more often than the rest. <strong>This is a good pick if you are unsure</strong>.</li>
-<li>Use the <strong>allkeys-random</strong> if you have a cyclic access where all the keys are scanned continuously, or when you expect the distribution to be uniform (all elements likely accessed with the same probability).</li>
-<li>Use the <strong>volatile-ttl</strong> if you want to be able to provide hints to Redis about what are good candidate for expiration by using different TTL values when you create your cache objects.</li>
-</ul><p>The <strong>allkeys-lru</strong> and <strong>volatile-random</strong> policies are mainly useful when you want to use a single instance for both caching and to have a set of persistent keys. However it is usually a better idea to run two Redis instances to solve such a problem.</p><p>It is also worth to note that setting an expire to a key costs memory, so using a policy like <strong>allkeys-lru</strong> is more memory efficient since there is no need to set an expire for the key to be evicted under memory pressure.</p><h2 id="using-redis-as-an-lru-cache-how-the-eviction-process-works">How the eviction process works</h2><p>It is important to understand that the eviction process works like this:</p><ul>
-<li>A client runs a new command, resulting in more data added.</li>
-<li>Redis checks the memory usage, and if it is greater than the <code>maxmemory</code> limit , it evicts keys according to the policy.</li>
-<li>A new command is executed, and so forth.</li>
-</ul><p>So we continuously cross the boundaries of the memory limit, by going over it, and then by evicting keys to return back under the limits.</p><p>If a command results in a lot of memory being used (like a big set intersection stored into a new key) for some time the memory limit can be surpassed by a noticeable amount.</p><h2 id="using-redis-as-an-lru-cache-approximated-lru-algorithm">Approximated LRU algorithm</h2><p>Redis LRU algorithm is not an exact implementation. This means that Redis is
-not able to pick the <em>best candidate</em> for eviction, that is, the access that
-was accessed the most in the past. Instead it will try to run an approximation
-of the LRU algorithm, by sampling a small number of keys, and evicting the
-one that is the best (with the oldest access time) among the sampled keys.</p><p>However since Redis 3.0 the algorithm was improved to also take a pool of good
-candidates for eviction. This improved the performance of the algorithm, making
-it able to approximate more closely the behavior of a real LRU algorithm.</p><p>What is important about the Redis LRU algorithm is that you <strong>are able to tune</strong> the precision of the algorithm by changing the number of samples to check for every eviction. This parameter is controlled by the following configuration directive:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">maxmemory</span><span class="pun">-</span><span class="pln">samples </span><span class="lit">5</span></code></pre><p>The reason why Redis does not use a true LRU implementation is because it
-costs more memory. However the approximation is virtually equivalent for the
-application using Redis. The following is a graphical comparison of how
-the LRU approximation used by Redis compares with true LRU.</p><p><img src="http://redis.io/images/redisdoc/lru_comparison.png" alt="LRU comparison"></p><p>The test to generate the above graphs filled a Redis server with a given number of keys. The keys were accessed from the first to the last, so that the first keys are the best candidates for eviction using an LRU algorithm. Later more 50% of keys are added, in order to force half of the old keys to be evicted.</p><p>You can see three kind of dots in the graphs, forming three distinct bands.</p><ul>
-<li>The light gray band are objects that were evicted.</li>
-<li>The gray band are objects that were not evicted.</li>
-<li>The green band are objects that were added.</li>
-</ul><p>In a theoretical LRU implementation we expect that, among the old keys, the first half will be expired. The Redis LRU algorithm will instead only <em>probabilistically</em> expire the older keys.</p><p>As you can see Redis 3.0 does a better job with 5 samples compared to Redis 2.8, however most objects that are among the latest accessed are still retained by Redis 2.8. Using a sample size of 10 in Redis 3.0 the approximation is very close to the theoretical performance of Redis 3.0.</p><p>Note that LRU is just a model to predict how likely a given key will be accessed in the future. Moreover, if your data access pattern closely
-resembles the power law, most of the accesses will be in the set of keys that
-the LRU approximated algorithm will be able to handle well.</p><p>In simulations we found that using a power law access pattern, the difference between true LRU and Redis approximation were minimal or non-existent.</p><p>However you can raise the sample size to 10 at the cost of some additional CPU
-usage in order to closely approximate true LRU, and check if this makes a
-difference in your cache misses rate.</p><p>To experiment in production with different values for the sample size by using
-the <code>CONFIG SET maxmemory-samples &lt;count&gt;</code> command, is very simple.</p></div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/lru-cache.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/lru-cache.md">
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="data-types">Data types</h1><p><a name="strings"></a></p><h2 id="data-types-strings">Strings</h2><p>Strings are the most basic kind of Redis value. Redis Strings are binary safe, this means that a Redis string can contain any kind of data, for instance a
+JPEG image or a serialized Ruby object.</p><p>A String value can be at max 512 Megabytes in length.</p><p>You can do a number of interesting things using strings in Redis, for instance you can:</p><ul>
+<li>Use Strings as atomic counters using commands in the INCR family: <a href="/commands/incr">INCR</a>, <a href="/commands/decr">DECR</a>, <a href="/commands/incrby">INCRBY</a>.</li>
+<li>Append to strings with the <a href="/commands/append">APPEND</a> command.</li>
+<li>Use Strings as a random access vectors with <a href="/commands/getrange">GETRANGE</a> and <a href="/commands/setrange">SETRANGE</a>.</li>
+<li>Encode a lot of data in little space, or create a Redis backed Bloom Filter using <a href="/commands/getbit">GETBIT</a> and <a href="/commands/setbit">SETBIT</a>.</li>
+</ul><p>Check all the <a href="/commands/#string">available string commands</a> for more information, or read the <a href="/topics/data-types-intro">introduction to Redis data types</a>.</p><p><a name="lists"></a></p><h2 id="data-types-lists">Lists</h2><p>Redis Lists are simply lists of strings, sorted by insertion order.
+It is possible to add elements to a Redis List pushing new elements on the head  (on the left) or on the tail (on the right) of the list.</p><p>The <a href="/commands/lpush">LPUSH</a> command inserts a new element on the head, while
+<a href="/commands/rpush">RPUSH</a> inserts a new element on the tail. A new list is created
+when one of this operations is performed against an empty key.
+Similarly the key is removed from the key space if a list operation will
+empty the list. These are very handy semantics since all the list commands will
+behave exactly like they were called with an empty list if called with a
+non-existing key as argument.</p><p>Some example of list operations and resulting lists:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">LPUSH mylist a   </span><span class="com"># now the list is "a"</span><span class="pln">
+LPUSH mylist b   </span><span class="com"># now the list is "b","a"</span><span class="pln">
+RPUSH mylist c   </span><span class="com"># now the list is "b","a","c" (RPUSH was used this time)</span></code></pre><p>The max length of a list is 2^32 - 1 elements (4294967295, more than 4 billion of elements per list).</p><p>The main features of Redis Lists from the point of view of time complexity are
+the support for constant time insertion and deletion of elements near the
+head and tail, even with many millions of inserted items.
+Accessing elements is very fast near the extremes of the list but
+is slow if you try accessing the middle of a very big list, as it is
+an O(N) operation.</p><p>You can do many interesting things with Redis Lists, for instance you can:</p><ul>
+<li>Model a timeline in a social network, using <a href="/commands/lpush">LPUSH</a> in order to add new elements in the user time line, and using <a href="/commands/lrange">LRANGE</a> in order to retrieve a few of recently inserted items.</li>
+<li>You can use <a href="/commands/lpush">LPUSH</a> together with <a href="/commands/ltrim">LTRIM</a> to create a list that never exceeds a given number of elements, but just remembers the latest N elements.</li>
+<li>Lists can be used as a message passing primitive, See for instance the well known <a href="https://github.com/defunkt/resque">Resque</a> Ruby library for creating background jobs.</li>
+<li>You can do a lot more with lists, this data type supports a number of commands, including blocking commands like <a href="/commands/blpop">BLPOP</a>.</li>
+</ul><p>Please check all the <a href="/commands#list">available commands operating on lists</a> for more information, or read the <a href="/topics/data-types-intro">introduction to Redis data types</a>.</p><p><a name="sets"></a></p><h2 id="data-types-sets">Sets</h2><p>Redis Sets are an unordered collection of Strings. It is possible to add,
+remove, and test for existence of members in O(1) (constant time regardless
+of the number of elements contained inside the Set).</p><p>Redis Sets have the desirable property of not allowing repeated members. Adding the same element multiple times will result in a set having a single copy of this element. Practically speaking this means that adding a member does not require a <em>check if exists then add</em> operation.</p><p>A very interesting thing about Redis Sets is that they support a number of
+server side commands to compute sets starting from existing sets, so you
+can do unions, intersections, differences of sets in very short time.</p><p>The max number of members in a set is 2^32 - 1 (4294967295, more than 4 billion   of members per set).</p><p>You can do many interesting things using Redis Sets, for instance you can:</p><ul>
+<li>You can track unique things using Redis Sets. Want to know all the unique IP addresses visiting a given blog post? Simply use <a href="/commands/sadd">SADD</a> every time you process a page view. You are sure repeated IPs will not be inserted.</li>
+<li>Redis Sets are good to represent relations. You can create a tagging system with Redis using a Set to represent every tag. Then you can add all the IDs of all the objects having a given tag into a Set representing this particular tag, using the <a href="/commands/sadd">SADD</a> command. Do you want all the IDs of all the Objects having a three different tags at the same time? Just use <a href="/commands/sinter">SINTER</a>.</li>
+<li>You can use Sets to extract elements at random using the <a href="/commands/spop">SPOP</a> or <a href="/commands/srandmember">SRANDMEMBER</a> commands.</li>
+</ul><p>As usual, check the <a href="/commands#set">full list of Set commands</a> for more information, or read the <a href="/topics/data-types-intro">introduction to Redis data types</a>.</p><p><a name="hashes"></a></p><h2 id="data-types-hashes">Hashes</h2><p>Redis Hashes are maps between string fields and string values, so they are the perfect data type to represent objects (e.g. A User with a number of fields like name, surname, age, and so forth):</p><pre><code class="prettyprint prettyprinted" style=""><span class="lit">@cli</span><span class="pln">
+HMSET user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln"> username antirez password P1pp0 age </span><span class="lit">34</span><span class="pln">
+HGETALL user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln">
+HSET user</span><span class="pun">:</span><span class="lit">1000</span><span class="pln"> password </span><span class="lit">12345</span><span class="pln">
+HGETALL user</span><span class="pun">:</span><span class="lit">1000</span></code></pre><p>A hash with a few fields (where few means up to one hundred or so) is stored in a way
+that takes very little space, so you can store millions of objects in a small
+Redis instance.</p><p>While Hashes are used mainly to represent objects, they are capable of storing many elements, so you can use Hashes for many other tasks as well.</p><p>Every hash can store up to 2^32 - 1 field-value pairs (more than 4 billion).</p><p>Check the <a href="/commands#hash">full list of Hash commands</a> for more information, or read the <a href="/topics/data-types-intro">introduction to Redis data types</a>.</p><p><a name="sorted-sets"></a></p><h2 id="data-types-sorted-sets">Sorted sets</h2><p>Redis Sorted Sets are, similarly to Redis Sets, non repeating collections of
+Strings. The difference is that every member of a Sorted Set is associated
+with score, that is used in order to take the sorted set ordered, from the
+smallest to the greatest score.  While members are unique, scores may be
+repeated.</p><p>With sorted sets you can add, remove, or update elements in a very fast way
+(in a time proportional to the logarithm of the number of elements). Since
+elements are <em>taken in order</em> and not ordered afterwards, you can also get
+ranges by score or by rank (position) in a very fast way.
+Accessing the middle of a sorted set is also very fast, so you can use
+Sorted Sets as a smart list of non repeating elements where you can quickly access
+everything you need: elements in order, fast existence test, fast access
+to elements in the middle!</p><p>In short with sorted sets you can do a lot of tasks with great performance
+that are really hard to model in other kind of databases.</p><p>With Sorted Sets you can:</p><ul>
+<li>Take a leader board in a massive online game, where every time a new score
+is submitted you update it using <a href="/commands/zadd">ZADD</a>. You can easily
+take the top users using <a href="/commands/zrange">ZRANGE</a>, you can also, given an
+user name, return its rank in the listing using <a href="/commands/zrank">ZRANK</a>.
+Using ZRANK and ZRANGE together you can show users with a score similar to
+a given user. All very <em>quickly</em>.</li>
+<li>Sorted Sets are often used in order to index data that is stored inside Redis.
+For instance if you have many hashes representing users, you can use a sorted set with elements having the age of the user as the score and the ID of the user as the value. So using <a href="/commands/zrangebyscore">ZRANGEBYSCORE</a> it will be trivial and fast to retrieve all the users with a given interval of ages.</li>
+</ul><p>Sorted Sets are probably the most advanced Redis data types, so take some time to check the <a href="/commands#sorted_set">full list of Sorted Set commands</a> to discover what you can do with Redis! Also you may want to read the <a href="/topics/data-types-intro">introduction to Redis data types</a>.</p><h2 id="data-types-bitmaps-and-hyperloglogs">Bitmaps and HyperLogLogs</h2><p>Redis also supports Bitmaps and HyperLogLogs which are actually data types
+based on the String base type, but having their own semantics.</p><p>Please refer to the <a href="/topics/data-types-intro">introduction to Redis data types</a> for information about those types.</p></div>
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/data-types.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/data-types.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->
 </div><!-- end ngIf: !index -->
