@@ -703,11 +703,11 @@ of the keys we don’t want to proceed.  When this happens we just call
 transactions.</p><h3 id="transactions-watch-explained-using-watch-to-implement-zpop">Using <code>WATCH</code> to implement ZPOP</h3><p>A good example to illustrate how <code>WATCH</code> can be used to create new
 atomic operations otherwise not supported by Redis is to implement ZPOP,
 that is a command that pops the element with the lower score from a
-sorted set in an atomic way. This is the simplest implementation:</p><pre><code class="prettyprint">WATCH zset
-element = ZRANGE zset 0 0
+sorted set in an atomic way. This is the simplest implementation:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">WATCH zset
+element </span><span class="pun">=</span><span class="pln"> ZRANGE zset </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pln">
 MULTI
 ZREM zset element
-EXEC</code></pre><p>If <code>EXEC</code> fails (i.e. returns a @nil-reply) we just repeat the operation.</p><h2 id="transactions-redis-scripting-and-transactions">Redis scripting and transactions</h2><p>A <a href="/commands/eval">Redis script</a> is transactional by definition, so everything
+EXEC</span></code></pre><p>If <code>EXEC</code> fails (i.e. returns a @nil-reply) we just repeat the operation.</p><h2 id="transactions-redis-scripting-and-transactions">Redis scripting and transactions</h2><p>A <a href="/commands/eval">Redis script</a> is transactional by definition, so everything
 you can do with a Redis transaction, you can also do with a script, and
 usually the script will be both simpler and faster.</p><p>This duplication is due to the fact that scripting was introduced in Redis 2.6
 while transactions already existed long before. However we are unlikely to

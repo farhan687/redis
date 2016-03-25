@@ -638,32 +638,32 @@ simple as using the <strong>bt</strong> command: (that is a short for backtrace)
 </span><span class="com">#4  0x000000010d251872 in readQueryFromClient (el=0x0, fd=5, privdata=0x7fff76f1c0b0, mask=220924512) at networking.c:1021</span><span class="pln">
 </span><span class="com">#5  0x000000010d243523 in aeProcessEvents (eventLoop=0x7fff6ce408d0, flags=220829559) at ae.c:352</span><span class="pln">
 </span><span class="com">#6  0x000000010d24373b in aeMain (eventLoop=0x10d429ef0) at ae.c:397</span><span class="pln">
-</span><span class="com">#7  0x000000010d2494ff in main (argc=1, argv=0x10d2b2900) at redis.c:2046</span></code></pre><p>This shows the backtrace, but we also want to dump the processor registers using the <strong>info registers</strong> command:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">(</span><span class="pln">gdb</span><span class="pun">)</span><span class="pln"> info registers
-rax            </span><span class="lit">0x0</span><span class="pln">  </span><span class="lit">0</span><span class="pln">
-rbx            </span><span class="lit">0x7ffc32005000</span><span class="pln">   </span><span class="lit">140721147367424</span><span class="pln">
-rcx            </span><span class="lit">0x10d2b0a60</span><span class="pln">  </span><span class="lit">4515891808</span><span class="pln">
-rdx            </span><span class="lit">0x7fff76f1c0b0</span><span class="pln">   </span><span class="lit">140735188943024</span><span class="pln">
-rsi            </span><span class="lit">0x10d299777</span><span class="pln">  </span><span class="lit">4515796855</span><span class="pln">
-rdi            </span><span class="lit">0x0</span><span class="pln">  </span><span class="lit">0</span><span class="pln">
-rbp            </span><span class="lit">0x7fff6ce40730</span><span class="pln">   </span><span class="lit">0x7fff6ce40730</span><span class="pln">
-rsp            </span><span class="lit">0x7fff6ce40650</span><span class="pln">   </span><span class="lit">0x7fff6ce40650</span><span class="pln">
-r8             </span><span class="lit">0x4f26b3f7</span><span class="pln">   </span><span class="lit">1327936503</span><span class="pln">
-r9             </span><span class="lit">0x7fff6ce40718</span><span class="pln">   </span><span class="lit">140735020271384</span><span class="pln">
-r10            </span><span class="lit">0x81</span><span class="pln"> </span><span class="lit">129</span><span class="pln">
-r11            </span><span class="lit">0x10d430398</span><span class="pln">  </span><span class="lit">4517462936</span><span class="pln">
-r12            </span><span class="lit">0x4b7c04f8babc0</span><span class="pln">  </span><span class="lit">1327936503000000</span><span class="pln">
-r13            </span><span class="lit">0x10d3350a0</span><span class="pln">  </span><span class="lit">4516434080</span><span class="pln">
-r14            </span><span class="lit">0x10d42d9f0</span><span class="pln">  </span><span class="lit">4517452272</span><span class="pln">
-r15            </span><span class="lit">0x10d430398</span><span class="pln">  </span><span class="lit">4517462936</span><span class="pln">
-rip            </span><span class="lit">0x10d26cfd4</span><span class="pln">  </span><span class="lit">0x10d26cfd4</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">debugCommand</span><span class="pun">+</span><span class="lit">68</span><span class="pun">&gt;</span><span class="pln">
-eflags         </span><span class="lit">0x10246</span><span class="pln">  </span><span class="lit">66118</span><span class="pln">
-cs             </span><span class="lit">0x2b</span><span class="pln"> </span><span class="lit">43</span><span class="pln">
-ss             </span><span class="lit">0x0</span><span class="pln">  </span><span class="lit">0</span><span class="pln">
-ds             </span><span class="lit">0x0</span><span class="pln">  </span><span class="lit">0</span><span class="pln">
-es             </span><span class="lit">0x0</span><span class="pln">  </span><span class="lit">0</span><span class="pln">
-fs             </span><span class="lit">0x0</span><span class="pln">  </span><span class="lit">0</span><span class="pln">
-gs             </span><span class="lit">0x0</span><span class="pln">  </span><span class="lit">0</span></code></pre><p>Please <strong>make sure to include</strong> both this outputs in your bug report.</p><h2 id="redis-debugging-guide-obtaining-the-core-file">Obtaining the core file</h2><p>The next step is to generate the core dump, that is the image of the memory of the running Redis process. This is performed using the <code>gcore</code> command:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pun">(</span><span class="pln">gdb</span><span class="pun">)</span><span class="pln"> gcore
-</span><span class="typ">Saved</span><span class="pln"> corefile core</span><span class="pun">.</span><span class="lit">58414</span></code></pre><p>Now you have the core dump to send to the Redis developer, but <strong>it is important to understand</strong> that this happens to contain all the data that was inside the Redis instance at the time of the crash: Redis developers will make sure to don’t share the content with any other, and will delete the file as soon as it is no longer used for debugging purposes, but you are warned that sending the core file you are sending your data.</p><p>If there are sensible stuff in the data set we suggest sending the dump directly to Salvatore Sanfilippo (that is the guy writing this doc) at the email address <strong>antirez at gmail dot com</strong>.</p><h2 id="redis-debugging-guide-what-to-send-to-developers">What to send to developers</h2><p>Finally you can send everything to the Redis core team:</p><ul>
+</span><span class="com">#7  0x000000010d2494ff in main (argc=1, argv=0x10d2b2900) at redis.c:2046</span></code></pre><p>This shows the backtrace, but we also want to dump the processor registers using the <strong>info registers</strong> command:</p><pre><code class="prettyprint">(gdb) info registers
+rax            0x0  0
+rbx            0x7ffc32005000   140721147367424
+rcx            0x10d2b0a60  4515891808
+rdx            0x7fff76f1c0b0   140735188943024
+rsi            0x10d299777  4515796855
+rdi            0x0  0
+rbp            0x7fff6ce40730   0x7fff6ce40730
+rsp            0x7fff6ce40650   0x7fff6ce40650
+r8             0x4f26b3f7   1327936503
+r9             0x7fff6ce40718   140735020271384
+r10            0x81 129
+r11            0x10d430398  4517462936
+r12            0x4b7c04f8babc0  1327936503000000
+r13            0x10d3350a0  4516434080
+r14            0x10d42d9f0  4517452272
+r15            0x10d430398  4517462936
+rip            0x10d26cfd4  0x10d26cfd4 &lt;debugCommand+68&gt;
+eflags         0x10246  66118
+cs             0x2b 43
+ss             0x0  0
+ds             0x0  0
+es             0x0  0
+fs             0x0  0
+gs             0x0  0</code></pre><p>Please <strong>make sure to include</strong> both this outputs in your bug report.</p><h2 id="redis-debugging-guide-obtaining-the-core-file">Obtaining the core file</h2><p>The next step is to generate the core dump, that is the image of the memory of the running Redis process. This is performed using the <code>gcore</code> command:</p><pre><code class="prettyprint">(gdb) gcore
+Saved corefile core.58414</code></pre><p>Now you have the core dump to send to the Redis developer, but <strong>it is important to understand</strong> that this happens to contain all the data that was inside the Redis instance at the time of the crash: Redis developers will make sure to don’t share the content with any other, and will delete the file as soon as it is no longer used for debugging purposes, but you are warned that sending the core file you are sending your data.</p><p>If there are sensible stuff in the data set we suggest sending the dump directly to Salvatore Sanfilippo (that is the guy writing this doc) at the email address <strong>antirez at gmail dot com</strong>.</p><h2 id="redis-debugging-guide-what-to-send-to-developers">What to send to developers</h2><p>Finally you can send everything to the Redis core team:</p><ul>
 <li>The Redis executable you are using.</li>
 <li>The stack trace produced by the <strong>bt</strong> command, and the registers dump.</li>
 <li>The core file you generated with gdb.</li>
