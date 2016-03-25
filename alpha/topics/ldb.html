@@ -550,7 +550,7 @@
 
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown search-dropdown">
-        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
       </li>
       <li class="dropdown">
         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -676,22 +676,22 @@ print all variables and their respective values.</p><p>The <code>eval</code> com
 <li>The client provides a native interface for setting the debug mode and controlling the debug session.</li>
 <li>The client provides an interface for sending arbitrary commands over RESP.</li>
 <li>The client allows sending raw messages to the Redis server.</li>
-</ol><p>For example, the <a href="https://redislabs.com/blog/zerobrane-studio-plugin-for-redis-lua-scripts">Redis plugin</a> for <a href="http://studio.zerobrane.com/">ZeroBrane Studio</a> integrates with LDB using <a href="https://github.com/nrk/redis-lua">redis-lua</a>. The following Lua code is a simplified example of how the plugin achieves that:</p><pre><code class="lang-Lua prettyprint prettyprinted" style=""><span class="kwd">local</span><span class="pln"> redis </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">require</span><span class="pln"> </span><span class="string"><span class="str">'redis'</span></span><span class="pln">
+</ol><p>For example, the <a href="https://redislabs.com/blog/zerobrane-studio-plugin-for-redis-lua-scripts">Redis plugin</a> for <a href="http://studio.zerobrane.com/">ZeroBrane Studio</a> integrates with LDB using <a href="https://github.com/nrk/redis-lua">redis-lua</a>. The following Lua code is a simplified example of how the plugin achieves that:</p><pre><code class="lang-Lua prettyprint">local redis = require <span class="string">'redis'</span>
 
-</span><span class="pun">--</span><span class="pln"> add LDB</span><span class="string"><span class="str">'s Continue command
-redis.commands['</span></span><span class="pln">ldbcontinue</span><span class="string"><span class="str">'] = redis.command('</span></span><span class="pln">C</span><span class="string"><span class="str">')
+-- add LDB<span class="string">'s Continue command
+redis.commands['</span>ldbcontinue<span class="string">'] = redis.command('</span>C<span class="string">')
 
 -- script to be debugged
 local script = [[
-  local x, y = tonumber(ARGV[</span><span class="number"><span class="str">1</span></span><span class="str">]), tonumber(ARGV[</span><span class="number"><span class="str">2</span></span><span class="str">])
+  local x, y = tonumber(ARGV[<span class="number">1</span>]), tonumber(ARGV[<span class="number">2</span>])
   local result = x * y
   return result
 ]]
 
-local client = redis.connect('</span></span><span class="number"><span class="number"><span class="lit">127</span></span><span class="lit">.</span><span class="number"><span class="lit">0</span></span></span><span class="pun">.</span><span class="number"><span class="number"><span class="lit">0</span></span><span class="lit">.</span><span class="number"><span class="lit">1</span></span></span><span class="str">', </span><span class="number"><span class="str">6379</span></span><span class="str">)
-client:script(</span><span class="string"><span class="str">"DEBUG"</span></span><span class="str">, </span><span class="string"><span class="str">"YES"</span></span><span class="str">)
-print(unpack(client:eval(script, </span><span class="number"><span class="str">0</span></span><span class="str">, </span><span class="number"><span class="str">6</span></span><span class="str">, </span><span class="number"><span class="str">9</span></span><span class="str">)))
-client:ldbcontinue()</span></code></pre></div>
+local client = redis.connect('</span><span class="number"><span class="number">127</span>.<span class="number">0</span></span>.<span class="number"><span class="number">0</span>.<span class="number">1</span></span>', <span class="number">6379</span>)
+client:script(<span class="string">"DEBUG"</span>, <span class="string">"YES"</span>)
+print(unpack(client:eval(script, <span class="number">0</span>, <span class="number">6</span>, <span class="number">9</span>)))
+client:ldbcontinue()</code></pre></div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/ldb.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/ldb.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->
