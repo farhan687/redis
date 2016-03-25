@@ -38,8 +38,10 @@ At this point you can try if your build works correctly by typing **make test**,
 
 It is a good idea to copy both the Redis server and the command line interface in proper places, either manually using the following commands:
 
-* sudo cp src/redis-server /usr/local/bin/
-* sudo cp src/redis-cli /usr/local/bin/
+```bash
+sudo cp src/redis-server /usr/local/bin/
+sudo cp src/redis-cli /usr/local/bin/
+```
 
 Or just using `sudo make install`.
 
