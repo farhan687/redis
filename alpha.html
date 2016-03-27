@@ -16,9 +16,9 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script><script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
-<body role="flatdoc" class="no-literate">
-  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
+<script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: 'html/navbar.html' --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="'html/navbar.html'"><div class="container-fluid ng-scope">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -550,7 +550,7 @@
 
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown search-dropdown">
-        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
       </li>
       <li class="dropdown">
         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -558,7 +558,7 @@
         </a>
         <ul class="dropdown-menu version-switcher" role="menu">
           <!-- ngRepeat: version in versions --><li ng-repeat="version in versions" class="ng-scope">
-            <a ng-href=./alpha/commands/append.html ng-bind="version" class="ng-binding" href=./alpha/commands/append.html>alpha</a>
+            <a ng-href=./alpha.html ng-bind="version" class="ng-binding" href=./alpha.html>alpha</a>
           </li><!-- end ngRepeat: version in versions -->
         </ul>
       </li>
@@ -570,41 +570,17 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
-  <div class="menubar fixed">
-    <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-pattern-time-series-item" class="level-2"><a id="-pattern-time-series-link" href="./alpha/commands/append.html#-pattern-time-series" class="level-2" pref="#-pattern-time-series">Pattern: Time series</a></li></ul></li></ul></li></ul></div>
+<div class="container-fluid push ng-scope">
+  <div class="row">
+    <div class="col-xs-12 landing">
+      <h1>Doc<b>base</b></h1>
+    </div>
+
+    <div class="col-xs-12 list">
+      <!-- ngRepeat: folder in map[currentVersion] --><a class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ng-binding ng-scope" ng-repeat="folder in map[currentVersion]" href=./alpha/commands/index.html ng-bind="folder.label">commands</a><!-- end ngRepeat: folder in map[currentVersion] --><a class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ng-binding ng-scope" ng-repeat="folder in map[currentVersion]" href=./alpha/topics/index.html ng-bind="folder.label">topics</a><!-- end ngRepeat: folder in map[currentVersion] -->
+		</div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>If <code>key</code> already exists and is a string, this command appends the <code>value</code> at the
-end of the string.
-If <code>key</code> does not exist it is created and set as an empty string, so <code>APPEND</code>
-will be similar to <code>SET</code> in this special case.</p><p>@return</p><p>@integer-reply: the length of the string after the append operation.</p><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">EXISTS mykey
-APPEND mykey </span><span class="string"><span class="str">"Hello"</span></span><span class="pln">
-APPEND mykey </span><span class="string"><span class="str">" World"</span></span><span class="pln">
-GET mykey</span></code></pre><h2 id="-pattern-time-series">Pattern: Time series</h2><p>The <code>APPEND</code> command can be used to create a very compact representation of a
-list of fixed-size samples, usually referred as <em>time series</em>.
-Every time a new sample arrives we can store it using the command</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">APPEND timeseries </span><span class="str">"fixed-size sample"</span></code></pre><p>Accessing individual elements in the time series is not hard:</p><ul>
-<li><code>STRLEN</code> can be used in order to obtain the number of samples.</li>
-<li><code>GETRANGE</code> allows for random access of elements.
-If our time series have associated time information we can easily implement
-a binary search to get range combining <code>GETRANGE</code> with the Lua scripting
-engine available in Redis 2.6.</li>
-<li><code>SETRANGE</code> can be used to overwrite an existing time series.</li>
-</ul><p>The limitation of this pattern is that we are forced into an append-only mode
-of operation, there is no way to cut the time series to a given size easily
-because Redis currently lacks a command able to trim string objects.
-However the space efficiency of time series stored in this way is remarkable.</p><p>Hint: it is possible to switch to a different key based on the current Unix
-time, in this way it is possible to have just a relatively small amount of
-samples per key, to avoid dealing with very big keys, and to make this pattern
-more friendly to be distributed across many Redis instances.</p><p>An example sampling the temperature of a sensor using fixed-size strings (using
-a binary format is better in real implementations).</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">APPEND ts </span><span class="string"><span class="str">"</span><span class="number"><span class="str">0043</span></span><span class="str">"</span></span><span class="pln">
-APPEND ts </span><span class="string"><span class="str">"</span><span class="number"><span class="str">0035</span></span><span class="str">"</span></span><span class="pln">
-GETRANGE ts </span><span class="number"><span class="lit">0</span></span><span class="pln"> </span><span class="number"><span class="lit">3</span></span><span class="pln">
-GETRANGE ts </span><span class="number"><span class="lit">4</span></span><span class="pln"> </span><span class="number"><span class="lit">7</span></span></code></pre></div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/append.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/append.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
+</div>
 </div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
