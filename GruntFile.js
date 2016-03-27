@@ -42,8 +42,8 @@ module.exports = function(grunt) {
 				options: {
 					base: 'docs_html',
 					user: {
-						name: 'Travis',
-						email: 'farhan687@gmail.com'
+						name: 'Docbase bot',
+						email: 'awesome@docba.se'
 					},
 					repo: 'https://' + new Buffer(process.env.DOCBASE_TOKEN, 'base64').toString() + '@github.com/farhan687/redis.git',
 					message: 'publish gh-pages (auto)',
