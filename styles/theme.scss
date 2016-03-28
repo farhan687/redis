@@ -17,5 +17,5 @@ a:active, a:hover, .menu a:hover{
 }
 .paginationLink:hover {
 	background: $theme-color;
-	border-color: darken($theme-color);
+	border-color: darken($theme-color, 10%);
 }
