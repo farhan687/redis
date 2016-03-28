@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-pattern-time-series-item" class="level-2"><a id="-pattern-time-series-link" href="./alpha/commands/append.html#-pattern-time-series" class="level-2" pref="#-pattern-time-series">Pattern: Time series</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>If <code>key</code> already exists and is a string, this command appends the <code>value</code> at the
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>If <code>key</code> already exists and is a string, this command appends the <code>value</code> at the
 end of the string.
 If <code>key</code> does not exist it is created and set as an empty string, so <code>APPEND</code>
 will be similar to <code>SET</code> in this special case.</p><p>@return</p><p>@integer-reply: the length of the string after the append operation.</p><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">EXISTS mykey
@@ -601,8 +600,9 @@ a binary format is better in real implementations).</p><pre><code class="lang-cl
 APPEND ts </span><span class="string"><span class="str">"</span><span class="number"><span class="str">0035</span></span><span class="str">"</span></span><span class="pln">
 GETRANGE ts </span><span class="number"><span class="lit">0</span></span><span class="pln"> </span><span class="number"><span class="lit">3</span></span><span class="pln">
 GETRANGE ts </span><span class="number"><span class="lit">4</span></span><span class="pln"> </span><span class="number"><span class="lit">7</span></span></code></pre></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/append.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/append.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left disabled">
@@ -614,13 +614,8 @@ GETRANGE ts </span><span class="number"><span class="lit">4</span></span><span c
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/append.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/append.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

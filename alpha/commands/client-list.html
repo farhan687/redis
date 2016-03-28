@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-notes-item" class="level-2"><a id="-notes-link" href="./alpha/commands/client-list.html#-notes" class="level-2" pref="#-notes">Notes</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>The <code>CLIENT LIST</code> command returns information and statistics about the client
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>The <code>CLIENT LIST</code> command returns information and statistics about the client
 connections server in a mostly human readable format.</p><p>@return</p><p>@bulk-string-reply: a unique string, formatted as follows:</p><ul>
 <li>One client connection per line (separated by LF)</li>
 <li>Each line is composed of a succession of <code>property=value</code> fields separated
@@ -615,8 +614,9 @@ w</span><span class="pun">:</span><span class="pln"> the client socket </span><s
 in the future. A version safe Redis client using this command should parse
 the output accordingly (i.e. handling gracefully missing fields, skipping
 unknown fields).</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/client-list.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/client-list.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -628,13 +628,8 @@ unknown fields).</p></div>
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/client-list.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/client-list.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

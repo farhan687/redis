@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-handling-of-strings-with-different-lengths-item" class="level-2"><a id="-handling-of-strings-with-different-lengths-link" href="./alpha/commands/bitop.html#-handling-of-strings-with-different-lengths" class="level-2" pref="#-handling-of-strings-with-different-lengths">Handling of strings with different lengths</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-pattern-real-time-metrics-using-bitmaps-item" class="level-2"><a id="-pattern-real-time-metrics-using-bitmaps-link" href="./alpha/commands/bitop.html#-pattern-real-time-metrics-using-bitmaps" class="level-2" pref="#-pattern-real-time-metrics-using-bitmaps">Pattern: real time metrics using bitmaps</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-performance-considerations-item" class="level-2"><a id="-performance-considerations-link" href="./alpha/commands/bitop.html#-performance-considerations" class="level-2" pref="#-performance-considerations">Performance considerations</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Perform a bitwise operation between multiple keys (containing string values) and
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Perform a bitwise operation between multiple keys (containing string values) and
 store the result in the destination key.</p><p>The <code>BITOP</code> command supports four bitwise operations: <strong>AND</strong>, <strong>OR</strong>, <strong>XOR</strong>
 and <strong>NOT</strong>, thus the valid forms to call the command are:</p><ul>
 <li><code>BITOP AND destkey srckey1 srckey2 srckey3 ... srckeyN</code></li>
@@ -598,8 +597,9 @@ bitmaps</a>“ for a interesting use cases.</p><h2 id="-performance-consideratio
 Care should be taken when running it against long input strings.</p><p>For real-time metrics and statistics involving large inputs a good approach is
 to use a slave (with read-only option disabled) where the bit-wise
 operations are performed to avoid blocking the master instance.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/bitop.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/bitop.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -611,13 +611,8 @@ operations are performed to avoid blocking the master instance.</p></div>
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/bitop.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/bitop.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

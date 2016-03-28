@@ -550,7 +550,7 @@
 
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown search-dropdown">
-        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
       </li>
       <li class="dropdown">
         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="introduction-to-redis-item" class="level-1"><a id="introduction-to-redis-link" href="./alpha/topics/introduction.html#introduction-to-redis" class="level-1" pref="#introduction-to-redis">Introduction to Redis</a></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="introduction-to-redis">Introduction to Redis</h1><p>Redis is an open source (BSD licensed), in-memory <strong>data structure store</strong>, used as database, cache and message broker. It supports data structures such as
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="introduction-to-redis">Introduction to Redis</h1><p>Redis is an open source (BSD licensed), in-memory <strong>data structure store</strong>, used as database, cache and message broker. It supports data structures such as
 <a href="/topics/data-types-intro#strings">strings</a>, <a href="/topics/data-types-intro#hashes">hashes</a>, <a href="/topics/data-types-intro#lists">lists</a>, <a href="/topics/data-types-intro#sets">sets</a>, <a href="/topics/data-types-intro#sorted-sets">sorted sets</a> with range queries, <a href="/topics/data-types-intro#bitmaps">bitmaps</a>, <a href="/topics/data-types-intro#hyperloglogs">hyperloglogs</a> and <a href="/commands/geoadd">geospatial indexes</a> with radius queries. Redis has built-in <a href="/topics/replication">replication</a>, <a href="/commands/eval">Lua scripting</a>, <a href="/topics/lru-cache">LRU eviction</a>, <a href="/topics/transactions">transactions</a> and different levels of <a href="/topics/persistence">on-disk persistence</a>, and provides high availability via <a href="/topics/sentinel">Redis Sentinel</a> and automatic partitioning with <a href="/topics/cluster-tutorial">Redis Cluster</a>.</p><p>You can run <strong>atomic operations</strong>
 on these types, like <a href="/commands/append">appending to a string</a>;
 <a href="/commands/hincrby">incrementing the value in a hash</a>; <a href="/commands/lpush">pushing an element to a
@@ -598,8 +597,9 @@ disabled, if you just need a feature-rich, networked, in-memory cache.</p><p>Red
 *BSD, OS X without external dependencies. Linux and OS X are the two operating systems where Redis is developed and more tested, and we <strong>recommend using Linux for deploying</strong>. Redis may work in Solaris-derived systems like SmartOS, but the support is <em>best effort</em>. There
 is no official support for Windows builds, but Microsoft develops and
 maintains a <a href="https://github.com/MSOpenTech/redis">Win-64 port of Redis</a>.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/introduction.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/introduction.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -611,13 +611,8 @@ maintains a <a href="https://github.com/MSOpenTech/redis">Win-64 port of Redis</
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/introduction.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/introduction.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

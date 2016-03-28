@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Reset a Redis Cluster node, in a more or less drastic way depending on the
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Reset a Redis Cluster node, in a more or less drastic way depending on the
 reset type, that can be <strong>hard</strong> or <strong>soft</strong>. Note that this command
 <strong>does not work for masters if they hold one or more keys</strong>, in that case
 to completely reset a master node keys must be removed first, e.g. by using <code>FLUSHALL</code> first,
@@ -590,8 +589,9 @@ and then <code>CLUSTER RESET</code>.</p><p>Effects on the node:</p><ol>
 in order to be used in the context of a new, different cluster. The command
 is also extensively used by the Redis Cluster testing framework in order to
 reset the state of the cluster every time a new test unit is executed.</p><p>If no reset type is specified, the default is <strong>soft</strong>.</p><p>@return</p><p>@simple-string-reply: <code>OK</code> if the command was successful. Otherwise an error is returned.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-reset.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-reset.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -603,13 +603,8 @@ reset the state of the cluster every time a new test unit is executed.</p><p>If 
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-reset.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-reset.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

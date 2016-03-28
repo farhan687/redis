@@ -550,7 +550,7 @@
 
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown search-dropdown">
-        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
       </li>
       <li class="dropdown">
         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-use-case-item" class="level-2"><a id="-use-case-link" href="./alpha/commands/geoencode.html#-use-case" class="level-2" pref="#-use-case">Use case</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Geospatial Redis commands encode positions of objects in a single 52 bit integer, using a technique called geohash. The encoding is further explained in the <code>GEODECODE</code> and <code>GEOADD</code> documentation. The <code>GEOENCODE</code> command, documented in this page, is able to convert a longitude and latitude pair into such 52 bit integer, which is used as the <em>score</em> for the sorted set members representing geopositional information.</p><p>Normally you don’t need to use this command, unless you plan to implement low level code in the client side interacting with the Redis geo commands. This command may also be useful for debugging purposes.</p><p><code>GEOENCODE</code> takes as input:</p><ol>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Geospatial Redis commands encode positions of objects in a single 52 bit integer, using a technique called geohash. The encoding is further explained in the <code>GEODECODE</code> and <code>GEOADD</code> documentation. The <code>GEOENCODE</code> command, documented in this page, is able to convert a longitude and latitude pair into such 52 bit integer, which is used as the <em>score</em> for the sorted set members representing geopositional information.</p><p>Normally you don’t need to use this command, unless you plan to implement low level code in the client side interacting with the Redis geo commands. This command may also be useful for debugging purposes.</p><p><code>GEOENCODE</code> takes as input:</p><ol>
 <li>The longitude and latitude of a point on the Earth surface.</li>
 <li>Optionally a radius represented by an integer and an unit.</li>
 </ol><p>And returns a set of information, including the representation of the position as a 52 bit integer, the min and max corners of the bounding box represented by the geo hash, the center point in the area covered by the geohash integer, and finally the two sorted set scores to query in order to retrieve all the elements included in the geohash area.</p><p>The radius optionally provided to the command is used in order to compute the two scores returned by the command for range query purposes. Moreover the returned geohash integer will only have the most significant bits set, according to the number of bits needed to approximate the specified radius.</p><h2 id="-use-case">Use case</h2><p>As already specified this command is mostly not needed if not for debugging. However there are actual use cases, which is, when there is to query for the same areas multiple times, or with a different granularity or area shape compared to what Redis <code>GEORADIUS</code> is able to provide, the client may implement using this command part of the logic on the client side. Score ranges representing given areas can be cached client side and used to retrieve elements directly using <code>ZRANGEBYSCORE</code>.</p><p>@return</p><p>@array-reply, specifically:</p><p>The command returns an array of give elements in the following order:</p><ul>
@@ -587,8 +586,9 @@
 </ul><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">GEOADD </span><span class="typ">Sicily</span><span class="pln"> </span><span class="number"><span class="number"><span class="lit">13</span></span><span class="lit">.</span><span class="number"><span class="lit">361389</span></span></span><span class="pln"> </span><span class="number"><span class="number"><span class="lit">38</span></span><span class="lit">.</span><span class="number"><span class="lit">115556</span></span></span><span class="pln"> </span><span class="string"><span class="str">"Palermo"</span></span><span class="pln"> </span><span class="number"><span class="number"><span class="lit">15</span></span><span class="lit">.</span><span class="number"><span class="lit">087269</span></span></span><span class="pln"> </span><span class="number"><span class="number"><span class="lit">37</span></span><span class="lit">.</span><span class="number"><span class="lit">502669</span></span></span><span class="pln"> </span><span class="string"><span class="str">"Catania"</span></span><span class="pln">
 ZSCORE </span><span class="typ">Sicily</span><span class="pln"> </span><span class="string"><span class="str">"Palermo"</span></span><span class="pln">
 GEOENCODE </span><span class="number"><span class="number"><span class="lit">13</span></span><span class="lit">.</span><span class="number"><span class="lit">361389</span></span></span><span class="pln"> </span><span class="number"><span class="number"><span class="lit">38</span></span><span class="lit">.</span><span class="number"><span class="lit">115556</span></span></span><span class="pln"> </span><span class="number"><span class="lit">100</span></span><span class="pln"> km</span></code></pre></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/geoencode.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/geoencode.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -600,13 +600,8 @@ GEOENCODE </span><span class="number"><span class="number"><span class="lit">13<
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/geoencode.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/geoencode.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

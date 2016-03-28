@@ -570,7 +570,26 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index -->
+<div role="flatdoc" class="content-root ng-scope ng-hide" data-ng-show="!index">
+  <div class="menubar">
+    <div class="menu section" role="flatdoc-menu"></div>
+  </div>
+  <div role="flatdoc-content" class="content"></div>
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="" target="_blank">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left disabled">
+					<a href="" class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right disabled">
+					<a href="" class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- ngIf: index --><div class="index-container ng-scope" data-ng-if="index">
 	<div class="container">
 		<div class="row">
@@ -578,408 +597,407 @@
 				commands
 			</h1>
 		</div>
-		<ul class="row">
-			<!-- ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+		<ul class="row indexList">
+			<!-- ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/append.html class="col-xs-12 ng-binding">append</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/auth.html class="col-xs-12 ng-binding">auth</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/bgrewriteaof.html class="col-xs-12 ng-binding">bgrewriteaof</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/bgsave.html class="col-xs-12 ng-binding">bgsave</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/bitcount.html class="col-xs-12 ng-binding">bitcount</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/bitop.html class="col-xs-12 ng-binding">bitop</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/bitpos.html class="col-xs-12 ng-binding">bitpos</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/blpop.html class="col-xs-12 ng-binding">blpop</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/brpop.html class="col-xs-12 ng-binding">brpop</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/brpoplpush.html class="col-xs-12 ng-binding">brpoplpush</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/client-getname.html class="col-xs-12 ng-binding">client-getname</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/client-kill.html class="col-xs-12 ng-binding">client-kill</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/client-list.html class="col-xs-12 ng-binding">client-list</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/client-pause.html class="col-xs-12 ng-binding">client-pause</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/client-reply.html class="col-xs-12 ng-binding">client-reply</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/client-setname.html class="col-xs-12 ng-binding">client-setname</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-addslots.html class="col-xs-12 ng-binding">cluster-addslots</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-count-failure-reports.html class="col-xs-12 ng-binding">cluster-count-failure-reports</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-countkeysinslot.html class="col-xs-12 ng-binding">cluster-countkeysinslot</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-delslots.html class="col-xs-12 ng-binding">cluster-delslots</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-failover.html class="col-xs-12 ng-binding">cluster-failover</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-forget.html class="col-xs-12 ng-binding">cluster-forget</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-getkeysinslot.html class="col-xs-12 ng-binding">cluster-getkeysinslot</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-info.html class="col-xs-12 ng-binding">cluster-info</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-keyslot.html class="col-xs-12 ng-binding">cluster-keyslot</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-meet.html class="col-xs-12 ng-binding">cluster-meet</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-nodes.html class="col-xs-12 ng-binding">cluster-nodes</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-replicate.html class="col-xs-12 ng-binding">cluster-replicate</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-reset.html class="col-xs-12 ng-binding">cluster-reset</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-saveconfig.html class="col-xs-12 ng-binding">cluster-saveconfig</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-set-config-epoch.html class="col-xs-12 ng-binding">cluster-set-config-epoch</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-setslot.html class="col-xs-12 ng-binding">cluster-setslot</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-slaves.html class="col-xs-12 ng-binding">cluster-slaves</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/cluster-slots.html class="col-xs-12 ng-binding">cluster-slots</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/command-count.html class="col-xs-12 ng-binding">command-count</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/command-getkeys.html class="col-xs-12 ng-binding">command-getkeys</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/command-info.html class="col-xs-12 ng-binding">command-info</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/command.html class="col-xs-12 ng-binding">command</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/config-get.html class="col-xs-12 ng-binding">config-get</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/config-resetstat.html class="col-xs-12 ng-binding">config-resetstat</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/config-rewrite.html class="col-xs-12 ng-binding">config-rewrite</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/config-set.html class="col-xs-12 ng-binding">config-set</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/dbsize.html class="col-xs-12 ng-binding">dbsize</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/debug-object.html class="col-xs-12 ng-binding">debug-object</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/debug-segfault.html class="col-xs-12 ng-binding">debug-segfault</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/decr.html class="col-xs-12 ng-binding">decr</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/decrby.html class="col-xs-12 ng-binding">decrby</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/del.html class="col-xs-12 ng-binding">del</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/discard.html class="col-xs-12 ng-binding">discard</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/dump.html class="col-xs-12 ng-binding">dump</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/echo.html class="col-xs-12 ng-binding">echo</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/eval.html class="col-xs-12 ng-binding">eval</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/evalsha.html class="col-xs-12 ng-binding">evalsha</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/exec.html class="col-xs-12 ng-binding">exec</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/exists.html class="col-xs-12 ng-binding">exists</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/expire.html class="col-xs-12 ng-binding">expire</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/expireat.html class="col-xs-12 ng-binding">expireat</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/flushall.html class="col-xs-12 ng-binding">flushall</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/flushdb.html class="col-xs-12 ng-binding">flushdb</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/geoadd.html class="col-xs-12 ng-binding">geoadd</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/geodecode.html class="col-xs-12 ng-binding">geodecode</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/geodist.html class="col-xs-12 ng-binding">geodist</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/geoencode.html class="col-xs-12 ng-binding">geoencode</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/geohash.html class="col-xs-12 ng-binding">geohash</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/geopos.html class="col-xs-12 ng-binding">geopos</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/georadius.html class="col-xs-12 ng-binding">georadius</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/georadiusbymember.html class="col-xs-12 ng-binding">georadiusbymember</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/get.html class="col-xs-12 ng-binding">get</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/getbit.html class="col-xs-12 ng-binding">getbit</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/getrange.html class="col-xs-12 ng-binding">getrange</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/getset.html class="col-xs-12 ng-binding">getset</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hdel.html class="col-xs-12 ng-binding">hdel</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hexists.html class="col-xs-12 ng-binding">hexists</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hget.html class="col-xs-12 ng-binding">hget</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hgetall.html class="col-xs-12 ng-binding">hgetall</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hincrby.html class="col-xs-12 ng-binding">hincrby</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hincrbyfloat.html class="col-xs-12 ng-binding">hincrbyfloat</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hkeys.html class="col-xs-12 ng-binding">hkeys</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hlen.html class="col-xs-12 ng-binding">hlen</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hmget.html class="col-xs-12 ng-binding">hmget</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hmset.html class="col-xs-12 ng-binding">hmset</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hscan.html class="col-xs-12 ng-binding">hscan</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hset.html class="col-xs-12 ng-binding">hset</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hsetnx.html class="col-xs-12 ng-binding">hsetnx</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hstrlen.html class="col-xs-12 ng-binding">hstrlen</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/hvals.html class="col-xs-12 ng-binding">hvals</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/incr.html class="col-xs-12 ng-binding">incr</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/incrby.html class="col-xs-12 ng-binding">incrby</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/incrbyfloat.html class="col-xs-12 ng-binding">incrbyfloat</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/info.html class="col-xs-12 ng-binding">info</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/keys.html class="col-xs-12 ng-binding">keys</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/lastsave.html class="col-xs-12 ng-binding">lastsave</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/lindex.html class="col-xs-12 ng-binding">lindex</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/linsert.html class="col-xs-12 ng-binding">linsert</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/llen.html class="col-xs-12 ng-binding">llen</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/lpop.html class="col-xs-12 ng-binding">lpop</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/lpush.html class="col-xs-12 ng-binding">lpush</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/lpushx.html class="col-xs-12 ng-binding">lpushx</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/lrange.html class="col-xs-12 ng-binding">lrange</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/lrem.html class="col-xs-12 ng-binding">lrem</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/lset.html class="col-xs-12 ng-binding">lset</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/ltrim.html class="col-xs-12 ng-binding">ltrim</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/mget.html class="col-xs-12 ng-binding">mget</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/migrate.html class="col-xs-12 ng-binding">migrate</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/monitor.html class="col-xs-12 ng-binding">monitor</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/move.html class="col-xs-12 ng-binding">move</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/mset.html class="col-xs-12 ng-binding">mset</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/msetnx.html class="col-xs-12 ng-binding">msetnx</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/multi.html class="col-xs-12 ng-binding">multi</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/object.html class="col-xs-12 ng-binding">object</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/persist.html class="col-xs-12 ng-binding">persist</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/pexpire.html class="col-xs-12 ng-binding">pexpire</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/pexpireat.html class="col-xs-12 ng-binding">pexpireat</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/pfadd.html class="col-xs-12 ng-binding">pfadd</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/pfcount.html class="col-xs-12 ng-binding">pfcount</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/pfmerge.html class="col-xs-12 ng-binding">pfmerge</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/ping.html class="col-xs-12 ng-binding">ping</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/psetex.html class="col-xs-12 ng-binding">psetex</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/psubscribe.html class="col-xs-12 ng-binding">psubscribe</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/pttl.html class="col-xs-12 ng-binding">pttl</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/publish.html class="col-xs-12 ng-binding">publish</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/pubsub.html class="col-xs-12 ng-binding">pubsub</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/punsubscribe.html class="col-xs-12 ng-binding">punsubscribe</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/quit.html class="col-xs-12 ng-binding">quit</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/randomkey.html class="col-xs-12 ng-binding">randomkey</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/readonly.html class="col-xs-12 ng-binding">readonly</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/readwrite.html class="col-xs-12 ng-binding">readwrite</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/rename.html class="col-xs-12 ng-binding">rename</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/renamenx.html class="col-xs-12 ng-binding">renamenx</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/restore.html class="col-xs-12 ng-binding">restore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/role.html class="col-xs-12 ng-binding">role</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/rpop.html class="col-xs-12 ng-binding">rpop</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/rpoplpush.html class="col-xs-12 ng-binding">rpoplpush</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/rpush.html class="col-xs-12 ng-binding">rpush</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/rpushx.html class="col-xs-12 ng-binding">rpushx</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sadd.html class="col-xs-12 ng-binding">sadd</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/save.html class="col-xs-12 ng-binding">save</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/scan.html class="col-xs-12 ng-binding">scan</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/scard.html class="col-xs-12 ng-binding">scard</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/script-debug.html class="col-xs-12 ng-binding">script-debug</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/script-exists.html class="col-xs-12 ng-binding">script-exists</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/script-flush.html class="col-xs-12 ng-binding">script-flush</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/script-kill.html class="col-xs-12 ng-binding">script-kill</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/script-load.html class="col-xs-12 ng-binding">script-load</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sdiff.html class="col-xs-12 ng-binding">sdiff</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sdiffstore.html class="col-xs-12 ng-binding">sdiffstore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/select.html class="col-xs-12 ng-binding">select</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/set.html class="col-xs-12 ng-binding">set</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/setbit.html class="col-xs-12 ng-binding">setbit</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/setex.html class="col-xs-12 ng-binding">setex</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/setnx.html class="col-xs-12 ng-binding">setnx</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/setrange.html class="col-xs-12 ng-binding">setrange</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/shutdown.html class="col-xs-12 ng-binding">shutdown</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sinter.html class="col-xs-12 ng-binding">sinter</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sinterstore.html class="col-xs-12 ng-binding">sinterstore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sismember.html class="col-xs-12 ng-binding">sismember</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/slaveof.html class="col-xs-12 ng-binding">slaveof</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/slowlog.html class="col-xs-12 ng-binding">slowlog</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/smembers.html class="col-xs-12 ng-binding">smembers</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/smove.html class="col-xs-12 ng-binding">smove</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sort.html class="col-xs-12 ng-binding">sort</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/spop.html class="col-xs-12 ng-binding">spop</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/srandmember.html class="col-xs-12 ng-binding">srandmember</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/srem.html class="col-xs-12 ng-binding">srem</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sscan.html class="col-xs-12 ng-binding">sscan</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/strlen.html class="col-xs-12 ng-binding">strlen</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/subscribe.html class="col-xs-12 ng-binding">subscribe</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sunion.html class="col-xs-12 ng-binding">sunion</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sunionstore.html class="col-xs-12 ng-binding">sunionstore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/sync.html class="col-xs-12 ng-binding">sync</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/time.html class="col-xs-12 ng-binding">time</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/ttl.html class="col-xs-12 ng-binding">ttl</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/type.html class="col-xs-12 ng-binding">type</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/unsubscribe.html class="col-xs-12 ng-binding">unsubscribe</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/unwatch.html class="col-xs-12 ng-binding">unwatch</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/wait.html class="col-xs-12 ng-binding">wait</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/watch.html class="col-xs-12 ng-binding">watch</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zadd.html class="col-xs-12 ng-binding">zadd</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zcard.html class="col-xs-12 ng-binding">zcard</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zcount.html class="col-xs-12 ng-binding">zcount</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zincrby.html class="col-xs-12 ng-binding">zincrby</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zinterstore.html class="col-xs-12 ng-binding">zinterstore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zlexcount.html class="col-xs-12 ng-binding">zlexcount</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrange.html class="col-xs-12 ng-binding">zrange</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrangebylex.html class="col-xs-12 ng-binding">zrangebylex</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrangebyscore.html class="col-xs-12 ng-binding">zrangebyscore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrank.html class="col-xs-12 ng-binding">zrank</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrem.html class="col-xs-12 ng-binding">zrem</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zremrangebylex.html class="col-xs-12 ng-binding">zremrangebylex</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zremrangebyrank.html class="col-xs-12 ng-binding">zremrangebyrank</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zremrangebyscore.html class="col-xs-12 ng-binding">zremrangebyscore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrevrange.html class="col-xs-12 ng-binding">zrevrange</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrevrangebylex.html class="col-xs-12 ng-binding">zrevrangebylex</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrevrangebyscore.html class="col-xs-12 ng-binding">zrevrangebyscore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zrevrank.html class="col-xs-12 ng-binding">zrevrank</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zscan.html class="col-xs-12 ng-binding">zscan</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zscore.html class="col-xs-12 ng-binding">zscore</a>
-			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
+			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><li class="col-xs-12 indexLi ng-scope" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
 				<a href=./alpha/commands/zunionstore.html class="col-xs-12 ng-binding">zunionstore</a>
 			</li><!-- end ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList --><!-- ngIf: file.name != 'index' --><!-- end ngRepeat: file in indexList -->
 		</ul>
 	</div>
-</div><!-- end ngIf: index -->
-</div>
+</div><!-- end ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p><code>CLIENT PAUSE</code> is a connections control command able to suspend all the Redis clients for the specified amount of time (in milliseconds).</p><p>The command performs the following actions:</p><ul>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p><code>CLIENT PAUSE</code> is a connections control command able to suspend all the Redis clients for the specified amount of time (in milliseconds).</p><p>The command performs the following actions:</p><ul>
 <li>It stops processing all the pending commands from normal and pub/sub clients. However interactions with slaves will continue normally.</li>
 <li>However it returns OK to the caller ASAP, so the <code>CLIENT PAUSE</code> command execution is not paused by itself.</li>
 <li>When the specified amount of time has elapsed, all the clients are unblocked: this will trigger the processing of all the commands accumulated in the query buffer of every client during the pause.</li>
@@ -585,8 +584,9 @@
 <li>Turn one of the slaves into a master.</li>
 <li>Reconfigure clients to connect with the new master.</li>
 </ul><p>It is possible to send <code>CLIENT PAUSE</code> in a MULTI/EXEC block together with the <code>INFO replication</code> command in order to get the current master offset at the time the clients are blocked. This way it is possible to wait for a specific offset in the slave side in order to make sure all the replication stream was processed.</p><p>@return</p><p>@simple-string-reply: The command returns OK or an error if the timeout is invalid.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/client-pause.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/client-pause.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -598,13 +598,8 @@
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/client-pause.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/client-pause.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="redis-administration-item" class="level-1"><a id="redis-administration-link" href="./alpha/topics/admin.html#redis-administration" class="level-1" pref="#redis-administration">Redis Administration</a><ul class="level-2" id="redis-administration-list"><li id="redis-administration-redis-setup-hints-item" class="level-2"><a id="redis-administration-redis-setup-hints-link" href="./alpha/topics/admin.html#redis-administration-redis-setup-hints" class="level-2" pref="#redis-administration-redis-setup-hints">Redis setup hints</a></li><li id="redis-administration-running-redis-on-ec2-item" class="level-2"><a id="redis-administration-running-redis-on-ec2-link" href="./alpha/topics/admin.html#redis-administration-running-redis-on-ec2" class="level-2" pref="#redis-administration-running-redis-on-ec2">Running Redis on EC2</a></li><li id="redis-administration-upgrading-or-restarting-a-redis-instance-without-downtime-item" class="level-2"><a id="redis-administration-upgrading-or-restarting-a-redis-instance-without-downtime-link" href="./alpha/topics/admin.html#redis-administration-upgrading-or-restarting-a-redis-instance-without-downtime" class="level-2" pref="#redis-administration-upgrading-or-restarting-a-redis-instance-without-downtime">Upgrading or restarting a Redis instance without downtime</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-administration">Redis Administration</h1><p>This page contains topics related to the administration of Redis instances.
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-administration">Redis Administration</h1><p>This page contains topics related to the administration of Redis instances.
 Every topic is self contained in form of a FAQ. New topics will be created in the future.</p><h2 id="redis-administration-redis-setup-hints">Redis setup hints</h2><ul>
 <li>We suggest deploying Redis using the <strong>Linux operating system</strong>. Redis is also tested heavily on OS X, and tested from time to time on FreeBSD and OpenBSD systems. However Linux is where we do all the major stress testing, and where most production deployments are working.</li>
 <li>Make sure to set the Linux kernel <strong>overcommit memory setting to 1</strong>. Add <code>vm.overcommit_memory = 1</code> to <code>/etc/sysctl.conf</code> and then reboot or run the command <code>sysctl vm.overcommit_memory=1</code> for this to take effect immediately.</li>
@@ -602,8 +601,9 @@ For instance many configuration options can be modified without any kind of rest
 <li>Configure all your clients in order to use the new instance (that is, the slave).</li>
 <li>Once you are sure that the master is no longer receiving any query (you can check this with the <a href="/commands/monitor">MONITOR command</a>), elect the slave to master using the <strong>SLAVEOF NO ONE</strong> command, and shut down your master.</li>
 </ul></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/admin.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/admin.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -615,13 +615,8 @@ For instance many configuration options can be modified without any kind of rest
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/admin.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/admin.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

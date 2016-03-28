@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Returns the members of the set resulting from the union of all the given sets.</p><p>For example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">key1 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">a</span><span class="pun">,</span><span class="pln">b</span><span class="pun">,</span><span class="pln">c</span><span class="pun">,</span><span class="pln">d</span><span class="pun">}</span><span class="pln">
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Returns the members of the set resulting from the union of all the given sets.</p><p>For example:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">key1 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">a</span><span class="pun">,</span><span class="pln">b</span><span class="pun">,</span><span class="pln">c</span><span class="pun">,</span><span class="pln">d</span><span class="pun">}</span><span class="pln">
 key2 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">c</span><span class="pun">}</span><span class="pln">
 key3 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">a</span><span class="pun">,</span><span class="pln">c</span><span class="pun">,</span><span class="pln">e</span><span class="pun">}</span><span class="pln">
 SUNION key1 key2 key3 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">a</span><span class="pun">,</span><span class="pln">b</span><span class="pun">,</span><span class="pln">c</span><span class="pun">,</span><span class="pln">d</span><span class="pun">,</span><span class="pln">e</span><span class="pun">}</span></code></pre><p>Keys that do not exist are considered to be empty sets.</p><p>@return</p><p>@array-reply: list with members of the resulting set.</p><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">SADD key</span><span class="number"><span class="pln">1</span></span><span class="pln"> </span><span class="string"><span class="str">"a"</span></span><span class="pln">
@@ -585,8 +584,9 @@ SADD key</span><span class="number"><span class="pln">2</span></span><span class
 SADD key</span><span class="number"><span class="pln">2</span></span><span class="pln"> </span><span class="string"><span class="str">"d"</span></span><span class="pln">
 SADD key</span><span class="number"><span class="pln">2</span></span><span class="pln"> </span><span class="string"><span class="str">"e"</span></span><span class="pln">
 SUNION key</span><span class="number"><span class="pln">1</span></span><span class="pln"> key</span><span class="number"><span class="pln">2</span></span></code></pre></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sunion.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sunion.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -598,13 +598,8 @@ SUNION key</span><span class="number"><span class="pln">1</span></span><span cla
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sunion.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sunion.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

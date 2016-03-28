@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="data-types-item" class="level-1"><a id="data-types-link" href="./alpha/topics/data-types.html#data-types" class="level-1" pref="#data-types">Data types</a><ul class="level-2" id="data-types-list"><li id="data-types-strings-item" class="level-2"><a id="data-types-strings-link" href="./alpha/topics/data-types.html#data-types-strings" class="level-2" pref="#data-types-strings">Strings</a></li><li id="data-types-lists-item" class="level-2"><a id="data-types-lists-link" href="./alpha/topics/data-types.html#data-types-lists" class="level-2" pref="#data-types-lists">Lists</a></li><li id="data-types-sets-item" class="level-2"><a id="data-types-sets-link" href="./alpha/topics/data-types.html#data-types-sets" class="level-2" pref="#data-types-sets">Sets</a></li><li id="data-types-hashes-item" class="level-2"><a id="data-types-hashes-link" href="./alpha/topics/data-types.html#data-types-hashes" class="level-2" pref="#data-types-hashes">Hashes</a></li><li id="data-types-sorted-sets-item" class="level-2"><a id="data-types-sorted-sets-link" href="./alpha/topics/data-types.html#data-types-sorted-sets" class="level-2" pref="#data-types-sorted-sets">Sorted sets</a></li><li id="data-types-bitmaps-and-hyperloglogs-item" class="level-2"><a id="data-types-bitmaps-and-hyperloglogs-link" href="./alpha/topics/data-types.html#data-types-bitmaps-and-hyperloglogs" class="level-2" pref="#data-types-bitmaps-and-hyperloglogs">Bitmaps and HyperLogLogs</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="data-types">Data types</h1><p><a name="strings"></a></p><h2 id="data-types-strings">Strings</h2><p>Strings are the most basic kind of Redis value. Redis Strings are binary safe, this means that a Redis string can contain any kind of data, for instance a
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="data-types">Data types</h1><p><a name="strings"></a></p><h2 id="data-types-strings">Strings</h2><p>Strings are the most basic kind of Redis value. Redis Strings are binary safe, this means that a Redis string can contain any kind of data, for instance a
 JPEG image or a serialized Ruby object.</p><p>A String value can be at max 512 Megabytes in length.</p><p>You can do a number of interesting things using strings in Redis, for instance you can:</p><ul>
 <li>Use Strings as atomic counters using commands in the INCR family: <a href="/commands/incr">INCR</a>, <a href="/commands/decr">DECR</a>, <a href="/commands/incrby">INCRBY</a>.</li>
 <li>Append to strings with the <a href="/commands/append">APPEND</a> command.</li>
@@ -637,8 +636,9 @@ a given user. All very <em>quickly</em>.</li>
 For instance if you have many hashes representing users, you can use a sorted set with elements having the age of the user as the score and the ID of the user as the value. So using <a href="/commands/zrangebyscore">ZRANGEBYSCORE</a> it will be trivial and fast to retrieve all the users with a given interval of ages.</li>
 </ul><p>Sorted Sets are probably the most advanced Redis data types, so take some time to check the <a href="/commands#sorted_set">full list of Sorted Set commands</a> to discover what you can do with Redis! Also you may want to read the <a href="/topics/data-types-intro">introduction to Redis data types</a>.</p><h2 id="data-types-bitmaps-and-hyperloglogs">Bitmaps and HyperLogLogs</h2><p>Redis also supports Bitmaps and HyperLogLogs which are actually data types
 based on the String base type, but having their own semantics.</p><p>Please refer to the <a href="/topics/data-types-intro">introduction to Redis data types</a> for information about those types.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/data-types.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/data-types.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -650,13 +650,8 @@ based on the String base type, but having their own semantics.</p><p>Please refe
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/data-types.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/data-types.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

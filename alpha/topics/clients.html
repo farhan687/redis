@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="redis-clients-handling-item" class="level-1"><a id="redis-clients-handling-link" href="./alpha/topics/clients.html#redis-clients-handling" class="level-1" pref="#redis-clients-handling">Redis Clients Handling</a><ul class="level-2" id="redis-clients-handling-list"><li id="redis-clients-handling-how-client-connections-are-accepted-item" class="level-2"><a id="redis-clients-handling-how-client-connections-are-accepted-link" href="./alpha/topics/clients.html#redis-clients-handling-how-client-connections-are-accepted" class="level-2" pref="#redis-clients-handling-how-client-connections-are-accepted">How client connections are accepted</a></li><li id="redis-clients-handling-in-what-order-clients-are-served-item" class="level-2"><a id="redis-clients-handling-in-what-order-clients-are-served-link" href="./alpha/topics/clients.html#redis-clients-handling-in-what-order-clients-are-served" class="level-2" pref="#redis-clients-handling-in-what-order-clients-are-served">In what order clients are served</a></li><li id="redis-clients-handling-maximum-number-of-clients-item" class="level-2"><a id="redis-clients-handling-maximum-number-of-clients-link" href="./alpha/topics/clients.html#redis-clients-handling-maximum-number-of-clients" class="level-2" pref="#redis-clients-handling-maximum-number-of-clients">Maximum number of clients</a></li><li id="redis-clients-handling-output-buffers-limits-item" class="level-2"><a id="redis-clients-handling-output-buffers-limits-link" href="./alpha/topics/clients.html#redis-clients-handling-output-buffers-limits" class="level-2" pref="#redis-clients-handling-output-buffers-limits">Output buffers limits</a></li><li id="redis-clients-handling-query-buffer-hard-limit-item" class="level-2"><a id="redis-clients-handling-query-buffer-hard-limit-link" href="./alpha/topics/clients.html#redis-clients-handling-query-buffer-hard-limit" class="level-2" pref="#redis-clients-handling-query-buffer-hard-limit">Query buffer hard limit</a></li><li id="redis-clients-handling-client-timeouts-item" class="level-2"><a id="redis-clients-handling-client-timeouts-link" href="./alpha/topics/clients.html#redis-clients-handling-client-timeouts" class="level-2" pref="#redis-clients-handling-client-timeouts">Client timeouts</a></li><li id="redis-clients-handling-client-command-item" class="level-2"><a id="redis-clients-handling-client-command-link" href="./alpha/topics/clients.html#redis-clients-handling-client-command" class="level-2" pref="#redis-clients-handling-client-command">CLIENT command</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-clients-handling">Redis Clients Handling</h1><p>This document provides information about how Redis handles clients from the
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-clients-handling">Redis Clients Handling</h1><p>This document provides information about how Redis handles clients from the
 point of view of the network layer: connections, timeouts, buffers, and
 other similar topics are covered here.</p><p>The information contained in this document is <strong>only applicable to Redis version 2.6 or greater</strong>.</p><h2 id="redis-clients-handling-how-client-connections-are-accepted">How client connections are accepted</h2><p>Redis accepts clients connections on the configured listening TCP port and
 on the Unix socket if enabled. When a new client connection is accepted
@@ -645,8 +644,9 @@ addr</span><span class="pun">=</span><span class="lit">127.0</span><span class="
 <li><strong>omem</strong>: The amount of memory used by the client for the output buffer.</li>
 <li><strong>cmd</strong>: The last executed command.</li>
 </ul><p>See the <a href="http://redis.io/commands/client-list">CLIENT LIST</a> documentation for the full list of fields and their meaning.</p><p>Once you have the list of clients, you can easily close the connection with a client using the <code>CLIENT KILL</code> command specifying the client address as argument.</p><p>The commands <code>CLIENT SETNAME</code> and <code>CLIENT GETNAME</code> can be used to set and get the connection name.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/clients.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/clients.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -658,13 +658,8 @@ addr</span><span class="pun">=</span><span class="lit">127.0</span><span class="
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/clients.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/clients.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

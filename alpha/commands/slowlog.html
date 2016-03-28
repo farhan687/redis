@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-redis-slow-log-overview-item" class="level-2"><a id="-redis-slow-log-overview-link" href="./alpha/commands/slowlog.html#-redis-slow-log-overview" class="level-2" pref="#-redis-slow-log-overview">Redis slow log overview</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-reading-the-slow-log-item" class="level-2"><a id="-reading-the-slow-log-link" href="./alpha/commands/slowlog.html#-reading-the-slow-log" class="level-2" pref="#-reading-the-slow-log">Reading the slow log</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-output-format-item" class="level-2"><a id="-output-format-link" href="./alpha/commands/slowlog.html#-output-format" class="level-2" pref="#-output-format">Output format</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-obtaining-the-current-length-of-the-slow-log-item" class="level-2"><a id="-obtaining-the-current-length-of-the-slow-log-link" href="./alpha/commands/slowlog.html#-obtaining-the-current-length-of-the-slow-log" class="level-2" pref="#-obtaining-the-current-length-of-the-slow-log">Obtaining the current length of the slow log</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-resetting-the-slow-log-item" class="level-2"><a id="-resetting-the-slow-log-link" href="./alpha/commands/slowlog.html#-resetting-the-slow-log" class="level-2" pref="#-resetting-the-slow-log">Resetting the slow log.</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>This command is used in order to read and reset the Redis slow queries log.</p><h2 id="-redis-slow-log-overview">Redis slow log overview</h2><p>The Redis Slow Log is a system to log queries that exceeded a specified
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>This command is used in order to read and reset the Redis slow queries log.</p><h2 id="-redis-slow-log-overview">Redis slow log overview</h2><p>The Redis Slow Log is a system to log queries that exceeded a specified
 execution time.
 The execution time does not include I/O operations like talking with the client,
 sending the reply and so forth, but just the time needed to actually execute the
@@ -620,8 +619,9 @@ for every new slow log entry).</p><p>The ID is never reset in the course of the 
 restart will reset it.</p><h2 id="-obtaining-the-current-length-of-the-slow-log">Obtaining the current length of the slow log</h2><p>It is possible to get just the length of the slow log using the command
 <strong>SLOWLOG LEN</strong>.</p><h2 id="-resetting-the-slow-log">Resetting the slow log.</h2><p>You can reset the slow log using the <strong>SLOWLOG RESET</strong> command.
 Once deleted the information is lost forever.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/slowlog.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/slowlog.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -633,13 +633,8 @@ Once deleted the information is lost forever.</p></div>
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/slowlog.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/slowlog.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

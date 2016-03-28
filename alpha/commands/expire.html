@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-refreshing-expires-item" class="level-2"><a id="-refreshing-expires-link" href="./alpha/commands/expire.html#-refreshing-expires" class="level-2" pref="#-refreshing-expires">Refreshing expires</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-differences-in-redis-prior-213-item" class="level-2"><a id="-differences-in-redis-prior-213-link" href="./alpha/commands/expire.html#-differences-in-redis-prior-213" class="level-2" pref="#-differences-in-redis-prior-213">Differences in Redis prior 2.1.3</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-pattern-navigation-session-item" class="level-2"><a id="-pattern-navigation-session-link" href="./alpha/commands/expire.html#-pattern-navigation-session" class="level-2" pref="#-pattern-navigation-session">Pattern: Navigation session</a></li></ul></li><li id="appendix-redis-expires-item" class="level-1"><a id="appendix-redis-expires-link" href="./alpha/commands/expire.html#appendix-redis-expires" class="level-1" pref="#appendix-redis-expires">Appendix: Redis expires</a><ul class="level-2" id="appendix-redis-expires-list"><li id="appendix-redis-expires-keys-with-an-expire-item" class="level-2"><a id="appendix-redis-expires-keys-with-an-expire-link" href="./alpha/commands/expire.html#appendix-redis-expires-keys-with-an-expire" class="level-2" pref="#appendix-redis-expires-keys-with-an-expire">Keys with an expire</a></li><li id="appendix-redis-expires-expire-accuracy-item" class="level-2"><a id="appendix-redis-expires-expire-accuracy-link" href="./alpha/commands/expire.html#appendix-redis-expires-expire-accuracy" class="level-2" pref="#appendix-redis-expires-expire-accuracy">Expire accuracy</a></li><li id="appendix-redis-expires-expires-and-persistence-item" class="level-2"><a id="appendix-redis-expires-expires-and-persistence-link" href="./alpha/commands/expire.html#appendix-redis-expires-expires-and-persistence" class="level-2" pref="#appendix-redis-expires-expires-and-persistence">Expires and persistence</a></li><li id="appendix-redis-expires-how-redis-expires-keys-item" class="level-2"><a id="appendix-redis-expires-how-redis-expires-keys-link" href="./alpha/commands/expire.html#appendix-redis-expires-how-redis-expires-keys" class="level-2" pref="#appendix-redis-expires-how-redis-expires-keys">How Redis expires keys</a></li><li id="appendix-redis-expires-how-expires-are-handled-in-the-replication-link-and-aof-file-item" class="level-2"><a id="appendix-redis-expires-how-expires-are-handled-in-the-replication-link-and-aof-file-link" href="./alpha/commands/expire.html#appendix-redis-expires-how-expires-are-handled-in-the-replication-link-and-aof-file" class="level-2" pref="#appendix-redis-expires-how-expires-are-handled-in-the-replication-link-and-aof-file">How expires are handled in the replication link and AOF file</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Set a timeout on <code>key</code>.
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Set a timeout on <code>key</code>.
 After the timeout has expired, the key will automatically be deleted.
 A key with an associated timeout is often said to be <em>volatile</em> in Redis
 terminology.</p><p>The timeout will only be cleared by commands that delete or overwrite the
@@ -654,8 +653,9 @@ independently (but will wait for the <code>DEL</code> coming from the master), t
 still take the full state of the expires existing in the dataset, so when a
 slave is elected to a master it will be able to expire the keys independently,
 fully acting as a master.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/expire.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/expire.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -667,13 +667,8 @@ fully acting as a master.</p></div>
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/expire.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/expire.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

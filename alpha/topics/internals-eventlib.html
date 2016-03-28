@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="event-library-item" class="level-1"><a id="event-library-link" href="./alpha/topics/internals-eventlib.html#event-library" class="level-1" pref="#event-library">Event Library</a><ul class="level-2" id="event-library-list"><li id="event-library-why-is-an-event-library-needed-at-all-item" class="level-2"><a id="event-library-why-is-an-event-library-needed-at-all-link" href="./alpha/topics/internals-eventlib.html#event-library-why-is-an-event-library-needed-at-all" class="level-2" pref="#event-library-why-is-an-event-library-needed-at-all">Why is an Event Library needed at all?</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="event-library">Event Library</h1><h2 id="event-library-why-is-an-event-library-needed-at-all">Why is an Event Library needed at all?</h2><p>Let us figure it out through a series of Q&amp;As.</p><p>Q: What do you expect a network server to be doing all the time? <br>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="event-library">Event Library</h1><h2 id="event-library-why-is-an-event-library-needed-at-all">Why is an Event Library needed at all?</h2><p>Let us figure it out through a series of Q&amp;As.</p><p>Q: What do you expect a network server to be doing all the time? <br>
 A: Watch for inbound connections on the port its listening and accept them.</p><p>Q: Calling [accept](<a href="http://man.cx/accept%282%29">http://man.cx/accept%282%29</a> accept) yields a descriptor. What do I do with it?<br>
 A: Save the descriptor and do a non-blocking read/write operation on it.</p><p>Q: Why does the read/write have to be non-blocking?<br>
 A: If the file operation ( even a socket in Unix is a file ) is blocking how could the server for example accept other connection requests when its blocked in a file I/O operation.</p><p>Q: I guess I have to do many such non-blocking operations on the socket to see when it’s ready. Am I right?<br>
@@ -583,8 +582,9 @@ A: Yes. That is what an event library does for you. Now you get it.</p><p>Q: How
 A: They use the operating system’s <a href="http://www.devshed.com/c/a/BrainDump/Linux-Files-and-the-Event-Poll-Interface/">polling</a> facility along with timers.</p><p>Q: So are there any open source event libraries that do what you just described? <br>
 A: Yes. <code>libevent</code> and <code>libev</code> are two such event libraries that I can recall off the top of my head.</p><p>Q: Does Redis use such open source event libraries for handling socket I/O?<br>
 A: No. For various <a href="http://groups.google.com/group/redis-db/browse_thread/thread/b52814e9ef15b8d0/">reasons</a> Redis uses its own event library.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/internals-eventlib.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/internals-eventlib.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -596,13 +596,8 @@ A: No. For various <a href="http://groups.google.com/group/redis-db/browse_threa
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/internals-eventlib.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/internals-eventlib.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="redis-debugging-guide-item" class="level-1"><a id="redis-debugging-guide-link" href="./alpha/topics/debugging.html#redis-debugging-guide" class="level-1" pref="#redis-debugging-guide">Redis debugging guide</a><ul class="level-2" id="redis-debugging-guide-list"><li id="redis-debugging-guide-what-is-gdb-item" class="level-2"><a id="redis-debugging-guide-what-is-gdb-link" href="./alpha/topics/debugging.html#redis-debugging-guide-what-is-gdb" class="level-2" pref="#redis-debugging-guide-what-is-gdb">What is GDB?</a></li><li id="redis-debugging-guide-compiling-redis-without-optimizations-item" class="level-2"><a id="redis-debugging-guide-compiling-redis-without-optimizations-link" href="./alpha/topics/debugging.html#redis-debugging-guide-compiling-redis-without-optimizations" class="level-2" pref="#redis-debugging-guide-compiling-redis-without-optimizations">Compiling Redis without optimizations</a></li><li id="redis-debugging-guide-attaching-gdb-to-a-running-process-item" class="level-2"><a id="redis-debugging-guide-attaching-gdb-to-a-running-process-link" href="./alpha/topics/debugging.html#redis-debugging-guide-attaching-gdb-to-a-running-process" class="level-2" pref="#redis-debugging-guide-attaching-gdb-to-a-running-process">Attaching GDB to a running process</a></li><li id="redis-debugging-guide-after-the-crash-item" class="level-2"><a id="redis-debugging-guide-after-the-crash-link" href="./alpha/topics/debugging.html#redis-debugging-guide-after-the-crash" class="level-2" pref="#redis-debugging-guide-after-the-crash">After the crash</a></li><li id="redis-debugging-guide-obtaining-the-stack-trace-item" class="level-2"><a id="redis-debugging-guide-obtaining-the-stack-trace-link" href="./alpha/topics/debugging.html#redis-debugging-guide-obtaining-the-stack-trace" class="level-2" pref="#redis-debugging-guide-obtaining-the-stack-trace">Obtaining the stack trace</a></li><li id="redis-debugging-guide-obtaining-the-core-file-item" class="level-2"><a id="redis-debugging-guide-obtaining-the-core-file-link" href="./alpha/topics/debugging.html#redis-debugging-guide-obtaining-the-core-file" class="level-2" pref="#redis-debugging-guide-obtaining-the-core-file">Obtaining the core file</a></li><li id="redis-debugging-guide-what-to-send-to-developers-item" class="level-2"><a id="redis-debugging-guide-what-to-send-to-developers-link" href="./alpha/topics/debugging.html#redis-debugging-guide-what-to-send-to-developers" class="level-2" pref="#redis-debugging-guide-what-to-send-to-developers">What to send to developers</a></li><li id="redis-debugging-guide-thank-you-item" class="level-2"><a id="redis-debugging-guide-thank-you-link" href="./alpha/topics/debugging.html#redis-debugging-guide-thank-you" class="level-2" pref="#redis-debugging-guide-thank-you">Thank you</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-debugging-guide">Redis debugging guide</h1><p>Redis is developed with a great stress on stability: we do our best with
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-debugging-guide">Redis debugging guide</h1><p>Redis is developed with a great stress on stability: we do our best with
 every release to make sure you’ll experience a very stable product and no
 crashes. However even with our best efforts it is impossible to avoid all
 the critical bugs with 100% of success.</p><p>When Redis crashes it produces a detailed report of what happened, however
@@ -670,8 +669,9 @@ gs             </span><span class="lit">0x0</span><span class="pln">  </span><sp
 <li>The core file you generated with gdb.</li>
 <li>Information about the operating system and GCC version, and Redis version you are using.</li>
 </ul><h2 id="redis-debugging-guide-thank-you">Thank you</h2><p>Your help is extremely important! Many issues can only be tracked this way, thanks! It is also possible that helping Redis debugging you’ll be among the winners of the next <a href="http://antirez.com/post/redis-moka-awards-2011.html">Redis Moka Award</a>.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/debugging.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/debugging.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -683,13 +683,8 @@ gs             </span><span class="lit">0x0</span><span class="pln">  </span><sp
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/debugging.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/debugging.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

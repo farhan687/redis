@@ -550,7 +550,7 @@
 
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown search-dropdown">
-        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
       </li>
       <li class="dropdown">
         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -570,12 +570,11 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<!-- ngIf: !index --><div role="flatdoc" class="content-root ng-scope" data-ng-if="!index">
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-sorting-by-external-keys-item" class="level-2"><a id="-sorting-by-external-keys-link" href="./alpha/commands/sort.html#-sorting-by-external-keys" class="level-2" pref="#-sorting-by-external-keys">Sorting by external keys</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-skip-sorting-the-elements-item" class="level-2"><a id="-skip-sorting-the-elements-link" href="./alpha/commands/sort.html#-skip-sorting-the-elements" class="level-2" pref="#-skip-sorting-the-elements">Skip sorting the elements</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-retrieving-external-keys-item" class="level-2"><a id="-retrieving-external-keys-link" href="./alpha/commands/sort.html#-retrieving-external-keys" class="level-2" pref="#-retrieving-external-keys">Retrieving external keys</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-storing-the-result-of-a-sort-operation-item" class="level-2"><a id="-storing-the-result-of-a-sort-operation-link" href="./alpha/commands/sort.html#-storing-the-result-of-a-sort-operation" class="level-2" pref="#-storing-the-result-of-a-sort-operation">Storing the result of a SORT operation</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-using-hashes-in-by-and-get-item" class="level-2"><a id="-using-hashes-in-by-and-get-link" href="./alpha/commands/sort.html#-using-hashes-in-by-and-get" class="level-2" pref="#-using-hashes-in-by-and-get">Using hashes in !BY and !GET</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div class="content">
-  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Returns or stores the elements contained in the <a href="/topics/data-types#lists">list</a>, <a href="/topics/data-types#set">set</a> or
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Returns or stores the elements contained in the <a href="/topics/data-types#lists">list</a>, <a href="/topics/data-types#set">set</a> or
 <a href="/topics/data-types#sorted-sets">sorted set</a> at <code>key</code>.
 By default, sorting is numeric and elements are compared by their value
 interpreted as double precision floating point number.
@@ -621,8 +620,9 @@ Some kind of locking is needed here (for instance using <code>SETNX</code>).</p>
 following syntax:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">SORT mylist BY weight_</span><span class="pun">*-&gt;</span><span class="pln">fieldname GET object_</span><span class="pun">*-&gt;</span><span class="pln">fieldname</span></code></pre><p>The string <code>-&gt;</code> is used to separate the key name from the hash field name.
 The key is substituted as documented above, and the hash stored at the resulting
 key is accessed to retrieve the specified hash field.</p><p>@return</p><p>@array-reply: list of sorted elements.</p></div>
-	
-	<div class="footer">
+  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sort.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sort.md">  <span class="fa fa-pencil"> Edit</span>
+  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
+  	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
@@ -634,13 +634,8 @@ key is accessed to retrieve the specified hash field.</p><p>@return</p><p>@array
 			</div>
 		</div>
 	</div>
-  </div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sort.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sort.md">
-    <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
-</div><!-- end ngIf: !index -->
-<!-- ngIf: index -->
 </div>
+<!-- ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>
