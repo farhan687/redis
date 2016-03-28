@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-atomic-rewrite-process-item" class="level-2"><a id="-atomic-rewrite-process-link" href="./alpha/commands/config-rewrite.html#-atomic-rewrite-process" class="level-2" pref="#-atomic-rewrite-process">Atomic rewrite process</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>The <code>CONFIG REWRITE</code> command rewrites the <code>redis.conf</code> file the server was started with, applying the minimal changes needed to make it reflecting the configuration currently used by the server, that may be different compared to the original one because of the use of the <code>CONFIG SET</code> command.</p><p>The rewrite is performed in a very conservative way:</p><ul>
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>The <code>CONFIG REWRITE</code> command rewrites the <code>redis.conf</code> file the server was started with, applying the minimal changes needed to make it reflecting the configuration currently used by the server, that may be different compared to the original one because of the use of the <code>CONFIG SET</code> command.</p><p>The rewrite is performed in a very conservative way:</p><ul>
 <li>Comments and the overall structure of the original redis.conf are preserved as much as possible.</li>
 <li>If an option already exists in the old redis.conf file, it will be rewritten at the same position (line number).</li>
 <li>If an option was not already present, but it is set to its default value, it is not added by the rewrite process.</li>
@@ -582,6 +583,20 @@
 <li>Non used lines are blanked. For instance if you used to have multiple <code>save</code> directives, but the current configuration has fewer or none as you disabled RDB persistence, all the lines will be blanked.</li>
 </ul><p>CONFIG REWRITE is also able to rewrite the configuration file from scratch if the original one no longer exists for some reason. However if the server was started without a configuration file at all, the CONFIG REWRITE will just return an error.</p><h2 id="-atomic-rewrite-process">Atomic rewrite process</h2><p>In order to make sure the redis.conf file is always consistent, that is, on errors or crashes you always end with the old file, or the new one, the rewrite is performed with a single <code>write(2)</code> call that has enough content to be at least as big as the old file. Sometimes additional padding in the form of comments is added in order to make sure the resulting file is big enough, and later the file gets truncated to remove the padding at the end.</p><p>@return</p><p>@simple-string-reply: <code>OK</code> when the configuration was rewritten properly.
 Otherwise an error is returned.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/config-resetstat.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/config-set.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/config-rewrite.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/config-rewrite.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

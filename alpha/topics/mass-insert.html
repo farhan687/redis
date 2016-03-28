@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="redis-mass-insertion-item" class="level-1"><a id="redis-mass-insertion-link" href="./alpha/topics/mass-insert.html#redis-mass-insertion" class="level-1" pref="#redis-mass-insertion">Redis Mass Insertion</a><ul class="level-2" id="redis-mass-insertion-list"><li id="redis-mass-insertion-use-the-protocol-luke-item" class="level-2"><a id="redis-mass-insertion-use-the-protocol-luke-link" href="./alpha/topics/mass-insert.html#redis-mass-insertion-use-the-protocol-luke" class="level-2" pref="#redis-mass-insertion-use-the-protocol-luke">Use the protocol, Luke</a></li><li id="redis-mass-insertion-generating-redis-protocol-item" class="level-2"><a id="redis-mass-insertion-generating-redis-protocol-link" href="./alpha/topics/mass-insert.html#redis-mass-insertion-generating-redis-protocol" class="level-2" pref="#redis-mass-insertion-generating-redis-protocol">Generating Redis Protocol</a></li><li id="redis-mass-insertion-how-the-pipe-mode-works-under-the-hoods-item" class="level-2"><a id="redis-mass-insertion-how-the-pipe-mode-works-under-the-hoods-link" href="./alpha/topics/mass-insert.html#redis-mass-insertion-how-the-pipe-mode-works-under-the-hoods" class="level-2" pref="#redis-mass-insertion-how-the-pipe-mode-works-under-the-hoods">How the pipe mode works under the hoods</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-mass-insertion">Redis Mass Insertion</h1><p>Sometimes Redis instances needs to be loaded with big amount of preexisting
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-mass-insertion">Redis Mass Insertion</h1><p>Sometimes Redis instances needs to be loaded with big amount of preexisting
 or user generated data in a short amount of time, so that millions of keys
 will be created as fast as possible.</p><p>This is called a <em>mass insertion</em>, and the goal of this document is to
 provide information about how to feed Redis with data as fast as possible.</p><h2 id="redis-mass-insertion-use-the-protocol-luke">Use the protocol, Luke</h2><p>Using a normal Redis client to perform mass insertion is not a good idea
@@ -640,6 +641,20 @@ at the same time.</p><p>This is obtained in the following way:</p><ul>
 <li>Once there is no more data to read from stdin, it sends a special <strong>ECHO</strong> command with a random 20 bytes string: we are sure this is the latest command sent, and we are sure we can match the reply checking if we receive the same 20 bytes as a bulk reply.</li>
 <li>Once this special final command is sent, the code receiving replies starts to match replies with this 20 bytes. When the matching reply is reached it can exit with success.</li>
 </ul><p>Using this trick we don’t need to parse the protocol we send to the server in order to understand how many commands we are sending, but just the replies.</p><p>However while parsing the replies we take a counter of all the replies parsed so that at the end we are able to tell the user the amount of commands transferred to the server by the mass insert session.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/topics/lru-cache.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/topics/memory-optimization.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/mass-insert.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/mass-insert.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

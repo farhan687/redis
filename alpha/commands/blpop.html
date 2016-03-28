@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-non-blocking-behavior-item" class="level-2"><a id="-non-blocking-behavior-link" href="./alpha/commands/blpop.html#-non-blocking-behavior" class="level-2" pref="#-non-blocking-behavior">Non-blocking behavior</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-blocking-behavior-item" class="level-2"><a id="-blocking-behavior-link" href="./alpha/commands/blpop.html#-blocking-behavior" class="level-2" pref="#-blocking-behavior">Blocking behavior</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-what-key-is-served-first-what-client-what-element-priority-ordering-details-item" class="level-2"><a id="-what-key-is-served-first-what-client-what-element-priority-ordering-details-link" href="./alpha/commands/blpop.html#-what-key-is-served-first-what-client-what-element-priority-ordering-details" class="level-2" pref="#-what-key-is-served-first-what-client-what-element-priority-ordering-details">What key is served first? What client? What element? Priority ordering details.</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-behavior-of-blpop-when-multiple-elements-are-pushed-inside-a-list-item" class="level-2"><a id="-behavior-of-blpop-when-multiple-elements-are-pushed-inside-a-list-link" href="./alpha/commands/blpop.html#-behavior-of-blpop-when-multiple-elements-are-pushed-inside-a-list" class="level-2" pref="#-behavior-of-blpop-when-multiple-elements-are-pushed-inside-a-list">Behavior of !BLPOP when multiple elements are pushed inside a list.</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-blpop-inside-a-multi-exec-transaction-item" class="level-2"><a id="-blpop-inside-a-multi-exec-transaction-link" href="./alpha/commands/blpop.html#-blpop-inside-a-multi-exec-transaction" class="level-2" pref="#-blpop-inside-a-multi-exec-transaction">!BLPOP inside a !MULTI / !EXEC transaction</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-reliable-queues-item" class="level-2"><a id="-reliable-queues-link" href="./alpha/commands/blpop.html#-reliable-queues" class="level-2" pref="#-reliable-queues">Reliable queues</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-pattern-event-notification-item" class="level-2"><a id="-pattern-event-notification-link" href="./alpha/commands/blpop.html#-pattern-event-notification" class="level-2" pref="#-pattern-event-notification">Pattern: Event notification</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p><code>BLPOP</code> is a blocking list pop primitive.
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p><code>BLPOP</code> is a blocking list pop primitive.
 It is the blocking version of <code>LPOP</code> because it blocks the connection when there
 are no elements to pop from any of the given lists.
 An element is popped from the head of the first list that is non-empty, with the
@@ -632,6 +633,20 @@ blocking list operations we can easily accomplish this task.</p><p>The consumer 
 SADD key element
 LPUSH helper_key x
 EXEC</span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/bitpos.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/brpop.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/blpop.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/blpop.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

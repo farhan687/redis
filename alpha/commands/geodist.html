@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Return the distance between two members in the geospatial index represented by the sorted set.</p><p>Given a sorted set representing a geospatial index, populated using the <code>GEOADD</code> command, the command returns the distance between the two specified members in the specified unit.</p><p>If one or both the members are missing, the command returns NULL.</p><p>The unit must be one of the following, and defaults to meters:</p><ul>
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Return the distance between two members in the geospatial index represented by the sorted set.</p><p>Given a sorted set representing a geospatial index, populated using the <code>GEOADD</code> command, the command returns the distance between the two specified members in the specified unit.</p><p>If one or both the members are missing, the command returns NULL.</p><p>The unit must be one of the following, and defaults to meters:</p><ul>
 <li><strong>m</strong> for meters.</li>
 <li><strong>km</strong> for kilometers.</li>
 <li><strong>mi</strong> for miles.</li>
@@ -585,6 +586,20 @@ GEODIST </span><span class="typ">Sicily</span><span class="pln"> </span><span cl
 GEODIST </span><span class="typ">Sicily</span><span class="pln"> </span><span class="typ">Palermo</span><span class="pln"> </span><span class="typ">Catania</span><span class="pln"> km
 GEODIST </span><span class="typ">Sicily</span><span class="pln"> </span><span class="typ">Palermo</span><span class="pln"> </span><span class="typ">Catania</span><span class="pln"> mi
 GEODIST </span><span class="typ">Sicily</span><span class="pln"> </span><span class="typ">Foo</span><span class="pln"> </span><span class="typ">Bar</span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/geodecode.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/geoencode.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/geodist.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/geodist.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

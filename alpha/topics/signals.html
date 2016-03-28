@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="redis-signals-handling-item" class="level-1"><a id="redis-signals-handling-link" href="./alpha/topics/signals.html#redis-signals-handling" class="level-1" pref="#redis-signals-handling">Redis Signals Handling</a><ul class="level-2" id="redis-signals-handling-list"><li id="redis-signals-handling-handling-of-sigterm-item" class="level-2"><a id="redis-signals-handling-handling-of-sigterm-link" href="./alpha/topics/signals.html#redis-signals-handling-handling-of-sigterm" class="level-2" pref="#redis-signals-handling-handling-of-sigterm">Handling of SIGTERM</a></li><li id="redis-signals-handling-handling-of-sigsegv-sigbus-sigfpe-and-sigill-item" class="level-2"><a id="redis-signals-handling-handling-of-sigsegv-sigbus-sigfpe-and-sigill-link" href="./alpha/topics/signals.html#redis-signals-handling-handling-of-sigsegv-sigbus-sigfpe-and-sigill" class="level-2" pref="#redis-signals-handling-handling-of-sigsegv-sigbus-sigfpe-and-sigill">Handling of SIGSEGV, SIGBUS, SIGFPE and SIGILL</a></li><li id="redis-signals-handling-what-happens-when-a-child-process-gets-killed-item" class="level-2"><a id="redis-signals-handling-what-happens-when-a-child-process-gets-killed-link" href="./alpha/topics/signals.html#redis-signals-handling-what-happens-when-a-child-process-gets-killed" class="level-2" pref="#redis-signals-handling-what-happens-when-a-child-process-gets-killed">What happens when a child process gets killed</a></li><li id="redis-signals-handling-killing-the-rdb-file-without-triggering-an-error-condition-item" class="level-2"><a id="redis-signals-handling-killing-the-rdb-file-without-triggering-an-error-condition-link" href="./alpha/topics/signals.html#redis-signals-handling-killing-the-rdb-file-without-triggering-an-error-condition" class="level-2" pref="#redis-signals-handling-killing-the-rdb-file-without-triggering-an-error-condition">Killing the RDB file without triggering an error condition</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-signals-handling">Redis Signals Handling</h1><p>This document provides information about how Redis reacts to the reception
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="redis-signals-handling">Redis Signals Handling</h1><p>This document provides information about how Redis reacts to the reception
 of different POSIX signals such as <code>SIGTERM</code>, <code>SIGSEGV</code> and so forth.</p><p>The information contained in this document is <strong>only applicable to Redis version 2.6 or greater</strong>.</p><h2 id="redis-signals-handling-handling-of-sigterm">Handling of SIGTERM</h2><p>The <code>SIGTERM</code> signals tells Redis to shutdown gracefully. When this signal is
 received the server does not actually exits as a result, but it schedules
 a shutdown very similar to the one performed when the <code>SHUTDOWN</code> command is
@@ -616,6 +617,20 @@ special signal <code>SIGUSR1</code> that is handled in a special way:
 it kills the child process as any other signal, but the parent process will
 not detect this as a critical error and will continue to serve write
 requests as usually.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/topics/sentinel.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/topics/sponsors.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/signals.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/signals.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-implementation-details-meet-and-ping-packets-item" class="level-2"><a id="-implementation-details-meet-and-ping-packets-link" href="./alpha/commands/cluster-meet.html#-implementation-details-meet-and-ping-packets" class="level-2" pref="#-implementation-details-meet-and-ping-packets">Implementation details: MEET and PING packets</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p><code>CLUSTER MEET</code> is used in order to connect different Redis nodes with cluster
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p><code>CLUSTER MEET</code> is used in order to connect different Redis nodes with cluster
 support enabled, into a working cluster.</p><p>The basic idea is that nodes by default don’t trust each other, and are
 considered unknown, so that it is unlikely that different cluster nodes will
 mix into a single one because of system administration errors or network
@@ -592,6 +593,20 @@ the node to force the receiver to accept it as a trusted node, it sends a
 <code>MEET</code> packet instead of a <code>PING</code> packet. The two packets have exactly the
 same format, but the former forces the receiver to acknowledge the node as
 trusted.</p><p>@return</p><p>@simple-string-reply: <code>OK</code> if the command was successful. If the address or port specified are invalid an error is returned.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/cluster-keyslot.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/cluster-nodes.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-meet.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-meet.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

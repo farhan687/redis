@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="transactions-item" class="level-1"><a id="transactions-link" href="./alpha/topics/transactions.html#transactions" class="level-1" pref="#transactions">Transactions</a><ul class="level-2" id="transactions-list"><li id="transactions-usage-item" class="level-2"><a id="transactions-usage-link" href="./alpha/topics/transactions.html#transactions-usage" class="level-2" pref="#transactions-usage">Usage</a></li><li id="transactions-errors-inside-a-transaction-item" class="level-2"><a id="transactions-errors-inside-a-transaction-link" href="./alpha/topics/transactions.html#transactions-errors-inside-a-transaction" class="level-2" pref="#transactions-errors-inside-a-transaction">Errors inside a transaction</a></li><li id="transactions-why-redis-does-not-support-roll-backs-item" class="level-2"><a id="transactions-why-redis-does-not-support-roll-backs-link" href="./alpha/topics/transactions.html#transactions-why-redis-does-not-support-roll-backs" class="level-2" pref="#transactions-why-redis-does-not-support-roll-backs">Why Redis does not support roll backs?</a></li><li id="transactions-discarding-the-command-queue-item" class="level-2"><a id="transactions-discarding-the-command-queue-link" href="./alpha/topics/transactions.html#transactions-discarding-the-command-queue" class="level-2" pref="#transactions-discarding-the-command-queue">Discarding the command queue</a></li><li id="transactions-optimistic-locking-using-check-and-set-item" class="level-2"><a id="transactions-optimistic-locking-using-check-and-set-link" href="./alpha/topics/transactions.html#transactions-optimistic-locking-using-check-and-set" class="level-2" pref="#transactions-optimistic-locking-using-check-and-set">Optimistic locking using check-and-set</a></li><li id="transactions-watch-explained-item" class="level-2"><a id="transactions-watch-explained-link" href="./alpha/topics/transactions.html#transactions-watch-explained" class="level-2" pref="#transactions-watch-explained">WATCH explained</a><ul class="level-3" id="transactions-watch-explained-list"><li id="transactions-watch-explained-using-watch-to-implement-zpop-item" class="level-3"><a id="transactions-watch-explained-using-watch-to-implement-zpop-link" href="./alpha/topics/transactions.html#transactions-watch-explained-using-watch-to-implement-zpop" class="level-3" pref="#transactions-watch-explained-using-watch-to-implement-zpop">Using WATCH to implement ZPOP</a></li></ul></li><li id="transactions-redis-scripting-and-transactions-item" class="level-2"><a id="transactions-redis-scripting-and-transactions-link" href="./alpha/topics/transactions.html#transactions-redis-scripting-and-transactions" class="level-2" pref="#transactions-redis-scripting-and-transactions">Redis scripting and transactions</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="transactions">Transactions</h1><p><code>MULTI</code>, <code>EXEC</code>, <code>DISCARD</code> and <code>WATCH</code> are the foundation of
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="transactions">Transactions</h1><p><code>MULTI</code>, <code>EXEC</code>, <code>DISCARD</code> and <code>WATCH</code> are the foundation of
 transactions in Redis.  They allow the execution of a group of commands
 in a single step, with two important guarantees:</p><ul>
 <li><p>All the commands in a transaction are serialized and executed
@@ -717,6 +718,20 @@ still possible to avoid race conditions, especially since the implementation
 complexity of Redis transactions is minimal.</p><p>However it is not impossible that in a non immediate future we’ll see that the
 whole user base is just using scripts. If this happens we may deprecate and
 finally remove transactions.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/topics/trademark.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/topics/twitter-clone.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/transactions.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/transactions.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

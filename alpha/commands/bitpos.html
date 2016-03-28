@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Return the position of the first bit set to 1 or 0 in a string.</p><p>The position is returned, thinking of the string as an array of bits from left to
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Return the position of the first bit set to 1 or 0 in a string.</p><p>The position is returned, thinking of the string as an array of bits from left to
 right, where the first byte’s most significant bit is at position 0, the second
 byte’s most significant bit is at position 8, and so forth.</p><p>The same bit position convention is followed by <code>GETBIT</code> and <code>SETBIT</code>.</p><p>By default, all the bytes contained in the string are examined.
 It is possible to look for bits only in a specified interval passing the additional arguments <em>start</em> and <em>end</em> (it is possible to just pass <em>start</em>, the operation will assume that the end is the last byte of the string. However there are semantic differences as explained later). The range is interpreted as a range of bytes and not a range of bits, so <code>start=0</code> and <code>end=2</code> means to look at the first three bytes.</p><p>Note that bit positions are returned always as absolute values starting from bit zero even when <em>start</em> and <em>end</em> are used to specify a range.</p><p>Like for the <code>GETRANGE</code> command start and end can contain negative values in
@@ -586,6 +587,20 @@ BITPOS mykey </span><span class="number"><span class="lit">1</span></span><span 
 BITPOS mykey </span><span class="number"><span class="lit">1</span></span><span class="pln"> </span><span class="number"><span class="lit">2</span></span><span class="pln">
 </span><span class="kwd">set</span><span class="pln"> mykey </span><span class="string"><span class="str">"\x</span><span class="number"><span class="str">00</span></span><span class="str">\x</span><span class="number"><span class="str">00</span></span><span class="str">\x</span><span class="number"><span class="str">00</span></span><span class="str">"</span></span><span class="pln">
 BITPOS mykey </span><span class="number"><span class="lit">1</span></span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/bitop.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/blpop.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/bitpos.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/bitpos.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

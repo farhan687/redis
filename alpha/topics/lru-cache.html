@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="using-redis-as-an-lru-cache-item" class="level-1"><a id="using-redis-as-an-lru-cache-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache" class="level-1" pref="#using-redis-as-an-lru-cache">Using Redis as an LRU cache</a><ul class="level-2" id="using-redis-as-an-lru-cache-list"><li id="using-redis-as-an-lru-cache-maxmemory-configuration-directive-item" class="level-2"><a id="using-redis-as-an-lru-cache-maxmemory-configuration-directive-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache-maxmemory-configuration-directive" class="level-2" pref="#using-redis-as-an-lru-cache-maxmemory-configuration-directive">Maxmemory configuration directive</a></li><li id="using-redis-as-an-lru-cache-eviction-policies-item" class="level-2"><a id="using-redis-as-an-lru-cache-eviction-policies-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache-eviction-policies" class="level-2" pref="#using-redis-as-an-lru-cache-eviction-policies">Eviction policies</a></li><li id="using-redis-as-an-lru-cache-how-the-eviction-process-works-item" class="level-2"><a id="using-redis-as-an-lru-cache-how-the-eviction-process-works-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache-how-the-eviction-process-works" class="level-2" pref="#using-redis-as-an-lru-cache-how-the-eviction-process-works">How the eviction process works</a></li><li id="using-redis-as-an-lru-cache-approximated-lru-algorithm-item" class="level-2"><a id="using-redis-as-an-lru-cache-approximated-lru-algorithm-link" href="./alpha/topics/lru-cache.html#using-redis-as-an-lru-cache-approximated-lru-algorithm" class="level-2" pref="#using-redis-as-an-lru-cache-approximated-lru-algorithm">Approximated LRU algorithm</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="using-redis-as-an-lru-cache">Using Redis as an LRU cache</h1><p>When Redis is used as a cache, sometimes it is handy to let it automatically
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="using-redis-as-an-lru-cache">Using Redis as an LRU cache</h1><p>When Redis is used as a cache, sometimes it is handy to let it automatically
 evict old data as you add new one. This behavior is very well known in the
 community of developers, since it is the default behavior of the popular
 <em>memcached</em> system.</p><p>LRU is actually only one of the supported eviction methods. This page covers
@@ -629,6 +630,20 @@ the LRU approximated algorithm will be able to handle well.</p><p>In simulations
 usage in order to closely approximate true LRU, and check if this makes a
 difference in your cache misses rate.</p><p>To experiment in production with different values for the sample size by using
 the <code>CONFIG SET maxmemory-samples &lt;count&gt;</code> command, is very simple.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/topics/license.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/topics/mass-insert.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/lru-cache.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/lru-cache.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

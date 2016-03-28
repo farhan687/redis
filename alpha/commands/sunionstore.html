@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>This command is equal to <code>SUNION</code>, but instead of returning the resulting set,
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>This command is equal to <code>SUNION</code>, but instead of returning the resulting set,
 it is stored in <code>destination</code>.</p><p>If <code>destination</code> already exists, it is overwritten.</p><p>@return</p><p>@integer-reply: the number of elements in the resulting set.</p><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">SADD key</span><span class="number"><span class="pln">1</span></span><span class="pln"> </span><span class="string"><span class="str">"a"</span></span><span class="pln">
 SADD key</span><span class="number"><span class="pln">1</span></span><span class="pln"> </span><span class="string"><span class="str">"b"</span></span><span class="pln">
 SADD key</span><span class="number"><span class="pln">1</span></span><span class="pln"> </span><span class="string"><span class="str">"c"</span></span><span class="pln">
@@ -583,6 +584,20 @@ SADD key</span><span class="number"><span class="pln">2</span></span><span class
 SADD key</span><span class="number"><span class="pln">2</span></span><span class="pln"> </span><span class="string"><span class="str">"e"</span></span><span class="pln">
 SUNIONSTORE key key</span><span class="number"><span class="pln">1</span></span><span class="pln"> key</span><span class="number"><span class="pln">2</span></span><span class="pln">
 SMEMBERS key</span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/sunion.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/sync.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sunionstore.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/sunionstore.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

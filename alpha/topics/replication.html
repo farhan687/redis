@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="replication-item" class="level-1"><a id="replication-link" href="./alpha/topics/replication.html#replication" class="level-1" pref="#replication">Replication</a><ul class="level-2" id="replication-list"><li id="replication-safety-of-replication-when-master-has-persistence-turned-off-item" class="level-2"><a id="replication-safety-of-replication-when-master-has-persistence-turned-off-link" href="./alpha/topics/replication.html#replication-safety-of-replication-when-master-has-persistence-turned-off" class="level-2" pref="#replication-safety-of-replication-when-master-has-persistence-turned-off">Safety of replication when master has persistence turned off</a></li><li id="replication-how-redis-replication-works-item" class="level-2"><a id="replication-how-redis-replication-works-link" href="./alpha/topics/replication.html#replication-how-redis-replication-works" class="level-2" pref="#replication-how-redis-replication-works">How Redis replication works</a></li><li id="replication-partial-resynchronization-item" class="level-2"><a id="replication-partial-resynchronization-link" href="./alpha/topics/replication.html#replication-partial-resynchronization" class="level-2" pref="#replication-partial-resynchronization">Partial resynchronization</a></li><li id="replication-diskless-replication-item" class="level-2"><a id="replication-diskless-replication-link" href="./alpha/topics/replication.html#replication-diskless-replication" class="level-2" pref="#replication-diskless-replication">Diskless replication</a></li><li id="replication-configuration-item" class="level-2"><a id="replication-configuration-link" href="./alpha/topics/replication.html#replication-configuration" class="level-2" pref="#replication-configuration">Configuration</a></li><li id="replication-read-only-slave-item" class="level-2"><a id="replication-read-only-slave-link" href="./alpha/topics/replication.html#replication-read-only-slave" class="level-2" pref="#replication-read-only-slave">Read-only slave</a></li><li id="replication-setting-a-slave-to-authenticate-to-a-master-item" class="level-2"><a id="replication-setting-a-slave-to-authenticate-to-a-master-link" href="./alpha/topics/replication.html#replication-setting-a-slave-to-authenticate-to-a-master" class="level-2" pref="#replication-setting-a-slave-to-authenticate-to-a-master">Setting a slave to authenticate to a master</a></li><li id="replication-allow-writes-only-with-n-attached-replicas-item" class="level-2"><a id="replication-allow-writes-only-with-n-attached-replicas-link" href="./alpha/topics/replication.html#replication-allow-writes-only-with-n-attached-replicas" class="level-2" pref="#replication-allow-writes-only-with-n-attached-replicas">Allow writes only with N attached replicas</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="replication">Replication</h1><p>Redis replication is a very simple to use and configure master-slave
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><h1 id="replication">Replication</h1><p>Redis replication is a very simple to use and configure master-slave
 replication that allows slave Redis servers to be exact copies of
 master servers. The following are some very important facts about Redis
 replication:</p><ul>
@@ -676,6 +677,20 @@ loss.</p><p>This is how the feature works:</p><ul>
 <li>min-slaves-max-lag <code>&lt;number of seconds&gt;</code></li>
 </ul><p>For more information, please check the example <code>redis.conf</code> file shipped with the
 Redis source distribution.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/topics/releases.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/topics/security.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/replication.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/replication.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

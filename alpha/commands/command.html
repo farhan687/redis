@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-nested-result-array-item" class="level-2"><a id="-nested-result-array-link" href="./alpha/commands/command.html#-nested-result-array" class="level-2" pref="#-nested-result-array">Nested Result Array</a><ul class="level-3" id="-nested-result-array-list"><li id="-nested-result-array-command-name-item" class="level-3"><a id="-nested-result-array-command-name-link" href="./alpha/commands/command.html#-nested-result-array-command-name" class="level-3" pref="#-nested-result-array-command-name">Command Name</a></li><li id="-nested-result-array-command-arity-item" class="level-3"><a id="-nested-result-array-command-arity-link" href="./alpha/commands/command.html#-nested-result-array-command-arity" class="level-3" pref="#-nested-result-array-command-arity">Command Arity</a></li><li id="-nested-result-array-flags-item" class="level-3"><a id="-nested-result-array-flags-link" href="./alpha/commands/command.html#-nested-result-array-flags" class="level-3" pref="#-nested-result-array-flags">Flags</a></li><li id="-nested-result-array-movable-keys-item" class="level-3"><a id="-nested-result-array-movable-keys-link" href="./alpha/commands/command.html#-nested-result-array-movable-keys" class="level-3" pref="#-nested-result-array-movable-keys">Movable Keys</a></li><li id="-nested-result-array-first-key-in-argument-list-item" class="level-3"><a id="-nested-result-array-first-key-in-argument-list-link" href="./alpha/commands/command.html#-nested-result-array-first-key-in-argument-list" class="level-3" pref="#-nested-result-array-first-key-in-argument-list">First Key in Argument List</a></li><li id="-nested-result-array-last-key-in-argument-list-item" class="level-3"><a id="-nested-result-array-last-key-in-argument-list-link" href="./alpha/commands/command.html#-nested-result-array-last-key-in-argument-list" class="level-3" pref="#-nested-result-array-last-key-in-argument-list">Last Key in Argument List</a></li><li id="-nested-result-array-step-count-item" class="level-3"><a id="-nested-result-array-step-count-link" href="./alpha/commands/command.html#-nested-result-array-step-count" class="level-3" pref="#-nested-result-array-step-count">Step Count</a></li></ul></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Returns @array-reply of details about all Redis commands.</p><p>Cluster clients must be aware of key positions in commands so commands can go to matching instances,
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Returns @array-reply of details about all Redis commands.</p><p>Cluster clients must be aware of key positions in commands so commands can go to matching instances,
 but Redis commands vary between accepting one key,
 multiple keys, or even multiple keys separated by other data.</p><p>You can use <code>COMMAND</code> to cache a mapping between commands and key positions for
 each command to enable exact routing of commands to cluster instances.</p><h2 id="-nested-result-array">Nested Result Array</h2><p>Each top-level result contains six nested results.  Each nested result is:</p><ul>
@@ -669,6 +670,20 @@ last key position is the location of the last key in the argument list.</p><p>If
 like <code>MSET</code> where the format is <code>MSET _key1_ _val1_ [key2] [val2] [key3] [val3]...</code>.</p><p>In the case of <code>MSET</code>, keys are every other position so the step value is 2.  Compare
 with <code>MGET</code> above where the step value is just 1.</p><p>@return</p><p>@array-reply: nested list of command details.  Commands are returned
 in random order.</p><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">COMMAND</span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/command-info.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/config-get.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/command.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/command.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

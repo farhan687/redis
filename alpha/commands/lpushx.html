@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Inserts <code>value</code> at the head of the list stored at <code>key</code>, only if <code>key</code> already
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Inserts <code>value</code> at the head of the list stored at <code>key</code>, only if <code>key</code> already
 exists and holds a list.
 In contrary to <code>LPUSH</code>, no operation will be performed when <code>key</code> does not yet
 exist.</p><p>@return</p><p>@integer-reply: the length of the list after the push operation.</p><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">LPUSH mylist </span><span class="string"><span class="str">"World"</span></span><span class="pln">
@@ -582,6 +583,20 @@ LPUSHX mylist </span><span class="string"><span class="str">"Hello"</span></span
 LPUSHX myotherlist </span><span class="string"><span class="str">"Hello"</span></span><span class="pln">
 LRANGE mylist </span><span class="number"><span class="lit">0</span></span><span class="pln"> </span><span class="pun">-</span><span class="number"><span class="lit">1</span></span><span class="pln">
 LRANGE myotherlist </span><span class="number"><span class="lit">0</span></span><span class="pln"> </span><span class="pun">-</span><span class="number"><span class="lit">1</span></span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/lpush.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/lrange.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/lpushx.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/lpushx.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

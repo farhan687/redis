@@ -574,11 +574,26 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>When all the elements in a sorted set are inserted with the same score, in order to force lexicographical ordering, this command returns the number of elements in the sorted set at <code>key</code> with a value between <code>min</code> and <code>max</code>.</p><p>The <code>min</code> and <code>max</code> arguments have the same meaning as described for
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>When all the elements in a sorted set are inserted with the same score, in order to force lexicographical ordering, this command returns the number of elements in the sorted set at <code>key</code> with a value between <code>min</code> and <code>max</code>.</p><p>The <code>min</code> and <code>max</code> arguments have the same meaning as described for
 <code>ZRANGEBYLEX</code>.</p><p>Note: the command has a complexity of just O(log(N)) because it uses elements ranks (see <code>ZRANK</code>) to get an idea of the range. Because of this there is no need to do a work proportional to the size of the range.</p><p>@return</p><p>@integer-reply: the number of elements in the specified score range.</p><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">ZADD myzset </span><span class="number"><span class="lit">0</span></span><span class="pln"> a </span><span class="number"><span class="lit">0</span></span><span class="pln"> b </span><span class="number"><span class="lit">0</span></span><span class="pln"> c </span><span class="number"><span class="lit">0</span></span><span class="pln"> d </span><span class="number"><span class="lit">0</span></span><span class="pln"> e
 ZADD myzset </span><span class="number"><span class="lit">0</span></span><span class="pln"> f </span><span class="number"><span class="lit">0</span></span><span class="pln"> g
 ZLEXCOUNT myzset </span><span class="pun">-</span><span class="pln"> </span><span class="pun">+</span><span class="pln">
 ZLEXCOUNT myzset </span><span class="pun">[</span><span class="pln">b </span><span class="pun">[</span><span class="pln">f</span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/zinterstore.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/zrange.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/zlexcount.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/zlexcount.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

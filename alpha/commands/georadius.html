@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Return the members of a sorted set populated with geospatial information using <code>GEOADD</code>, which are within the borders of the area specified with the center location and the maximum distance from the center (the radius).</p><p>The common use case for this command is to retrieve geospatial items near a specified point and no far than a given amount of meters (or other units). This allows, for example, to suggest mobile users of an application nearby places.</p><p>The radius is specified in one of the following units:</p><ul>
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Return the members of a sorted set populated with geospatial information using <code>GEOADD</code>, which are within the borders of the area specified with the center location and the maximum distance from the center (the radius).</p><p>The common use case for this command is to retrieve geospatial items near a specified point and no far than a given amount of meters (or other units). This allows, for example, to suggest mobile users of an application nearby places.</p><p>The radius is specified in one of the following units:</p><ul>
 <li><strong>m</strong> for meters.</li>
 <li><strong>km</strong> for kilometers.</li>
 <li><strong>mi</strong> for miles.</li>
@@ -597,6 +598,20 @@
 GEORADIUS </span><span class="typ">Sicily</span><span class="pln"> </span><span class="number"><span class="lit">15</span></span><span class="pln"> </span><span class="number"><span class="lit">37</span></span><span class="pln"> </span><span class="number"><span class="lit">200</span></span><span class="pln"> km WITHDIST
 GEORADIUS </span><span class="typ">Sicily</span><span class="pln"> </span><span class="number"><span class="lit">15</span></span><span class="pln"> </span><span class="number"><span class="lit">37</span></span><span class="pln"> </span><span class="number"><span class="lit">200</span></span><span class="pln"> km WITHCOORD
 GEORADIUS </span><span class="typ">Sicily</span><span class="pln"> </span><span class="number"><span class="lit">15</span></span><span class="pln"> </span><span class="number"><span class="lit">37</span></span><span class="pln"> </span><span class="number"><span class="lit">200</span></span><span class="pln"> km WITHDIST WITHCOORD</span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/geopos.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/georadiusbymember.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/georadius.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/georadius.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

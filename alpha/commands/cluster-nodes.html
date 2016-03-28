@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-serialization-format-item" class="level-2"><a id="-serialization-format-link" href="./alpha/commands/cluster-nodes.html#-serialization-format" class="level-2" pref="#-serialization-format">Serialization format</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-notes-on-published-config-epochs-item" class="level-2"><a id="-notes-on-published-config-epochs-link" href="./alpha/commands/cluster-nodes.html#-notes-on-published-config-epochs" class="level-2" pref="#-notes-on-published-config-epochs">Notes on published config epochs</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-special-slot-entries-item" class="level-2"><a id="-special-slot-entries-link" href="./alpha/commands/cluster-nodes.html#-special-slot-entries" class="level-2" pref="#-special-slot-entries">Special slot entries</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Each node in a Redis Cluster has its view of the current cluster configuration,
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Each node in a Redis Cluster has its view of the current cluster configuration,
 given by the set of known nodes, the state of the connection we have with such
 nodes, their flags, properties and assigned slots, and so forth.</p><p><code>CLUSTER NODES</code> provides all this information, that is, the current cluster
 configuration of the node we are contacting, in a serialization format which
@@ -635,6 +636,20 @@ as already explained above:</p><ol>
 <li>Migration and importing slots are only added to the node flagged as <code>myself</code>. This information is local to a node, for its own slots.</li>
 <li>Importing and migrating slots are provided as <strong>additional info</strong>. If the node has a given hash slot assigned, it will be also a plain number in the list of hash slots, so clients that don’t have a clue about hash slots migrations can just skip this special fields.</li>
 </ol><p>@return</p><p>@bulk-string-reply: The serialized cluster configuration.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/cluster-meet.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/cluster-replicate.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-nodes.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-nodes.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

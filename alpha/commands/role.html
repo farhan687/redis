@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-output-format-item" class="level-2"><a id="-output-format-link" href="./alpha/commands/role.html#-output-format" class="level-2" pref="#-output-format">Output format</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-master-output-item" class="level-2"><a id="-master-output-link" href="./alpha/commands/role.html#-master-output" class="level-2" pref="#-master-output">Master output</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-slave-output-item" class="level-2"><a id="-slave-output-link" href="./alpha/commands/role.html#-slave-output" class="level-2" pref="#-slave-output">Slave output</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-sentinel-output-item" class="level-2"><a id="-sentinel-output-link" href="./alpha/commands/role.html#-sentinel-output" class="level-2" pref="#-sentinel-output">Sentinel output</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Provide information on the role of a Redis instance in the context of replication, by returning if the instance is currently a <code>master</code>, <code>slave</code>, or <code>sentinel</code>. The command also returns additional information about the state of the replication (if the role is master or slave) or the list of monitored master names (if the role is sentinel).</p><h2 id="-output-format">Output format</h2><p>The command returns an array of elements. The first element is the role of
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Provide information on the role of a Redis instance in the context of replication, by returning if the instance is currently a <code>master</code>, <code>slave</code>, or <code>sentinel</code>. The command also returns additional information about the state of the replication (if the role is master or slave) or the list of monitored master names (if the role is sentinel).</p><h2 id="-output-format">Output format</h2><p>The command returns an array of elements. The first element is the role of
 the instance, as one of the following three strings:</p><ul>
 <li>“master”</li>
 <li>“slave”</li>
@@ -610,6 +611,20 @@ the instance, as one of the following three strings:</p><ul>
 </ol><p>@return</p><p>@array-reply: where the first element is one of <code>master</code>, <code>slave</code>, <code>sentinel</code> and the additional elements are role-specific as illustrated above.</p><p>@history</p><ul>
 <li>This command was introduced in the middle of a Redis stable release, specifically with Redis 2.8.12.</li>
 </ul><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">ROLE</span></code></pre></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/restore.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/rpop.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/role.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/role.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->

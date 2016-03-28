@@ -574,7 +574,8 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-example-item" class="level-2"><a id="-example-link" href="./alpha/commands/cluster-delslots.html#-example" class="level-2" pref="#-example">Example</a></li></ul></li><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-usage-in-redis-cluster-item" class="level-2"><a id="-usage-in-redis-cluster-link" href="./alpha/commands/cluster-delslots.html#-usage-in-redis-cluster" class="level-2" pref="#-usage-in-redis-cluster">Usage in Redis Cluster</a></li></ul></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>In Redis Cluster, each node keeps track of which master is serving
+  <div class="content">
+  	<div role="flatdoc-content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>In Redis Cluster, each node keeps track of which master is serving
 a particular hash slot.</p><p>The <code>DELSLOTS</code> command asks a particular Redis Cluster node to
 forget which master is serving the hash slots specified as arguments.</p><p>In the context of a node that has received a <code>DELSLOTS</code> command and
 has consequently removed the associations for the passed hash slots,
@@ -600,6 +601,20 @@ debugging and in order to manually orchestrate a cluster configuration
 when a new cluster is created. It is currently not used by <code>redis-trib</code>,
 and mainly exists for API completeness.</p><p>@return</p><p>@simple-string-reply: <code>OK</code> if the command was successful. Otherwise
 an error is returned.</p></div>
+	
+	<div class="footer">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./alpha/commands/cluster-countkeysinslot.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./alpha/commands/cluster-failover.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
+  </div>
   <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-delslots.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-delslots.md">
     <span class="fa fa-pencil"> Edit</span>
   </a><!-- end ngIf: docbaseOptions.method == 'github' -->
