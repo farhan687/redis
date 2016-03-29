@@ -5,8 +5,6 @@
     <div class="menu section" role="flatdoc-menu"></div>
   </div>
   <div role="flatdoc-content" class="content"></div>
-  <a data-ng-if="docbaseOptions.method == 'github'" class="edit" ng-href="{{github}}" target="_blank">  <span class="fa fa-pencil"> Edit</span>
-  </a>
   	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
@@ -27,10 +25,17 @@
 				{{currentFolder}}
 			</h1>
 		</div>
-		<ul class="row indexList">
-			<li class="col-xs-12 indexLi" data-ng-repeat="file in indexList" data-ng-if="file.name != 'index'">
-				<a href="#/{{currentVersion}}/{{currentFolder}}/{{file.name}}" class="col-xs-12">{{file.name}}</a>
-			</li>
-		</ul>
+		<div class="row indexLinkContainer">
+			<ul class="col-xs-12 col-sm-6">
+				<li class="col-xs-12" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' && key%2 == 0">
+					<a href="#/{{currentVersion}}/{{currentFolder}}/{{file.name}}" class="col-xs-12"> {{key+1}} {{file.name}}</a>
+				</li>
+			</ul>
+			<ul  class="col-xs-12 col-sm-6">
+				<li class="col-xs-12" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' && key%2 == 1">
+					<a href="#/{{currentVersion}}/{{currentFolder}}/{{file.name}}" class="col-xs-12">{{key+1}} {{file.name}}</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>

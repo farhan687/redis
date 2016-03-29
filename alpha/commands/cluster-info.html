@@ -550,7 +550,7 @@
 
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown search-dropdown">
-        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+        <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
       </li>
       <li class="dropdown">
         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -574,7 +574,7 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p><code>CLUSTER INFO</code> provides <code>INFO</code> style information about Redis Cluster
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div><div class="contributors_header"><a class="edit-btn" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-info.md" target="_blank"><span class="fa fa-pencil"> Edit this page on Github </span></a></div></div><div class="clearFix"></div><p><code>CLUSTER INFO</code> provides <code>INFO</code> style information about Redis Cluster
 vital parameters. The following is a sample output, followed by the
 description of each field reported.</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">cluster_state</span><span class="pun">:</span><span class="pln">ok
 cluster_slots_assigned</span><span class="pun">:</span><span class="lit">16384</span><span class="pln">
@@ -599,8 +599,6 @@ cluster_stats_messages_received</span><span class="pun">:</span><span class="lit
 <li><code>cluster_stats_messages_sent</code>: Number of messages sent via the cluster node-to-node binary bus.</li>
 <li><code>cluster_stats_messages_received</code>: Number of messages received via the cluster node-to-node binary bus.</li>
 </ul><p>More information about the Current Epoch and Config Epoch variables are available in the Redis Cluster specification document.</p><p>@return</p><p>@bulk-string-reply: A map between named fields and values in the form of <code>&lt;field&gt;:&lt;value&gt;</code> lines separated by newlines composed by the two bytes <code>CRLF</code>.</p></div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-info.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/cluster-info.md">  <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
   	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	

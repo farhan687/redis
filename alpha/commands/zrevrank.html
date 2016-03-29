@@ -574,7 +574,7 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div></div><div class="clearFix"></div><p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code>, with the scores
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div><div class="contributors_header"><a class="edit-btn" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/zrevrank.md" target="_blank"><span class="fa fa-pencil"> Edit this page on Github </span></a></div></div><div class="clearFix"></div><p>Returns the rank of <code>member</code> in the sorted set stored at <code>key</code>, with the scores
 ordered from high to low.
 The rank (or index) is 0-based, which means that the member with the highest
 score has rank <code>0</code>.</p><p>Use <code>ZRANK</code> to get the rank of an element with the scores ordered from low to
@@ -587,8 +587,6 @@ ZADD myzset </span><span class="number"><span class="lit">2</span></span><span c
 ZADD myzset </span><span class="number"><span class="lit">3</span></span><span class="pln"> </span><span class="string"><span class="str">"three"</span></span><span class="pln">
 ZREVRANK myzset </span><span class="string"><span class="str">"one"</span></span><span class="pln">
 ZREVRANK myzset </span><span class="string"><span class="str">"four"</span></span></code></pre></div>
-  <!-- ngIf: docbaseOptions.method == 'github' --><a data-ng-if="docbaseOptions.method == 'github'" class="edit ng-scope" ng-href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/zrevrank.md" target="_blank" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/zrevrank.md">  <span class="fa fa-pencil"> Edit</span>
-  </a><!-- end ngIf: docbaseOptions.method == 'github' -->
   	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">	
