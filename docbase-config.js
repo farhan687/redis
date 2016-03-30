@@ -14,13 +14,14 @@ var docbaseConfig = {
   "github": {
     "user": "farhan687",
     "repo": "redis",
-    "path": "source",
+    "path": "soruce",
     "branch": "master",
     "access_token": "MzNlYmQ5NzA3NWQyODAyZGZiZDE2ZjBiZjkzMGViZWI0NmU5MDVjNQ=="
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
   "html5mode": false,
+  "default_version": null,
   "versions" : {
     "v1": [{
       "name": "sample",
