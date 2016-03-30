@@ -11,12 +11,12 @@ var docbaseConfig = {
   "file": {
     "path": ""
   },
-  "github": {
-    "user": "farhan687",
-    "repo": "redis",
-    "path": "soruce",
-    "branch": "master",
-    "access_token": "MzNlYmQ5NzA3NWQyODAyZGZiZDE2ZjBiZjkzMGViZWI0NmU5MDVjNQ=="
+   "github": {
+     "user": "farhan687",
+     "repo": "redis",
+     "path": "source",
+     "branch": "master",
+     "access_token": "MzNlYmQ5NzA3NWQyODAyZGZiZDE2ZjBiZjkzMGViZWI0NmU5MDVjNQ=="
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
