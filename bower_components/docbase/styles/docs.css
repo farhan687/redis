@@ -42,7 +42,10 @@ body:not(.no-literate) .content h1 {
 }
 
 .edit-btn {
-  color: #505050
+  color: #505050;
+  font-size: 12px; 
+  padding: 10px; 
+  float: right;
 }
 
 @media (min-width: 1350px) {
@@ -76,7 +79,8 @@ body:not(.no-literate) .content h1 {
   body:not(.no-literate) .content > h5,
   body:not(.no-literate) .content > h6,
   body:not(.no-literate) .content > pre,
-  body:not(.no-literate) .content > blockquote {
+  body:not(.no-literate) .content > blockquote,
+  body:not(.no-literate) .content.footer {
     width: 550px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
