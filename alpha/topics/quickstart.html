@@ -27,7 +27,7 @@
       <span class="icon-bar"></span>
     </button>
     <a id="docs-appbase-logo" class="navbar-brand" href="#/">
-      <img src="./images/docbase.png">
+      <img src="./images/logo.png">
     </a>
   </div>
   <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -553,13 +553,13 @@
       </ul>
       <ul class="nav navbar-nav category-li" style="display: block; ">
         <li class="dropdown menu-large">
-          <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>       
+          <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
             <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
               <ul>
                 <li class="dropdown-header">
                   <a ng-href=./alpha/commands/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="commands" href=./alpha/commands/index.html>commands</a>
-                </li>   
+                </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./alpha/commands/append.html title="append" ng-bind="file.label" class="ng-binding" href=./alpha/commands/append.html>append</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -964,7 +964,7 @@
               <ul>
                 <li class="dropdown-header">
                   <a ng-href=./alpha/topics/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="topics" href=./alpha/topics/index.html>topics</a>
-                </li>   
+                </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./alpha/topics/admin.html title="admin" ng-bind="file.label" class="ng-binding" href=./alpha/topics/admin.html>admin</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -1079,7 +1079,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px; "><span class="twitter-typeahead" style="position: relative; display: inline-block; "><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" style="position: absolute; top: 0px; left: 0px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size:  ; background-position: 0% 0%; background-repeat: repeat repeat; " readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent; "><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; "></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; "><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -1117,13 +1117,13 @@
         <li class="col-xs-12">
           <ul class="nav navbar-nav">
             <li class="dropdown menu-large">
-              <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>       
+              <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
               <ul class="dropdown-menu megamenu row">
                 <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
                   <ul>
                     <li class="dropdown-header">
                       <a ng-href=./alpha/commands/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="commands" href=./alpha/commands/index.html>commands</a>
-                    </li>   
+                    </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./alpha/commands/append.html title="append" ng-bind="file.label" class="ng-binding" href=./alpha/commands/append.html>append</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -1528,7 +1528,7 @@
                   <ul>
                     <li class="dropdown-header">
                       <a ng-href=./alpha/topics/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="topics" href=./alpha/topics/index.html>topics</a>
-                    </li>   
+                    </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./alpha/topics/admin.html title="admin" ng-bind="file.label" class="ng-binding" href=./alpha/topics/admin.html>admin</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -1649,7 +1649,7 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="redis-quick-start-item" class="level-1"><a id="redis-quick-start-link" href="./alpha/topics/quickstart.html#redis-quick-start" class="level-1" pref="#redis-quick-start">Redis Quick Start</a></li><li id="installing-redis-item" class="level-1"><a id="installing-redis-link" href="./alpha/topics/quickstart.html#installing-redis" class="level-1" pref="#installing-redis">Installing Redis</a></li><li id="starting-redis-item" class="level-1"><a id="starting-redis-link" href="./alpha/topics/quickstart.html#starting-redis" class="level-1" pref="#starting-redis">Starting Redis</a></li><li id="check-if-redis-is-working-item" class="level-1"><a id="check-if-redis-is-working-link" href="./alpha/topics/quickstart.html#check-if-redis-is-working" class="level-1" pref="#check-if-redis-is-working">Check if Redis is working</a></li><li id="securing-redis-item" class="level-1"><a id="securing-redis-link" href="./alpha/topics/quickstart.html#securing-redis" class="level-1" pref="#securing-redis">Securing Redis</a></li><li id="using-redis-from-your-application-item" class="level-1"><a id="using-redis-from-your-application-link" href="./alpha/topics/quickstart.html#using-redis-from-your-application" class="level-1" pref="#using-redis-from-your-application">Using Redis from your application</a></li><li id="redis-persistence-item" class="level-1"><a id="redis-persistence-link" href="./alpha/topics/quickstart.html#redis-persistence" class="level-1" pref="#redis-persistence">Redis persistence</a></li><li id="installing-redis-more-properly-item" class="level-1"><a id="installing-redis-more-properly-link" href="./alpha/topics/quickstart.html#installing-redis-more-properly" class="level-1" pref="#installing-redis-more-properly">Installing Redis more properly</a></li></ul></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/b341cef739b132657b7909190d758aa6f6245df1">Mar 25, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/630042?v=3" alt="siddharthlatest"></a><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/quickstart.md" target="_blank"><span class="fa fa-pencil"> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="redis-quick-start">Redis Quick Start</h1><p>This is a quick start document that targets people without prior experience
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/farhan687/redis/commit/b341cef739b132657b7909190d758aa6f6245df1">Mar 25, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/630042?v=3" alt="siddharthlatest"></a><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/farhan687/redis/tree/master/source/alpha/topics/quickstart.md" target="_blank"><span class="fa fa-pencil"> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="redis-quick-start">Redis Quick Start</h1><p>This is a quick start document that targets people without prior experience
 with Redis. Reading this document will help you:</p><ul>
 <li>Download and compile Redis to start hacking.</li>
 <li>Use <strong>redis-cli</strong> to access the server.</li>
@@ -1660,7 +1660,7 @@ with Redis. Reading this document will help you:</p><ul>
 </ul><h1 id="installing-redis">Installing Redis</h1><p>The suggested way of installing Redis is compiling it from sources as
 Redis has no dependencies other than a working GCC compiler and libc.
 Installing it using the package manager of your Linux distribution is somewhat
-discouraged as usually the available version is not the latest.</p><p>You can either download the latest Redis tar ball from the <a href="http://redis.io">redis.io</a> web site, or you can alternatively use this special URL that always points to the latest stable Redis version, that is, <a href="http://download.redis.io/redis-stable.tar.gz"></a><a href="http://download.redis.io/redis-stable.tar.gz">http://download.redis.io/redis-stable.tar.gz</a>.</p><p>In order to compile Redis follow this simple steps:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">wget http</span><span class="pun">:</span><span class="com">//download.redis.io/redis-stable.tar.gz</span><span class="pln">
+discouraged as usually the available version is not the latest.</p><p>You can either download the latest Redis tar ball from the <a href="http://redis.io">redis.io</a> web site, or you can alternatively use this special URL that always points to the latest stable Redis version, that is, <a href="http://download.redis.io/redis-stable.tar.gz">http://download.redis.io/redis-stable.tar.gz</a>.</p><p>In order to compile Redis follow this simple steps:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">wget http</span><span class="pun">:</span><span class="com">//download.redis.io/redis-stable.tar.gz</span><span class="pln">
 tar xvzf redis</span><span class="pun">-</span><span class="pln">stable</span><span class="pun">.</span><span class="pln">tar</span><span class="pun">.</span><span class="pln">gz
 cd redis</span><span class="pun">-</span><span class="pln">stable
 make</span></code></pre><p>At this point you can try if your build works correctly by typing <strong>make test</strong>, but this is an optional step. After the compilation the <strong>src</strong> directory inside the Redis distribution is populated with the different executables that are part of Redis:</p><ul>
@@ -1721,22 +1721,17 @@ on a real server. For this kind of usage you have two different choices:</p><ul>
 The following instructions can be used to perform a proper installation using the init script shipped with Redis 2.4 in a Debian or Ubuntu based distribution.</p><p>We assume you already copied <strong>redis-server</strong> and <strong>redis-cli</strong> executables under /usr/local/bin.</p><ul>
 <li><p>Create a directory where to store your Redis config files and your data:</p>
 <pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo mkdir </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">redis
-  sudo mkdir </span><span class="pun">/</span><span class="kwd">var</span><span class="pun">/</span><span class="pln">redis</span></code></pre>
-</li>
+  sudo mkdir </span><span class="pun">/</span><span class="kwd">var</span><span class="pun">/</span><span class="pln">redis</span></code></pre></li>
 <li><p>Copy the init script that you’ll find in the Redis distribution under the <strong>utils</strong> directory into /etc/init.d. We suggest calling it with the name of the port where you are running this instance of Redis. For example:</p>
-<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo cp utils</span><span class="pun">/</span><span class="pln">redis_init_script </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">redis_6379</span></code></pre>
-</li>
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo cp utils</span><span class="pun">/</span><span class="pln">redis_init_script </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">redis_6379</span></code></pre></li>
 <li><p>Edit the init script.</p>
-<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo vi </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">redis_6379</span></code></pre>
-</li>
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo vi </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">redis_6379</span></code></pre></li>
 </ul><p>Make sure to modify <strong>REDISPORT</strong> accordingly to the port you are using.
 Both the pid file path and the configuration file name depend on the port number.</p><ul>
 <li><p>Copy the template configuration file you’ll find in the root directory of the Redis distribution into /etc/redis/ using the port number as name, for instance:</p>
-<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo cp redis</span><span class="pun">.</span><span class="pln">conf </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">redis</span><span class="pun">/</span><span class="lit">6379.conf</span></code></pre>
-</li>
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo cp redis</span><span class="pun">.</span><span class="pln">conf </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">redis</span><span class="pun">/</span><span class="lit">6379.conf</span></code></pre></li>
 <li><p>Create a directory inside /var/redis that will work as data and working directory for this Redis instance:</p>
-<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo mkdir </span><span class="pun">/</span><span class="kwd">var</span><span class="pun">/</span><span class="pln">redis</span><span class="pun">/</span><span class="lit">6379</span></code></pre>
-</li>
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo mkdir </span><span class="pun">/</span><span class="kwd">var</span><span class="pun">/</span><span class="pln">redis</span><span class="pun">/</span><span class="lit">6379</span></code></pre></li>
 <li><p>Edit the configuration file, making sure to perform the following changes:</p>
 <ul>
 <li>Set <strong>daemonize</strong> to yes (by default it is set to no).</li>
@@ -1748,8 +1743,7 @@ Both the pid file path and the configuration file name depend on the port number
 </ul>
 </li>
 <li><p>Finally add the new Redis init script to all the default runlevels using the following command:</p>
-<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo update</span><span class="pun">-</span><span class="pln">rc</span><span class="pun">.</span><span class="pln">d redis_6379 defaults</span></code></pre>
-</li>
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">  sudo update</span><span class="pun">-</span><span class="pln">rc</span><span class="pun">.</span><span class="pln">d redis_6379 defaults</span></code></pre></li>
 </ul><p>You are done! Now you can try running your instance with:</p><pre><code class="prettyprint prettyprinted" style=""><span class="pln">sudo </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">init</span><span class="pun">.</span><span class="pln">d</span><span class="pun">/</span><span class="pln">redis_6379 start</span></code></pre><p>Make sure that everything is working as expected:</p><ul>
 <li>Try pinging your instance with redis-cli.</li>
 <li>Do a test save with <strong>redis-cli save</strong> and check that the dump file is correctly stored into /var/redis/6379/ (you should find a file called dump.rdb).</li>

@@ -27,7 +27,7 @@
       <span class="icon-bar"></span>
     </button>
     <a id="docs-appbase-logo" class="navbar-brand" href="#/">
-      <img src="./images/docbase.png">
+      <img src="./images/logo.png">
     </a>
   </div>
   <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -553,13 +553,13 @@
       </ul>
       <ul class="nav navbar-nav category-li" style="display: block; ">
         <li class="dropdown menu-large">
-          <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>       
+          <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
             <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
               <ul>
                 <li class="dropdown-header">
                   <a ng-href=./alpha/commands/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="commands" href=./alpha/commands/index.html>commands</a>
-                </li>   
+                </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./alpha/commands/append.html title="append" ng-bind="file.label" class="ng-binding" href=./alpha/commands/append.html>append</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -964,7 +964,7 @@
               <ul>
                 <li class="dropdown-header">
                   <a ng-href=./alpha/topics/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="topics" href=./alpha/topics/index.html>topics</a>
-                </li>   
+                </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./alpha/topics/admin.html title="admin" ng-bind="file.label" class="ng-binding" href=./alpha/topics/admin.html>admin</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -1079,7 +1079,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px; "><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -1117,13 +1117,13 @@
         <li class="col-xs-12">
           <ul class="nav navbar-nav">
             <li class="dropdown menu-large">
-              <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>       
+              <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
               <ul class="dropdown-menu megamenu row">
                 <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
                   <ul>
                     <li class="dropdown-header">
                       <a ng-href=./alpha/commands/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="commands" href=./alpha/commands/index.html>commands</a>
-                    </li>   
+                    </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./alpha/commands/append.html title="append" ng-bind="file.label" class="ng-binding" href=./alpha/commands/append.html>append</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -1528,7 +1528,7 @@
                   <ul>
                     <li class="dropdown-header">
                       <a ng-href=./alpha/topics/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="topics" href=./alpha/topics/index.html>topics</a>
-                    </li>   
+                    </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./alpha/topics/admin.html title="admin" ng-bind="file.label" class="ng-binding" href=./alpha/topics/admin.html>admin</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -1649,7 +1649,7 @@
   <div class="menubar fixed">
     <div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"></li></ul></div>
   </div>
-  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last Modified On : <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/pfadd.md" target="_blank"><span class="fa fa-pencil"> Edit this page on Github </span></a></div></div><div class="clearFix"></div><p>Adds all the element arguments to the HyperLogLog data structure stored at the variable name specified as first argument.</p><p>As a side effect of this command the HyperLogLog internals may be updated to reflect a different estimation of the number of unique items added so far (the cardinality of the set).</p><p>If the approximated cardinality estimated by the HyperLogLog changed after executing the command, <code>PFADD</code> returns 1, otherwise 0 is returned. The command automatically creates an empty HyperLogLog structure (that is, a Redis String of a specified length and with a given encoding) if the specified key does not exist.</p><p>To call the command without elements but just the variable name is valid, this will result into no operation performed if the variable already exists, or just the creation of the data structure if the key does not exist (in the latter case 1 is returned).</p><p>For an introduction to HyperLogLog data structure check the <code>PFCOUNT</code> command page.</p><p>@return</p><p>@integer-reply, specifically:</p><ul>
+  <div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/farhan687/redis/commit/85f5f8e9afa845b48c3cb3342a0d4c7008ff8edd">Mar 24, 2016</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/farhan687" title="farhan687" target="_blank"><img class="contributor_img img-rounded" src="https://avatars.githubusercontent.com/u/6059027?v=3" alt="farhan687"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/farhan687/redis/tree/master/source/alpha/commands/pfadd.md" target="_blank"><span class="fa fa-pencil"> Edit this page on Github </span></a></div></div><div class="clearFix"></div><p>Adds all the element arguments to the HyperLogLog data structure stored at the variable name specified as first argument.</p><p>As a side effect of this command the HyperLogLog internals may be updated to reflect a different estimation of the number of unique items added so far (the cardinality of the set).</p><p>If the approximated cardinality estimated by the HyperLogLog changed after executing the command, <code>PFADD</code> returns 1, otherwise 0 is returned. The command automatically creates an empty HyperLogLog structure (that is, a Redis String of a specified length and with a given encoding) if the specified key does not exist.</p><p>To call the command without elements but just the variable name is valid, this will result into no operation performed if the variable already exists, or just the creation of the data structure if the key does not exist (in the latter case 1 is returned).</p><p>For an introduction to HyperLogLog data structure check the <code>PFCOUNT</code> command page.</p><p>@return</p><p>@integer-reply, specifically:</p><ul>
 <li>1 if at least 1 HyperLogLog internal register was altered. 0 otherwise.</li>
 </ul><p>@examples</p><pre><code class="lang-cli prettyprint prettyprinted" style=""><span class="pln">PFADD hll a b c d e f g
 PFCOUNT hll</span></code></pre></div>
