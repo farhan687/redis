@@ -79,6 +79,8 @@
         path: '/'
       },
       html5mode: false,
+      default_version: '',
+      manual_override: false,
       indexType: 'html',
       indexSrc: 'v1/path/index.md',
       navbarHtml: 'html/navbar.html',
@@ -117,7 +119,7 @@
     Events.bind();
     if (options.method === 'file') {
       Docbase.file(options.map);
-    } else if (options.method === 'github') {
+    } else if (options.method === 'github' && !options.manual_override) {
       Docbase.github(options.github);
     } else {
       Docbase.file(options.map);
@@ -595,7 +597,7 @@
           $rootScope.logoSrc = Docbase.options.logoSrc;
           $scope.map = Docbase.map;
           $scope.versions = Object.keys($scope.map);
-          $scope.currentVersion = $scope.docbaseOptions.default_version && $scope.docbaseOptions.default_version !== null ? $scope.docbaseOptions.default_version: $scope.versions[0];
+          $scope.currentVersion = $scope.docbaseOptions.default_version && $scope.docbaseOptions.default_version !== null && $scope.docbaseOptions.default_version !== '' ? $scope.docbaseOptions.default_version: $scope.versions[0];
           
           setTimeout(function(){
             $('#folder-navbar').megaMenu();
