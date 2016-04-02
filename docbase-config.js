@@ -1,9 +1,5 @@
 var docbaseConfig = {
   "method": "github",
-  "map": {
-    "file": "map.json",
-    "path": ""
-  },
   "generic": {
     "baseurl": "",
     "path": ""
@@ -20,31 +16,43 @@ var docbaseConfig = {
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
-  "html5mode": false,
-  "default_version": null,
+  "default_version": "",
+  "manual_override": false,
   "versions" : {
-    "v1": [{
+  "v1": [
+    {
       "name": "sample",
       "label": "Sample Label",
-      "files": [{
-        "name": "sample1",
-        "label": "Sample 1 Doc"
-      },]
-    }, {
+      "files": [
+        {
+          "name": "sample1",
+          "label": "Sample 1 Doc"
+        }
+      ]
+    },
+    {
       "name": "howtostart",
       "label": "How to start",
-      "files": [{
-        "name": "starting",
-        "label": "Starting with docbase"
-      }]
-    }],
-    "v2": [{
+      "files": [
+        {
+          "name": "starting",
+          "label": "Starting with docbase"
+        }
+      ]
+    }
+  ],
+  "v2": [
+    {
       "name": "sample",
       "label": "Sample Label",
-      "files": [{
-        "name": "sample1",
-        "label": "Sample 2 Doc"
-      }]
-    }]
-  }
+      "files": [
+        {
+          "name": "sample1",
+          "label": "Sample 2 Doc"
+        }
+      ]
+    }
+  ]
+},
+  "publish": "github"
 }
